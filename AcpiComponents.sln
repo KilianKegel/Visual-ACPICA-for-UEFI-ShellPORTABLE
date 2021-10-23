@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31815.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template", "template\template.vcxproj", "{E4C4AE18-CF90-4109-B345-1FAE61AFFCF0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{223B3668-E022-4DA7-A33D-C9168D1357A3} = {223B3668-E022-4DA7-A33D-C9168D1357A3}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AcpiDump", "AcpiDump\AcpiDump.vcxproj", "{2EAB564D-2739-43AF-A545-2077D3D91560}"
+	ProjectSection(ProjectDependencies) = postProject
+		{223B3668-E022-4DA7-A33D-C9168D1357A3} = {223B3668-E022-4DA7-A33D-C9168D1357A3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win324UEFI", "Win324UEFI\Win324UEFI.vcxproj", "{223B3668-E022-4DA7-A33D-C9168D1357A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,10 @@ Global
 		{2EAB564D-2739-43AF-A545-2077D3D91560}.UEFIShell|x64.Build.0 = UEFIShell|x64
 		{2EAB564D-2739-43AF-A545-2077D3D91560}.UEFIShell|x86.ActiveCfg = UEFIShell|Win32
 		{2EAB564D-2739-43AF-A545-2077D3D91560}.UEFIShell|x86.Build.0 = UEFIShell|Win32
+		{223B3668-E022-4DA7-A33D-C9168D1357A3}.UEFIShell|x64.ActiveCfg = UEFIShell|x64
+		{223B3668-E022-4DA7-A33D-C9168D1357A3}.UEFIShell|x64.Build.0 = UEFIShell|x64
+		{223B3668-E022-4DA7-A33D-C9168D1357A3}.UEFIShell|x86.ActiveCfg = UEFIShell|x64
+		{223B3668-E022-4DA7-A33D-C9168D1357A3}.UEFIShell|x86.Build.0 = UEFIShell|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

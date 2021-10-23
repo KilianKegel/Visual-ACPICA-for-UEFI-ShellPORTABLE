@@ -1,3 +1,6 @@
 [submodule "lib"]
 	path = lib
 	url = https://github.com/KilianKegel/toro-C-Library.git
+[submodule "Win324UEFI"]
+	path = Win324UEFI
+	url = https://github.com/KilianKegel/Win324UEFI.git
