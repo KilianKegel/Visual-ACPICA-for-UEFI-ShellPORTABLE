@@ -153,6 +153,18 @@
 #include "accommon.h"
 #include "acutils.h"
 #include <stdio.h>
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+#include <stdint.h>
+extern uint32_t EnumSystemFirmwareTables4UEFI(uint32_t FirmwareTableProviderSignature, void* pFirmwareTableEnumBuffer, uint32_t BufferSize);
+#define EFIAPI __cdecl  
+uint32_t EFIAPI GetSystemFirmwareTable4UEFI(
+    uint32_t FirmwareTableProviderSignature,
+    uint32_t FirmwareTableID,
+    void* pFirmwareTableBuffer,
+    uint32_t BufferSize,
+    ...
+);
+#endif//VISUAL_ACPICA_FOR_UEFI
 
 #ifdef WIN32
 #pragma warning(disable:4115)   /* warning C4115: (caused by rpcasync.h) */
@@ -360,7 +372,11 @@ OslTableInitialize (
      * ACPI table signatures are always 4 characters. Therefore, the data size
      * buffer should be a multiple of 4
      */
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    DataSize = EnumSystemFirmwareTables4UEFI ('ACPI', NULL, 0);
+#else// VISUAL_ACPICA_FOR_UEFI
     DataSize = EnumSystemFirmwareTables ('ACPI', NULL, 0);
+#endif//VISUAL_ACPICA_FOR_UEFI
     if (DataSize % ACPI_NAMESEG_SIZE)
     {
         return (AE_ERROR);
@@ -377,7 +393,11 @@ OslTableInitialize (
         return (AE_NO_MEMORY);
     }
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    ResultSize = EnumSystemFirmwareTables4UEFI ('ACPI', Gbl_AvailableTableSignatures, DataSize);
+#else// VISUAL_ACPICA_FOR_UEFI
     ResultSize = EnumSystemFirmwareTables ('ACPI', Gbl_AvailableTableSignatures, DataSize);
+#endif//VISUAL_ACPICA_FOR_UEFI
     if (ResultSize > DataSize)
     {
         return (AE_ERROR);
@@ -392,7 +412,7 @@ OslTableInitialize (
     return (AE_OK);
 }
 
-
+#ifndef  VISUAL_ACPICA_FOR_UEFI
 /******************************************************************************
  *
  * FUNCTION:    WindowsGetTableFromRegistry
@@ -598,7 +618,7 @@ Cleanup:
     RegCloseKey(Handle);
     return (Status);
 }
-
+#endif//VISUAL_ACPICA_FOR_UEFI
 
 /******************************************************************************
  *
@@ -644,17 +664,21 @@ AcpiOsGetTableByName(
     {
         return (AE_LIMIT);
     }
-
+#ifndef  VISUAL_ACPICA_FOR_UEFI
     if (ACPI_COMPARE_NAMESEG (Signature, ACPI_SIG_SSDT))
     {
         Status = WindowsGetTableFromRegistry ("SSDT", Instance, Table, Address);
         return (Status);
     }
-
+#endif//VISUAL_ACPICA_FOR_UEFI
     /* GetSystemFirmwareTable requires the table signature to be UINT32 */
 
     UIntSignature = *ACPI_CAST_PTR (UINT32, Signature);
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    DataSize = GetSystemFirmwareTable4UEFI('ACPI', UIntSignature, NULL, 0, Address, Instance);
+#else//  VISUAL_ACPICA_FOR_UEFI
     DataSize = GetSystemFirmwareTable('ACPI', UIntSignature, NULL, 0);
+#endif//VISUAL_ACPICA_FOR_UEFI
     if (!DataSize)
     {
         fprintf(stderr, "The table signature %s does not exist.", Signature);
@@ -666,8 +690,11 @@ AcpiOsGetTableByName(
     {
         return (AE_NO_MEMORY);
     }
-
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    Result = GetSystemFirmwareTable4UEFI('ACPI', UIntSignature, ReturnTable, DataSize, Address, Instance);
+#else  VISUAL_ACPICA_FOR_UEFI
     Result = GetSystemFirmwareTable('ACPI', UIntSignature, ReturnTable, DataSize);
+#endif//VISUAL_ACPICA_FOR_UEFI
     if (Result > (LONG) DataSize)
     {
         /* Clean up */

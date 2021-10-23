@@ -13,8 +13,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e4c4ae18-cf90-4109-b345-1fae61affcf0}</ProjectGuid>
-    <RootNamespace>template</RootNamespace>
+    <ProjectGuid>{2eab564d-2739-43af-a545-2077d3d91560}</ProjectGuid>
+    <RootNamespace>AcpiDump</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -51,7 +51,7 @@
       <SDLCheck>false</SDLCheck>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <PreprocessorDefinitions>VISUAL_ACPICA_FOR_UEFI;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;NDEBUG;_CONSOLE;__STDC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ACPI_DUMP_APP;VISUAL_ACPICA_FOR_UEFI;WIN32;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;NDEBUG;_CONSOLE;__STDC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -61,7 +61,7 @@
       </EnableEnhancedInstructionSet>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
@@ -80,7 +80,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\cmfsize.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\getopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbprint.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbxfroot.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utascii.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utbuffer.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uthex.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utnonansi.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstring.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstrsuppt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstrtoul64.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxferror.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\SERVICE_LAYERS\oswindir.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswintbl.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpidump\apdump.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpidump\apfiles.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpidump\apmain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\tools\acpidump\acpidump.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
