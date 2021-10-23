@@ -155,12 +155,19 @@
 #include <stdlib.h>
 #include <string.h>
 #include <io.h>
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+#include <stdint.h>
+#endif//VISUAL_ACPICA_FOR_UEFI
 
 typedef struct ExternalFindInfo
 {
     struct _finddata_t          DosInfo;
     char                        *FullWildcardSpec;
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    intptr_t                    FindHandle;
+#else// VISUAL_ACPICA_FOR_UEFI
     long                        FindHandle;
+#endif//VISUAL_ACPICA_FOR_UEFI
     char                        State;
     char                        RequestedFileType;
 
@@ -188,7 +195,11 @@ AcpiOsOpenDirectory (
     char                    *WildcardSpec,
     char                    RequestedFileType)
 {
-    long                    FindHandle;
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    intptr_t                    FindHandle;
+#else// VISUAL_ACPICA_FOR_UEFI
+    long                        FindHandle;
+#endif//VISUAL_ACPICA_FOR_UEFI
     char                    *FullWildcardSpec;
     EXTERNAL_FIND_INFO      *SearchInfo;
 

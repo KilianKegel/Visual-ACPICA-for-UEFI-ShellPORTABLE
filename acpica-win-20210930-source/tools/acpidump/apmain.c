@@ -151,7 +151,10 @@
 
 #define _DECLARE_GLOBALS
 #include "acpidump.h"
-
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+/*EFI_SYSTEM_TABLE**/void* pEfiSystemTable;
+/*EFI_HANDLE*/void* hEfiImageHandle;
+#endif//VISUAL_ACPICA_FOR_UEFI
 
 /*
  * acpidump - A portable utility for obtaining system ACPI tables and dumping
@@ -474,6 +477,10 @@ acpi_main (
     UINT32                  FileSize;
     UINT32                  i;
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    pEfiSystemTable = (void*)(argv[-1]);                        // pEfiSystemTable is passed in argv[-1]
+    hEfiImageHandle = (void*)(argv[-2]);                        // ImageHandle is passed in argv[-2]
+#endif//VISUAL_ACPICA_FOR_UEFI
 
     ACPI_DEBUG_INITIALIZE (); /* For debug version only */
     AcpiOsInitialize ();

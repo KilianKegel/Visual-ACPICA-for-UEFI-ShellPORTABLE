@@ -151,6 +151,17 @@
 
 #include "acpi.h"
 #include "accommon.h"
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+#include <stdint.h>
+
+#define EFIAPI __cdecl  
+extern int32_t EFIAPI QueryPerformanceCounter4UEFI(int64_t* lpPerformanceCount);
+extern int32_t EFIAPI QueryPerformanceFrequency4UEFI(int64_t* lpFrequency);
+extern uint64_t EFIAPI GetTickCount644UEFI(void);
+extern void Sleep4UEFI(uint32_t dwMilliseconds);
+extern int IsBadReadPtr4UEFI(const void* lp, uint32_t* ucb);
+extern int IsBadWritePtr4UEFI(const void* lp, uint32_t* ucb);
+#endif//VISUAL_ACPICA_FOR_UEFI
 
 #ifdef WIN32
 #pragma warning(disable:4115)   /* warning C4115: named type definition in parentheses (caused by rpcasync.h> */
@@ -259,7 +270,11 @@ AcpiOsInitialize (
     /* Get the timer frequency for use in AcpiOsGetTimer */
 
     TimerFrequency = 0;
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    if (QueryPerformanceFrequency4UEFI ((void*) & LocalTimerFrequency))
+#else// VISUAL_ACPICA_FOR_UEFI
     if (QueryPerformanceFrequency (&LocalTimerFrequency))
+#endif//VISUAL_ACPICA_FOR_UEFI
     {
         /* Frequency is in ticks per second */
 
@@ -444,7 +459,11 @@ AcpiOsGetTimer (
     /* Attempt to use hi-granularity timer first */
 
     if (TimerFrequency &&
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+        QueryPerformanceCounter4UEFI ((void*) & Timer))
+#else// VISUAL_ACPICA_FOR_UEFI
         QueryPerformanceCounter (&Timer))
+#endif//VISUAL_ACPICA_FOR_UEFI
     {
         /* Convert to 100 nanosecond ticks */
 
@@ -458,7 +477,11 @@ AcpiOsGetTimer (
     {
         /* Convert milliseconds to 100 nanosecond ticks */
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+        return (GetTickCount644UEFI() * ACPI_100NSEC_PER_MSEC);
+#else// VISUAL_ACPICA_FOR_UEFI
         return (GetTickCount64() * ACPI_100NSEC_PER_MSEC);
+#endif//VISUAL_ACPICA_FOR_UEFI
     }
 }
 
@@ -482,7 +505,11 @@ AcpiOsReadable (
     ACPI_SIZE               Length)
 {
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    return ((BOOLEAN)!IsBadReadPtr4UEFI(Pointer, Length));
+#else// VISUAL_ACPICA_FOR_UEFI
     return ((BOOLEAN) !IsBadReadPtr (Pointer, Length));
+#endif//VISUAL_ACPICA_FOR_UEFI
 }
 
 
@@ -505,7 +532,11 @@ AcpiOsWritable (
     ACPI_SIZE               Length)
 {
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    return ((BOOLEAN) !IsBadWritePtr4UEFI (Pointer, Length));
+#else// VISUAL_ACPICA_FOR_UEFI
     return ((BOOLEAN) !IsBadWritePtr (Pointer, Length));
+#endif//VISUAL_ACPICA_FOR_UEFI
 }
 
 
@@ -1256,7 +1287,11 @@ AcpiOsStall (
     UINT32                  Microseconds)
 {
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    Sleep4UEFI ((Microseconds / ACPI_USEC_PER_MSEC) + 1);
+#else// VISUAL_ACPICA_FOR_UEFI
     Sleep ((Microseconds / ACPI_USEC_PER_MSEC) + 1);
+#endif//VISUAL_ACPICA_FOR_UEFI
     return;
 }
 
@@ -1280,7 +1315,11 @@ AcpiOsSleep (
 
     /* Add 10ms to account for clock tick granularity */
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    Sleep4UEFI (((unsigned long) Milliseconds) + 10);
+#else// VISUAL_ACPICA_FOR_UEFI
     Sleep (((unsigned long) Milliseconds) + 10);
+#endif//VISUAL_ACPICA_FOR_UEFI
     return;
 }
 
