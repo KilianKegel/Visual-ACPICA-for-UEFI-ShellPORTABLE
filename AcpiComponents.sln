@@ -35,6 +35,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AcpiSrc", "AcpiSrc\AcpiSrc.
 		{223B3668-E022-4DA7-A33D-C9168D1357A3} = {223B3668-E022-4DA7-A33D-C9168D1357A3}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AcpiXtract", "AcpiXtract\AcpiXtract.vcxproj", "{B6864D00-5273-4589-8226-D2553B8EE127}"
+	ProjectSection(ProjectDependencies) = postProject
+		{223B3668-E022-4DA7-A33D-C9168D1357A3} = {223B3668-E022-4DA7-A33D-C9168D1357A3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		UEFIShell|x64 = UEFIShell|x64
@@ -69,6 +74,10 @@ Global
 		{3010A373-3AAA-4C48-B56A-77F17227518C}.UEFIShell|x64.Build.0 = UEFIShell|x64
 		{3010A373-3AAA-4C48-B56A-77F17227518C}.UEFIShell|x86.ActiveCfg = UEFIShell|Win32
 		{3010A373-3AAA-4C48-B56A-77F17227518C}.UEFIShell|x86.Build.0 = UEFIShell|Win32
+		{B6864D00-5273-4589-8226-D2553B8EE127}.UEFIShell|x64.ActiveCfg = UEFIShell|x64
+		{B6864D00-5273-4589-8226-D2553B8EE127}.UEFIShell|x64.Build.0 = UEFIShell|x64
+		{B6864D00-5273-4589-8226-D2553B8EE127}.UEFIShell|x86.ActiveCfg = UEFIShell|Win32
+		{B6864D00-5273-4589-8226-D2553B8EE127}.UEFIShell|x86.Build.0 = UEFIShell|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
