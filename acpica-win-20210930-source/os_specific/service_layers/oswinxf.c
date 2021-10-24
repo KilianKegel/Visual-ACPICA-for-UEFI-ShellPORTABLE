@@ -153,14 +153,15 @@
 #include "accommon.h"
 #ifdef  VISUAL_ACPICA_FOR_UEFI
 #include <stdint.h>
+#include <Windows.h>
 
 #define EFIAPI __cdecl  
 extern int32_t EFIAPI QueryPerformanceCounter4UEFI(int64_t* lpPerformanceCount);
 extern int32_t EFIAPI QueryPerformanceFrequency4UEFI(int64_t* lpFrequency);
 extern uint64_t EFIAPI GetTickCount644UEFI(void);
 extern void Sleep4UEFI(uint32_t dwMilliseconds);
-extern int IsBadReadPtr4UEFI(const void* lp, uint32_t* ucb);
-extern int IsBadWritePtr4UEFI(const void* lp, uint32_t* ucb);
+extern int IsBadReadPtr4UEFI(const void* lp, UINT_PTR ucb);
+extern int IsBadWritePtr4UEFI(const void* lp, UINT_PTR ucb);
 #endif//VISUAL_ACPICA_FOR_UEFI
 
 #ifdef WIN32
