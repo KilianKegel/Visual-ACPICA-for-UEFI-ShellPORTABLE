@@ -165,6 +165,79 @@ static UINT32
 AcpiEvGlobalLockHandler (
     void                    *Context);
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+/*******************************************************************************
+ *
+ * FUNCTION:    AcpiAcquireGlobalLockX8664
+ *
+ * PARAMETERS:  ACPI_TABLE_FACS *pAcpiGbl_FACS
+ *
+ * RETURN:      BOOLEAN Pending
+ *
+ * DESCRIPTION: Aquire ownership of the Global Lock.
+ * 
+ *              https://uefi.org/specs/ACPI/6.4/05_ACPI_Software_Programming_Model/ACPI_Software_Programming_Model.html
+ * 
+ ******************************************************************************/
+BOOLEAN AcpiAcquireGlobalLockX8664(ACPI_TABLE_FACS *pAcpiGbl_FACS)
+        {
+    BOOLEAN fRet = -1;
+    int  GlobalLockValue, GlobalLockOrg;
+#define PENDING 0
+#define OWNED   1
+
+    if (((void*)0) != pAcpiGbl_FACS)
+    {
+        do
+        {
+            GlobalLockValue = GlobalLockOrg = pAcpiGbl_FACS->GlobalLock;
+
+            GlobalLockValue &= ~(1 << PENDING);
+
+            GlobalLockValue += _bittestandset(&GlobalLockValue, OWNED);
+
+        } while (0 != _InterlockedCompareExchange(&pAcpiGbl_FACS->GlobalLock, GlobalLockValue, GlobalLockOrg));
+        
+        fRet = 0;
+    }
+
+    return fRet;
+}
+
+/*******************************************************************************
+ *
+ * FUNCTION:    AcpiReleaseGlobalLockX8664
+ *
+ * PARAMETERS:  ACPI_TABLE_FACS *pAcpiGbl_FACS
+ *
+ * RETURN:      BOOLEAN Pending
+ *
+ * DESCRIPTION: Release ownership of the Global Lock.
+ *
+ ******************************************************************************/
+BOOLEAN AcpiReleaseGlobalLockX8664(ACPI_TABLE_FACS* pAcpiGbl_FACS)
+{
+    int nRet = -1;
+    int  GlobalLockValue, GlobalLockOrg;
+#define PENDING 0
+#define OWNED   1
+
+    if (((void*)0) != pAcpiGbl_FACS)
+    {
+        do
+        {
+            GlobalLockValue = GlobalLockOrg = pAcpiGbl_FACS->GlobalLock;
+
+            GlobalLockValue &= ~((1 << PENDING) + (1 << OWNED));
+
+        } while (GlobalLockOrg != _InterlockedCompareExchange(&pAcpiGbl_FACS->GlobalLock , GlobalLockValue, GlobalLockOrg));
+        
+        nRet = 0;
+    }
+
+    return nRet;
+}
+#endif//VISUAL_ACPICA_FOR_UEFI
 
 /*******************************************************************************
  *

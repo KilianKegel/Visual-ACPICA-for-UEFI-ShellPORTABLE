@@ -180,10 +180,12 @@
 
 
 #define ACPI_MACHINE_WIDTH      32
+
 #ifdef  VISUAL_ACPICA_FOR_UEFI
-#undef ACPI_MACHINE_WIDTH
-#define ACPI_MACHINE_WIDTH      64
+#   undef ACPI_MACHINE_WIDTH
+#   define ACPI_MACHINE_WIDTH 64
 #endif//VISUAL_ACPICA_FOR_UEFI
+
 #define ACPI_USE_NATIVE_DIVIDE
 #define ACPI_USE_NATIVE_MATH64
 
@@ -261,6 +263,12 @@ typedef COMPILER_DEPENDENT_UINT64       u64;
  *
  * Note: Handles case where the FACS pointer is null
  */
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+
+#   define ACPI_ACQUIRE_GLOBAL_LOCK(FacsPtr, Acq)  Acq = AcpiAcquireGlobalLockX8664(FacsPtr)
+#   define ACPI_RELEASE_GLOBAL_LOCK(FacsPtr, Acq)  Acq = AcpiReleaseGlobalLockX8664(FacsPtr)
+
+#else// #ifdef VISUAL_ACPICA_FOR_UEFI
 #define ACPI_ACQUIRE_GLOBAL_LOCK(FacsPtr, Acq)  __asm \
 {                                                   \
         __asm mov           eax, 0xFF               \
@@ -306,5 +314,6 @@ typedef COMPILER_DEPENDENT_UINT64       u64;
         __asm exit_rel:                             \
         __asm mov           Pnd, al                 \
 }
+#endif//#ifdef VISUAL_ACPICA_FOR_UEFI
 
 #endif /* __ACWIN_H__ */
