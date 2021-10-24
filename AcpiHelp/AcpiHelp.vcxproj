@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="UEFIShell|Win32">
+      <Configuration>UEFIShell</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UEFIShell|x64">
+      <Configuration>UEFIShell</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ad65c64c-ae16-4ea4-84fa-e05e781a3049}</ProjectGuid>
+    <RootNamespace>AcpiHelp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='UEFIShell|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <TargetExt>.efi</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <SDLCheck>false</SDLCheck>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>VISUAL_ACPICA_FOR_UEFI;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;ACPI_HELP_APP;WIN32;NDEBUG;_CONSOLE;__STDC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib;$(OutDir)Win324UEFI.lib</AdditionalDependencies>
+    </Link>
+    <Link>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EnableUAC>false</EnableUAC>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile />
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>EFI Application</SubSystem>
+      <EntryPointSymbol>_cdeCRT0UefiShell </EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\acpihelp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahids.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahtable.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahuuids.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\getopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmessages.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uthex.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utnonansi.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utuuid.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahaml.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahamlops.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahasl.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahaslkey.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahaslops.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahdecode.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahgrammar.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpihelp\ahmain.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
