@@ -156,6 +156,10 @@
 #include "acdisasm.h"
 #include <signal.h>
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+/*EFI_SYSTEM_TABLE**/void* pEfiSystemTable;
+/*EFI_HANDLE*/void* hEfiImageHandle;
+#endif//VISUAL_ACPICA_FOR_UEFI
 #define _COMPONENT          ACPI_COMPILER
         ACPI_MODULE_NAME    ("aslmain")
 
@@ -206,6 +210,10 @@ main (
     int                     Index2;
     int                     ReturnStatus = 0;
 
+#ifdef  VISUAL_ACPICA_FOR_UEFI
+    pEfiSystemTable = (void*)(argv[-1]);    //pEfiSystemTable is passed in argv[-1]
+    hEfiImageHandle = (void*)(argv[-2]);    //ImageHandle is passed in argv[-2]
+#endif//VISUAL_ACPICA_FOR_UEFI
 
     signal (SIGINT, AslSignalHandler);
 
