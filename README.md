@@ -20,3 +20,30 @@ https://acpica.org/downloads/windows-source
 Based on that source code package the transition to a 64Bit UEFI Shell Built could be easily done,
 using the Microsoft C Library LIBCMT.lib compatible UEFI C Library **Toro C Library** 
 https://github.com/KilianKegel/toro-C-Library#toro-c-library-formerly-known-as-torito-c-library
+
+Additionally it was necessary to create the [Win32API4UEFI](https://github.com/KilianKegel/Win324UEFI)--sub-project,
+to get required Win32-API equivalents for UEFI.
+
+The original source directory from the [`acpica-win-20210930.zip`](https://acpica.org/sites/acpica/files/acpica-win-20210930.zip) 
+archive is used. It is just renamed to [`acpica-win-20210930-source`](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell/tree/main/acpica-win-20210930-source).
+
+All changes to the original source code are encapsulated by the `VISUAL_ACPICA_FOR_UEFI` build switch.
+
+## HowTo
+#### 1. install Visual Studio 2022 on a Windows PC<br>
+https://github.com/KilianKegel/HowTo-setup-an-UEFI-Development-PC#howto-setup-an-uefi-development-pc
+
+#### 2. install additional tools <br>
+Follow the guidance to get FLEX/BISON running on that build machine<br>
+https://acpica.org/downloads/windows-source
+
+#### 3. get the project to the build machine <br>
+[Visual-ACPICA-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell)
+
+## Revision history
+### 20211101 alpha
+* all projects build with minor compiler warnings
+* all projects pass simple tests in the UEFI Shell
+    * `AcpiDump.efi` dumps all ACPI tables
+    * `AslCompiler.efi` processes [`badcode.asl`](https://github.com/RehabMan/Intel-iasl/blob/master/tests/misc/badcode.asl)
+* further and comprehensive tests should be done by an ACPI expert
