@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="UEFIShell|x64">
+      <Configuration>UEFIShell</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c5b5ec25-ad36-48ae-a6a1-b094263c6454}</ProjectGuid>
+    <RootNamespace>Examples</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Examples</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <TargetExt>.efi</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <SDLCheck>false</SDLCheck>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>ACPI_EXAMPLE_APP;VISUAL_ACPICA_FOR_UEFI;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;WIN32;NDEBUG;_CONSOLE;__STDC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib;$(OutDir)Win324UEFI.lib</AdditionalDependencies>
+    </Link>
+    <Link>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EnableUAC>false</EnableUAC>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile />
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>EFI Application</SubSystem>
+      <EntryPointSymbol>_cdeCRT0UefiShell </EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsargs.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dscontrol.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsfield.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsinit.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsmethod.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsmthdat.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsopcode.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dspkginit.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswexec.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswload.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswload2.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswscope.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswstate.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\events\evhandler.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\events\evmisc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\events\evregion.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\events\evrgnini.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\events\evxface.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\events\evxfregn.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exconcat.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exconfig.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exconvrt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\excreate.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exdump.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exfield.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exfldio.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exmisc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exmutex.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exnames.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg1.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg2.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg3.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg6.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exprep.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exregion.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exresnte.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exresolv.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exresop.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exserial.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exstore.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exstoren.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exstorob.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exsystem.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\extrace.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\hardware\hwpci.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsaccess.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsalloc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsarguments.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsconvert.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsdump.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nseval.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsinit.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsload.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsnames.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsparse.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nspredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsprepkg.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsrepair.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsrepair2.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nssearch.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nswalk.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsxfeval.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsxfname.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsxfobj.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psargs.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psloop.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psopcode.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psopinfo.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psparse.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psscope.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\pstree.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\pswalk.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psxface.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbdata.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbfadt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbfind.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbinstal.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbprint.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbxface.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbxfload.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbxfroot.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utaddress.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utalloc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utascii.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utbuffer.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utcache.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utclib.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utcopy.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdecode.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdelete.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uterror.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uteval.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uthex.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utids.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utinit.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utlock.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmisc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmutex.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utnonansi.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utosi.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utownerid.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utresrc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstate.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstring.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstrsuppt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstrtoul64.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uttrack.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxface.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxferror.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxfinit.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxfmutex.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c">
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</DisableLanguageExtensions>
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DisableLanguageExtensions>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\examples\examples.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\examples\exstubs.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\examples\extables.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\tools\examples\examples.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
