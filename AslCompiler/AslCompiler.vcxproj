@@ -18,7 +18,7 @@
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
     <PlatformToolset>v143</PlatformToolset>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -29,6 +29,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
     <TargetExt>.efi</TargetExt>
     <GenerateManifest>false</GenerateManifest>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
     <ClCompile>
@@ -71,6 +72,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
+      <ManifestFile />
     </Link>
     <PostBuildEvent>
       <Command>COPY $(OutDir)$(TargetName)$(TargetExt) g: /y</Command>
