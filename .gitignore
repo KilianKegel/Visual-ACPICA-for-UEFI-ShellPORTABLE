@@ -1,15 +1,6 @@
 .vs/
-AcpiBin/x64/
-AcpiDump/x64/
-AcpiExec/x64/
-AcpiHelp/x64/
-AcpiSrc/x64/
-AcpiSubsystem/x64/
-AcpiXtract/x64/
-AslCompiler/x64/
-Examples/x64/
-template/x64/
-x64/
+x64
+!Include/X64/
 AslCompiler/aslcompiler.l.c
 AslCompiler/aslcompiler.y.c
 AslCompiler/dtcompilerparser.l.c
