@@ -1,5 +1,6 @@
 .vs/
 x64
+Win32
 !Include/X64/
 AslCompiler/aslcompiler.l.c
 AslCompiler/aslcompiler.y.c

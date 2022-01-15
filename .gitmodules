@@ -4,3 +4,6 @@
 [submodule "Win324UEFI"]
 	path = Win324UEFI
 	url = https://github.com/KilianKegel/Win324UEFI.git
+[submodule "libsrc"]
+	path = libsrc
+	url = https://github.com/KilianKegel/torosrc.git

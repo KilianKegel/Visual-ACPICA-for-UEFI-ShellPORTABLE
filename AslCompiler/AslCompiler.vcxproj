@@ -59,7 +59,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include;$(SolutionDir)acpica-win-20210930-source\compiler;$(SolutionDir)$(ProjectName)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib;$(OutDir)Win324UEFI.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(OutDir)Win324UEFI.lib;$(OutDir)..\Release\toroCLibrary.lib</AdditionalDependencies>
     </Link>
     <Link>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
@@ -80,6 +80,9 @@
     <PostBuildEvent>
       <Message>COPY $(OutDir)$(TargetName)$(TargetExt) g: /y</Message>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)toolschk.bat</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\acfileio.c" />

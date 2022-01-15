@@ -57,7 +57,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib;$(OutDir)Win324UEFI.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(OutDir)Win324UEFI.lib;$(OutDir)..\Release\toroCLibrary.lib</AdditionalDependencies>
     </Link>
     <Link>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
