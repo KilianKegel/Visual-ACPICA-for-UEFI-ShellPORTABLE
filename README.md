@@ -4,6 +4,8 @@
 
 ACPI CA (ACPI component architecture) reference implementation for UEFI, using Visual Studio 2022 build environment.
 
+**NOTE:** That project is discussed in details at https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2022-01-16#cdepkgblog-2022-01-16
+
 ## Goal
 The [ACPI Component Architecture (ACPICA) project](https://acpica.org/) 
 provides an operating system (OS)-independent reference implementation of the Advanced Configuration and Power Interface Specification (ACPI).
