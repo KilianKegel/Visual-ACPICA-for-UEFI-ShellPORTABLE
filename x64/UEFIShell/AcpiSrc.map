@@ -1,0 +1,2116 @@
+ AcpiSrc
+
+ Timestamp is 64fd92de (Sun Sep 10 11:56:46 2023)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000e4a6H .text$mn                CODE
+ 0002:00000000 00000008H .CRT$XCA                DATA
+ 0002:00000008 00000008H .CRT$XCZ                DATA
+ 0002:00000010 00000008H .CRT$XIA                DATA
+ 0002:00000018 00000008H .CRT$XIZ                DATA
+ 0002:00000020 00000008H .CRT$XPA                DATA
+ 0002:00000028 00000008H .CRT$XPZ                DATA
+ 0002:00000030 00000008H .CRT$XTA                DATA
+ 0002:00000038 00000008H .CRT$XTZ                DATA
+ 0002:00000040 00006c1cH .rdata                  DATA
+ 0002:00006c5c 00000040H .rdata$voltmd           DATA
+ 0002:00006c9c 00000138H .rdata$zzzdbg           DATA
+ 0002:00006dd4 00000eacH .xdata                  DATA
+ 0002:00007c80 00000000H .edata                  DATA
+ 0003:00000000 00005c00H .data                   DATA
+ 0003:00005c00 00013770H .bss                    DATA
+ 0004:00000000 00000bd0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_image_info_bitfield 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000000       CmGetFileSize              0000000180001000 f   cmfsize.obj
+ 0001:00000094       AcpiGetopt                 0000000180001094 f   getopt.obj
+ 0001:00000390       AcpiGetoptArgument         0000000180001390 f   getopt.obj
+ 0001:00000430       AcpiFormatException        0000000180001430 f   utexcep.obj
+ 0001:00000478       AcpiUtValidateException    0000000180001478 f   utexcep.obj
+ 0001:00000544       AcpiUtDivide               0000000180001544 f   utmath.obj
+ 0001:0000059c       AcpiUtShortDivide          000000018000159c f   utmath.obj
+ 0001:000005f8       AcpiUtShortMultiply        00000001800015f8 f   utmath.obj
+ 0001:00000610       AcpiUtShortShiftLeft       0000000180001610 f   utmath.obj
+ 0001:0000062c       AcpiUtShortShiftRight      000000018000162c f   utmath.obj
+ 0001:00000640       AcpiUtStrupr               0000000180001640 f   utnonansi.obj
+ 0001:00000670       AcpiUtStrlwr               0000000180001670 f   utnonansi.obj
+ 0001:000006a0       AcpiUtStricmp              00000001800016a0 f   utnonansi.obj
+ 0001:000006f0       AcpiUtSafeStrcpy           00000001800016f0 f   utnonansi.obj
+ 0001:0000073c       AcpiUtSafeStrncpy          000000018000173c f   utnonansi.obj
+ 0001:00000768       AcpiUtSafeStrcat           0000000180001768 f   utnonansi.obj
+ 0001:000007cc       AcpiUtSafeStrncat          00000001800017cc f   utnonansi.obj
+ 0001:00000850       AcpiError                  0000000180001850 f   utxferror.obj
+ 0001:000008a4       AcpiException              00000001800018a4 f   utxferror.obj
+ 0001:00000914       AcpiWarning                0000000180001914 f   utxferror.obj
+ 0001:00000968       AcpiInfo                   0000000180001968 f   utxferror.obj
+ 0001:000009b4       AcpiBiosError              00000001800019b4 f   utxferror.obj
+ 0001:00000a08       AcpiBiosException          0000000180001a08 f   utxferror.obj
+ 0001:00000a78       AcpiBiosWarning            0000000180001a78 f   utxferror.obj
+ 0001:00000ac8       AcpiOsOpenDirectory        0000000180001ac8 f   oswindir.obj
+ 0001:00000be0       AcpiOsGetNextFilename      0000000180001be0 f   oswindir.obj
+ 0001:00000c5c       AcpiOsCloseDirectory       0000000180001c5c f   oswindir.obj
+ 0001:00000c8c       AcpiOsInitialize           0000000180001c8c f   oswinxf.obj
+ 0001:00000cdc       AcpiOsTerminate            0000000180001cdc f   oswinxf.obj
+ 0001:00000ce8       AcpiOsGetRootPointer       0000000180001ce8 f   oswinxf.obj
+ 0001:00000cf4       AcpiOsPredefinedOverride   0000000180001cf4 f   oswinxf.obj
+ 0001:00000d14       AcpiOsTableOverride        0000000180001d14 f   oswinxf.obj
+ 0001:00000d34       AcpiOsPhysicalTableOverride 0000000180001d34 f   oswinxf.obj
+ 0001:00000d40       AcpiOsCreateLock           0000000180001d40 f   oswinxf.obj
+ 0001:00000d58       AcpiOsDeleteLock           0000000180001d58 f   oswinxf.obj
+ 0001:00000d64       AcpiOsAcquireLock          0000000180001d64 f   oswinxf.obj
+ 0001:00000d70       AcpiOsReleaseLock          0000000180001d70 f   oswinxf.obj
+ 0001:00000d7c       AcpiOsCreateSemaphore      0000000180001d7c f   oswinxf.obj
+ 0001:00000d8c       AcpiOsDeleteSemaphore      0000000180001d8c f   oswinxf.obj
+ 0001:00000d98       AcpiOsWaitSemaphore        0000000180001d98 f   oswinxf.obj
+ 0001:00000da4       AcpiOsSignalSemaphore      0000000180001da4 f   oswinxf.obj
+ 0001:00000db0       AcpiOsAllocate             0000000180001db0 f   oswinxf.obj
+ 0001:00000dbc       AcpiOsAllocateZeroed       0000000180001dbc f   oswinxf.obj
+ 0001:00000dd0       AcpiOsFree                 0000000180001dd0 f   oswinxf.obj
+ 0001:00000ddc       AcpiOsMapMemory            0000000180001ddc f   oswinxf.obj
+ 0001:00000de8       AcpiOsUnmapMemory          0000000180001de8 f   oswinxf.obj
+ 0001:00000df4       AcpiOsInstallInterruptHandler 0000000180001df4 f   oswinxf.obj
+ 0001:00000e00       AcpiOsRemoveInterruptHandler 0000000180001e00 f   oswinxf.obj
+ 0001:00000e0c       AcpiOsGetThreadId          0000000180001e0c f   oswinxf.obj
+ 0001:00000e18       AcpiOsExecute              0000000180001e18 f   oswinxf.obj
+ 0001:00000e30       AcpiOsWaitEventsComplete   0000000180001e30 f   oswinxf.obj
+ 0001:00000e3c       AcpiOsSleep                0000000180001e3c f   oswinxf.obj
+ 0001:00000e4c       AcpiOsStall                0000000180001e4c f   oswinxf.obj
+ 0001:00000e64       AcpiOsReadPort             0000000180001e64 f   oswinxf.obj
+ 0001:00000ebc       AcpiOsWritePort            0000000180001ebc f   oswinxf.obj
+ 0001:00000f00       AcpiOsReadMemory           0000000180001f00 f   oswinxf.obj
+ 0001:00000f30       AcpiOsWriteMemory          0000000180001f30 f   oswinxf.obj
+ 0001:00000f3c       AcpiOsReadPciConfiguration 0000000180001f3c f   oswinxf.obj
+ 0001:00000f4c       AcpiOsWritePciConfiguration 0000000180001f4c f   oswinxf.obj
+ 0001:00000f58       AcpiOsReadable             0000000180001f58 f   oswinxf.obj
+ 0001:00000f74       AcpiOsWritable             0000000180001f74 f   oswinxf.obj
+ 0001:00000f90       AcpiOsGetTimer             0000000180001f90 f   oswinxf.obj
+ 0001:00000fd8       AcpiOsSignal               0000000180001fd8 f   oswinxf.obj
+ 0001:00000fe4       AcpiOsEnterSleep           0000000180001fe4 f   oswinxf.obj
+ 0001:00000ff0       AcpiOsPrintf               0000000180001ff0 f   oswinxf.obj
+ 0001:00001058       AcpiOsVprintf              0000000180002058 f   oswinxf.obj
+ 0001:000010bc       AcpiOsRedirectOutput       00000001800020bc f   oswinxf.obj
+ 0001:000010cc       AcpiOsGetLine              00000001800020cc f   oswinxf.obj
+ 0001:0000114c       AsLowerCaseString          000000018000214c f   ascase.obj
+ 0001:00001270       AsMixedCaseToUnderscores   0000000180002270 f   ascase.obj
+ 0001:00001554       AsLowerCaseIdentifiers     0000000180002554 f   ascase.obj
+ 0001:00001634       AsUppercaseTokens          0000000180002634 f   ascase.obj
+ 0001:00001778       AsReplaceString            0000000180002778 f   asconvrt.obj
+ 0001:00001894       AsCheckForBraces           0000000180002894 f   asconvrt.obj
+ 0001:000018ac       AsTrimLines                00000001800028ac f   asconvrt.obj
+ 0001:0000193c       AsCountTabs                000000018000293c f   asconvrt.obj
+ 0001:000019ac       AsBracesOnSameLine         00000001800029ac f   asconvrt.obj
+ 0001:00001b98       AsCountSourceLines         0000000180002b98 f   asconvrt.obj
+ 0001:00001c6c       AsCountNonAnsiComments     0000000180002c6c f   asconvrt.obj
+ 0001:00001cb4       AsTrimWhitespace           0000000180002cb4 f   asconvrt.obj
+ 0001:00001d74       AsTabify4                  0000000180002d74 f   asconvrt.obj
+ 0001:00001e1c       AsTabify8                  0000000180002e1c f   asconvrt.obj
+ 0001:0000200c       AsReplaceHeader            000000018000300c f   asconvrt.obj
+ 0001:00002080       AsDoSpdxHeader             0000000180003080 f   asconvrt.obj
+ 0001:00002100       AsRemoveExtraLines         0000000180003100 f   asconvrt.obj
+ 0001:00002188       AsRemoveSpacesAfterPeriod  0000000180003188 f   asconvrt.obj
+ 0001:0000221c       AsMatchExactWord           000000018000321c f   asconvrt.obj
+ 0001:00002268       AsPrint                    0000000180003268 f   asconvrt.obj
+ 0001:00002294       AsInsertPrefix             0000000180003294 f   asconvrt.obj
+ 0001:000023d8       AsInsertCarriageReturns    00000001800033d8 f   asconvrt.obj
+ 0001:00002420       AsConvertToLineFeeds       0000000180003420 f   asconvrt.obj
+ 0001:00002780       AsProcessTree              0000000180003780 f   asfile.obj
+ 0001:00002908       AsGetFile                  0000000180003908 f   asfile.obj
+ 0001:00002a68       AsPutFile                  0000000180003a68 f   asfile.obj
+ 0001:00002b30       AsConvertFile              0000000180003b30 f   asfile.obj
+ 0001:00002f40       AsProcessOneFile           0000000180003f40 f   asfile.obj
+ 0001:000031a0       AsCheckForDirectory        00000001800041a0 f   asfile.obj
+ 0001:000032e4       AsDoWildcard               00000001800042e4 f   asfile.obj
+ 0001:0000345c       AsDetectLoneLineFeeds      000000018000445c f   asfile.obj
+ 0001:0000355c       AsExaminePaths             000000018000455c f   asmain.obj
+ 0001:0000363c       AsDisplayStats             000000018000463c f   asmain.obj
+ 0001:00003828       AsDisplayUsage             0000000180004828 f   asmain.obj
+ 0001:00003968       main                       0000000180004968 f   asmain.obj
+ 0001:00003cbc       AsRemoveLine               0000000180004cbc f   asremove.obj
+ 0001:00003d24       AsReduceTypedefs           0000000180004d24 f   asremove.obj
+ 0001:00003e78       AsRemoveDebugMacros        0000000180004e78 f   asremove.obj
+ 0001:00003fac       AsRemoveEmptyBlocks        0000000180004fac f   asremove.obj
+ 0001:00004074       AsCleanupSpecialMacro      0000000180005074 f   asremove.obj
+ 0001:00004164       AsRemoveConditionalCompile 0000000180005164 f   asremove.obj
+ 0001:00004334       AsRemoveStatement          0000000180005334 f   asremove.obj
+ 0001:000043f4       AsSkipUntilChar            00000001800053f4 f   asutils.obj
+ 0001:00004410       AsSkipPastChar             0000000180005410 f   asutils.obj
+ 0001:00004430       AsReplaceData              0000000180005430 f   asutils.obj
+ 0001:000044b8       AsInsertData               00000001800054b8 f   asutils.obj
+ 0001:0000452c       AsRemoveData               000000018000552c f   asutils.obj
+ 0001:00004568       QueryPerformanceCounter4UEFI 0000000180005568 f   Win324UEFI:QueryPerformanceCounter.obj
+ 0001:00004598       QueryPerformanceFrequency4UEFI 0000000180005598 f   Win324UEFI:QueryPerformanceFrequency.obj
+ 0001:00004660       GetTickCount644UEFI        0000000180005660 f   Win324UEFI:GetTickCount64.obj
+ 0001:00004670       Sleep4UEFI                 0000000180005670 f   Win324UEFI:Sleep.obj
+ 0001:00004698       IsBadReadPtr4UEFI          0000000180005698 f   Win324UEFI:IsBadReadPtr.obj
+ 0001:00004698       IsBadWritePtr4UEFI         0000000180005698 f   Win324UEFI:IsBadWritePtr.obj
+ 0001:0000469c       __cdeGetAppIf              000000018000569c f   toroC64:osifUefiShellEntryPoint.obj
+ 0001:00004720       _MainEntryPointShell       0000000180005720 f   toroC64:osifUefiShellEntryPoint.obj
+ 0001:00004d18       _cdeCRT0UefiShell          0000000180005d18 f   toroC64:osifUefiShellEntryPoint.obj
+ 0001:00004d7c       __acrt_iob_func            0000000180005d7c f   toroC64:__acrt_iob_func.obj
+ 0001:00004db8       fseek                      0000000180005db8 f   toroC64:Fseek.obj
+ 0001:00004dc0       ftell                      0000000180005dc0 f   toroC64:Ftell.obj
+ 0001:00004dc8       fprintf                    0000000180005dc8 f   toroC64:Fprintf.obj
+ 0001:00004dec       strchr                     0000000180005dec f   toroC64:StrChr.obj
+ 0001:00004e1c       strcmp                     0000000180005e1c f   toroC64:StrCmp.obj
+ 0001:00004e58       strcat                     0000000180005e58 f   toroC64:StrCat.obj
+ 0001:00004e88       strcpy                     0000000180005e88 f   toroC64:StrCpy.obj
+ 0001:00004ec0       strlen                     0000000180005ec0 f   toroC64:StrLen.obj
+ 0001:00004ed4       strncat                    0000000180005ed4 f   toroC64:StrNCat.obj
+ 0001:00004f3c       strncpy                    0000000180005f3c f   toroC64:StrNCpy.obj
+ 0001:00004f80       toupper                    0000000180005f80 f   toroC64:toupper.obj
+ 0001:00004fa0       tolower                    0000000180005fa0 f   toroC64:tolower.obj
+ 0001:00004fc0       _findclose                 0000000180005fc0 f   toroC64:_findclose.obj
+ 0001:00004fd4       _findfirst64i32            0000000180005fd4 f   toroC64:_findfirst.obj
+ 0001:00005250       _findnext64i32             0000000180006250 f   toroC64:_findnext.obj
+ 0001:00005398       calloc                     0000000180006398 f   toroC64:Calloc.obj
+ 0001:000053d8       free                       00000001800063d8 f   toroC64:Free.obj
+ 0001:000053f0       printf                     00000001800063f0 f   toroC64:Printf.obj
+ 0001:0000542c       malloc                     000000018000642c f   toroC64:Malloc.obj
+ 0001:00005438       getchar                    0000000180006438 f   toroC64:Getchar.obj
+ 0001:00005450       vfprintf                   0000000180006450 f   toroC64:Vfprintf.obj
+ 0001:0000555c       memmove                    000000018000655c f   toroC64:MemMove.obj
+ 0001:000055bc       strstr                     00000001800065bc f   toroC64:StrStr.obj
+ 0001:00005600       isupper                    0000000180006600 f   toroC64:isupper.obj
+ 0001:0000560c       islower                    000000018000660c f   toroC64:islower.obj
+ 0001:00005620       isdigit                    0000000180006620 f   toroC64:isdigit.obj
+ 0001:00005634       isxdigit                   0000000180006634 f   toroC64:isxdigit.obj
+ 0001:00005660       isalnum                    0000000180006660 f   toroC64:isalnum.obj
+ 0001:00005688       strncmp                    0000000180006688 f   toroC64:StrNCmp.obj
+ 0001:000056d0       _errno                     00000001800066d0 f   toroC64:errno.obj
+ 0001:000056f4       perror                     00000001800066f4 f   toroC64:Perror.obj
+ 0001:00005764       isspace                    0000000180006764 f   toroC64:isspace.obj
+ 0001:0000577c       isprint                    000000018000677c f   toroC64:isprint.obj
+ 0001:0000579c       fclose                     000000018000679c f   toroC64:Fclose.obj
+ 0001:00005854       fopen                      0000000180006854 f   toroC64:Fopen.obj
+ 0001:00005a80       fread                      0000000180006a80 f   toroC64:Fread.obj
+ 0001:00005ad8       fwrite                     0000000180006ad8 f   toroC64:Fwrite.obj
+ 0001:00005b30       _mkdir                     0000000180006b30 f   toroC64:_mkdir.obj
+ 0001:00005c34       exit                       0000000180006c34 f   toroC64:exit.obj
+ 0001:00005c58       _stat64i32                 0000000180006c58 f   toroC64:_stat64i32.obj
+ 0001:00005d0c       clock                      0000000180006d0c f   toroC64:clock.obj
+ 0001:00005d60       _CdeDbgPutChar             0000000180006d60 f   toroC64:_CdeDbgPutChar.obj
+ 0001:00005ef4       _cdeCoreVwxPrintf          0000000180006ef4 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000071b8       ComputeFieldSize           00000001800081b8 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000071f4       ydes                       00000001800081f4 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00007bc8       _cdeCoreVwxScanf           0000000180008bc8 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00009338       _cdeCoreWcsStrTok          000000018000a338 f   toroC64:_cdeCoreWcsStrTok.obj
+ 0001:00009434       _cdeWcsStrPbrkSpn          000000018000a434 f   toroC64:_cdeWcsStrPbrkSpn.obj
+ 0001:00009574       _cdeCoreMemRealloc         000000018000a574 f   toroC64:_cdeCoreMemRealloc.obj
+ 0001:00009944       _cdeMemStrxCpy             000000018000a944 f   toroC64:_cdeMemStrxCpy.obj
+ 0001:00009a38       _cdeMemStrxCmp             000000018000aa38 f   toroC64:_cdeMemStrxCmp.obj
+ 0001:00009b78       _osifIbmAtGetTime          000000018000ab78 f   toroC64:osifIbmAtGetTime.obj
+ 0001:00009d30       _osifIbmAtGetTscPerSec     000000018000ad30 f   toroC64:osifIbmAtGetTscPerSec.obj
+ 0001:00009dd0       _osifIbmAtGetTsc           000000018000add0 f   toroC64:osifIbmAtGetTsc.obj
+ 0001:00009ddc       _osifUefiShellMemAlloc     000000018000addc f   toroC64:osifUefiShellMemAlloc.obj
+ 0001:00009e20       _osifUefiShellMemFree      000000018000ae20 f   toroC64:osifUefiShellMemFree.obj
+ 0001:00009e38       _osifUefiShellFileWrite    000000018000ae38 f   toroC64:osifUefiShellFileWrite.obj
+ 0001:00009fc0       _osifUefiShellFileRead     000000018000afc0 f   toroC64:osifUefiShellFileRead.obj
+ 0001:0000a1ec       _osifUefiShellFileSetPos   000000018000b1ec f   toroC64:osifUefiShellFileSetPos.obj
+ 0001:0000a2f8       _osifUefiShellFileOpen     000000018000b2f8 f   toroC64:osifUefiShellFileOpen.obj
+ 0001:0000a9d8       _osifUefiShellFileClose    000000018000b9d8 f   toroC64:osifUefiShellFileClose.obj
+ 0001:0000aa2c       _osifUefiShellFileDelete   000000018000ba2c f   toroC64:osifUefiShellFileDelete.obj
+ 0001:0000aa54       _osifUefiShellFileRename   000000018000ba54 f   toroC64:osifUefiShellFileRename.obj
+ 0001:0000abb4       _osifUefiShellFileFindAll  000000018000bbb4 f   toroC64:osifUefiShellFileFindAll.obj
+ 0001:0000afe4       _osifUefiShellFileGetStatus 000000018000bfe4 f   toroC64:osifUefiShellFileGetStatus.obj
+ 0001:0000b134       _osifUefiShellDirectoryCreate 000000018000c134 f   toroC64:osifUefiShellDirectoryCreate.obj
+ 0001:0000b3cc       _osifUefiShellCmdExec      000000018000c3cc f   toroC64:osifUefiShellCmdExec.obj
+ 0001:0000b4c0       _osifUefiShellGetEnv       000000018000c4c0 f   toroC64:osifUefiShellGetEnv.obj
+ 0001:0000b570       _osifUefiShellGetDrvCwd    000000018000c570 f   toroC64:osifUefiShellGetDrvCwd.obj
+ 0001:0000b5bc       _cdeCoreFread              000000018000c5bc f   toroC64:_cdeCoreFread.obj
+ 0001:0000b890       _cdeCoreFwrite             000000018000c890 f   toroC64:_cdeCoreFwrite.obj
+ 0001:0000bb20       _cdeCoreFsetpos            000000018000cb20 f   toroC64:_cdeCoreFsetpos.obj
+ 0001:0000bc98       _cdeCoreFflush             000000018000cc98 f   toroC64:_cdeCoreFflush.obj
+ 0001:0000bd20       _cdeSigDflt                000000018000cd20 f   toroC64:_cdeSigDfl.obj
+ 0001:0000bd28       __cdeGetIOBuffer           000000018000cd28 f   toroC64:__cdsGetIOBuffer.obj
+ 0001:0000bd30       _setjmp                    000000018000cd30 f   toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000bdd5       __imp_setjmp               000000018000cdd5     toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000bddd       __cdeSETJMPCDEINTRINABIAnchor 000000018000cddd     toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000bde0       _CdeLocateProtocol         000000018000cde0 f   toroC64:_CdeLocateProtocol.obj
+ 0001:0000be10       _cdeStr2Argcv              000000018000ce10 f   toroC64:_cdeStr2Argcv.obj
+ 0001:0000c040       __cdeGetCurrentPrivilegeLevel 000000018000d040 f   toroC64:CdeGetCurrentPrivilegeLevel64.obj
+ 0001:0000c050       memset                     000000018000d050 f   toroC64:MemSetCDEINTRINABI.obj
+ 0001:0000c290       _fseeki64                  000000018000d290 f   toroC64:_Fseeki64.obj
+ 0001:0000c348       _ftelli64                  000000018000d348 f   toroC64:_Ftelli64.obj
+ 0001:0000c370       strpbrk                    000000018000d370 f   toroC64:StrPbrk.obj
+ 0001:0000c3b0       strrchr                    000000018000d3b0 f   toroC64:StrRChr.obj
+ 0001:0000c400       __cdeSplitSearchNameExt2Upcase 000000018000d400 f   toroC64:__cdeSplitSearchNameExt2Upcase.obj
+ 0001:0000c4c0       strspn                     000000018000d4c0 f   toroC64:StrSpn.obj
+ 0001:0000c504       __cdeStrMatch              000000018000d504 f   toroC64:__cdeStrMatch.obj
+ 0001:0000c65c       realloc                    000000018000d65c f   toroC64:Realloc.obj
+ 0001:0000c694       fgetc                      000000018000d694 f   toroC64:Fgetc.obj
+ 0001:0000c6e0       fputc                      000000018000d6e0 f   toroC64:Fputc.obj
+ 0001:0000c718       isalpha                    000000018000d718 f   toroC64:isalpha.obj
+ 0001:0000c740       strerror                   000000018000d740 f   toroC64:StrError.obj
+ 0001:0000c75c       isgraph                    000000018000d75c f   toroC64:isgraph.obj
+ 0001:0000c784       fflush                     000000018000d784 f   toroC64:Fflush.obj
+ 0001:0000c7a8       remove                     000000018000d7a8 f   toroC64:Remove.obj
+ 0001:0000c820       __cdeIsFilePointer         000000018000d820 f   toroC64:__cdeIsFilePointer.obj
+ 0001:0000c88c       _stricmp                   000000018000d88c f   toroC64:_StrICmp.obj
+ 0001:0000c8c8       strtok                     000000018000d8c8 f   toroC64:StrTok.obj
+ 0001:0000c90c       mbstowcs                   000000018000d90c f   toroC64:mbstowcs.obj
+ 0001:0000c934       strnlen                    000000018000d934 f   toroC64:StrNLen.obj
+ 0001:0000c950       longjmp                    000000018000d950 f   toroC64:longjmp64CDEINTRINABI.obj
+ 0001:0000c9f9       __imp_longjmp              000000018000d9f9     toroC64:longjmp64CDEINTRINABI.obj
+ 0001:0000ca01       __cdeLONGJMPCDEINTRINABIAnchor 000000018000da01     toroC64:longjmp64CDEINTRINABI.obj
+ 0001:0000ca04       _CdeDbgCOMInit             000000018000da04 f   toroC64:_CdeDbgCOMInit.obj
+ 0001:0000cb20       _CdeDbgCOMReady2Send       000000018000db20 f   toroC64:_CdeDbgCOMReady2Send.obj
+ 0001:0000cb50       _CdeDbgCOMSend             000000018000db50 f   toroC64:_CdeDbgCOMSend.obj
+ 0001:0000cba0       _cdeCoreSprintf            000000018000dba0 f   toroC64:_cdeCoreSprintf.obj
+ 0001:0000cc48       _cdeUMUL128                000000018000dc48 f   toroC64:_cdeUMUL128.obj
+ 0001:0000cd4c       _cdeGmltime                000000018000dd4c f   toroC64:_cdeGmltime.obj
+ 0001:0000ce68       __cdeOnErrSet_status       000000018000de68 f   toroC64:__cdeOnErrSet_status.obj
+ 0001:0000ce88       __cdeOffsetCdeFposType     000000018000de88 f   toroC64:__cdeGetOffsetCdeFposType.obj
+ 0001:0000cec8       __cdeBiasCdeFposType       000000018000dec8 f   toroC64:__cdeGetBiasCdeFposType.obj
+ 0001:0000d12c       _CdeLocateHandleBuffer     000000018000e12c f   toroC64:_CdeLocateHandleBuffer.obj
+ 0001:0000d1b8       _cdeConvertDevicePathToText 000000018000e1b8 f   toroC64:_cdeConvertDevicePathToText.obj
+ 0001:0000d1d4       _CdeGetMapFromDevicePath   000000018000e1d4 f   toroC64:_CdeGetMapFromDevicePath.obj
+ 0001:0000d1f4       _CdeGetCurDir              000000018000e1f4 f   toroC64:_CdeGetCurDir.obj
+ 0001:0000d810       _cdeEfiTime2TimeT          000000018000e810 f   toroC64:_cdeEfiTime2TimeT.obj
+ 0001:0000d8ac       __cdeIsFilePointerCORE     000000018000e8ac f   toroC64:__cdeIsFilePointerCORE.obj
+ 0001:0000d92c       __cdereallocCORE           000000018000e92c f   toroC64:__cdereallocCORE.obj
+ 0001:0000d93c       __cderewindCORE            000000018000e93c f   toroC64:__cderewindCORE.obj
+ 0001:0000d958       __cdeGetIOBufferCORE       000000018000e958 f   toroC64:__cdsGetIOBufferCORE.obj
+ 0001:0000d960       _cdeAbort                  000000018000e960 f   toroC64:_cdeAbort.obj
+ 0001:0000dba4       _cdeSig2idx                000000018000eba4 f   toroC64:_cdeSig2idx.obj
+ 0001:0000dbcc       _cdeSigIgn                 000000018000ebcc f   toroC64:_cdeSigIgn.obj
+ 0001:0000dbd0       fsetposCDEABI              000000018000ebd0 f   toroC64:FsetposCDEABI.obj
+ 0001:0000dc04       fgetpos                    000000018000ec04 f   toroC64:Fgetpos.obj
+ 0001:0000dc64       strcspn                    000000018000ec64 f   toroC64:StrCSpn.obj
+ 0001:0000dca8       _strnicmp                  000000018000eca8 f   toroC64:_StrNICmp.obj
+ 0001:0000dd60       ispunct                    000000018000ed60 f   toroC64:ispunct.obj
+ 0001:0000dd8c       __cdeOnErrSet_errno        000000018000ed8c f   toroC64:__cdeOnErrSet_errno.obj
+ 0001:0000ddac       _CdeMemPutChar             000000018000edac f   toroC64:_CdeMemPutChar.obj
+ 0001:0000ddb8       _cdeGreg2Day               000000018000edb8 f   toroC64:_cdeGreg2Day.obj
+ 0001:0000de34       _cdeDay2Greg               000000018000ee34 f   toroC64:_cdeDay2Greg.obj
+ 0001:0000df38       _efierrno                  000000018000ef38 f   toroC64:_efierrno.obj
+ 0001:0000df5c       __cdeIsCdeFposType         000000018000ef5c f   toroC64:__cdeIsCdeFposType.obj
+ 0001:0000dfd4       _cdePoolWcs2AppWcs         000000018000efd4 f   toroC64:_CdePoolWcs2AppWcs.obj
+ 0001:0000e0cc       _cdeSscanf                 000000018000f0cc f   toroC64:_cdeSscanf.obj
+ 0001:0000e13c       __cdeOnErrSet_errnoCORE    000000018000f13c f   toroC64:__cdeOnErrSet_errnoCORE.obj
+ 0001:0000e15c       __acrt_iob_funcCORE        000000018000f15c f   toroC64:__acrt_iob_funcCORE.obj
+ 0001:0000e23c       _CdeMemPutNada             000000018000f23c f   toroC64:_CdeMemPutNada.obj
+ 0001:0000e240       abort                      000000018000f240 f   toroC64:abort.obj
+ 0001:0000e2a8       _cdeMemGetChar             000000018000f2a8 f   toroC64:_cdeMemGetChar.obj
+ 0001:0000e2b8       _cdeMemUngetChar           000000018000f2b8 f   toroC64:_cdeMemUngetChar.obj
+ 0001:0000e2c0       _errnoCORE                 000000018000f2c0 f   toroC64:errnoCORE.obj
+ 0001:0000e3e0       raise                      000000018000f3e0 f   toroC64:raise.obj
+ 0002:00000000       __xc_a                     0000000180010000     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000008       __xc_z                     0000000180010008     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000010       __xi_a                     0000000180010010     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000018       __xi_z                     0000000180010018     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000020       __xp_a                     0000000180010020     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000028       __xp_z                     0000000180010028     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000030       __xt_a                     0000000180010030     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000038       __xt_z                     0000000180010038     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00000040       ??_C@_0BL@HNKPMGKN@Could?5not?5get?5file?5offset?6@ 0000000180010040     cmfsize.obj
+ 0002:00000060       ??_C@_0BL@BJPGHIBP@Could?5not?5set?5file?5offset?6@ 0000000180010060     cmfsize.obj
+ 0002:00000080       ??_C@_0BN@NGLHEDOF@?6Option?5requires?5an?5argument@ 0000000180010080     getopt.obj
+ 0002:000000a0       ??_C@_05IALMJCDJ@?$CFs?$CFc?6@ 00000001800100a0     getopt.obj
+ 0002:000000a8       ??_C@_02BAABKJLB@?9?9@     00000001800100a8     getopt.obj
+ 0002:000000b0       ??_C@_0BC@PMNGDADG@Illegal?5option?3?5?9@ 00000001800100b0     getopt.obj
+ 0002:000000c8       ??_C@_0BP@NFLOMOC@Option?5requires?5an?5argument?3?5?9@ 00000001800100c8     getopt.obj
+ 0002:000000e8       ??_C@_01JKBOJNNK@?$FO@     00000001800100e8     getopt.obj
+ 0002:000000f0       ??_C@_0DA@IHKJENBL@Option?5requires?5a?5single?9charac@ 00000001800100f0     getopt.obj
+ 0002:00000460       ??_C@_05OBAPBDGL@AE_OK@    0000000180010460     utexcep.obj
+ 0002:00000468       ??_C@_08OLPGJMLE@AE_ERROR@ 0000000180010468     utexcep.obj
+ 0002:00000478       ??_C@_0BC@JINIPNCM@AE_NO_ACPI_TABLES@ 0000000180010478     utexcep.obj
+ 0002:00000490       ??_C@_0BA@HGCJFKIC@AE_NO_NAMESPACE@ 0000000180010490     utexcep.obj
+ 0002:000004a0       ??_C@_0N@MDFEEFMI@AE_NO_MEMORY@ 00000001800104a0     utexcep.obj
+ 0002:000004b0       ??_C@_0N@EHNPHEEE@AE_NOT_FOUND@ 00000001800104b0     utexcep.obj
+ 0002:000004c0       ??_C@_0N@FHHIIHCN@AE_NOT_EXIST@ 00000001800104c0     utexcep.obj
+ 0002:000004d0       ??_C@_0BC@KJMMOBPP@AE_ALREADY_EXISTS@ 00000001800104d0     utexcep.obj
+ 0002:000004e8       ??_C@_07OCFLOMK@AE_TYPE@   00000001800104e8     utexcep.obj
+ 0002:000004f0       ??_C@_0P@LCAACJFD@AE_NULL_OBJECT@ 00000001800104f0     utexcep.obj
+ 0002:00000500       ??_C@_0O@KMMNEPLB@AE_NULL_ENTRY@ 0000000180010500     utexcep.obj
+ 0002:00000510       ??_C@_0BD@FAHLAIFN@AE_BUFFER_OVERFLOW@ 0000000180010510     utexcep.obj
+ 0002:00000528       ??_C@_0BC@FEOJPKCP@AE_STACK_OVERFLOW@ 0000000180010528     utexcep.obj
+ 0002:00000540       ??_C@_0BD@MFEPEJKM@AE_STACK_UNDERFLOW@ 0000000180010540     utexcep.obj
+ 0002:00000558       ??_C@_0BD@IGFFMNIC@AE_NOT_IMPLEMENTED@ 0000000180010558     utexcep.obj
+ 0002:00000570       ??_C@_0L@LKIHBFJD@AE_SUPPORT@ 0000000180010570     utexcep.obj
+ 0002:00000580       ??_C@_08IBGEPHBC@AE_LIMIT@ 0000000180010580     utexcep.obj
+ 0002:00000590       ??_C@_07EKMCNJHG@AE_TIME@  0000000180010590     utexcep.obj
+ 0002:00000598       ??_C@_0BE@FGDBKHMM@AE_ACQUIRE_DEADLOCK@ 0000000180010598     utexcep.obj
+ 0002:000005b0       ??_C@_0BE@FOBDECPM@AE_RELEASE_DEADLOCK@ 00000001800105b0     utexcep.obj
+ 0002:000005c8       ??_C@_0BA@PPOMDOJD@AE_NOT_ACQUIRED@ 00000001800105c8     utexcep.obj
+ 0002:000005d8       ??_C@_0BE@HIPEDKOJ@AE_ALREADY_ACQUIRED@ 00000001800105d8     utexcep.obj
+ 0002:000005f0       ??_C@_0BI@KNLEMKLH@AE_NO_HARDWARE_RESPONSE@ 00000001800105f0     utexcep.obj
+ 0002:00000608       ??_C@_0BC@JPCCIPIN@AE_NO_GLOBAL_LOCK@ 0000000180010608     utexcep.obj
+ 0002:00000620       ??_C@_0BA@PKLCJEBC@AE_ABORT_METHOD@ 0000000180010620     utexcep.obj
+ 0002:00000630       ??_C@_0BA@GDKIHKKP@AE_SAME_HANDLER@ 0000000180010630     utexcep.obj
+ 0002:00000640       ??_C@_0O@PFOADCGB@AE_NO_HANDLER@ 0000000180010640     utexcep.obj
+ 0002:00000650       ??_C@_0BC@JGFDFDLG@AE_OWNER_ID_LIMIT@ 0000000180010650     utexcep.obj
+ 0002:00000668       ??_C@_0BC@PMNNBAHK@AE_NOT_CONFIGURED@ 0000000180010668     utexcep.obj
+ 0002:00000680       ??_C@_09FCELEONC@AE_ACCESS@ 0000000180010680     utexcep.obj
+ 0002:00000690       ??_C@_0M@BIPEGDFC@AE_IO_ERROR@ 0000000180010690     utexcep.obj
+ 0002:000006a0       ??_C@_0BE@GCBICNJK@AE_NUMERIC_OVERFLOW@ 00000001800106a0     utexcep.obj
+ 0002:000006b8       ??_C@_0BA@JDMHIEGJ@AE_HEX_OVERFLOW@ 00000001800106b8     utexcep.obj
+ 0002:000006c8       ??_C@_0BE@HHBGLENC@AE_DECIMAL_OVERFLOW@ 00000001800106c8     utexcep.obj
+ 0002:000006e0       ??_C@_0BC@DKCJMEPN@AE_OCTAL_OVERFLOW@ 00000001800106e0     utexcep.obj
+ 0002:000006f8       ??_C@_0BA@EAJEGCAK@AE_END_OF_TABLE@ 00000001800106f8     utexcep.obj
+ 0002:00000708       ??_C@_0BB@GGMNEPFA@AE_BAD_PARAMETER@ 0000000180010708     utexcep.obj
+ 0002:00000720       ??_C@_0BB@FKHHEGKA@AE_BAD_CHARACTER@ 0000000180010720     utexcep.obj
+ 0002:00000738       ??_C@_0BA@NBPLLLII@AE_BAD_PATHNAME@ 0000000180010738     utexcep.obj
+ 0002:00000748       ??_C@_0M@JECPJBCE@AE_BAD_DATA@ 0000000180010748     utexcep.obj
+ 0002:00000758       ??_C@_0BE@IPFKHDDI@AE_BAD_HEX_CONSTANT@ 0000000180010758     utexcep.obj
+ 0002:00000770       ??_C@_0BG@MIDKBGIL@AE_BAD_OCTAL_CONSTANT@ 0000000180010770     utexcep.obj
+ 0002:00000788       ??_C@_0BI@BEMEOOAI@AE_BAD_DECIMAL_CONSTANT@ 0000000180010788     utexcep.obj
+ 0002:000007a0       ??_C@_0BF@HKJOKEC@AE_MISSING_ARGUMENTS@ 00000001800107a0     utexcep.obj
+ 0002:000007b8       ??_C@_0P@JBCHJANB@AE_BAD_ADDRESS@ 00000001800107b8     utexcep.obj
+ 0002:000007c8       ??_C@_0BB@HKCFDBKC@AE_BAD_SIGNATURE@ 00000001800107c8     utexcep.obj
+ 0002:000007e0       ??_C@_0O@ELNDGGAE@AE_BAD_HEADER@ 00000001800107e0     utexcep.obj
+ 0002:000007f0       ??_C@_0BA@BIILNBAK@AE_BAD_CHECKSUM@ 00000001800107f0     utexcep.obj
+ 0002:00000800       ??_C@_0N@HBAFKHEM@AE_BAD_VALUE@ 0000000180010800     utexcep.obj
+ 0002:00000810       ??_C@_0BI@DKLNCMJF@AE_INVALID_TABLE_LENGTH@ 0000000180010810     utexcep.obj
+ 0002:00000828       ??_C@_0BC@KGKLJMBP@AE_AML_BAD_OPCODE@ 0000000180010828     utexcep.obj
+ 0002:00000840       ??_C@_0BC@ILAINBHF@AE_AML_NO_OPERAND@ 0000000180010840     utexcep.obj
+ 0002:00000858       ??_C@_0BE@CMBNMMAM@AE_AML_OPERAND_TYPE@ 0000000180010858     utexcep.obj
+ 0002:00000870       ??_C@_0BF@JPCFNMLI@AE_AML_OPERAND_VALUE@ 0000000180010870     utexcep.obj
+ 0002:00000888       ??_C@_0BL@BJKBHBGD@AE_AML_UNINITIALIZED_LOCAL@ 0000000180010888     utexcep.obj
+ 0002:000008a8       ??_C@_0BJ@BDDHFJEF@AE_AML_UNINITIALIZED_ARG@ 00000001800108a8     utexcep.obj
+ 0002:000008c8       ??_C@_0BN@INAHBINF@AE_AML_UNINITIALIZED_ELEMENT@ 00000001800108c8     utexcep.obj
+ 0002:000008e8       ??_C@_0BI@COHNKOEN@AE_AML_NUMERIC_OVERFLOW@ 00000001800108e8     utexcep.obj
+ 0002:00000900       ??_C@_0BE@ODNDBIBN@AE_AML_REGION_LIMIT@ 0000000180010900     utexcep.obj
+ 0002:00000918       ??_C@_0BE@NFHDHJIM@AE_AML_BUFFER_LIMIT@ 0000000180010918     utexcep.obj
+ 0002:00000930       ??_C@_0BF@PAHJLGEL@AE_AML_PACKAGE_LIMIT@ 0000000180010930     utexcep.obj
+ 0002:00000948       ??_C@_0BG@PJELJHDF@AE_AML_DIVIDE_BY_ZERO@ 0000000180010948     utexcep.obj
+ 0002:00000960       ??_C@_0BA@CIMDLPJI@AE_AML_BAD_NAME@ 0000000180010960     utexcep.obj
+ 0002:00000970       ??_C@_0BG@NBCCMIJD@AE_AML_NAME_NOT_FOUND@ 0000000180010970     utexcep.obj
+ 0002:00000988       ??_C@_0BA@JDIOKGCC@AE_AML_INTERNAL@ 0000000180010988     utexcep.obj
+ 0002:00000998       ??_C@_0BI@IGMDDMCI@AE_AML_INVALID_SPACE_ID@ 0000000180010998     utexcep.obj
+ 0002:000009b0       ??_C@_0BE@HOGNAHOK@AE_AML_STRING_LIMIT@ 00000001800109b0     utexcep.obj
+ 0002:000009c8       ??_C@_0BH@OKOBGBEM@AE_AML_NO_RETURN_VALUE@ 00000001800109c8     utexcep.obj
+ 0002:000009e0       ??_C@_0BE@DJLCLOMO@AE_AML_METHOD_LIMIT@ 00000001800109e0     utexcep.obj
+ 0002:000009f8       ??_C@_0BB@OOHNPDEB@AE_AML_NOT_OWNER@ 00000001800109f8     utexcep.obj
+ 0002:00000a10       ??_C@_0BD@BIFMCDBD@AE_AML_MUTEX_ORDER@ 0000000180010a10     utexcep.obj
+ 0002:00000a28       ??_C@_0BK@FDAGLEMK@AE_AML_MUTEX_NOT_ACQUIRED@ 0000000180010a28     utexcep.obj
+ 0002:00000a48       ??_C@_0BN@ONMIFGCB@AE_AML_INVALID_RESOURCE_TYPE@ 0000000180010a48     utexcep.obj
+ 0002:00000a68       ??_C@_0BF@KCCFIGMH@AE_AML_INVALID_INDEX@ 0000000180010a68     utexcep.obj
+ 0002:00000a80       ??_C@_0BG@GLGAPHBJ@AE_AML_REGISTER_LIMIT@ 0000000180010a80     utexcep.obj
+ 0002:00000a98       ??_C@_0BA@BJMBKDJP@AE_AML_NO_WHILE@ 0000000180010a98     utexcep.obj
+ 0002:00000aa8       ??_C@_0BB@PJHGPBLK@AE_AML_ALIGNMENT@ 0000000180010aa8     utexcep.obj
+ 0002:00000ac0       ??_C@_0BL@EJHJMLPF@AE_AML_NO_RESOURCE_END_TAG@ 0000000180010ac0     utexcep.obj
+ 0002:00000ae0       ??_C@_0BK@JPDPGMEO@AE_AML_BAD_RESOURCE_VALUE@ 0000000180010ae0     utexcep.obj
+ 0002:00000b00       ??_C@_0BK@NNHAJIBC@AE_AML_CIRCULAR_REFERENCE@ 0000000180010b00     utexcep.obj
+ 0002:00000b20       ??_C@_0BL@GMFABCFD@AE_AML_BAD_RESOURCE_LENGTH@ 0000000180010b20     utexcep.obj
+ 0002:00000b40       ??_C@_0BH@HMBGODKD@AE_AML_ILLEGAL_ADDRESS@ 0000000180010b40     utexcep.obj
+ 0002:00000b58       ??_C@_0BE@NCFBHLCM@AE_AML_LOOP_TIMEOUT@ 0000000180010b58     utexcep.obj
+ 0002:00000b70       ??_C@_0BK@KJMOJPMM@AE_AML_UNINITIALIZED_NODE@ 0000000180010b70     utexcep.obj
+ 0002:00000b90       ??_C@_0BD@GABIPGIC@AE_AML_TARGET_TYPE@ 0000000180010b90     utexcep.obj
+ 0002:00000ba8       ??_C@_0BA@HFCOMJIC@AE_AML_PROTOCOL@ 0000000180010ba8     utexcep.obj
+ 0002:00000bb8       ??_C@_0BF@MMGLEOH@AE_AML_BUFFER_LENGTH@ 0000000180010bb8     utexcep.obj
+ 0002:00000bd0       ??_C@_0BF@GEIGFIMD@AE_CTRL_RETURN_VALUE@ 0000000180010bd0     utexcep.obj
+ 0002:00000be8       ??_C@_0BA@NFCAKKBE@AE_CTRL_PENDING@ 0000000180010be8     utexcep.obj
+ 0002:00000bf8       ??_C@_0BC@GMBKOLLO@AE_CTRL_TERMINATE@ 0000000180010bf8     utexcep.obj
+ 0002:00000c10       ??_C@_0N@KLLLBMCF@AE_CTRL_TRUE@ 0000000180010c10     utexcep.obj
+ 0002:00000c20       ??_C@_0O@JKEFFNAO@AE_CTRL_FALSE@ 0000000180010c20     utexcep.obj
+ 0002:00000c30       ??_C@_0O@IICDNKCK@AE_CTRL_DEPTH@ 0000000180010c30     utexcep.obj
+ 0002:00000c40       ??_C@_0M@MCNHIAMO@AE_CTRL_END@ 0000000180010c40     utexcep.obj
+ 0002:00000c50       ??_C@_0BB@CKDICBC@AE_CTRL_TRANSFER@ 0000000180010c50     utexcep.obj
+ 0002:00000c68       ??_C@_0O@NKLNOHFA@AE_CTRL_BREAK@ 0000000180010c68     utexcep.obj
+ 0002:00000c78       ??_C@_0BB@IPPIFIGO@AE_CTRL_CONTINUE@ 0000000180010c78     utexcep.obj
+ 0002:00000c90       ??_C@_0BH@JBJBIHAH@AE_CTRL_PARSE_CONTINUE@ 0000000180010c90     utexcep.obj
+ 0002:00000ca8       ??_C@_0BG@LNANKLIG@AE_CTRL_PARSE_PENDING@ 0000000180010ca8     utexcep.obj
+ 0002:00000cc0       ??_C@_0CA@HAPNOHJM@Unknown?5exception?5code?3?50x?$CF8?48X@ 0000000180010cc0     utexcep.obj
+ 0002:00000ce0       ??_C@_0BE@JENJPLOL@UNKNOWN_STATUS_CODE@ 0000000180010ce0     utexcep.obj
+ 0002:00000d00       AcpiGbl_LowerHexDigits     0000000180010d00     utglobal.obj
+ 0002:00000d18       AcpiGbl_UpperHexDigits     0000000180010d18     utglobal.obj
+ 0002:00000d30       AcpiGbl_PreDefinedNames    0000000180010d30     utglobal.obj
+ 0002:00000e20       ??_C@_05EPMCMKIN@?2_S0_@   0000000180010e20     utglobal.obj
+ 0002:00000e28       ??_C@_05EOAAKALK@?2_S1_@   0000000180010e28     utglobal.obj
+ 0002:00000e30       ??_C@_05EMEGBOOD@?2_S2_@   0000000180010e30     utglobal.obj
+ 0002:00000e38       ??_C@_05ENIEHENE@?2_S3_@   0000000180010e38     utglobal.obj
+ 0002:00000e40       ??_C@_05EIMLGCFB@?2_S4_@   0000000180010e40     utglobal.obj
+ 0002:00000e48       ??_C@_05EJAJAIGG@?2_S5_@   0000000180010e48     utglobal.obj
+ 0002:00000e50       ??_C@_04ILLHNOLH@_S0W@     0000000180010e50     utglobal.obj
+ 0002:00000e58       ??_C@_04IKHFLEIA@_S1W@     0000000180010e58     utglobal.obj
+ 0002:00000e60       ??_C@_04IIDDAKNJ@_S2W@     0000000180010e60     utglobal.obj
+ 0002:00000e68       ??_C@_04IJPBGAOO@_S3W@     0000000180010e68     utglobal.obj
+ 0002:00000e70       ??_C@_04IMLOHGGL@_S4W@     0000000180010e70     utglobal.obj
+ 0002:00000e78       ??_C@_04OLJKPFBC@_S1D@     0000000180010e78     utglobal.obj
+ 0002:00000e80       ??_C@_04OJNMELEL@_S2D@     0000000180010e80     utglobal.obj
+ 0002:00000e88       ??_C@_04OIBOCBHM@_S3D@     0000000180010e88     utglobal.obj
+ 0002:00000e90       ??_C@_04ONFBDHPJ@_S4D@     0000000180010e90     utglobal.obj
+ 0002:00000e98       ??_C@_04GEOPKFIM@_GPE@     0000000180010e98     utglobal.obj
+ 0002:00000ea0       ??_C@_04BKIIOEBP@_PR_@     0000000180010ea0     utglobal.obj
+ 0002:00000ea8       ??_C@_04BEBLOIIB@_SB_@     0000000180010ea8     utglobal.obj
+ 0002:00000eb0       ??_C@_04BIEOAHGA@_SI_@     0000000180010eb0     utglobal.obj
+ 0002:00000eb8       ??_C@_04JLPJCCPA@_TZ_@     0000000180010eb8     utglobal.obj
+ 0002:00000ec0       ??_C@_04HICKCCCI@_REV@     0000000180010ec0     utglobal.obj
+ 0002:00000ec8       ??_C@_04BDDAMJOB@_OS_@     0000000180010ec8     utglobal.obj
+ 0002:00000ed0       ??_C@_0BF@BPDEPEPO@Microsoft?5Windows?5NT@ 0000000180010ed0     utglobal.obj
+ 0002:00000ee8       ??_C@_04MBPOAFED@_GL_@     0000000180010ee8     utglobal.obj
+ 0002:00000ef0       ??_C@_04PKIHMDG@_OSI@      0000000180010ef0     utglobal.obj
+ 0002:00000f00       ??_C@_0P@FGOAMMID@Divide?5by?5zero@ 0000000180010f00     utmath.obj
+ 0002:00000f10       ??_C@_0N@HFMBIKJA@ACPI?5Error?3?5@ 0000000180010f10     utxferror.obj
+ 0002:00000f20       ??_C@_0BA@IMDPOJBL@?5?$CI?$CF8?48X?1?$CFs?9?$CFu?$CJ?6@ 0000000180010f20     utxferror.obj
+ 0002:00000f30       ??_C@_0BB@HHBECIGO@ACPI?5Error?3?5?$CFs?0?5@ 0000000180010f30     utxferror.obj
+ 0002:00000f48       ??_C@_0P@HCHEAOAD@ACPI?5Warning?3?5@ 0000000180010f48     utxferror.obj
+ 0002:00000f58       ??_C@_06GLFELKBG@ACPI?3?5@ 0000000180010f58     utxferror.obj
+ 0002:00000f60       ??_C@_01EEMJAFIK@?6@       0000000180010f60     utxferror.obj
+ 0002:00000f68       ??_C@_0BI@JMEGFGNN@Firmware?5Error?5?$CIACPI?$CJ?3?5@ 0000000180010f68     utxferror.obj
+ 0002:00000f80       ??_C@_0BM@DHONDAIK@Firmware?5Error?5?$CIACPI?$CJ?3?5?$CFs?0?5@ 0000000180010f80     utxferror.obj
+ 0002:00000fa0       ??_C@_0BK@EPGCPCHP@Firmware?5Warning?5?$CIACPI?$CJ?3?5@ 0000000180010fa0     utxferror.obj
+ 0002:00000fbc       ??_C@_01LFCBOECM@?4@       0000000180010fbc     oswindir.obj
+ 0002:00000fc0       ??_C@_0DB@MDODPNKB@Could?5not?5allocate?5buffer?5for?5w@ 0000000180010fc0     oswindir.obj
+ 0002:00000ff4       ??_C@_01KMDKNFGN@?1@       0000000180010ff4     oswindir.obj
+ 0002:00001000       ??_C@_0BI@PGMJHKLJ@Bad?5width?5parameter?3?5?$CFX@ 0000000180011000     oswinxf.obj
+ 0002:00001018       ??_C@_03JPKPEJFO@?1?$CK?$CB@ 0000000180011018     ascase.obj
+ 0002:0000101c       ??_C@_03OBPDBDOD@?$CB?$CK?1@ 000000018001101c     ascase.obj
+ 0002:00001020       ??_C@_08GGFKNFHG@?5?5?5?5?5?5?5?5@ 0000000180011020     ascase.obj
+ 0002:00001030       ??_C@_0DD@GHHDOPAC@Found?5an?5unterminated?5quoted?5st@ 0000000180011030     ascase.obj
+ 0002:00001068       ??_C@_0DI@LKJHDIDG@Found?5an?5unterminated?5translati@ 0000000180011068     ascase.obj
+ 0002:000010a0       ??_C@_02CHHINNLG@?$CK?1@   00000001800110a0     ascase.obj
+ 0002:000010a4       ??_C@_03KCILDFD@?5if@      00000001800110a4     asconvrt.obj
+ 0002:000010a8       ??_C@_08EHONPFFO@?5else?5if@ 00000001800110a8     asconvrt.obj
+ 0002:000010b8       ??_C@_0M@EINHEAGF@?5else?5while@ 00000001800110b8     asconvrt.obj
+ 0002:000010c4       ??_C@_05CHIOKCAH@?5else@   00000001800110c4     asconvrt.obj
+ 0002:000010cc       ??_C@_04JKFHOPAN@?5do?5@   00000001800110cc     asconvrt.obj
+ 0002:000010e0       ??_C@_0GK@GFHJNHFL@?1?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 00000001800110e0     asconvrt.obj
+ 0002:00001150       ??_C@_0BL@BOLNOMGN@Non?9ANSI?5?1?1?5Comments?5Found@ 0000000180011150     asconvrt.obj
+ 0002:00001170       ??_C@_0CG@JFBIMDPA@Missing?5braces?5for?5?$DM?$CFs?$DO?0?5line?5?$CF@ 0000000180011170     asconvrt.obj
+ 0002:00001198       ??_C@_0BJ@ELAODKOG@Unbalanced?5quoted?5string@ 0000000180011198     asconvrt.obj
+ 0002:000011b8       ??_C@_0BF@KJGEFOHB@?5?5?5?5?$CF?432s?5?$CIline?5?$CFu?$CJ?6@ 00000001800111b8     asconvrt.obj
+ 0002:000011d0       ??_C@_0CK@HKNIAHFF@Removing?5extra?5line?5at?5start?5of@ 00000001800111d0     asconvrt.obj
+ 0002:00001200       ??_C@_0CI@KNMAGOHH@Removing?5extra?5line?5at?5end?5of?5f@ 0000000180011200     asconvrt.obj
+ 0002:00001228       ??_C@_03DDJPJKKM@?4?5?5@   0000000180011228     asconvrt.obj
+ 0002:0000122c       ??_C@_02KHOJGJKF@?4?5@     000000018001122c     asconvrt.obj
+ 0002:00001230       ??_C@_0CM@HHHCCHHM@Removed?5?$CFd?5extra?5blanks?5after?5a@ 0000000180011230     asconvrt.obj
+ 0002:00001260       ??_C@_0BF@HGEDOLNJ@?9?9?5?$CF4u?5?$CF28?428s?5?3?5?$CFs?6@ 0000000180011260     asconvrt.obj
+ 0002:00001278       ??_C@_0BK@JBDDDNBN@Extraneous?5spaces?5removed@ 0000000180011278     asconvrt.obj
+ 0002:00001294       ??_C@_03EGHOKNNL@?6?6?6@   0000000180011294     asconvrt.obj
+ 0002:00001298       ??_C@_04OLKIJNHL@?6?6?6?6@ 0000000180011298     asconvrt.obj
+ 0002:000012a0       ??_C@_02PHMGELLB@?6?6@     00000001800112a0     asconvrt.obj
+ 0002:000012a8       ??_C@_0CM@DPMDDFFE@Found?5multiple?5blank?5lines?5afte@ 00000001800112a8     asconvrt.obj
+ 0002:000012d8       ??_C@_0CF@BBFLNDMJ@Inserted?5blank?5line?5after?5copyr@ 00000001800112d8     asconvrt.obj
+ 0002:00001300       ??_C@_0FC@JAEEMFNK@?5?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK@ 0000000180011300     asconvrt.obj
+ 0002:00001354       ??_C@_02PCIJFNDE@?$AN?6@   0000000180011354     asconvrt.obj
+ 0002:00001358       ??_C@_01LIIJDEN@?$AN@      0000000180011358     asconvrt.obj
+ 0002:0000135c       ??_C@_02JHLIKEIA@?6?$HN@   000000018001135c     asconvrt.obj
+ 0002:00001360       ??_C@_07EGDHLMDK@else?5if@ 0000000180011360     asconvrt.obj
+ 0002:00001368       ??_C@_0L@EALEOMBO@else?5while@ 0000000180011368     asconvrt.obj
+ 0002:00001374       ??_C@_04FHMCPBIP@else@     0000000180011374     asconvrt.obj
+ 0002:0000137c       ??_C@_03NMMCOAOG@?5?$HL?6@ 000000018001137c     asconvrt.obj
+ 0002:00001380       ??_C@_02PEDIMADA@?5?$HL@   0000000180011380     asconvrt.obj
+ 0002:00001388       ??_C@_0N@CAPFOEJE@long?3?5?$CF?480s?6@ 0000000180011388     asconvrt.obj
+ 0002:00001398       ??_C@_0CF@MHIAPPCD@?$CFu?5Lines?5longer?5than?580?5found?5i@ 0000000180011398     asconvrt.obj
+ 0002:000013c0       ??_C@_0L@CHDLJNMK@Tabs?5found@ 00000001800113c0     asconvrt.obj
+ 0002:000013d0       ??_C@_0CM@HGPLKGKH@?$CFu?5Comment?5?$CFu?5White?5?$CFu?5Code?5?$CFu?5@ 00000001800113d0     asconvrt.obj
+ 0002:00001400       ??_C@_07DIBCDNGL@struct?5@ 0000000180011400     asconvrt.obj
+ 0002:00001408       ??_C@_06MOJHIBMG@union?5@  0000000180011408     asconvrt.obj
+ 0002:00001410       ??_C@_0DA@CMEPPIKK@Checking?5for?5?$CFs?5source?5files?5in@ 0000000180011410     asfile.obj
+ 0002:00001440       ??_C@_0BC@DFHIDLHG@Subdirectory?3?5?$CFs?6@ 0000000180011440     asfile.obj
+ 0002:00001458       ??_C@_09HOEPGLGH@File?3?5?$CFs?6@ 0000000180011458     asfile.obj
+ 0002:00001468       ??_C@_0BJ@KLHDOAJE@Creating?5Directory?5?$CC?$CFs?$CC?6@ 0000000180011468     asfile.obj
+ 0002:00001488       ??_C@_0CD@DDKIDAPF@Could?5not?5create?5target?5directo@ 0000000180011488     asfile.obj
+ 0002:000014ac       ??_C@_03GNDHDMDH@?$CK?4c@  00000001800114ac     asfile.obj
+ 0002:000014b0       ??_C@_03IOMDOFPM@?$CK?4h@  00000001800114b0     asfile.obj
+ 0002:000014b4       ??_C@_03OKKPCAPI@?$CK?4l@  00000001800114b4     asfile.obj
+ 0002:000014b8       ??_C@_03NNBKMGOM@?$CK?4y@  00000001800114b8     asfile.obj
+ 0002:000014bc       ??_C@_05IKJOILKN@?$CK?4asl@ 00000001800114bc     asfile.obj
+ 0002:000014c4       ??_C@_01NBENCBCI@?$CK@     00000001800114c4     asfile.obj
+ 0002:000014d0       ??_C@_0EA@PKKIKIJA@?$CFs?3?5?$CK?$CK?$CK?$CKFile?5has?5UNIX?5format?$CK?$CK?$CK@ 00000001800114d0     asfile.obj
+ 0002:00001510       ??_C@_0BP@MPBMCIHN@?$CFs?3?5?$CFu?5lone?5linefeeds?5in?5file?6@ 0000000180011510     asfile.obj
+ 0002:00001530       ??_C@_0CD@EFKIABKF@Unknown?5file?5type?0?5cannot?5proce@ 0000000180011530     asfile.obj
+ 0002:00001558       ??_C@_0BG@MIEOMDCA@?1?$CK?5acpisrc?3StructDefs@ 0000000180011558     asfile.obj
+ 0002:00001570       ??_C@_0BF@DNGAKDFG@Processing?5?$CFu?5bytes?6@ 0000000180011570     asfile.obj
+ 0002:00001588       ??_C@_0O@HBNIKACG@typedef?5union@ 0000000180011588     asfile.obj
+ 0002:00001598       ??_C@_0P@HIPOHHFD@typedef?5struct@ 0000000180011598     asfile.obj
+ 0002:000015a8       ??_C@_0CH@GNDKHKGE@Unknown?5conversion?5subfunction?5@ 00000001800115a8     asfile.obj
+ 0002:000015d0       ??_C@_0DO@MLPJKHGM@Non?9printable?5character?5?$CI0x?$CF2?42@ 00000001800115d0     asfile.obj
+ 0002:00001610       ??_C@_0CO@ICHCNCJE@Could?5not?5allocate?5buffer?5for?5f@ 0000000180011610     asfile.obj
+ 0002:00001640       ??_C@_04FLEJPLED@?4asl@    0000000180011640     asfile.obj
+ 0002:00001650       ??_C@_0EO@JJPALEOA@?5?$CK?52?41?4?5This?5is?5your?5license?5fr@ 0000000180011650     asfile.obj
+ 0002:000016a0       ??_C@_0EH@DPAOOBOM@?5?$CK?5THIS?5SOFTWARE?5IS?5PROVIDED?5BY@ 00000001800116a0     asfile.obj
+ 0002:000016e8       ??_C@_0BL@EMOMPEIA@Converting?5lone?5linefeeds?6@ 00000001800116e8     asfile.obj
+ 0002:00001704       ??_C@_02DJGKEECL@?4?4@     0000000180011704     asfile.obj
+ 0002:00001708       ??_C@_0DJ@MEHGMEDO@Could?5not?5allocate?5buffer?5for?5d@ 0000000180011708     asfile.obj
+ 0002:00001748       ??_C@_0DJ@IKCOGNIL@Could?5not?5allocate?5buffer?5for?5d@ 0000000180011748     asfile.obj
+ 0002:00001784       ??_C@_02JDPG@rb@           0000000180011784     asfile.obj
+ 0002:00001788       ??_C@_0BI@LLBEIELB@Could?5not?5open?5file?5?$CFs?6@ 0000000180011788     asfile.obj
+ 0002:000017a0       ??_C@_0CA@IONLCBPF@Could?5not?5get?5file?5size?5for?5?$CFs?6@ 00000001800117a0     asfile.obj
+ 0002:000017c0       ??_C@_0CG@OPKLIKCC@Could?5not?5allocate?5buffer?5of?5si@ 00000001800117c0     asfile.obj
+ 0002:000017e8       ??_C@_0CN@MHJNBKPE@Could?5not?5read?5the?5input?5file?5?$CF@ 00000001800117e8     asfile.obj
+ 0002:00001818       ??_C@_0CP@KAPAABFA@File?5contains?5only?5printable?5AS@ 0000000180011818     asfile.obj
+ 0002:00001848       ??_C@_03ELIABIOC@w?$CLb@   0000000180011848     asfile.obj
+ 0002:00001850       ??_C@_0CC@MELMFFKM@Could?5not?5create?5destination?5fi@ 0000000180011850     asfile.obj
+ 0002:00001878       ??_C@_0CI@GLHLBGDD@Could?5not?5create?5destination?5fi@ 0000000180011878     asfile.obj
+ 0002:000018a0       ??_C@_0CA@NKPOBCBN@Error?5writing?5output?5file?5?$CC?$CFs?$CC?6@ 00000001800118a0     asfile.obj
+ 0002:000018c0       ??_C@_0CB@EJLHKKG@Source?5path?5?$CC?$CFs?$CC?5does?5not?5exist@ 00000001800118c0     asmain.obj
+ 0002:000018e8       ??_C@_0DI@IFDDNEME@Target?5path?5is?5the?5same?5as?5the?5@ 00000001800118e8     asmain.obj
+ 0002:00001920       ??_C@_0CI@FEJINPDI@Target?5path?5already?5exists?0?5ove@ 0000000180011920     asmain.obj
+ 0002:00001948       ??_C@_0BH@BCBLEHDL@?6AcpiSrc?5statistics?3?6?6@ 0000000180011948     asmain.obj
+ 0002:00001960       ??_C@_0BF@FEKCFCPD@?$CF8u?5Files?5processed?6@ 0000000180011960     asmain.obj
+ 0002:00001978       ??_C@_0BO@NDDHAMPI@?$CF8u?5Total?5bytes?5?$CI?$CF?41fK?1file?$CJ?6@ 0000000180011978     asmain.obj
+ 0002:00001998       ??_C@_0BA@KFONCIGD@?$CF8u?5Tabs?5found?6@ 0000000180011998     asmain.obj
+ 0002:000019a8       ??_C@_0CC@OIKBCFEP@?$CF8u?5Missing?5if?1else?1while?5brace@ 00000001800119a8     asmain.obj
+ 0002:000019d0       ??_C@_0CA@DONDPMKB@?$CF8u?5Non?9ANSI?5?1?1?5comments?5found?6@ 00000001800119d0     asmain.obj
+ 0002:000019f0       ??_C@_0BB@BMFBFHCB@?$CF8u?5Total?5Lines?6@ 00000001800119f0     asmain.obj
+ 0002:00001a08       ??_C@_0BD@NAMCEEBE@?$CF8u?5Lines?5of?5code?6@ 0000000180011a08     asmain.obj
+ 0002:00001a20       ??_C@_0CF@CJMNDLIM@?$CF8u?5Lines?5of?5non?9comment?5whites@ 0000000180011a20     asmain.obj
+ 0002:00001a48       ??_C@_0BH@GMPCKKGL@?$CF8u?5Lines?5of?5comments?6@ 0000000180011a48     asmain.obj
+ 0002:00001a60       ??_C@_0BG@NLOBLGAI@?$CF8u?5Long?5lines?5found?6@ 0000000180011a60     asmain.obj
+ 0002:00001a78       ??_C@_0CD@BNBNALJO@?$CF8?41f?5Ratio?5of?5code?5to?5whitespa@ 0000000180011a78     asmain.obj
+ 0002:00001aa0       ??_C@_0CB@KMMJCCJL@?$CF8?41f?5Ratio?5of?5code?5to?5comments@ 0000000180011aa0     asmain.obj
+ 0002:00001ad0       ??_C@_0EC@HFPALLHL@?5?5?5?5?5?5?5?5?5?$CFu?$CF?$CF?5code?0?5?$CFu?$CF?$CF?5commen@ 0000000180011ad0     asmain.obj
+ 0002:00001b18       ??_C@_0DG@CDBGKBNL@acpisrc?5?$FL?9c?$HMl?$HMu?$FN?5?$FL?9dsvy?$FN?5?$DMSourc@ 0000000180011b18     asmain.obj
+ 0002:00001b50       ??_C@_0BE@GIAJDAGE@Usage?3?5?$CFs?6Options?3?6@ 0000000180011b50     asmain.obj
+ 0002:00001b68       ??_C@_0CP@FKOLLMMO@Check?5entire?5file?5for?5non?9print@ 0000000180011b68     asmain.obj
+ 0002:00001b98       ??_C@_09EPNNIEAI@?9a?5?$DMfile?$DO@ 0000000180011b98     asmain.obj
+ 0002:00001ba8       ??_C@_0L@EJOMDKDJ@?5?5?$CF?920s?$CFs?6@ 0000000180011ba8     asmain.obj
+ 0002:00001bb8       ??_C@_0CH@MIOKDDOF@Generate?5cleaned?5version?5of?5the@ 0000000180011bb8     asmain.obj
+ 0002:00001be0       ??_C@_02HOPLMLDK@?9c@      0000000180011be0     asmain.obj
+ 0002:00001be8       ??_C@_0CM@DADEOPCP@Insert?5dual?9license?5header?5into@ 0000000180011be8     asmain.obj
+ 0002:00001c14       ??_C@_02JNAPBCPB@?9h@      0000000180011c14     asmain.obj
+ 0002:00001c18       ??_C@_0BK@HBBEEGNC@Cleanup?5macro?5indentation@ 0000000180011c18     asmain.obj
+ 0002:00001c34       ??_C@_02IEBECDLA@?9i@      0000000180011c34     asmain.obj
+ 0002:00001c38       ??_C@_0CF@DFOGMBOC@Generate?5Linux?5version?5of?5the?5s@ 0000000180011c38     asmain.obj
+ 0002:00001c60       ??_C@_02PJGDNHPF@?9l@      0000000180011c60     asmain.obj
+ 0002:00001c68       ??_C@_0CD@GKCOHDPF@Generate?5Custom?5source?5translat@ 0000000180011c68     asmain.obj
+ 0002:00001c8c       ??_C@_02GCGDHOON@?9u@      0000000180011c8c     asmain.obj
+ 0002:00001c90       ??_C@_0BP@DFDLFBPN@Leave?5debug?5statements?5in?5code@ 0000000180011c90     asmain.obj
+ 0002:00001cb0       ??_C@_02DBLKFNPN@?9d@      0000000180011cb0     asmain.obj
+ 0002:00001cb8       ??_C@_0CA@FBGPBKL@Generate?5source?5statistics?5only@ 0000000180011cb8     asmain.obj
+ 0002:00001cd8       ??_C@_02DEDJNJGL@?9s@      0000000180011cd8     asmain.obj
+ 0002:00001ce0       ??_C@_0BM@PFCLPAEM@Display?5version?5information@ 0000000180011ce0     asmain.obj
+ 0002:00001cfc       ??_C@_02EJEOCNCO@?9v@      0000000180011cfc     asmain.obj
+ 0002:00001d00       ??_C@_0N@LANNGDHD@Verbose?5mode@ 0000000180011d00     asmain.obj
+ 0002:00001d10       ??_C@_03ILFEEKMH@?9vb@     0000000180011d10     asmain.obj
+ 0002:00001d18       ??_C@_0BM@BPPIBEBA@Display?5build?5date?5and?5time@ 0000000180011d18     asmain.obj
+ 0002:00001d34       ??_C@_03NNAOONEB@?9vd@     0000000180011d34     asmain.obj
+ 0002:00001d38       ??_C@_0CA@MFLIGGGL@Suppress?5file?5overwrite?5prompts@ 0000000180011d38     asmain.obj
+ 0002:00001d58       ??_C@_02MONGDBOB@?9y@      0000000180011d58     asmain.obj
+ 0002:00001d60       ??_C@_0CM@LAHHFNKD@Copyright?5?$CIc?$CJ?52000?5?9?52021?5Intel@ 0000000180011d60     asmain.obj
+ 0002:00001d90       ??_C@_0CE@GNCLIJDN@ACPI?5Source?5Code?5Conversion?5Uti@ 0000000180011d90     asmain.obj
+ 0002:00001db8       ??_C@_0CC@GEMNFFHD@Intel?5ACPI?5Component?5Architectu@ 0000000180011db8     asmain.obj
+ 0002:00001de0       ??_C@_0BK@GCKDLEMI@?6?$CFs?6?$CFs?5version?5?$CF8?48X?6?$CFs?6?6@ 0000000180011de0     asmain.obj
+ 0002:00001e00       ??_C@_0N@JILNCGB@acdhilqsuv?$FOy@ 0000000180011e00     asmain.obj
+ 0002:00001e10       ??_C@_0BM@MIEPNNAO@Creating?5Linux?5source?5code?6@ 0000000180011e10     asmain.obj
+ 0002:00001e30       ??_C@_0O@FDOEJLNE@Code?5cleanup?6@ 0000000180011e30     asmain.obj
+ 0002:00001e40       ??_C@_0CO@BDNNJLOM@Inserting?5Dual?9license?5header?5t@ 0000000180011e40     asmain.obj
+ 0002:00001e70       ??_C@_0BP@POOMLDML@Cleaning?5up?5macro?5indentation?6@ 0000000180011e70     asmain.obj
+ 0002:00001e90       ??_C@_0BL@PKDHMIH@Custom?5source?5translation?6@ 0000000180011e90     asmain.obj
+ 0002:00001eb0       ??_C@_08BNLNKDI@11?356?345@ 0000000180011eb0     asmain.obj
+ 0002:00001ec0       ??_C@_0M@IEBCDICD@Sep?510?52023@ 0000000180011ec0     asmain.obj
+ 0002:00001ed0       ??_C@_0BI@PDHHDADA@Build?5date?1time?3?5?$CFs?5?$CFs?6@ 0000000180011ed0     asmain.obj
+ 0002:00001ee8       ??_C@_0BG@BMJCIMDK@Unknown?5option?3?5?9v?$CFs?6@ 0000000180011ee8     asmain.obj
+ 0002:00001f00       ??_C@_0BF@DHKBGELE@Missing?5source?5path?6@ 0000000180011f00     asmain.obj
+ 0002:00001f18       ??_C@_0BN@HDJBPDDJ@Source?5code?5statistics?5only?6@ 0000000180011f18     asmain.obj
+ 0002:00001f38       ??_C@_02JPEJKMKI@?4h@      0000000180011f38     asmain.obj
+ 0002:00001f3c       ??_C@_02HMLNHFGD@?4c@      0000000180011f3c     asmain.obj
+ 0002:00001f40       ??_C@_06FBIJJCGB@?4patch@  0000000180011f40     asmain.obj
+ 0002:00001f48       ??_C@_0BI@JFHIOKOM@Unknown?5file?5type?5?9?5?$CFs?6@ 0000000180011f48     asmain.obj
+ 0002:00001f60       __real@3f50000000000000    0000000180011f60     asmain.obj
+ 0002:00001f68       ??_C@_02FMMEOLBI@?1?$CK@   0000000180011f68     asremove.obj
+ 0002:00001f6c       ??_C@_03BIJNBMLN@?$CDif@   0000000180011f6c     asremove.obj
+ 0002:00001f70       ??_C@_06CCBIAIJP@?$CDendif@ 0000000180011f70     asremove.obj
+ 0002:00001f78       ??_C@_05KBBKNAKJ@?$CDelse@ 0000000180011f78     asremove.obj
+ 0002:00001f80       ??_C@_04HHCDBDLF@?5?7?$AN?6@ 0000000180011f80     asremove.obj
+ 0002:00001f88       ??_C@_07FIDIHKEG@typedef@  0000000180011f88     asremove.obj
+ 0002:00001f90       ??_C@_0BE@OAMBMGOI@Code?5blocks?5deleted@ 0000000180011f90     asremove.obj
+ 0002:00001fa8       ??_C@_0BC@KIIOMEHD@ACPI_DEBUG_OUTPUT@ 0000000180011fa8     asremove.obj
+ 0002:00001fc0       ??_C@_0BB@GIGNOPGH@ACPI_DEBUG_PRINT@ 0000000180011fc0     asremove.obj
+ 0002:00001fd8       ??_C@_0BF@MIJABHPA@ACPI_DEBUG_PRINT_RAW@ 0000000180011fd8     asremove.obj
+ 0002:00001ff0       ??_C@_0L@CIADGMPF@DEBUG_EXEC@ 0000000180011ff0     asremove.obj
+ 0002:00002000       ??_C@_0P@NJACPACG@FUNCTION_ENTRY@ 0000000180012000     asremove.obj
+ 0002:00002010       ??_C@_09LAGEABBF@PROC_NAME@ 0000000180012010     asremove.obj
+ 0002:00002020       ??_C@_0P@CIMMGICM@FUNCTION_TRACE@ 0000000180012020     asremove.obj
+ 0002:00002030       ??_C@_05BCOGLJFG@DUMP_@    0000000180012030     asremove.obj
+ 0002:00002038       ??_C@_06LNOFJDNM@return@   0000000180012038     asremove.obj
+ 0002:00002040       ??_C@_0M@HPBAOKMA@return_VOID@ 0000000180012040     asremove.obj
+ 0002:00002050       ??_C@_0L@JHHICGBC@return_PTR@ 0000000180012050     asremove.obj
+ 0002:00002060       ??_C@_0L@IFMNIJPM@return_STR@ 0000000180012060     asremove.obj
+ 0002:00002070       ??_C@_0BD@KDCJAIIH@return_ACPI_STATUS@ 0000000180012070     asremove.obj
+ 0002:00002088       ??_C@_0BD@PEADADAJ@return_acpi_status@ 0000000180012088     asremove.obj
+ 0002:000020a0       ??_C@_0N@IDBPOOAO@return_VALUE@ 00000001800120a0     asremove.obj
+ 0002:000020b0       ??_C@_0N@KJFKNCGA@UINT32?5?5?5?5?5?5@ 00000001800120b0     astable.obj
+ 0002:000020c0       ??_C@_0N@OFHMGPAL@unsigned?5int@ 00000001800120c0     astable.obj
+ 0002:000020d0       ??_C@_0P@PBGOAKPM@UINT16?5?5?5?5?5?5?5?5@ 00000001800120d0     astable.obj
+ 0002:000020e0       ??_C@_0P@IIMKEEHB@unsigned?5short@ 00000001800120e0     astable.obj
+ 0002:000020f0       ??_C@_0O@KCEJIOCI@UINT8?5?5?5?5?5?5?5?5@ 00000001800120f0     astable.obj
+ 0002:00002100       ??_C@_0O@PPAIJIHF@unsigned?5char@ 0000000180012100     astable.obj
+ 0002:00002110       ??_C@_0O@DINIHPO@BOOLEAN?5?5?5?5?5?5@ 0000000180012110     astable.obj
+ 0002:00002120       ??_C@_06FDNIMMFA@UINT32@   0000000180012120     astable.obj
+ 0002:00002128       ??_C@_06DEDANNDK@UINT16@   0000000180012128     astable.obj
+ 0002:00002130       ??_C@_05EAHMOILJ@UINT8@    0000000180012130     astable.obj
+ 0002:00002138       ??_C@_07JDEDMABE@BOOLEAN@  0000000180012138     astable.obj
+ 0002:00002140       ??_C@_07DOEOCNKL@INT32?5?5@ 0000000180012140     astable.obj
+ 0002:00002148       ??_C@_07NCHJABBB@int?5?5?5?5@ 0000000180012148     astable.obj
+ 0002:00002150       ??_C@_05OJLHEJN@INT32@     0000000180012150     astable.obj
+ 0002:00002158       ??_C@_03JBIPMCLC@int@      0000000180012158     astable.obj
+ 0002:0000215c       ??_C@_05GJHDGFPH@INT16@    000000018001215c     astable.obj
+ 0002:00002164       ??_C@_05BFKKPKCG@short@    0000000180012164     astable.obj
+ 0002:0000216c       ??_C@_04GLNPCHED@INT8@     000000018001216c     astable.obj
+ 0002:00002174       ??_C@_04ENMBGAPA@char@     0000000180012174     astable.obj
+ 0002:0000217c       ??_C@_05JCOFPAGF@_int_@    000000018001217c     astable.obj
+ 0002:00002188       ??_C@_07MHNLNEGL@_INT32_@  0000000180012188     astable.obj
+ 0002:00002190       ??_C@_0P@HGGNLJPD@_unsigned?5int_@ 0000000180012190     astable.obj
+ 0002:000021a0       ??_C@_08HINLINMD@_UINT32_@ 00000001800121a0     astable.obj
+ 0002:000021b0       ??_C@_0N@DAMLDHFD@INT64?5?5?5?5?5?5?5@ 00000001800121b0     astable.obj
+ 0002:000021c0       ??_C@_0N@KEODDPLK@s64?5?5?5?5?5?5?5?5?5@ 00000001800121c0     astable.obj
+ 0002:000021d0       ??_C@_0N@CFKCJOKI@UINT64?5?5?5?5?5?5@ 00000001800121d0     astable.obj
+ 0002:000021e0       ??_C@_0N@EAGOAGH@u64?5?5?5?5?5?5?5?5?5@ 00000001800121e0     astable.obj
+ 0002:000021f0       ??_C@_0N@HEBAFNDE@u32?5?5?5?5?5?5?5?5?5@ 00000001800121f0     astable.obj
+ 0002:00002200       ??_C@_0N@KFPIIFJN@INT32?5?5?5?5?5?5?5@ 0000000180012200     astable.obj
+ 0002:00002210       ??_C@_0N@NEPFICOJ@s32?5?5?5?5?5?5?5?5?5@ 0000000180012210     astable.obj
+ 0002:00002220       ??_C@_0N@DOGPEBM@UINT16?5?5?5?5?5?5@ 0000000180012220     astable.obj
+ 0002:00002230       ??_C@_0N@CIPCLACJ@u16?5?5?5?5?5?5?5?5?5@ 0000000180012230     astable.obj
+ 0002:00002240       ??_C@_0N@PMOBAEKM@INT16?5?5?5?5?5?5?5@ 0000000180012240     astable.obj
+ 0002:00002250       ??_C@_0N@IIBHGPPE@s16?5?5?5?5?5?5?5?5?5@ 0000000180012250     astable.obj
+ 0002:00002260       ??_C@_0N@BFJBHKOL@UINT8?5?5?5?5?5?5?5@ 0000000180012260     astable.obj
+ 0002:00002270       ??_C@_0N@PDBIIEDA@u8?5?5?5?5?5?5?5?5?5?5@ 0000000180012270     astable.obj
+ 0002:00002280       ??_C@_0N@LNCEK@BOOLEAN?5?5?5?5?5@ 0000000180012280     astable.obj
+ 0002:00002290       ??_C@_0N@HBKGDHGB@char?5?5?5?5?5?5?5?5@ 0000000180012290     astable.obj
+ 0002:000022a0       ??_C@_0N@DMGFNLMN@void?5?5?5?5?5?5?5?5@ 00000001800122a0     astable.obj
+ 0002:000022b0       ??_C@_0N@OAGGCLKJ@char?5?$CK?5?5?5?5?5?5@ 00000001800122b0     astable.obj
+ 0002:000022c0       ??_C@_0N@KNKFMHAF@void?5?$CK?5?5?5?5?5?5@ 00000001800122c0     astable.obj
+ 0002:000022d0       ??_C@_0N@MGIEMKFL@int?5?5?5?5?5?5?5?5?5@ 00000001800122d0     astable.obj
+ 0002:000022e0       ??_C@_0N@JLEEADIB@FILE?5?5?5?5?5?5?5?5@ 00000001800122e0     astable.obj
+ 0002:000022f0       ??_C@_0N@OINHPFPC@size_t?5?5?5?5?5?5@ 00000001800122f0     astable.obj
+ 0002:00002300       ??_C@_06DEJKJDN@UINT64@    0000000180012300     astable.obj
+ 0002:00002308       ??_C@_03BJJGBKJI@u64@      0000000180012308     astable.obj
+ 0002:0000230c       ??_C@_03EJAHHPPF@u32@      000000018001230c     astable.obj
+ 0002:00002310       ??_C@_03COOPGOJP@u16@      0000000180012310     astable.obj
+ 0002:00002314       ??_C@_02EFBLDAKN@u8@       0000000180012314     astable.obj
+ 0002:00002318       ??_C@_07NDMFPNAH@INT64?5?5@ 0000000180012318     astable.obj
+ 0002:00002320       ??_C@_07CAGAIBEO@s64?5?5?5?5@ 0000000180012320     astable.obj
+ 0002:00002328       ??_C@_05FOAKBBPA@INT64@    0000000180012328     astable.obj
+ 0002:00002330       ??_C@_03DMPNEFEE@s64@      0000000180012330     astable.obj
+ 0002:00002338       ??_C@_07KEABENPE@s32?5?5?5?5@ 0000000180012338     astable.obj
+ 0002:00002340       ??_C@_03GMGMCACJ@s32@      0000000180012340     astable.obj
+ 0002:00002348       ??_C@_07MLOMOJJM@INT16?5?5@ 0000000180012348     astable.obj
+ 0002:00002350       ??_C@_07KIAPBOML@s16?5?5?5?5@ 0000000180012350     astable.obj
+ 0002:00002358       ??_C@_07LDIOIDKO@INT8?5?5?5@ 0000000180012358     astable.obj
+ 0002:00002360       ??_C@_07OIBILKJO@s8?5?5?5?5?5@ 0000000180012360     astable.obj
+ 0002:00002368       ??_C@_03LIEDBED@s16@       0000000180012368     astable.obj
+ 0002:0000236c       ??_C@_02EBJGEMBP@s8@       000000018001236c     astable.obj
+ 0002:00002370       ??_C@_0N@EEHKEDPP@__FUNCTION__@ 0000000180012370     astable.obj
+ 0002:00002380       ??_C@_08NOMANIOG@__func__@ 0000000180012380     astable.obj
+ 0002:00002390       ??_C@_0BJ@EPNABINK@ACPI_ADDRESS16_ATTRIBUTE@ 0000000180012390     astable.obj
+ 0002:000023b0       ??_C@_0BJ@CMIKJGOO@ACPI_ADDRESS32_ATTRIBUTE@ 00000001800123b0     astable.obj
+ 0002:000023d0       ??_C@_0BJ@NOJIIABN@ACPI_ADDRESS64_ATTRIBUTE@ 00000001800123d0     astable.obj
+ 0002:000023f0       ??_C@_0BD@KEJNNKBC@ACPI_ADDRESS_RANGE@ 00000001800123f0     astable.obj
+ 0002:00002408       ??_C@_0BH@KNPCABKE@ACPI_ADR_SPACE_HANDLER@ 0000000180012408     astable.obj
+ 0002:00002420       ??_C@_0BF@GILICKPM@ACPI_ADR_SPACE_SETUP@ 0000000180012420     astable.obj
+ 0002:00002438       ??_C@_0BE@OLNGNLJM@ACPI_ADR_SPACE_TYPE@ 0000000180012438     astable.obj
+ 0002:00002450       ??_C@_0BC@GHBHACMN@ACPI_AML_OPERANDS@ 0000000180012450     astable.obj
+ 0002:00002468       ??_C@_0BH@DNABOMFK@ACPI_BIT_REGISTER_INFO@ 0000000180012468     astable.obj
+ 0002:00002480       ??_C@_0M@DPKCEIHO@ACPI_BUFFER@ 0000000180012480     astable.obj
+ 0002:00002490       ??_C@_0BD@LDCICJLH@ACPI_BUS_ATTRIBUTE@ 0000000180012490     astable.obj
+ 0002:000024a8       ??_C@_0N@NBELGCOB@ACPI_CACHE_T@ 00000001800124a8     astable.obj
+ 0002:000024b8       ??_C@_0BF@MKHGGLJJ@ACPI_CMTABLE_HANDLER@ 00000001800124b8     astable.obj
+ 0002:000024d0       ??_C@_0BH@MLGKHPAN@ACPI_COMMENT_ADDR_NODE@ 00000001800124d0     astable.obj
+ 0002:000024e8       ??_C@_0BC@KOPJMPEM@ACPI_COMMENT_NODE@ 00000001800124e8     astable.obj
+ 0002:00002500       ??_C@_0BB@OMBOMHKL@ACPI_COMMON_FACS@ 0000000180012500     astable.obj
+ 0002:00002518       ??_C@_0BC@JILLIKDD@ACPI_COMMON_STATE@ 0000000180012518     astable.obj
+ 0002:00002530       ??_C@_0BH@KKAGLHEA@ACPI_COMMON_DESCRIPTOR@ 0000000180012530     astable.obj
+ 0002:00002548       ??_C@_0BD@NGHLNGII@ACPI_COMPATIBLE_ID@ 0000000180012548     astable.obj
+ 0002:00002560       ??_C@_0BF@JKGHFDBP@ACPI_CONNECTION_INFO@ 0000000180012560     astable.obj
+ 0002:00002578       ??_C@_0BD@KPPKENGF@ACPI_CONTROL_STATE@ 0000000180012578     astable.obj
+ 0002:00002590       ??_C@_0BG@FLMNOIDG@ACPI_CONVERSION_TABLE@ 0000000180012590     astable.obj
+ 0002:000025a8       ??_C@_0P@GFJPHCMP@ACPI_CPU_FLAGS@ 00000001800125a8     astable.obj
+ 0002:000025b8       ??_C@_0BH@GAIOCOFH@ACPI_CREATE_FIELD_INFO@ 00000001800125b8     astable.obj
+ 0002:000025d0       ??_C@_0BG@EAFCODPK@ACPI_DB_ARGUMENT_INFO@ 00000001800125d0     astable.obj
+ 0002:000025e8       ??_C@_0BF@LNFFNFHG@ACPI_DB_COMMAND_HELP@ 00000001800125e8     astable.obj
+ 0002:00002600       ??_C@_0BF@JHPJPAIP@ACPI_DB_COMMAND_INFO@ 0000000180012600     astable.obj
+ 0002:00002618       ??_C@_0BF@LPPOLGJK@ACPI_DB_EXECUTE_WALK@ 0000000180012618     astable.obj
+ 0002:00002630       ??_C@_0BE@CCLFDALD@ACPI_DB_METHOD_INFO@ 0000000180012630     astable.obj
+ 0002:00002648       ??_C@_0BF@CCMNKBDF@ACPI_DEBUG_MEM_BLOCK@ 0000000180012648     astable.obj
+ 0002:00002660       ??_C@_0BG@HFBKJDAA@ACPI_DEBUG_MEM_HEADER@ 0000000180012660     astable.obj
+ 0002:00002678       ??_C@_0BG@JICDEOED@ACPI_DEBUG_PRINT_INFO@ 0000000180012678     astable.obj
+ 0002:00002690       ??_C@_0BA@PKMNEIHN@ACPI_DESCRIPTOR@ 0000000180012690     astable.obj
+ 0002:000026a0       ??_C@_0BB@JHKMAEDH@ACPI_DEVICE_INFO@ 00000001800126a0     astable.obj
+ 0002:000026b8       ??_C@_0BG@CBFGAAOF@ACPI_DEVICE_WALK_INFO@ 00000001800126b8     astable.obj
+ 0002:000026d0       ??_C@_0BC@MFPOLJGD@ACPI_DMTABLE_DATA@ 00000001800126d0     astable.obj
+ 0002:000026e8       ??_C@_0BC@OECMDHBE@ACPI_DMTABLE_INFO@ 00000001800126e8     astable.obj
+ 0002:00002700       ??_C@_0BF@DHIPJDOM@ACPI_DMTABLE_HANDLER@ 0000000180012700     astable.obj
+ 0002:00002718       ??_C@_0O@LJEJLPGJ@ACPI_EFI_FILE@ 0000000180012718     astable.obj
+ 0002:00002728       ??_C@_0BD@BGHJCFGB@ACPI_EVALUATE_INFO@ 0000000180012728     astable.obj
+ 0002:00002740       ??_C@_0BD@HOLBFKDE@ACPI_EVENT_HANDLER@ 0000000180012740     astable.obj
+ 0002:00002758       ??_C@_0BC@GOKHAPKP@ACPI_EVENT_STATUS@ 0000000180012758     astable.obj
+ 0002:00002770       ??_C@_0BA@BAEJEJAG@ACPI_EVENT_TYPE@ 0000000180012770     astable.obj
+ 0002:00002780       ??_C@_0BH@HBPDKFL@ACPI_EXCEPTION_HANDLER@ 0000000180012780     astable.obj
+ 0002:00002798       ??_C@_0BE@GLNAEHPH@ACPI_EXCEPTION_INFO@ 0000000180012798     astable.obj
+ 0002:000027b0       ??_C@_0BB@CAKIIAHP@ACPI_EXDUMP_INFO@ 00000001800127b0     astable.obj
+ 0002:000027c8       ??_C@_0BA@BBBHEKE@ACPI_EXECUTE_OP@ 00000001800127c8     astable.obj
+ 0002:000027d8       ??_C@_0BC@BGIJLBDA@ACPI_EXECUTE_TYPE@ 00000001800127d8     astable.obj
+ 0002:000027f0       ??_C@_0BD@HJCDDOEE@ACPI_EXTERNAL_LIST@ 00000001800127f0     astable.obj
+ 0002:00002808       ??_C@_0BD@HHDAOBLI@ACPI_EXTERNAL_FILE@ 0000000180012808     astable.obj
+ 0002:00002820       ??_C@_0P@NJPEHBOJ@ACPI_FADT_INFO@ 0000000180012820     astable.obj
+ 0002:00002830       ??_C@_0BC@KLHPIOJM@ACPI_FADT_PM_INFO@ 0000000180012830     astable.obj
+ 0002:00002848       ??_C@_0BA@MNAPGFIM@ACPI_FIELD_INFO@ 0000000180012848     astable.obj
+ 0002:00002858       ??_C@_0P@IDJHNIKP@ACPI_FILE_NODE@ 0000000180012858     astable.obj
+ 0002:00002868       ??_C@_0BC@DFKMEGAD@ACPI_FIND_CONTEXT@ 0000000180012868     astable.obj
+ 0002:00002880       ??_C@_0BJ@DPCENDGO@ACPI_FIXED_EVENT_HANDLER@ 0000000180012880     astable.obj
+ 0002:000028a0       ??_C@_0BG@CDFGIEFA@ACPI_FIXED_EVENT_INFO@ 00000001800128a0     astable.obj
+ 0002:000028b8       ??_C@_0BH@PMHEPGLF@ACPI_GBL_EVENT_HANDLER@ 00000001800128b8     astable.obj
+ 0002:000028d0       ??_C@_0BF@KKFHICMA@ACPI_GENERIC_ADDRESS@ 00000001800128d0     astable.obj
+ 0002:000028e8       ??_C@_0BD@EJELNEHF@ACPI_GENERIC_STATE@ 00000001800128e8     astable.obj
+ 0002:00002900       ??_C@_0BG@BOOLPFKI@ACPI_GET_DEVICES_INFO@ 0000000180012900     astable.obj
+ 0002:00002918       ??_C@_0BL@BBLFGKNL@ACPI_GLOBAL_NOTIFY_HANDLER@ 0000000180012918     astable.obj
+ 0002:00002938       ??_C@_0BE@CKLMNGE@ACPI_GPE_BLOCK_INFO@ 0000000180012938     astable.obj
+ 0002:00002950       ??_C@_0BC@EMPOAPEE@ACPI_GPE_CALLBACK@ 0000000180012950     astable.obj
+ 0002:00002968       ??_C@_0BF@FKFIBAFM@ACPI_GPE_DEVICE_INFO@ 0000000180012968     astable.obj
+ 0002:00002980       ??_C@_0BE@IEKBLKKO@ACPI_GPE_EVENT_INFO@ 0000000180012980     astable.obj
+ 0002:00002998       ??_C@_0BB@OCMMIIFK@ACPI_GPE_HANDLER@ 0000000180012998     astable.obj
+ 0002:000029b0       ??_C@_0BG@HOLFLKFI@ACPI_GPE_HANDLER_INFO@ 00000001800129b0     astable.obj
+ 0002:000029c8       ??_C@_0BE@DHHDILBE@ACPI_GPE_INDEX_INFO@ 00000001800129c8     astable.obj
+ 0002:000029e0       ??_C@_0BF@LOKLIIFK@ACPI_GPE_NOTIFY_INFO@ 00000001800129e0     astable.obj
+ 0002:000029f8       ??_C@_0BH@OHFDDPBC@ACPI_GPE_REGISTER_INFO@ 00000001800129f8     astable.obj
+ 0002:00002a10       ??_C@_0BD@JIHECGFK@ACPI_GPE_WALK_INFO@ 0000000180012a10     astable.obj
+ 0002:00002a28       ??_C@_0BE@CNNJPCHA@ACPI_GPE_XRUPT_INFO@ 0000000180012a28     astable.obj
+ 0002:00002a40       ??_C@_0P@HDFBJBAA@ACPI_GPIO_INFO@ 0000000180012a40     astable.obj
+ 0002:00002a50       ??_C@_0M@JDLOGLOO@ACPI_HANDLE@ 0000000180012a50     astable.obj
+ 0002:00002a60       ??_C@_0BC@KEBIPGJM@ACPI_HANDLER_INFO@ 0000000180012a60     astable.obj
+ 0002:00002a78       ??_C@_0BC@DKMIMGHE@ACPI_INIT_HANDLER@ 0000000180012a78     astable.obj
+ 0002:00002a90       ??_C@_0BH@HBJOGDDN@ACPI_INTERFACE_HANDLER@ 0000000180012a90     astable.obj
+ 0002:00002aa8       ??_C@_0BG@MNKFGIKI@ACPI_IDENTIFIER_TABLE@ 0000000180012aa8     astable.obj
+ 0002:00002ac0       ??_C@_0BE@CBHJLOF@ACPI_INIT_WALK_INFO@ 0000000180012ac0     astable.obj
+ 0002:00002ad8       ??_C@_0N@LNGCLBPJ@ACPI_INTEGER@ 0000000180012ad8     astable.obj
+ 0002:00002ae8       ??_C@_0BF@LLEKPB@ACPI_INTEGER_OVERLAY@ 0000000180012ae8     astable.obj
+ 0002:00002b00       ??_C@_0BE@HAFKBHHJ@ACPI_INTEGRITY_INFO@ 0000000180012b00     astable.obj
+ 0002:00002b18       ??_C@_0BE@OMGGDCPC@ACPI_INTERFACE_INFO@ 0000000180012b18     astable.obj
+ 0002:00002b30       ??_C@_0BF@CEHMJPI@ACPI_INTERNAL_METHOD@ 0000000180012b30     astable.obj
+ 0002:00002b48       ??_C@_0BG@EBKMGJNO@ACPI_INTERPRETER_MODE@ 0000000180012b48     astable.obj
+ 0002:00002b60       ??_C@_0BA@KELINDDP@ACPI_IO_ADDRESS@ 0000000180012b60     astable.obj
+ 0002:00002b70       ??_C@_0BC@HOONGCAJ@ACPI_IO_ATTRIBUTE@ 0000000180012b70     astable.obj
+ 0002:00002b88       ??_C@_0BB@IPECHILK@ACPI_LPIT_HEADER@ 0000000180012b88     astable.obj
+ 0002:00002ba0       ??_C@_0N@EDHABNHB@ACPI_LPIT_IO@ 0000000180012ba0     astable.obj
+ 0002:00002bb0       ??_C@_0BB@DGIKFGAG@ACPI_LPIT_NATIVE@ 0000000180012bb0     astable.obj
+ 0002:00002bc8       ??_C@_0BH@MHJMCOP@ACPI_MEM_SPACE_CONTEXT@ 0000000180012bc8     astable.obj
+ 0002:00002be0       ??_C@_0BG@BDMCLDJC@ACPI_MEMORY_ATTRIBUTE@ 0000000180012be0     astable.obj
+ 0002:00002bf8       ??_C@_0BB@FANCOHPE@ACPI_MEMORY_LIST@ 0000000180012bf8     astable.obj
+ 0002:00002c10       ??_C@_0BC@KOKOEHKE@ACPI_METHOD_LOCAL@ 0000000180012c10     astable.obj
+ 0002:00002c28       ??_C@_0L@GEEHGMPK@ACPI_MUTEX@ 0000000180012c28     astable.obj
+ 0002:00002c38       ??_C@_0BC@NJHCKLKA@ACPI_MUTEX_HANDLE@ 0000000180012c38     astable.obj
+ 0002:00002c50       ??_C@_0BA@NHDGDIAN@ACPI_MUTEX_INFO@ 0000000180012c50     astable.obj
+ 0002:00002c60       ??_C@_09MCFIMBDI@ACPI_NAME@ 0000000180012c60     astable.obj
+ 0002:00002c70       ??_C@_0P@BEMFLNEM@ACPI_NAME_INFO@ 0000000180012c70     astable.obj
+ 0002:00002c80       ??_C@_0BA@DNPDHIDL@ACPI_NAME_UNION@ 0000000180012c80     astable.obj
+ 0002:00002c90       ??_C@_0BE@KKIIMNC@ACPI_NAMESPACE_NODE@ 0000000180012c90     astable.obj
+ 0002:00002ca8       ??_C@_0BF@NFDCDPBF@ACPI_NAMESTRING_INFO@ 0000000180012ca8     astable.obj
+ 0002:00002cc0       ??_C@_0BA@BABOPAMI@ACPI_NATIVE_INT@ 0000000180012cc0     astable.obj
+ 0002:00002cd0       ??_C@_0BB@GCAOKILO@ACPI_NATIVE_UINT@ 0000000180012cd0     astable.obj
+ 0002:00002ce8       ??_C@_0BE@BALHPNCC@ACPI_NEW_TABLE_DESC@ 0000000180012ce8     astable.obj
+ 0002:00002d00       ??_C@_0BE@INPGFCNE@ACPI_NOTIFY_HANDLER@ 0000000180012d00     astable.obj
+ 0002:00002d18       ??_C@_0BB@HDFPJMDB@ACPI_NOTIFY_INFO@ 0000000180012d18     astable.obj
+ 0002:00002d30       ??_C@_0BE@BCJKNNFC@ACPI_NS_SEARCH_DATA@ 0000000180012d30     astable.obj
+ 0002:00002d48       ??_C@_0BF@DAGIHGEK@ACPI_OBJ_INFO_HEADER@ 0000000180012d48     astable.obj
+ 0002:00002d60       ??_C@_0M@MFDEICEG@ACPI_OBJECT@ 0000000180012d60     astable.obj
+ 0002:00002d70       ??_C@_0BJ@GMPAOOHP@ACPI_OBJECT_ADDR_HANDLER@ 0000000180012d70     astable.obj
+ 0002:00002d90       ??_C@_0BH@FGKCMBED@ACPI_OBJECT_BANK_FIELD@ 0000000180012d90     astable.obj
+ 0002:00002da8       ??_C@_0BD@PFFADDGJ@ACPI_OBJECT_BUFFER@ 0000000180012da8     astable.obj
+ 0002:00002dc0       ??_C@_0BJ@KJFIDOOA@ACPI_OBJECT_BUFFER_FIELD@ 0000000180012dc0     astable.obj
+ 0002:00002de0       ??_C@_0BH@NABFKIDA@ACPI_OBJECT_CACHE_LIST@ 0000000180012de0     astable.obj
+ 0002:00002df8       ??_C@_0BD@LKFLHHLL@ACPI_OBJECT_COMMON@ 0000000180012df8     astable.obj
+ 0002:00002e10       ??_C@_0BG@KCAIDM@ACPI_OBJECT_CONVERTER@ 0000000180012e10     astable.obj
+ 0002:00002e28       ??_C@_0BB@PENIDOMF@ACPI_OBJECT_DATA@ 0000000180012e28     astable.obj
+ 0002:00002e40       ??_C@_0BD@KMNLHLDI@ACPI_OBJECT_DEVICE@ 0000000180012e40     astable.obj
+ 0002:00002e58       ??_C@_0BC@MPEIJJKB@ACPI_OBJECT_EVENT@ 0000000180012e58     astable.obj
+ 0002:00002e70       ??_C@_0BC@LKFEKLDK@ACPI_OBJECT_EXTRA@ 0000000180012e70     astable.obj
+ 0002:00002e88       ??_C@_0BJ@CNKBHMNP@ACPI_OBJECT_FIELD_COMMON@ 0000000180012e88     astable.obj
+ 0002:00002ea8       ??_C@_0BE@EMLFDJHO@ACPI_OBJECT_HANDLER@ 0000000180012ea8     astable.obj
+ 0002:00002ec0       ??_C@_0BI@PJCCLCJL@ACPI_OBJECT_INDEX_FIELD@ 0000000180012ec0     astable.obj
+ 0002:00002ed8       ??_C@_0BE@DOHLMGEF@ACPI_OBJECT_INTEGER@ 0000000180012ed8     astable.obj
+ 0002:00002ef0       ??_C@_0BB@NFAKLALC@ACPI_OBJECT_INFO@ 0000000180012ef0     astable.obj
+ 0002:00002f08       ??_C@_0BB@DDOGKNHK@ACPI_OBJECT_LIST@ 0000000180012f08     astable.obj
+ 0002:00002f20       ??_C@_0BD@OLDOMCML@ACPI_OBJECT_METHOD@ 0000000180012f20     astable.obj
+ 0002:00002f38       ??_C@_0BC@CMPOPBAL@ACPI_OBJECT_MUTEX@ 0000000180012f38     astable.obj
+ 0002:00002f50       ??_C@_0BK@HALFCEJI@ACPI_OBJECT_NOTIFY_COMMON@ 0000000180012f50     astable.obj
+ 0002:00002f70       ??_C@_0BL@OOBIKGFP@ACPI_OBJECT_NOTIFY_HANDLER@ 0000000180012f70     astable.obj
+ 0002:00002f90       ??_C@_0BE@CJEIBPMK@ACPI_OBJECT_PACKAGE@ 0000000180012f90     astable.obj
+ 0002:00002fa8       ??_C@_0BL@FBOHANFK@ACPI_OBJECT_POWER_RESOURCE@ 0000000180012fa8     astable.obj
+ 0002:00002fc8       ??_C@_0BG@MFNILANJ@ACPI_OBJECT_PROCESSOR@ 0000000180012fc8     astable.obj
+ 0002:00002fe0       ??_C@_0BG@CKIKMDPM@ACPI_OBJECT_REFERENCE@ 0000000180012fe0     astable.obj
+ 0002:00002ff8       ??_C@_0BD@BPLLEMFB@ACPI_OBJECT_REGION@ 0000000180012ff8     astable.obj
+ 0002:00003010       ??_C@_0BJ@JPPIFPHB@ACPI_OBJECT_REGION_FIELD@ 0000000180013010     astable.obj
+ 0002:00003030       ??_C@_0BD@JEGFPFH@ACPI_OBJECT_STRING@ 0000000180013030     astable.obj
+ 0002:00003048       ??_C@_0BJ@PBMLEFKP@ACPI_OBJECT_THERMAL_ZONE@ 0000000180013048     astable.obj
+ 0002:00003068       ??_C@_0BB@GCPALLOP@ACPI_OBJECT_TYPE@ 0000000180013068     astable.obj
+ 0002:00003080       ??_C@_0BC@CHEILDKJ@ACPI_OBJECT_TYPE8@ 0000000180013080     astable.obj
+ 0002:00003098       ??_C@_0BC@PBHBFFNG@ACPI_OP_WALK_INFO@ 0000000180013098     astable.obj
+ 0002:000030b0       ??_C@_0BB@IBMHPCIP@ACPI_OPCODE_INFO@ 00000001800130b0     astable.obj
+ 0002:000030c8       ??_C@_0BE@BDIAMNHO@ACPI_OPERAND_OBJECT@ 00000001800130c8     astable.obj
+ 0002:000030e0       ??_C@_0BB@JCOAPDJL@ACPI_OSD_HANDLER@ 00000001800130e0     astable.obj
+ 0002:000030f8       ??_C@_0BH@FKFALNNK@ACPI_OSD_EXEC_CALLBACK@ 00000001800130f8     astable.obj
+ 0002:00003110       ??_C@_0O@EFONBJK@ACPI_OWNER_ID@ 0000000180013110     astable.obj
+ 0002:00003120       ??_C@_0BC@GBJANHML@ACPI_PACKAGE_INFO@ 0000000180013120     astable.obj
+ 0002:00003138       ??_C@_0BD@OBKHNPJO@ACPI_PACKAGE_INFO2@ 0000000180013138     astable.obj
+ 0002:00003150       ??_C@_0BD@PILMOONP@ACPI_PACKAGE_INFO3@ 0000000180013150     astable.obj
+ 0002:00003168       ??_C@_0BD@LHPNHIBI@ACPI_PACKAGE_INFO4@ 0000000180013168     astable.obj
+ 0002:00003180       ??_C@_0BF@HLIOIGKL@ACPI_PARSE_DOWNWARDS@ 0000000180013180     astable.obj
+ 0002:00003198       ??_C@_0BD@JFGAABP@ACPI_PARSE_OBJ_ASL@ 0000000180013198     astable.obj
+ 0002:000031b0       ??_C@_0BG@DHNLMCGK@ACPI_PARSE_OBJ_COMMON@ 00000001800131b0     astable.obj
+ 0002:000031c8       ??_C@_0BF@HMNENDLA@ACPI_PARSE_OBJ_NAMED@ 00000001800131c8     astable.obj
+ 0002:000031e0       ??_C@_0BC@OMEHMMOF@ACPI_PARSE_OBJECT@ 00000001800131e0     astable.obj
+ 0002:000031f8       ??_C@_0BB@EPDDBPCO@ACPI_PARSE_STATE@ 00000001800131f8     astable.obj
+ 0002:00003210       ??_C@_0BD@OCGLNLKH@ACPI_PARSE_UPWARDS@ 0000000180013210     astable.obj
+ 0002:00003228       ??_C@_0BB@EEFGCEIF@ACPI_PARSE_VALUE@ 0000000180013228     astable.obj
+ 0002:00003240       ??_C@_0BA@KJGAANGH@ACPI_PCI_DEVICE@ 0000000180013240     astable.obj
+ 0002:00003250       ??_C@_0M@KAKPOHGI@ACPI_PCI_ID@ 0000000180013250     astable.obj
+ 0002:00003260       ??_C@_0BH@LJKADCED@ACPI_PCI_ROUTING_TABLE@ 0000000180013260     astable.obj
+ 0002:00003278       ??_C@_0BG@GBBJMKH@ACPI_PHYSICAL_ADDRESS@ 0000000180013278     astable.obj
+ 0002:00003290       ??_C@_0BC@KAGMFPPF@ACPI_PKG_CALLBACK@ 0000000180013290     astable.obj
+ 0002:000032a8       ??_C@_0O@HMNLBEOP@ACPI_PKG_INFO@ 00000001800132a8     astable.obj
+ 0002:000032b8       ??_C@_0P@LIHOEFEL@ACPI_PKG_STATE@ 00000001800132b8     astable.obj
+ 0002:000032c8       ??_C@_0BB@DBGCFLFD@ACPI_PMTT_HEADER@ 00000001800132c8     astable.obj
+ 0002:000032e0       ??_C@_0BD@BLCJFGLA@ACPI_PNP_DEVICE_ID@ 00000001800132e0     astable.obj
+ 0002:000032f8       ??_C@_0BI@FGOBPOPL@ACPI_PNP_DEVICE_ID_LIST@ 00000001800132f8     astable.obj
+ 0002:00003310       ??_C@_0N@PCNFEIGI@ACPI_POINTER@ 0000000180013310     astable.obj
+ 0002:00003320       ??_C@_0O@NCANDCLF@ACPI_POINTERS@ 0000000180013320     astable.obj
+ 0002:00003330       ??_C@_0P@IBFCGDHI@ACPI_PORT_INFO@ 0000000180013330     astable.obj
+ 0002:00003340       ??_C@_0BF@ELIHGPNJ@ACPI_PREDEFINED_DATA@ 0000000180013340     astable.obj
+ 0002:00003358       ??_C@_0BF@GKFFOBKO@ACPI_PREDEFINED_INFO@ 0000000180013358     astable.obj
+ 0002:00003370       ??_C@_0BG@OFFBHACH@ACPI_PREDEFINED_NAMES@ 0000000180013370     astable.obj
+ 0002:00003388       ??_C@_0BA@BMJAFPKD@ACPI_PRUNE_INFO@ 0000000180013388     astable.obj
+ 0002:00003398       ??_C@_0BC@OAPEIKJH@ACPI_PSCOPE_STATE@ 0000000180013398     astable.obj
+ 0002:000033b0       ??_C@_0BK@MEIDKMIN@ACPI_RASF_PARAMETER_BLOCK@ 00000001800133b0     astable.obj
+ 0002:000033d0       ??_C@_0CB@EMNBMIMK@ACPI_RASF_PATROL_SCRUB_PARAMETE@ 00000001800133d0     astable.obj
+ 0002:000033f8       ??_C@_0BI@JAGMFMGK@ACPI_RASF_SHARED_MEMORY@ 00000001800133f8     astable.obj
+ 0002:00003410       ??_C@_0BG@IHICHHMC@ACPI_REGION_WALK_INFO@ 0000000180013410     astable.obj
+ 0002:00003428       ??_C@_0BF@PIFHNBDE@ACPI_REPAIR_FUNCTION@ 0000000180013428     astable.obj
+ 0002:00003440       ??_C@_0BB@PBPGCAPM@ACPI_REPAIR_INFO@ 0000000180013440     astable.obj
+ 0002:00003458       ??_C@_0BD@DPHGPPAN@ACPI_REG_WALK_INFO@ 0000000180013458     astable.obj
+ 0002:00003470       ??_C@_0O@JEBLCMNI@ACPI_RESOURCE@ 0000000180013470     astable.obj
+ 0002:00003480       ??_C@_0BG@JCKCGGBG@ACPI_RESOURCE_HANDLER@ 0000000180013480     astable.obj
+ 0002:00003498       ??_C@_0BG@ONFGLCNH@ACPI_RESOURCE_ADDRESS@ 0000000180013498     astable.obj
+ 0002:000034b0       ??_C@_0BI@EHKDHCPM@ACPI_RESOURCE_ADDRESS16@ 00000001800134b0     astable.obj
+ 0002:000034c8       ??_C@_0BI@CAELGDJG@ACPI_RESOURCE_ADDRESS32@ 00000001800134c8     astable.obj
+ 0002:000034e0       ??_C@_0BI@HANKAGPL@ACPI_RESOURCE_ADDRESS64@ 00000001800134e0     astable.obj
+ 0002:000034f8       ??_C@_0BP@PHGGLEGO@ACPI_RESOURCE_COMMON_SERIALBUS@ 00000001800134f8     astable.obj
+ 0002:00003518       ??_C@_0BN@KIEPHKCO@ACPI_RESOURCE_CSI2_SERIALBUS@ 0000000180013518     astable.obj
+ 0002:00003538       ??_C@_0CB@PKMENLGP@ACPI_RESOURCE_EXTENDED_ADDRESS6@ 0000000180013538     astable.obj
+ 0002:00003560       ??_C@_0BI@NCPPADMN@ACPI_RESOURCE_ATTRIBUTE@ 0000000180013560     astable.obj
+ 0002:00003578       ??_C@_0BD@KHOLKEEK@ACPI_RESOURCE_DATA@ 0000000180013578     astable.obj
+ 0002:00003590       ??_C@_0BC@LDPGEFJC@ACPI_RESOURCE_DMA@ 0000000180013590     astable.obj
+ 0002:000035a8       ??_C@_0BG@OMFFLHGD@ACPI_RESOURCE_END_TAG@ 00000001800135a8     astable.obj
+ 0002:000035c0       ??_C@_0BL@FJELPAEN@ACPI_RESOURCE_EXTENDED_IRQ@ 00000001800135c0     astable.obj
+ 0002:000035e0       ??_C@_0BI@CDKKCHHB@ACPI_RESOURCE_FIXED_DMA@ 00000001800135e0     astable.obj
+ 0002:000035f8       ??_C@_0BH@EIHFEOCA@ACPI_RESOURCE_FIXED_IO@ 00000001800135f8     astable.obj
+ 0002:00003610       ??_C@_0BN@OKHCFNDH@ACPI_RESOURCE_FIXED_MEMORY32@ 0000000180013610     astable.obj
+ 0002:00003630       ??_C@_0BP@PLNGLAPA@ACPI_RESOURCE_GENERIC_REGISTER@ 0000000180013630     astable.obj
+ 0002:00003650       ??_C@_0BD@ICJDPDMN@ACPI_RESOURCE_GPIO@ 0000000180013650     astable.obj
+ 0002:00003668       ??_C@_0BM@MHIMJJBC@ACPI_RESOURCE_I2C_SERIALBUS@ 0000000180013668     astable.obj
+ 0002:00003688       ??_C@_0BD@IGDJCKDN@ACPI_RESOURCE_INFO@ 0000000180013688     astable.obj
+ 0002:000036a0       ??_C@_0BB@KLAKDMCP@ACPI_RESOURCE_IO@ 00000001800136a0     astable.obj
+ 0002:000036b8       ??_C@_0BC@BMCEGLFD@ACPI_RESOURCE_IRQ@ 00000001800136b8     astable.obj
+ 0002:000036d0       ??_C@_0BE@FEEKGBNB@ACPI_RESOURCE_LABEL@ 00000001800136d0     astable.obj
+ 0002:000036e8       ??_C@_0BH@FHFGEPMP@ACPI_RESOURCE_MEMORY24@ 00000001800136e8     astable.obj
+ 0002:00003700       ??_C@_0BH@MOICHO@ACPI_RESOURCE_MEMORY32@ 0000000180013700     astable.obj
+ 0002:00003718       ??_C@_0BJ@LJCININC@ACPI_RESOURCE_PIN_CONFIG@ 0000000180013718     astable.obj
+ 0002:00003738       ??_C@_0BL@KBLEDBDK@ACPI_RESOURCE_PIN_FUNCTION@ 0000000180013738     astable.obj
+ 0002:00003758       ??_C@_0BI@JIIJMNDE@ACPI_RESOURCE_PIN_GROUP@ 0000000180013758     astable.obj
+ 0002:00003770       ??_C@_0BP@KLHMCPPA@ACPI_RESOURCE_PIN_GROUP_CONFIG@ 0000000180013770     astable.obj
+ 0002:00003790       ??_C@_0CB@CFNPACPB@ACPI_RESOURCE_PIN_GROUP_FUNCTIO@ 0000000180013790     astable.obj
+ 0002:000037b8       ??_C@_0BF@MDEAPNLN@ACPI_RESOURCE_SOURCE@ 00000001800137b8     astable.obj
+ 0002:000037d0       ??_C@_0BM@PHJBPIJB@ACPI_RESOURCE_SPI_SERIALBUS@ 00000001800137d0     astable.obj
+ 0002:000037f0       ??_C@_0BO@PBKGAEC@ACPI_RESOURCE_START_DEPENDENT@ 00000001800137f0     astable.obj
+ 0002:00003810       ??_C@_0BC@LMKPEMOP@ACPI_RESOURCE_TAG@ 0000000180013810     astable.obj
+ 0002:00003828       ??_C@_0BD@DBMDCBGA@ACPI_RESOURCE_TYPE@ 0000000180013828     astable.obj
+ 0002:00003840       ??_C@_0BN@NNKKBJMD@ACPI_RESOURCE_UART_SERIALBUS@ 0000000180013840     astable.obj
+ 0002:00003860       ??_C@_0BF@FODICCFO@ACPI_RESOURCE_VENDOR@ 0000000180013860     astable.obj
+ 0002:00003878       ??_C@_0BL@IAPAHCJK@ACPI_RESOURCE_VENDOR_TYPED@ 0000000180013878     astable.obj
+ 0002:00003898       ??_C@_0BD@INPGBIOM@ACPI_RESULT_VALUES@ 0000000180013898     astable.obj
+ 0002:000038b0       ??_C@_0BI@OPNJCIOP@ACPI_ROUND_UP_TO_32_BIT@ 00000001800138b0     astable.obj
+ 0002:000038c8       ??_C@_0BE@CLONCPLA@ACPI_RSCONVERT_INFO@ 00000001800138c8     astable.obj
+ 0002:000038e0       ??_C@_0BB@HLAJADEI@ACPI_RSDUMP_INFO@ 00000001800138e0     astable.obj
+ 0002:000038f8       ??_C@_0N@FDBLCKGO@ACPI_RW_LOCK@ 00000001800138f8     astable.obj
+ 0002:00003908       ??_C@_0BB@ODEDFACM@ACPI_S3PT_HEADER@ 0000000180013908     astable.obj
+ 0002:00003920       ??_C@_0BB@MAPKBMJN@ACPI_SCI_HANDLER@ 0000000180013920     astable.obj
+ 0002:00003938       ??_C@_0BG@JAPGCHGC@ACPI_SCI_HANDLER_INFO@ 0000000180013938     astable.obj
+ 0002:00003950       ??_C@_0BB@ILBMECIC@ACPI_SCOPE_STATE@ 0000000180013950     astable.obj
+ 0002:00003968       ??_C@_0P@PKHMNNCN@ACPI_SEMAPHORE@ 0000000180013968     astable.obj
+ 0002:00003978       ??_C@_0BB@DBHKOCJA@ACPI_SERIAL_INFO@ 0000000180013978     astable.obj
+ 0002:00003990       ??_C@_0BH@FKNMAMEP@ACPI_SIGNAL_FATAL_INFO@ 0000000180013990     astable.obj
+ 0002:000039a8       ??_C@_0BI@FNIANMO@ACPI_SIMPLE_REPAIR_INFO@ 00000001800139a8     astable.obj
+ 0002:000039c0       ??_C@_09IGPFAPBB@ACPI_SIZE@ 00000001800139c0     astable.obj
+ 0002:000039d0       ??_C@_0BE@HPOINKIB@ACPI_SLEEP_FUNCTION@ 00000001800139d0     astable.obj
+ 0002:000039e8       ??_C@_0BF@LFGFFPL@ACPI_SLEEP_FUNCTIONS@ 00000001800139e8     astable.obj
+ 0002:00003a00       ??_C@_0O@OOMJEAMO@ACPI_SPINLOCK@ 0000000180013a00     astable.obj
+ 0002:00003a10       ??_C@_0BA@MBECCJEI@ACPI_STATISTICS@ 0000000180013a10     astable.obj
+ 0002:00003a20       ??_C@_0M@HIFKNNJE@ACPI_STATUS@ 0000000180013a20     astable.obj
+ 0002:00003a30       ??_C@_0M@MDLECEEA@ACPI_STRING@ 0000000180013a30     astable.obj
+ 0002:00003a40       ??_C@_0BC@NIGCIPGI@ACPI_STRING_TABLE@ 0000000180013a40     astable.obj
+ 0002:00003a58       ??_C@_0BF@PEIEFELC@ACPI_SUBTABLE_HEADER@ 0000000180013a58     astable.obj
+ 0002:00003a70       ??_C@_0BB@FOGHPMK@ACPI_SYSTEM_INFO@ 0000000180013a70     astable.obj
+ 0002:00003a88       ??_C@_0BA@HDJNFDCI@ACPI_TABLE_DESC@ 0000000180013a88     astable.obj
+ 0002:00003a98       ??_C@_0BD@KIOAJNDE@ACPI_TABLE_HANDLER@ 0000000180013a98     astable.obj
+ 0002:00003ab0       ??_C@_0BC@BBLEDLKL@ACPI_TABLE_HEADER@ 0000000180013ab0     astable.obj
+ 0002:00003ac8       ??_C@_0BA@OKFEDOAP@ACPI_TABLE_INFO@ 0000000180013ac8     astable.obj
+ 0002:00003ad8       ??_C@_0BA@MLICDMH@ACPI_TABLE_LIST@ 0000000180013ad8     astable.obj
+ 0002:00003ae8       ??_C@_0BA@DABIBNHE@ACPI_TABLE_LPIT@ 0000000180013ae8     astable.obj
+ 0002:00003af8       ??_C@_0BD@OLJKOHKA@ACPI_TABLE_SUPPORT@ 0000000180013af8     astable.obj
+ 0002:00003b10       ??_C@_0BA@FNKODFFC@ACPI_TABLE_TYPE@ 0000000180013b10     astable.obj
+ 0002:00003b20       ??_C@_0O@LAPHFJCL@ACPI_TAG_INFO@ 0000000180013b20     astable.obj
+ 0002:00003b30       ??_C@_0P@OMDADAOH@ACPI_THREAD_ID@ 0000000180013b30     astable.obj
+ 0002:00003b40       ??_C@_0BC@FCIMHEJN@ACPI_THREAD_STATE@ 0000000180013b40     astable.obj
+ 0002:00003b58       ??_C@_0BG@PMHJIJIH@ACPI_TRACE_EVENT_TYPE@ 0000000180013b58     astable.obj
+ 0002:00003b70       ??_C@_0BM@KGELJBNE@ACPI_TYPED_IDENTIFIER_TABLE@ 0000000180013b70     astable.obj
+ 0002:00003b90       ??_C@_0P@PGFNKPHG@ACPI_UINTPTR_T@ 0000000180013b90     astable.obj
+ 0002:00003ba0       ??_C@_0BC@OAFLJPEI@ACPI_UPDATE_STATE@ 0000000180013ba0     astable.obj
+ 0002:00003bb8       ??_C@_09BEABDOPO@ACPI_UUID@ 0000000180013bb8     astable.obj
+ 0002:00003bc8       ??_C@_0BB@INMPNCPL@ACPI_VENDOR_UUID@ 0000000180013bc8     astable.obj
+ 0002:00003be0       ??_C@_0BG@DMBAJHEE@ACPI_VENDOR_WALK_INFO@ 0000000180013be0     astable.obj
+ 0002:00003bf8       ??_C@_0BH@PCBOLOK@ACPI_WALK_AML_CALLBACK@ 0000000180013bf8     astable.obj
+ 0002:00003c10       ??_C@_0BD@LPAEPNAB@ACPI_WALK_CALLBACK@ 0000000180013c10     astable.obj
+ 0002:00003c28       ??_C@_0BM@COIHHNHG@ACPI_WALK_RESOURCE_CALLBACK@ 0000000180013c28     astable.obj
+ 0002:00003c48       ??_C@_0P@FDOLGMKN@ACPI_WALK_INFO@ 0000000180013c48     astable.obj
+ 0002:00003c58       ??_C@_0BA@CAIDFFIP@ACPI_WALK_STATE@ 0000000180013c58     astable.obj
+ 0002:00003c68       ??_C@_0BB@BKJGPDHG@ACPI_WHEA_HEADER@ 0000000180013c68     astable.obj
+ 0002:00003c80       ??_C@_0O@ONLOCMJB@ACPI_FDE_INFO@ 0000000180013c80     astable.obj
+ 0002:00003c90       ??_C@_0O@IBLIJHAE@ACPI_GRT_INFO@ 0000000180013c90     astable.obj
+ 0002:00003ca0       ??_C@_0O@LFJBEHJO@ACPI_GTM_INFO@ 0000000180013ca0     astable.obj
+ 0002:00003cb0       ??_C@_0O@EHPGAHGL@ACPI_PLD_INFO@ 0000000180013cb0     astable.obj
+ 0002:00003cc0       ??_C@_0P@DNOBJGOG@ACPI_RS_LENGTH@ 0000000180013cc0     astable.obj
+ 0002:00003cd0       ??_C@_0BB@LAJKOBHH@ACPI_RSDESC_SIZE@ 0000000180013cd0     astable.obj
+ 0002:00003ce8       ??_C@_0N@BFNOPAAB@AML_RESOURCE@ 0000000180013ce8     astable.obj
+ 0002:00003cf8       ??_C@_0BF@FFMEKAPE@AML_RESOURCE_ADDRESS@ 0000000180013cf8     astable.obj
+ 0002:00003d10       ??_C@_0BH@KLDMMEH@AML_RESOURCE_ADDRESS16@ 0000000180013d10     astable.obj
+ 0002:00003d28       ??_C@_0BH@GNFLNNCN@AML_RESOURCE_ADDRESS32@ 0000000180013d28     astable.obj
+ 0002:00003d40       ??_C@_0BH@DNMKLIEA@AML_RESOURCE_ADDRESS64@ 0000000180013d40     astable.obj
+ 0002:00003d58       ??_C@_0BO@PMEKMKFD@AML_RESOURCE_COMMON_SERIALBUS@ 0000000180013d58     astable.obj
+ 0002:00003d78       ??_C@_0BM@GLAEOILK@AML_RESOURCE_CSI2_SERIALBUS@ 0000000180013d78     astable.obj
+ 0002:00003d98       ??_C@_0BB@EAALOPGI@AML_RESOURCE_DMA@ 0000000180013d98     astable.obj
+ 0002:00003db0       ??_C@_0BL@LNIHPNFB@AML_RESOURCE_END_DEPENDENT@ 0000000180013db0     astable.obj
+ 0002:00003dd0       ??_C@_0BF@FEMHKFEA@AML_RESOURCE_END_TAG@ 0000000180013dd0     astable.obj
+ 0002:00003de8       ??_C@_0CA@CHJBMEMG@AML_RESOURCE_EXTENDED_ADDRESS64@ 0000000180013de8     astable.obj
+ 0002:00003e08       ??_C@_0BK@PHLBHCKD@AML_RESOURCE_EXTENDED_IRQ@ 0000000180013e08     astable.obj
+ 0002:00003e28       ??_C@_0BH@GOLKJJMK@AML_RESOURCE_FIXED_DMA@ 0000000180013e28     astable.obj
+ 0002:00003e40       ??_C@_0BG@OKKKKNEA@AML_RESOURCE_FIXED_IO@ 0000000180013e40     astable.obj
+ 0002:00003e58       ??_C@_0BM@CJDJMPKD@AML_RESOURCE_FIXED_MEMORY32@ 0000000180013e58     astable.obj
+ 0002:00003e78       ??_C@_0BO@PAPKMOMN@AML_RESOURCE_GENERIC_REGISTER@ 0000000180013e78     astable.obj
+ 0002:00003e98       ??_C@_0BC@NPAIBFGF@AML_RESOURCE_GPIO@ 0000000180013e98     astable.obj
+ 0002:00003eb0       ??_C@_0BA@OPNBIODN@AML_RESOURCE_IO@ 0000000180013eb0     astable.obj
+ 0002:00003ec0       ??_C@_0BL@IAJAKMOP@AML_RESOURCE_I2C_SERIALBUS@ 0000000180013ec0     astable.obj
+ 0002:00003ee0       ??_C@_0BB@OPNJMBKJ@AML_RESOURCE_IRQ@ 0000000180013ee0     astable.obj
+ 0002:00003ef8       ??_C@_0BJ@OAILNICK@AML_RESOURCE_IRQ_NOFLAGS@ 0000000180013ef8     astable.obj
+ 0002:00003f18       ??_C@_0BK@BLCEKDJF@AML_RESOURCE_LARGE_HEADER@ 0000000180013f18     astable.obj
+ 0002:00003f38       ??_C@_0BG@PFIJKMKP@AML_RESOURCE_MEMORY24@ 0000000180013f38     astable.obj
+ 0002:00003f50       ??_C@_0BG@KCBBGBBO@AML_RESOURCE_MEMORY32@ 0000000180013f50     astable.obj
+ 0002:00003f68       ??_C@_0BI@OFNGKCGI@AML_RESOURCE_PIN_CONFIG@ 0000000180013f68     astable.obj
+ 0002:00003f80       ??_C@_0BK@PEOLDNE@AML_RESOURCE_PIN_FUNCTION@ 0000000180013f80     astable.obj
+ 0002:00003fa0       ??_C@_0BH@NFJJHDIP@AML_RESOURCE_PIN_GROUP@ 0000000180013fa0     astable.obj
+ 0002:00003fb8       ??_C@_0BO@KAFAFBMN@AML_RESOURCE_PIN_GROUP_CONFIG@ 0000000180013fb8     astable.obj
+ 0002:00003fd8       ??_C@_0CA@PIIKBNFI@AML_RESOURCE_PIN_GROUP_FUNCTION@ 0000000180013fd8     astable.obj
+ 0002:00003ff8       ??_C@_0BK@OOAOHCJN@AML_RESOURCE_SMALL_HEADER@ 0000000180013ff8     astable.obj
+ 0002:00004018       ??_C@_0BL@LAINMNGM@AML_RESOURCE_SPI_SERIALBUS@ 0000000180014018     astable.obj
+ 0002:00004038       ??_C@_0BN@PILLHMIN@AML_RESOURCE_START_DEPENDENT@ 0000000180014038     astable.obj
+ 0002:00004058       ??_C@_0CE@IGGFPLFF@AML_RESOURCE_START_DEPENDENT_NO@ 0000000180014058     astable.obj
+ 0002:00004080       ??_C@_0BM@BOOBILFH@AML_RESOURCE_UART_SERIALBUS@ 0000000180014080     astable.obj
+ 0002:000040a0       ??_C@_0BK@CBIJIBGF@AML_RESOURCE_VENDOR_LARGE@ 00000001800140a0     astable.obj
+ 0002:000040c0       ??_C@_0BK@IJMCHAPD@AML_RESOURCE_VENDOR_SMALL@ 00000001800140c0     astable.obj
+ 0002:000040e0       ??_C@_0O@JDFGHNBO@AS_BRACE_INFO@ 00000001800140e0     astable.obj
+ 0002:000040f0       ??_C@_0BB@HCGJEFNB@AS_SCAN_CALLBACK@ 00000001800140f0     astable.obj
+ 0002:00004108       ??_C@_0M@PJKMIDEG@APIC_HEADER@ 0000000180014108     astable.obj
+ 0002:00004118       ??_C@_0BB@PACGHECM@AE_DEBUG_REGIONS@ 0000000180014118     astable.obj
+ 0002:00004130       ??_C@_09IHCCAEOM@AE_REGION@ 0000000180014130     astable.obj
+ 0002:00004140       ??_C@_0BH@KLJAEBF@ASL_ANALYSIS_WALK_INFO@ 0000000180014140     astable.obj
+ 0002:00004158       ??_C@_0P@IMBOPNHO@ASL_CACHE_INFO@ 0000000180014158     astable.obj
+ 0002:00004168       ??_C@_0BC@HLGGEGNE@ASL_COMMENT_STATE@ 0000000180014168     astable.obj
+ 0002:00004180       ??_C@_0BC@HHCKPOLH@ASL_COMMENT_TYPES@ 0000000180014180     astable.obj
+ 0002:00004198       ??_C@_0O@FKFDHEIB@ASL_ERROR_MSG@ 0000000180014198     astable.obj
+ 0002:000041a8       ??_C@_0P@NFAFEKNL@ASL_EVENT_INFO@ 00000001800141a8     astable.obj
+ 0002:000041b8       ??_C@_0BF@BBAIDIHL@ASL_EXPECTED_MESSAGE@ 00000001800141b8     astable.obj
+ 0002:000041d0       ??_C@_0BG@FCGJIOMP@ASL_EXPECTED_MSG_NODE@ 00000001800141d0     astable.obj
+ 0002:000041e8       ??_C@_0O@FIMGDHNP@ASL_FILE_DESC@ 00000001800141e8     astable.obj
+ 0002:000041f8       ??_C@_0O@MBAPFKPI@ASL_FILE_INFO@ 00000001800141f8     astable.obj
+ 0002:00004208       ??_C@_0O@DCPINNGJ@ASL_FILE_NODE@ 0000000180014208     astable.obj
+ 0002:00004218       ??_C@_0BA@PIOBBOGP@ASL_FILE_STATUS@ 0000000180014218     astable.obj
+ 0002:00004228       ??_C@_0P@DHFMKMKB@ASL_FILE_TYPES@ 0000000180014228     astable.obj
+ 0002:00004238       ??_C@_0BF@LOLKCPML@ASL_GLOBAL_FILE_NODE@ 0000000180014238     astable.obj
+ 0002:00004250       ??_C@_0BA@IGDLADNE@ASL_INCLUDE_DIR@ 0000000180014250     astable.obj
+ 0002:00004260       ??_C@_0BB@MENFONPO@ASL_LISTING_NODE@ 0000000180014260     astable.obj
+ 0002:00004278       ??_C@_0BC@CDMHBFPI@ASL_LOCATION_NODE@ 0000000180014278     astable.obj
+ 0002:00004290       ??_C@_0BC@CPCEEEJL@ASL_MAPPING_ENTRY@ 0000000180014290     astable.obj
+ 0002:000042a8       ??_C@_0BA@FJJNBAL@ASL_METHOD_INFO@ 00000001800142a8     astable.obj
+ 0002:000042b8       ??_C@_0BB@JLPGCFGL@ASL_METHOD_LOCAL@ 00000001800142b8     astable.obj
+ 0002:000042d0       ??_C@_0BC@LAFALNLM@ASL_RESERVED_INFO@ 00000001800142d0     astable.obj
+ 0002:000042e8       ??_C@_0BC@INNHKNHO@ASL_RESOURCE_INFO@ 00000001800142e8     astable.obj
+ 0002:00004300       ??_C@_0BC@HOCACKOP@ASL_RESOURCE_NODE@ 0000000180014300     astable.obj
+ 0002:00004318       ??_C@_0BC@LEOKHKEC@ASL_WALK_CALLBACK@ 0000000180014318     astable.obj
+ 0002:00004330       ??_C@_0O@PIFKDGLJ@ASL_XREF_INFO@ 0000000180014330     astable.obj
+ 0002:00004340       ??_C@_0P@GIPKJCBF@UINT64_OVERLAY@ 0000000180014340     astable.obj
+ 0002:00004350       ??_C@_0O@KLNOIBDB@UINT64_STRUCT@ 0000000180014350     astable.obj
+ 0002:00004360       ??_C@_0BA@LOPOFIMO@ACPI_TABLE_AEST@ 0000000180014360     astable.obj
+ 0002:00004370       ??_C@_0P@LGFAHCEJ@ACPI_TABLE_ASF@ 0000000180014370     astable.obj
+ 0002:00004380       ??_C@_0BA@FOEADCGF@ACPI_TABLE_BDAT@ 0000000180014380     astable.obj
+ 0002:00004390       ??_C@_0BA@PIJMEICJ@ACPI_TABLE_BERT@ 0000000180014390     astable.obj
+ 0002:000043a0       ??_C@_0BA@FCJFIAKC@ACPI_TABLE_BGRT@ 00000001800143a0     astable.obj
+ 0002:000043b0       ??_C@_0BA@IDNPJIGO@ACPI_TABLE_BOOT@ 00000001800143b0     astable.obj
+ 0002:000043c0       ??_C@_0BA@NNFHLOFL@ACPI_TABLE_CEDT@ 00000001800143c0     astable.obj
+ 0002:000043d0       ??_C@_0BA@NPDOLGMF@ACPI_TABLE_CPEP@ 00000001800143d0     astable.obj
+ 0002:000043e0       ??_C@_0BA@LAIOGJNK@ACPI_TABLE_CSRT@ 00000001800143e0     astable.obj
+ 0002:000043f0       ??_C@_0BA@MDEBCIIK@ACPI_TABLE_DBG2@ 00000001800143f0     astable.obj
+ 0002:00004400       ??_C@_0BA@JEIKCBKP@ACPI_TABLE_DBGP@ 0000000180014400     astable.obj
+ 0002:00004410       ??_C@_0BA@PKFCCPMJ@ACPI_TABLE_DMAR@ 0000000180014410     astable.obj
+ 0002:00004420       ??_C@_0BA@CFJPAHAF@ACPI_TABLE_DRTM@ 0000000180014420     astable.obj
+ 0002:00004430       ??_C@_0BA@HHHMBECH@ACPI_TABLE_ECDT@ 0000000180014430     astable.obj
+ 0002:00004440       ??_C@_0BA@MBBHEOEK@ACPI_TABLE_EINJ@ 0000000180014440     astable.obj
+ 0002:00004450       ??_C@_0BA@IGLAJBCI@ACPI_TABLE_ERST@ 0000000180014450     astable.obj
+ 0002:00004460       ??_C@_0BA@NANLCGDO@ACPI_TABLE_FACS@ 0000000180014460     astable.obj
+ 0002:00004470       ??_C@_0BA@JKNFKGHM@ACPI_TABLE_FADT@ 0000000180014470     astable.obj
+ 0002:00004480       ??_C@_0BA@HCHAJGIG@ACPI_TABLE_FPDT@ 0000000180014480     astable.obj
+ 0002:00004490       ??_C@_0BA@MAHCCIGB@ACPI_TABLE_GTDT@ 0000000180014490     astable.obj
+ 0002:000044a0       ??_C@_0BA@LDOODKLP@ACPI_TABLE_HEST@ 00000001800144a0     astable.obj
+ 0002:000044b0       ??_C@_0BA@GJPIGFEO@ACPI_TABLE_HMAT@ 00000001800144b0     astable.obj
+ 0002:000044c0       ??_C@_0BA@MMICECNA@ACPI_TABLE_HPET@ 00000001800144c0     astable.obj
+ 0002:000044d0       ??_C@_0BA@JLEEKCN@ACPI_TABLE_IBFT@ 00000001800144d0     astable.obj
+ 0002:000044e0       ??_C@_0BA@OAPBJJFM@ACPI_TABLE_IORT@ 00000001800144e0     astable.obj
+ 0002:000044f0       ??_C@_0BA@ICKBBHIO@ACPI_TABLE_IVRS@ 00000001800144f0     astable.obj
+ 0002:00004500       ??_C@_0BA@ONAFJHGN@ACPI_TABLE_MADT@ 0000000180014500     astable.obj
+ 0002:00004510       ??_C@_0BA@CFGHMKBK@ACPI_TABLE_MCFG@ 0000000180014510     astable.obj
+ 0002:00004520       ??_C@_0BA@LBHKMKJO@ACPI_TABLE_MCHI@ 0000000180014520     astable.obj
+ 0002:00004530       ??_C@_0BA@BMMJBCGC@ACPI_TABLE_MPST@ 0000000180014530     astable.obj
+ 0002:00004540       ??_C@_0BA@BCFKBOPM@ACPI_TABLE_MSCT@ 0000000180014540     astable.obj
+ 0002:00004550       ??_C@_0BA@IMBFKBGB@ACPI_TABLE_MSDM@ 0000000180014550     astable.obj
+ 0002:00004560       ??_C@_0BA@DPKKEGFH@ACPI_TABLE_NFIT@ 0000000180014560     astable.obj
+ 0002:00004570       ??_C@_0BA@NJLOPDIP@ACPI_TABLE_NHLT@ 0000000180014570     astable.obj
+ 0002:00004580       ??_C@_0BA@NKDDBKFA@ACPI_TABLE_PCCT@ 0000000180014580     astable.obj
+ 0002:00004590       ??_C@_0BA@FOINJHBM@ACPI_TABLE_PDTT@ 0000000180014590     astable.obj
+ 0002:000045a0       ??_C@_0BA@OLGEJDP@ACPI_TABLE_PHAT@ 00000001800145a0     astable.obj
+ 0002:000045b0       ??_C@_0BA@CDIFNIJG@ACPI_TABLE_PMTT@ 00000001800145b0     astable.obj
+ 0002:000045c0       ??_C@_0BA@IBPGFHNE@ACPI_TABLE_PPTT@ 00000001800145c0     astable.obj
+ 0002:000045d0       ??_C@_0BA@DIAIAHKA@ACPI_TABLE_PRMT@ 00000001800145d0     astable.obj
+ 0002:000045e0       ??_C@_0BA@DCHFBHCA@ACPI_TABLE_RGRT@ 00000001800145e0     astable.obj
+ 0002:000045f0       ??_C@_0BA@JBMJMNCO@ACPI_TABLE_RSDP@ 00000001800145f0     astable.obj
+ 0002:00004600       ??_C@_0BA@PFKFAICK@ACPI_TABLE_RSDT@ 0000000180014600     astable.obj
+ 0002:00004610       ??_C@_0BA@OIMMNNDF@ACPI_TABLE_S3PT@ 0000000180014610     astable.obj
+ 0002:00004620       ??_C@_0BA@DJAJKEJF@ACPI_TABLE_SBST@ 0000000180014620     astable.obj
+ 0002:00004630       ??_C@_0BA@DGPPEGAJ@ACPI_TABLE_SDEV@ 0000000180014630     astable.obj
+ 0002:00004640       ??_C@_0BA@HGFMAOMM@ACPI_TABLE_SVKL@ 0000000180014640     astable.obj
+ 0002:00004650       ??_C@_0BA@MNOEHBJG@ACPI_TABLE_SLIC@ 0000000180014650     astable.obj
+ 0002:00004660       ??_C@_0BA@MIGHPFAA@ACPI_TABLE_SLIT@ 0000000180014660     astable.obj
+ 0002:00004670       ??_C@_0BA@IJGFDPHH@ACPI_TABLE_SPCR@ 0000000180014670     astable.obj
+ 0002:00004680       ??_C@_0BA@CKMNNJOH@ACPI_TABLE_SPMI@ 0000000180014680     astable.obj
+ 0002:00004690       ??_C@_0BA@HGLCIEBE@ACPI_TABLE_SRAT@ 0000000180014690     astable.obj
+ 0002:000046a0       ??_C@_0BA@PKOPBAFC@ACPI_TABLE_STAO@ 00000001800146a0     astable.obj
+ 0002:000046b0       ??_C@_0BA@GGGEHKN@ACPI_TABLE_TCPA@ 00000001800146b0     astable.obj
+ 0002:000046c0       ??_C@_0BA@FECGKFMK@ACPI_TABLE_TPM2@ 00000001800146c0     astable.obj
+ 0002:000046d0       ??_C@_0BB@IPIOGIDL@ACPI_TABLE_TPM23@ 00000001800146d0     astable.obj
+ 0002:000046e8       ??_C@_0BA@MOBPGEAL@ACPI_TABLE_UEFI@ 00000001800146e8     astable.obj
+ 0002:000046f8       ??_C@_0BA@DDNEPGPA@ACPI_TABLE_VIOT@ 00000001800146f8     astable.obj
+ 0002:00004708       ??_C@_0BA@MGJHHCHJ@ACPI_TABLE_WAET@ 0000000180014708     astable.obj
+ 0002:00004718       ??_C@_0BA@PGEACKJH@ACPI_TABLE_WDAT@ 0000000180014718     astable.obj
+ 0002:00004728       ??_C@_0BA@PAILOIHM@ACPI_TABLE_WDDT@ 0000000180014728     astable.obj
+ 0002:00004738       ??_C@_0BA@OICADHLO@ACPI_TABLE_WDRT@ 0000000180014738     astable.obj
+ 0002:00004748       ??_C@_0BA@CLHNFEAG@ACPI_TABLE_WPBT@ 0000000180014748     astable.obj
+ 0002:00004758       ??_C@_0BA@DCJELMNF@ACPI_TABLE_WSMT@ 0000000180014758     astable.obj
+ 0002:00004768       ??_C@_0BA@PFMGPPJM@ACPI_TABLE_XENV@ 0000000180014768     astable.obj
+ 0002:00004778       ??_C@_0BA@LPBFBAIL@ACPI_TABLE_XSDT@ 0000000180014778     astable.obj
+ 0002:00004788       ??_C@_0O@BOPNDNGI@ACPI_AEST_GIC@ 0000000180014788     astable.obj
+ 0002:00004798       ??_C@_0BB@POMAAAPM@ACPI_AEST_HEADER@ 0000000180014798     astable.obj
+ 0002:000047b0       ??_C@_0BB@EEJECJGF@ACPI_AEST_MEMORY@ 00000001800147b0     astable.obj
+ 0002:000047c8       ??_C@_0BJ@DAPICKCL@ACPI_AEST_NODE_INTERFACE@ 00000001800147c8     astable.obj
+ 0002:000047e8       ??_C@_0BJ@DHFKOFJI@ACPI_AEST_NODE_INTERRUPT@ 00000001800147e8     astable.obj
+ 0002:00004808       ??_C@_0BE@BMNMPGDF@ACPI_AEST_PROCESSOR@ 0000000180014808     astable.obj
+ 0002:00004820       ??_C@_0BK@KJJJGPFI@ACPI_AEST_PROCESSOR_CACHE@ 0000000180014820     astable.obj
+ 0002:00004840       ??_C@_0BM@PCLFDKCF@ACPI_AEST_PROCESSOR_GENERIC@ 0000000180014840     astable.obj
+ 0002:00004860       ??_C@_0BI@KNDEIGB@ACPI_AEST_PROCESSOR_TLB@ 0000000180014860     astable.obj
+ 0002:00004878       ??_C@_0P@JECHDGFJ@ACPI_AEST_SMMU@ 0000000180014878     astable.obj
+ 0002:00004888       ??_C@_0BB@EGOGPFGI@ACPI_AEST_VENDOR@ 0000000180014888     astable.obj
+ 0002:000048a0       ??_C@_0BB@NACEHJ@ACPI_ASF_ADDRESS@ 00000001800148a0     astable.obj
+ 0002:000048b8       ??_C@_0P@GNBIPIEM@ACPI_ASF_ALERT@ 00000001800148b8     astable.obj
+ 0002:000048c8       ??_C@_0BE@ONGDOPPJ@ACPI_ASF_ALERT_DATA@ 00000001800148c8     astable.obj
+ 0002:000048e0       ??_C@_0BG@CLJDNCEB@ACPI_ASF_CONTROL_DATA@ 00000001800148e0     astable.obj
+ 0002:000048f8       ??_C@_0BA@NIALFJEK@ACPI_ASF_HEADER@ 00000001800148f8     astable.obj
+ 0002:00004908       ??_C@_0O@MOEJGDPH@ACPI_ASF_INFO@ 0000000180014908     astable.obj
+ 0002:00004918       ??_C@_0BA@BBDDLNBL@ACPI_ASF_REMOTE@ 0000000180014918     astable.obj
+ 0002:00004928       ??_C@_0O@FNKGPP@ACPI_ASF_RMCP@ 0000000180014928     astable.obj
+ 0002:00004938       ??_C@_0BB@DDPIIPEE@ACPI_BERT_REGION@ 0000000180014938     astable.obj
+ 0002:00004950       ??_C@_0P@OMJEFJFN@ACPI_CEDT_CHBS@ 0000000180014950     astable.obj
+ 0002:00004960       ??_C@_0BB@NHIJAEPC@ACPI_CEDT_HEADER@ 0000000180014960     astable.obj
+ 0002:00004978       ??_C@_0BC@GIKIOOMD@ACPI_CPEP_POLLING@ 0000000180014978     astable.obj
+ 0002:00004990       ??_C@_0BA@BNMBEHEK@ACPI_CSRT_GROUP@ 0000000180014990     astable.obj
+ 0002:000049a0       ??_C@_0BF@OHMOCNMG@ACPI_CSRT_DESCRIPTOR@ 00000001800149a0     astable.obj
+ 0002:000049b8       ??_C@_0BG@PDOJGACM@ACPI_CSRT_SHARED_INFO@ 00000001800149b8     astable.obj
+ 0002:000049d0       ??_C@_0BB@KIGALKMM@ACPI_DBG2_DEVICE@ 00000001800149d0     astable.obj
+ 0002:000049e8       ??_C@_0BB@IMOBLOPG@ACPI_DMAR_HEADER@ 00000001800149e8     astable.obj
+ 0002:00004a00       ??_C@_0BH@GFCMDGHG@ACPI_DMAR_DEVICE_SCOPE@ 0000000180014a00     astable.obj
+ 0002:00004a18       ??_C@_0P@MAAFCPPK@ACPI_DMAR_ANDD@ 0000000180014a18     astable.obj
+ 0002:00004a28       ??_C@_0P@PKFAJICD@ACPI_DMAR_ATSR@ 0000000180014a28     astable.obj
+ 0002:00004a38       ??_C@_0P@KGDANMME@ACPI_DMAR_RHSA@ 0000000180014a38     astable.obj
+ 0002:00004a48       ??_C@_0BI@EODALFBM@ACPI_DMAR_HARDWARE_UNIT@ 0000000180014a48     astable.obj
+ 0002:00004a60       ??_C@_0BK@EFONDB@ACPI_DMAR_RESERVED_MEMORY@ 0000000180014a60     astable.obj
+ 0002:00004a80       ??_C@_0BB@BPBAOIGE@ACPI_DRTM_DPS_ID@ 0000000180014a80     astable.obj
+ 0002:00004a98       ??_C@_0BD@GIKHCHMP@ACPI_DRTM_RESOURCE@ 0000000180014a98     astable.obj
+ 0002:00004ab0       ??_C@_0BI@BBFJFCKD@ACPI_DRTM_RESOURCE_LIST@ 0000000180014ab0     astable.obj
+ 0002:00004ac8       ??_C@_0BG@FIFGPEBC@ACPI_DRTM_VTABLE_LIST@ 0000000180014ac8     astable.obj
+ 0002:00004ae0       ??_C@_0BA@FNHAKIIO@ACPI_EINJ_ENTRY@ 0000000180014ae0     astable.obj
+ 0002:00004af0       ??_C@_0BC@DEDAFNIG@ACPI_EINJ_TRIGGER@ 0000000180014af0     astable.obj
+ 0002:00004b08       ??_C@_0BA@LGIAFEKO@ACPI_ERST_ENTRY@ 0000000180014b08     astable.obj
+ 0002:00004b18       ??_C@_0P@NBPAIMGM@ACPI_ERST_INFO@ 0000000180014b18     astable.obj
+ 0002:00004b28       ??_C@_0BB@JAILBLGL@ACPI_FPDT_HEADER@ 0000000180014b28     astable.obj
+ 0002:00004b40       ??_C@_0P@LMEIBLK@ACPI_FPDT_BOOT@ 0000000180014b40     astable.obj
+ 0002:00004b50       ??_C@_0BH@KLFHGLOP@ACPI_FPDT_BOOT_POINTER@ 0000000180014b50     astable.obj
+ 0002:00004b68       ??_C@_0BH@NOIIOIMI@ACPI_FPDT_S3PT_POINTER@ 0000000180014b68     astable.obj
+ 0002:00004b80       ??_C@_0BB@LLPHCEIG@ACPI_GTDT_HEADER@ 0000000180014b80     astable.obj
+ 0002:00004b98       ??_C@_0BG@MCBPADOL@ACPI_GTDT_TIMER_BLOCK@ 0000000180014b98     astable.obj
+ 0002:00004bb0       ??_C@_0BG@EHNCAJDJ@ACPI_GTDT_TIMER_ENTRY@ 0000000180014bb0     astable.obj
+ 0002:00004bc8       ??_C@_0BD@MHBGLPKN@ACPI_GTDT_WATCHDOG@ 0000000180014bc8     astable.obj
+ 0002:00004be0       ??_C@_0BF@EPFMFCMJ@ACPI_HEST_AER_COMMON@ 0000000180014be0     astable.obj
+ 0002:00004bf8       ??_C@_0BB@GDGJDKGN@ACPI_HEST_HEADER@ 0000000180014bf8     astable.obj
+ 0002:00004c10       ??_C@_0BB@BKPKILIM@ACPI_HEST_NOTIFY@ 0000000180014c10     astable.obj
+ 0002:00004c28       ??_C@_0BI@JPGPCEOE@ACPI_HEST_IA_ERROR_BANK@ 0000000180014c28     astable.obj
+ 0002:00004c40       ??_C@_0BL@GJGICDEP@ACPI_HEST_IA_MACHINE_CHECK@ 0000000180014c40     astable.obj
+ 0002:00004c60       ??_C@_0BH@FEABPBIE@ACPI_HEST_IA_CORRECTED@ 0000000180014c60     astable.obj
+ 0002:00004c78       ??_C@_0BB@EJMHCAGK@ACPI_HEST_IA_NMI@ 0000000180014c78     astable.obj
+ 0002:00004c90       ??_C@_0BD@FAHJPLBM@ACPI_HEST_AER_ROOT@ 0000000180014c90     astable.obj
+ 0002:00004ca8       ??_C@_0O@MNPGAOJL@ACPI_HEST_AER@ 0000000180014ca8     astable.obj
+ 0002:00004cb8       ??_C@_0BF@DDAMCJAB@ACPI_HEST_AER_BRIDGE@ 0000000180014cb8     astable.obj
+ 0002:00004cd0       ??_C@_0BC@CAJPMCGH@ACPI_HEST_GENERIC@ 0000000180014cd0     astable.obj
+ 0002:00004ce8       ??_C@_0BF@MCMLPPBL@ACPI_HEST_GENERIC_V2@ 0000000180014ce8     astable.obj
+ 0002:00004d00       ??_C@_0BJ@DCGMIBEK@ACPI_HEST_GENERIC_STATUS@ 0000000180014d00     astable.obj
+ 0002:00004d20       ??_C@_0BH@GFEJNFGE@ACPI_HEST_GENERIC_DATA@ 0000000180014d20     astable.obj
+ 0002:00004d38       ??_C@_0BM@EJMBLFOO@ACPI_HEST_GENERIC_DATA_V300@ 0000000180014d38     astable.obj
+ 0002:00004d58       ??_C@_0BM@JBBMELFN@ACPI_HEST_IA_DEFERRED_CHECK@ 0000000180014d58     astable.obj
+ 0002:00004d78       ??_C@_0BL@NJKGBLFJ@ACPI_HMAT_PROXIMITY_DOMAIN@ 0000000180014d78     astable.obj
+ 0002:00004d98       ??_C@_0BA@EHIGMJCK@ACPI_HMAT_CACHE@ 0000000180014d98     astable.obj
+ 0002:00004da8       ??_C@_0BD@CNMFBAPP@ACPI_HMAT_LOCALITY@ 0000000180014da8     astable.obj
+ 0002:00004dc0       ??_C@_0BE@KGFOHHBO@ACPI_HMAT_STRUCTURE@ 0000000180014dc0     astable.obj
+ 0002:00004dd8       ??_C@_0BB@BAHACJCN@ACPI_IBFT_HEADER@ 0000000180014dd8     astable.obj
+ 0002:00004df0       ??_C@_0BC@KIJPBFBP@ACPI_IBFT_CONTROL@ 0000000180014df0     astable.obj
+ 0002:00004e08       ??_C@_0BE@BKNMAJBL@ACPI_IBFT_INITIATOR@ 0000000180014e08     astable.obj
+ 0002:00004e20       ??_C@_0O@OHAOGKIK@ACPI_IBFT_NIC@ 0000000180014e20     astable.obj
+ 0002:00004e30       ??_C@_0BB@EIDAHILL@ACPI_IBFT_TARGET@ 0000000180014e30     astable.obj
+ 0002:00004e48       ??_C@_0BF@CDOJLADP@ACPI_IORT_ID_MAPPING@ 0000000180014e48     astable.obj
+ 0002:00004e60       ??_C@_0BE@LGNPBMGC@ACPI_IORT_ITS_GROUP@ 0000000180014e60     astable.obj
+ 0002:00004e78       ??_C@_0BI@POBMJJMC@ACPI_IORT_MEMORY_ACCESS@ 0000000180014e78     astable.obj
+ 0002:00004e90       ??_C@_0BK@LMMCDLMB@ACPI_IORT_NAMED_COMPONENT@ 0000000180014e90     astable.obj
+ 0002:00004eb0       ??_C@_0P@KJBOEOML@ACPI_IORT_NODE@ 0000000180014eb0     astable.obj
+ 0002:00004ec0       ??_C@_0BH@FEHNFOEI@ACPI_IORT_ROOT_COMPLEX@ 0000000180014ec0     astable.obj
+ 0002:00004ed8       ??_C@_0P@NOHEPMKN@ACPI_IORT_SMMU@ 0000000180014ed8     astable.obj
+ 0002:00004ee8       ??_C@_0BD@NKCGFEHG@ACPI_IORT_SMMU_GSI@ 0000000180014ee8     astable.obj
+ 0002:00004f00       ??_C@_0BC@DBPFPNLP@ACPI_IORT_SMMU_V3@ 0000000180014f00     astable.obj
+ 0002:00004f18       ??_C@_0P@OLLONLKE@ACPI_IORT_PMCG@ 0000000180014f18     astable.obj
+ 0002:00004f28       ??_C@_0O@KBIFKEGN@ACPI_IORT_RMR@ 0000000180014f28     astable.obj
+ 0002:00004f38       ??_C@_0BD@LKIGAJOG@ACPI_IORT_RMR_DESC@ 0000000180014f38     astable.obj
+ 0002:00004f50       ??_C@_0BB@EEHLNCDP@ACPI_IVRS_HEADER@ 0000000180014f50     astable.obj
+ 0002:00004f68       ??_C@_0BD@FIMFCIBL@ACPI_IVRS_HARDWARE@ 0000000180014f68     astable.obj
+ 0002:00004f80       ??_C@_0BE@CCKJFGOG@ACPI_IVRS_DE_HEADER@ 0000000180014f80     astable.obj
+ 0002:00004f98       ??_C@_0BC@IAOGKMOM@ACPI_IVRS_DEVICE4@ 0000000180014f98     astable.obj
+ 0002:00004fb0       ??_C@_0BD@EJEEMPNP@ACPI_IVRS_DEVICE8A@ 0000000180014fb0     astable.obj
+ 0002:00004fc8       ??_C@_0BD@GCGJJMBM@ACPI_IVRS_DEVICE8B@ 0000000180014fc8     astable.obj
+ 0002:00004fe0       ??_C@_0BD@HLHCKNFN@ACPI_IVRS_DEVICE8C@ 0000000180014fe0     astable.obj
+ 0002:00004ff8       ??_C@_0BB@POCPPLKG@ACPI_IVRS_MEMORY@ 0000000180014ff8     astable.obj
+ 0002:00005010       ??_C@_0BL@HJIEPAMO@ACPI_MADT_ADDRESS_OVERRIDE@ 0000000180015010     astable.obj
+ 0002:00005030       ??_C@_0BM@BMDOJAHN@ACPI_MADT_GENERIC_MSI_FRAME@ 0000000180015030     astable.obj
+ 0002:00005050       ??_C@_0CA@CDJOEFFI@ACPI_MADT_GENERIC_REDISTRIBUTOR@ 0000000180015050     astable.obj
+ 0002:00005070       ??_C@_0BB@IOGBKEGO@ACPI_MADT_HEADER@ 0000000180015070     astable.obj
+ 0002:00005088       ??_C@_0BC@JPICGJEK@ACPI_MADT_IO_APIC@ 0000000180015088     astable.obj
+ 0002:000050a0       ??_C@_0BD@HONKLGEA@ACPI_MADT_IO_SAPIC@ 00000001800150a0     astable.obj
+ 0002:000050b8       ??_C@_0BF@JBAEMGDL@ACPI_MADT_LOCAL_APIC@ 00000001800150b8     astable.obj
+ 0002:000050d0       ??_C@_0BJ@MJBNGOEP@ACPI_MADT_LOCAL_APIC_NMI@ 00000001800150d0     astable.obj
+ 0002:000050f0       ??_C@_0BO@OBICPMHK@ACPI_MADT_LOCAL_APIC_OVERRIDE@ 00000001800150f0     astable.obj
+ 0002:00005110       ??_C@_0BG@FJNGHBEF@ACPI_MADT_LOCAL_SAPIC@ 0000000180015110     astable.obj
+ 0002:00005128       ??_C@_0BH@CPAMHHMM@ACPI_MADT_LOCAL_X2APIC@ 0000000180015128     astable.obj
+ 0002:00005140       ??_C@_0BL@PCDAMAPF@ACPI_MADT_LOCAL_X2APIC_NMI@ 0000000180015140     astable.obj
+ 0002:00005160       ??_C@_0BO@FJHFDNDK@ACPI_MADT_GENERIC_DISTRIBUTOR@ 0000000180015160     astable.obj
+ 0002:00005180       ??_C@_0BM@GMFBOBCN@ACPI_MADT_GENERIC_INTERRUPT@ 0000000180015180     astable.obj
+ 0002:000051a0       ??_C@_0BN@JLFHDILE@ACPI_MADT_INTERRUPT_OVERRIDE@ 00000001800151a0     astable.obj
+ 0002:000051c0       ??_C@_0BL@NNLOBEIB@ACPI_MADT_INTERRUPT_SOURCE@ 00000001800151c0     astable.obj
+ 0002:000051e0       ??_C@_0BF@MHGGDDGF@ACPI_MADT_NMI_SOURCE@ 00000001800151e0     astable.obj
+ 0002:000051f8       ??_C@_0BL@BJJDPFHH@ACPI_MADT_MULTIPROC_WAKEUP@ 00000001800151f8     astable.obj
+ 0002:00005218       ??_C@_0CD@BGDDFIEE@ACPI_MADT_MULTIPROC_WAKEUP_MAIL@ 0000000180015218     astable.obj
+ 0002:00005240       ??_C@_0BJ@KKKCOHAB@ACPI_MADT_PROCESSOR_APIC@ 0000000180015240     astable.obj
+ 0002:00005260       ??_C@_0BF@MABHEDOO@ACPI_MCFG_ALLOCATION@ 0000000180015260     astable.obj
+ 0002:00005278       ??_C@_0BE@CFDMKGJE@ACPI_MPST_COMPONENT@ 0000000180015278     astable.obj
+ 0002:00005290       ??_C@_0BD@NGGLCJLD@ACPI_MPST_DATA_HDR@ 0000000180015290     astable.obj
+ 0002:000052a8       ??_C@_0BF@IPAEFFAD@ACPI_MPST_POWER_DATA@ 00000001800152a8     astable.obj
+ 0002:000052c0       ??_C@_0BF@FNCBFMOF@ACPI_MPST_POWER_NODE@ 00000001800152c0     astable.obj
+ 0002:000052d8       ??_C@_0BG@NPHBACEI@ACPI_MPST_POWER_STATE@ 00000001800152d8     astable.obj
+ 0002:000052f0       ??_C@_0BE@HCLGINNM@ACPI_MSCT_PROXIMITY@ 00000001800152f0     astable.obj
+ 0002:00005308       ??_C@_0BH@FDKMHNGO@ACPI_NFIT_CAPABILITIES@ 0000000180015308     astable.obj
+ 0002:00005320       ??_C@_0BJ@JJHNEIIO@ACPI_NFIT_CONTROL_REGION@ 0000000180015320     astable.obj
+ 0002:00005340       ??_C@_0BG@MPKNDOBF@ACPI_NFIT_DATA_REGION@ 0000000180015340     astable.obj
+ 0002:00005358       ??_C@_0BI@MEJFLGNH@ACPI_NFIT_DEVICE_HANDLE@ 0000000180015358     astable.obj
+ 0002:00005370       ??_C@_0BI@LALFJBJH@ACPI_NFIT_FLUSH_ADDRESS@ 0000000180015370     astable.obj
+ 0002:00005388       ??_C@_0BB@CFDKOIKN@ACPI_NFIT_HEADER@ 0000000180015388     astable.obj
+ 0002:000053a0       ??_C@_0BF@KIOPKJOB@ACPI_NFIT_INTERLEAVE@ 00000001800153a0     astable.obj
+ 0002:000053b8       ??_C@_0BF@GMDEDJCE@ACPI_NFIT_MEMORY_MAP@ 00000001800153b8     astable.obj
+ 0002:000053d0       ??_C@_0BB@NPGLEGO@ACPI_NFIT_SMBIOS@ 00000001800153d0     astable.obj
+ 0002:000053e8       ??_C@_0BJ@INENBHE@ACPI_NFIT_SYSTEM_ADDRESS@ 00000001800153e8     astable.obj
+ 0002:00005408       ??_C@_0CB@INNPJLBG@ACPI_NHLT_DEVICE_SPECIFIC_CONFI@ 0000000180015408     astable.obj
+ 0002:00005430       ??_C@_0CD@PFMHGFAN@ACPI_NHLT_DEVICE_SPECIFIC_CONFI@ 0000000180015430     astable.obj
+ 0002:00005458       ??_C@_0CD@NOOKDGMO@ACPI_NHLT_DEVICE_SPECIFIC_CONFI@ 0000000180015458     astable.obj
+ 0002:00005480       ??_C@_0CD@MHPBAHIP@ACPI_NHLT_DEVICE_SPECIFIC_CONFI@ 0000000180015480     astable.obj
+ 0002:000054a8       ??_C@_0BO@PHKPMHJB@ACPI_NHLT_DEVICE_SPECIFIC_HDR@ 00000001800154a8     astable.obj
+ 0002:000054c8       ??_C@_0BD@NIBMJCPK@ACPI_NHLT_ENDPOINT@ 00000001800154c8     astable.obj
+ 0002:000054e0       ??_C@_0BI@FIEPHJMD@ACPI_NHLT_FORMAT_CONFIG@ 00000001800154e0     astable.obj
+ 0002:000054f8       ??_C@_0BJ@BOFMBNIN@ACPI_NHLT_FORMATS_CONFIG@ 00000001800154f8     astable.obj
+ 0002:00005518       ??_C@_0BP@IOJFMEDC@ACPI_NHLT_LINUX_SPECIFIC_COUNT@ 0000000180015518     astable.obj
+ 0002:00005538       ??_C@_0BO@JDIIIDKL@ACPI_NHLT_LINUX_SPECIFIC_DATA@ 0000000180015538     astable.obj
+ 0002:00005558       ??_C@_0CF@MAIENOJJ@ACPI_NHLT_MIC_DEVICE_SPECIFIC_C@ 0000000180015558     astable.obj
+ 0002:00005580       ??_C@_0CI@EGMEMIKG@ACPI_NHLT_MIC_SNR_SENSITIVITY_E@ 0000000180015580     astable.obj
+ 0002:000055a8       ??_C@_0DB@GOCMILIF@ACPI_NHLT_RENDER_FEEDBACK_DEVIC@ 00000001800155a8     astable.obj
+ 0002:000055e0       ??_C@_0BL@COMIHEKG@ACPI_NHLT_TABLE_TERMINATOR@ 00000001800155e0     astable.obj
+ 0002:00005600       ??_C@_0BM@HBDAKOGP@ACPI_NHLT_VENDOR_MIC_CONFIG@ 0000000180015600     astable.obj
+ 0002:00005620       ??_C@_0CM@HFKPHHCN@ACPI_NHLT_VENDOR_MIC_DEVICE_SPE@ 0000000180015620     astable.obj
+ 0002:00005650       ??_C@_0BK@IODKFPEI@ACPI_NHLT_WAVE_EXTENSIBLE@ 0000000180015650     astable.obj
+ 0002:00005670       ??_C@_0CA@FDEMNHMC@ACPI_PCCT_EXT_PCC_SHARED_MEMORY@ 0000000180015670     astable.obj
+ 0002:00005690       ??_C@_0BF@OCFMIFIF@ACPI_PCCT_HW_REDUCED@ 0000000180015690     astable.obj
+ 0002:000056a8       ??_C@_0BL@DLGLGEKA@ACPI_PCCT_HW_REDUCED_TYPE2@ 00000001800156a8     astable.obj
+ 0002:000056c8       ??_C@_0BJ@NJBOJIHB@ACPI_PCCT_EXT_PCC_MASTER@ 00000001800156c8     astable.obj
+ 0002:000056e8       ??_C@_0BI@HFHPHBBB@ACPI_PCCT_EXT_PCC_SLAVE@ 00000001800156e8     astable.obj
+ 0002:00005700       ??_C@_0BB@HFGPIOOA@ACPI_PCCT_HW_REG@ 0000000180015700     astable.obj
+ 0002:00005718       ??_C@_0BI@JHNKLDJI@ACPI_PCCT_SHARED_MEMORY@ 0000000180015718     astable.obj
+ 0002:00005730       ??_C@_0BD@IHCCBCCJ@ACPI_PCCT_SUBSPACE@ 0000000180015730     astable.obj
+ 0002:00005748       ??_C@_0BC@ILFDAPEO@ACPI_PDTT_CHANNEL@ 0000000180015748     astable.obj
+ 0002:00005760       ??_C@_0BB@IBLCLNLN@ACPI_PHAT_HEADER@ 0000000180015760     astable.obj
+ 0002:00005778       ??_C@_0BH@EBGCPDII@ACPI_PHAT_VERSION_DATA@ 0000000180015778     astable.obj
+ 0002:00005790       ??_C@_0BK@NLBFDFIH@ACPI_PHAT_VERSION_ELEMENT@ 0000000180015790     astable.obj
+ 0002:000057b0       ??_C@_0BG@NKLOAKGA@ACPI_PHAT_HEALTH_DATA@ 00000001800157b0     astable.obj
+ 0002:000057c8       ??_C@_0BF@IHGJBAEA@ACPI_PMTT_CONTROLLER@ 00000001800157c8     astable.obj
+ 0002:000057e0       ??_C@_0BN@LLGEEJF@ACPI_PMTT_PHYSICAL_COMPONENT@ 00000001800157e0     astable.obj
+ 0002:00005800       ??_C@_0BB@IBNJFELB@ACPI_PMTT_SOCKET@ 0000000180015800     astable.obj
+ 0002:00005818       ??_C@_0BK@GMAAGJLJ@ACPI_PMTT_VENDOR_SPECIFIC@ 0000000180015818     astable.obj
+ 0002:00005838       ??_C@_0BA@GHLEOBMC@ACPI_PPTT_CACHE@ 0000000180015838     astable.obj
+ 0002:00005848       ??_C@_0BD@CEEALNDF@ACPI_PPTT_CACHE_V1@ 0000000180015848     astable.obj
+ 0002:00005860       ??_C@_0N@DENIPBJL@ACPI_PPTT_ID@ 0000000180015860     astable.obj
+ 0002:00005870       ??_C@_0BE@HOCHOGML@ACPI_PPTT_PROCESSOR@ 0000000180015870     astable.obj
+ 0002:00005888       ??_C@_0BH@HEAPPHJM@ACPI_TABLE_PRMT_HEADER@ 0000000180015888     astable.obj
+ 0002:000058a0       ??_C@_0BI@CHPHLKMA@ACPI_PRMT_MODULE_HEADER@ 00000001800158a0     astable.obj
+ 0002:000058b8       ??_C@_0BG@POMCPCOF@ACPI_PRMT_MODULE_INFO@ 00000001800158b8     astable.obj
+ 0002:000058d0       ??_C@_0BH@LFLPBKKG@ACPI_PRMT_HANDLER_INFO@ 00000001800158d0     astable.obj
+ 0002:000058e8       ??_C@_0BB@KLBPPHHJ@ACPI_RSDP_COMMON@ 00000001800158e8     astable.obj
+ 0002:00005900       ??_C@_0BE@LIHNCNDE@ACPI_RSDP_EXTENSION@ 0000000180015900     astable.obj
+ 0002:00005918       ??_C@_0BB@NJPILCJK@ACPI_S3PT_RESUME@ 0000000180015918     astable.obj
+ 0002:00005930       ??_C@_0BC@COGDNMMH@ACPI_S3PT_SUSPEND@ 0000000180015930     astable.obj
+ 0002:00005948       ??_C@_0BB@NLCLHFHG@ACPI_SDEV_HEADER@ 0000000180015948     astable.obj
+ 0002:00005960       ??_C@_0BE@HMJHFKBN@ACPI_SDEV_NAMESPACE@ 0000000180015960     astable.obj
+ 0002:00005978       ??_C@_0P@GHPIONCE@ACPI_SDEV_PCIE@ 0000000180015978     astable.obj
+ 0002:00005988       ??_C@_0BE@DEEJMGPJ@ACPI_SDEV_PCIE_PATH@ 0000000180015988     astable.obj
+ 0002:000059a0       ??_C@_0O@CGKKIPAP@ACPI_SVKL_KEY@ 00000001800159a0     astable.obj
+ 0002:000059b0       ??_C@_0BH@MPOFKMCD@ACPI_SRAT_CPU_AFFINITY@ 00000001800159b0     astable.obj
+ 0002:000059c8       ??_C@_0BB@LKHFPDAC@ACPI_SRAT_HEADER@ 00000001800159c8     astable.obj
+ 0002:000059e0       ??_C@_0BL@NPNHNKKJ@ACPI_SRAT_GIC_ITS_AFFINITY@ 00000001800159e0     astable.obj
+ 0002:00005a00       ??_C@_0BI@KOGBDDI@ACPI_SRAT_GICC_AFFINITY@ 0000000180015a00     astable.obj
+ 0002:00005a18       ??_C@_0BL@FPPBKMDK@ACPI_SRAT_GENERIC_AFFINITY@ 0000000180015a18     astable.obj
+ 0002:00005a38       ??_C@_0BH@LFINBPPB@ACPI_SRAT_MEM_AFFINITY@ 0000000180015a38     astable.obj
+ 0002:00005a50       ??_C@_0BO@INOLOGON@ACPI_SRAT_X2APIC_CPU_AFFINITY@ 0000000180015a50     astable.obj
+ 0002:00005a70       ??_C@_0BH@NLLNLLHP@ACPI_TABLE_TCPA_CLIENT@ 0000000180015a70     astable.obj
+ 0002:00005a88       ??_C@_0BH@JEPPGAPM@ACPI_TABLE_TCPA_SERVER@ 0000000180015a88     astable.obj
+ 0002:00005aa0       ??_C@_0BC@DEAOONNE@ACPI_TPM2_TRAILER@ 0000000180015aa0     astable.obj
+ 0002:00005ab8       ??_C@_0BD@JAACCFGD@ACPI_TPM23_TRAILER@ 0000000180015ab8     astable.obj
+ 0002:00005ad0       ??_C@_0BC@MNIHEFKD@ACPI_TPM2_ARM_SMC@ 0000000180015ad0     astable.obj
+ 0002:00005ae8       ??_C@_0BB@LBMIPHCO@ACPI_VIOT_HEADER@ 0000000180015ae8     astable.obj
+ 0002:00005b00       ??_C@_0BE@LHENONMO@ACPI_VIOT_PCI_RANGE@ 0000000180015b00     astable.obj
+ 0002:00005b18       ??_C@_0P@PEIBAAFM@ACPI_VIOT_MMIO@ 0000000180015b18     astable.obj
+ 0002:00005b28       ??_C@_0BL@CHFJKIME@ACPI_VIOT_VIRTIO_IOMMU_PCI@ 0000000180015b28     astable.obj
+ 0002:00005b48       ??_C@_0BM@JDGACIML@ACPI_VIOT_VIRTIO_IOMMU_MMIO@ 0000000180015b48     astable.obj
+ 0002:00005b68       ??_C@_0BA@OIJMLCPM@ACPI_WDAT_ENTRY@ 0000000180015b68     astable.obj
+ 0002:00005b78       ??_C@_0BC@BKAGCMEM@ACPI_WPBT_UNICODE@ 0000000180015b78     astable.obj
+ 0002:00005b90       ??_C@_08FDMEFINL@DT_FIELD@ 0000000180015b90     astable.obj
+ 0002:00005ba0       ??_C@_0M@IFKFEGHH@DT_SUBTABLE@ 0000000180015ba0     astable.obj
+ 0002:00005bb0       ??_C@_0BB@ONDGMGNE@DT_WALK_CALLBACK@ 0000000180015bb0     astable.obj
+ 0002:00005bc8       ??_C@_0P@MBOHIJGK@PR_DEFINE_INFO@ 0000000180015bc8     astable.obj
+ 0002:00005bd8       ??_C@_0BC@GCDEMKBM@PR_DIRECTIVE_INFO@ 0000000180015bd8     astable.obj
+ 0002:00005bf0       ??_C@_0N@GIGCKGIH@PR_FILE_NODE@ 0000000180015bf0     astable.obj
+ 0002:00005c00       ??_C@_0BA@BAHPIDOP@PR_LINE_MAPPING@ 0000000180015c00     astable.obj
+ 0002:00005c10       ??_C@_0N@MEBHDJFO@PR_MACRO_ARG@ 0000000180015c10     astable.obj
+ 0002:00005c20       ??_C@_0BB@LFGNLBIH@PR_OPERATOR_INFO@ 0000000180015c20     astable.obj
+ 0002:00005c38       ??_C@_0P@KIECHEHE@AP_DUMP_ACTION@ 0000000180015c38     astable.obj
+ 0002:00005c48       ??_C@_0O@LMFLFIL@AH_AML_OPCODE@ 0000000180015c48     astable.obj
+ 0002:00005c58       ??_C@_0BA@IJMDFNHK@AH_ASL_OPERATOR@ 0000000180015c58     astable.obj
+ 0002:00005c68       ??_C@_0P@JPONIIAI@AH_ASL_KEYWORD@ 0000000180015c68     astable.obj
+ 0002:00005c78       ??_C@_0N@GNNILOIH@AH_DEVICE_ID@ 0000000180015c78     astable.obj
+ 0002:00005c88       ??_C@_0BD@DHDIAIGH@AH_PREDEFINED_NAME@ 0000000180015c88     astable.obj
+ 0002:00005ca0       ??_C@_07BCKIOALM@AH_UUID@  0000000180015ca0     astable.obj
+ 0002:00005ca8       ??_C@_0O@BOOINILH@AX_TABLE_INFO@ 0000000180015ca8     astable.obj
+ 0002:00005cb8       ??_C@_0BD@BHPLAHBB@EXTERNAL_FIND_INFO@ 0000000180015cb8     astable.obj
+ 0002:00005cd0       ??_C@_0P@HFJBCOPK@OSL_TABLE_INFO@ 0000000180015cd0     astable.obj
+ 0002:00005ce0       ??_C@_0BE@BKBKEBFK@acpi_namespace_node@ 0000000180015ce0     astable.obj
+ 0002:00005cf8       ??_C@_0BC@OEAMEDLH@acpi_parse_object@ 0000000180015cf8     astable.obj
+ 0002:00005d10       ??_C@_0BA@CDLMJCPA@acpi_table_desc@ 0000000180015d10     astable.obj
+ 0002:00005d20       ??_C@_0BA@LILDKIPN@acpi_walk_state@ 0000000180015d20     astable.obj
+ 0002:00005d30       ??_C@_0L@NEIJHGBB@?$CDdefine?5__@ 0000000180015d30     astable.obj
+ 0002:00005d3c       ??_C@_05LKMDHMJN@WIN32@    0000000180015d3c     astable.obj
+ 0002:00005d48       ??_C@_08DHINEBLL@_MSC_VER@ 0000000180015d48     astable.obj
+ 0002:00005d58       ??_C@_08CNHFKLGB@?$CCacpi?4h?$CC@ 0000000180015d58     astable.obj
+ 0002:00005d68       ??_C@_0O@NDKFGJPB@?$DMacpi?1acpi?4h?$DO@ 0000000180015d68     astable.obj
+ 0002:00005d78       ??_C@_0N@NLDCFEKP@?$CCacpiosxf?4h?$CC@ 0000000180015d78     astable.obj
+ 0002:00005d88       ??_C@_0BC@LNAHHCJM@?$DMacpi?1acpiosxf?4h?$DO@ 0000000180015d88     astable.obj
+ 0002:00005da0       ??_C@_0L@PDKFDLHI@?$CCacpixf?4h?$CC@ 0000000180015da0     astable.obj
+ 0002:00005db0       ??_C@_0BA@LDGFJFE@?$DMacpi?1acpixf?4h?$DO@ 0000000180015db0     astable.obj
+ 0002:00005dc0       ??_C@_0N@LCBMDMFK@?$CCacbuffer?4h?$CC@ 0000000180015dc0     astable.obj
+ 0002:00005dd0       ??_C@_0BC@NECJBKGJ@?$DMacpi?1acbuffer?4h?$DO@ 0000000180015dd0     astable.obj
+ 0002:00005de8       ??_C@_0N@GIBHFMLH@?$CCacconfig?4h?$CC@ 0000000180015de8     astable.obj
+ 0002:00005df8       ??_C@_0BC@OCCHKIE@?$DMacpi?1acconfig?4h?$DO@ 0000000180015df8     astable.obj
+ 0002:00005e10       ??_C@_0M@IMFOIFJ@?$CCacexcep?4h?$CC@ 0000000180015e10     astable.obj
+ 0002:00005e20       ??_C@_0BB@MJKOBAJB@?$DMacpi?1acexcep?4h?$DO@ 0000000180015e20     astable.obj
+ 0002:00005e38       ??_C@_0M@POPLFNAJ@?$CCacnames?4h?$CC@ 0000000180015e38     astable.obj
+ 0002:00005e48       ??_C@_0BB@DPJAKFMB@?$DMacpi?1acnames?4h?$DO@ 0000000180015e48     astable.obj
+ 0002:00005e60       ??_C@_0N@PBOENPHD@?$CCacoutput?4h?$CC@ 0000000180015e60     astable.obj
+ 0002:00005e70       ??_C@_0BC@JHNBPJEA@?$DMacpi?1acoutput?4h?$DO@ 0000000180015e70     astable.obj
+ 0002:00005e88       ??_C@_0N@PDLMNMOL@?$CCacrestyp?4h?$CC@ 0000000180015e88     astable.obj
+ 0002:00005e98       ??_C@_0BC@JFIJPKNI@?$DMacpi?1acrestyp?4h?$DO@ 0000000180015e98     astable.obj
+ 0002:00005eb0       ??_C@_09OCODLCEL@?$CCactbl?4h?$CC@ 0000000180015eb0     astable.obj
+ 0002:00005ec0       ??_C@_0P@OBFJPGIE@?$DMacpi?1actbl?4h?$DO@ 0000000180015ec0     astable.obj
+ 0002:00005ed0       ??_C@_0L@GHJMDCCO@?$CCactbl1?4h?$CC@ 0000000180015ed0     astable.obj
+ 0002:00005ee0       ??_C@_0BA@JPAPFAAC@?$DMacpi?1actbl1?4h?$DO@ 0000000180015ee0     astable.obj
+ 0002:00005ef0       ??_C@_0L@CADMEIPO@?$CCactbl2?4h?$CC@ 0000000180015ef0     astable.obj
+ 0002:00005f00       ??_C@_0BA@NIKPCKNC@?$DMacpi?1actbl2?4h?$DO@ 0000000180015f00     astable.obj
+ 0002:00005f10       ??_C@_0L@BNFMGBEO@?$CCactbl3?4h?$CC@ 0000000180015f10     astable.obj
+ 0002:00005f20       ??_C@_0BA@OFMPADGC@?$DMacpi?1actbl3?4h?$DO@ 0000000180015f20     astable.obj
+ 0002:00005f30       ??_C@_0M@GOECECHG@?$CCactypes?4h?$CC@ 0000000180015f30     astable.obj
+ 0002:00005f40       ??_C@_0BB@KPCJLKLO@?$DMacpi?1actypes?4h?$DO@ 0000000180015f40     astable.obj
+ 0002:00005f58       ??_C@_0BD@NKKFDHEL@?$CCplatform?1acenv?4h?$CC@ 0000000180015f58     astable.obj
+ 0002:00005f70       ??_C@_0BI@FAAGFONE@?$DMacpi?1platform?1acenv?4h?$DO@ 0000000180015f70     astable.obj
+ 0002:00005f88       ??_C@_0BF@FOPOHEJ@?$CCplatform?1acenvex?4h?$CC@ 0000000180015f88     astable.obj
+ 0002:00005fa0       ??_C@_0BK@DLOAJHLJ@?$DMacpi?1platform?1acenvex?4h?$DO@ 0000000180015fa0     astable.obj
+ 0002:00005fc0       ??_C@_09PNNJHAGM@?$CCacgcc?4h?$CC@ 0000000180015fc0     astable.obj
+ 0002:00005fd0       ??_C@_0BI@NDAHEENB@?$DMacpi?1platform?1acgcc?4h?$DO@ 0000000180015fd0     astable.obj
+ 0002:00005fe8       ??_C@_0M@FDEMPLCC@?$CCacintel?4h?$CC@ 0000000180015fe8     astable.obj
+ 0002:00005ff8       ??_C@_0BK@NPCLEEMG@?$DMacpi?1platform?1acintel?4h?$DO@ 0000000180015ff8     astable.obj
+ 0002:00006018       ??_C@_0M@EGAGEHCN@?$CCaclinux?4h?$CC@ 0000000180016018     astable.obj
+ 0002:00006028       ??_C@_0BK@MKGBPIMJ@?$DMacpi?1platform?1aclinux?4h?$DO@ 0000000180016028     astable.obj
+ 0002:00006048       ??_C@_0O@GGENMGPH@?$CCaclinuxex?4h?$CC@ 0000000180016048     astable.obj
+ 0002:00006058       ??_C@_0BM@PLDJGHBP@?$DMacpi?1platform?1aclinuxex?4h?$DO@ 0000000180016058     astable.obj
+ 0002:00006078       ??_C@_0BP@CPPBGHMJ@ACPI_DBG_DEPENDENT_RETURN_VOID@ 0000000180016078     astable.obj
+ 0002:00006098       ??_C@_0BD@PCNMNFIP@ACPI_EXPORT_SYMBOL@ 0000000180016098     astable.obj
+ 0002:000060b0       ??_C@_0BI@PCEJKAII@ACPI_EXPORT_SYMBOL_INIT@ 00000001800160b0     astable.obj
+ 0002:000060c8       ??_C@_0BI@FHDAAHOM@ACPI_EXTERNAL_RETURN_OK@ 00000001800160c8     astable.obj
+ 0002:000060e0       ??_C@_0BJ@DOGGACAG@ACPI_EXTERNAL_RETURN_PTR@ 00000001800160e0     astable.obj
+ 0002:00006100       ??_C@_0BM@DLEMFHJF@ACPI_EXTERNAL_RETURN_STATUS@ 0000000180016100     astable.obj
+ 0002:00006120       ??_C@_0BM@FFDIAJEP@ACPI_EXTERNAL_RETURN_UINT32@ 0000000180016120     astable.obj
+ 0002:00006140       ??_C@_0BK@GFGDCAJJ@ACPI_EXTERNAL_RETURN_VOID@ 0000000180016140     astable.obj
+ 0002:00006160       ??_C@_0BM@ONFDLJKC@ACPI_HW_DEPENDENT_RETURN_OK@ 0000000180016160     astable.obj
+ 0002:00006180       ??_C@_0CA@OKCDMJHH@ACPI_HW_DEPENDENT_RETURN_STATUS@ 0000000180016180     astable.obj
+ 0002:000061a0       ??_C@_0BO@CHEAGGPK@ACPI_HW_DEPENDENT_RETURN_VOID@ 00000001800161a0     astable.obj
+ 0002:000061c0       ??_C@_0BP@GAFJFLIC@ACPI_MSG_DEPENDENT_RETURN_VOID@ 00000001800161c0     astable.obj
+ 0002:000061e0       ??_C@_0DF@BNCNBBMM@?1?1?5SPDX?9License?9Identifier?3?5BSD@ 00000001800161e0     astable.obj
+ 0002:00006218       ??_C@_0DI@KJLOPOKE@?1?$CK?5SPDX?9License?9Identifier?3?5BSD@ 0000000180016218     astable.obj
+ 0002:00006250       ??_C@_0BA@LNGLEIJA@?$CIc?$CJ?51999?5?9?52020@ 0000000180016250     astable.obj
+ 0002:00006260       ??_C@_0BA@KEHAHJNB@?$CIc?$CJ?51999?5?9?52021@ 0000000180016260     astable.obj
+ 0002:00006270       ??_C@_0BA@JCBEEAPO@?$CIc?$CJ?52006?5?9?52020@ 0000000180016270     astable.obj
+ 0002:00006280       ??_C@_0BA@ILAPHBLP@?$CIc?$CJ?52006?5?9?52021@ 0000000180016280     astable.obj
+ 0002:00006290       ??_C@_01GFHCPBMG@C@        0000000180016290     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000062a0       ??_C@_1GG@CBENNICG@?$AAF?$AAA?$AAT?$AAA?$AAL?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAR?$AAe@ 00000001800162a0     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00006310       ??_C@_1BKG@PIHDEHDC@?$AAF?$AAA?$AAT?$AAA?$AAL?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAS?$AAh@ 0000000180016310     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000064b8       ??_C@_02KPKOKMHB@?$CFS@    00000001800164b8     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000064bc       ??_C@_15JNBOKNOG@?$AA?$AN?$AA?6@ 00000001800164bc     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000064c4       ??_C@_02FNAGIBCP@?4?$CK@   00000001800164c4     toroC64:_findfirst.obj
+ 0002:000064c7       ??_C@_00CNPNBAHC@@         00000001800164c7     toroC64:Perror.obj
+ 0002:000064c8       ??_C@_02LMMGGCAJ@?3?5@     00000001800164c8     toroC64:Perror.obj
+ 0002:000064d0       ??_C@_07CEGMOJAH@?$CFs?$CFs?$CFs?6@ 00000001800164d0     toroC64:Perror.obj
+ 0002:000064d8       ??_C@_07FPDFEDEI@ctrwaxb@  00000001800164d8     toroC64:Fopen.obj
+ 0002:000064e0       ??_C@_01KDCPPGHE@r@        00000001800164e0     toroC64:Fopen.obj
+ 0002:000064e4       ??_C@_02CHHAKFFB@w?$CL@    00000001800164e4     toroC64:Fopen.obj
+ 0002:000064e8       ??_C@_02DPNLHKJD@a?$CL@    00000001800164e8     toroC64:Fopen.obj
+ 0002:000064ec       ??_C@_01JOAMLHOP@?9@       00000001800164ec     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000064f0       ??_C@_01MIFGBAGJ@?$CL@     00000001800164f0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000064f4       ??_C@_02MDDDDAID@0x@       00000001800164f4     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000064f8       ??_C@_02FGLHBECB@0X@       00000001800164f8     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000064fc       ??_C@_01GBGANLPD@0@        00000001800164fc     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006500       ??_C@_0DB@NHMBHPIK@?$CF08X?9?$CF04X?9?$CF04X?9?$CF02X?$CF02X?9?$CF02X?$CF02@ 0000000180016500     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006538       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02@ 0000000180016538     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006570       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d@ 0000000180016570     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:0000658c       ??_C@_03GOAGKKNE@?$CFqX@   000000018001658c     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006590       ??_C@_07PBILKAFL@Success@  0000000180016590     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006598       ??_C@_0L@PLPBEPPC@Load?5Error@ 0000000180016598     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000065a8       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter@ 00000001800165a8     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000065c0       ??_C@_0M@BEECMOIL@Unsupported@ 00000001800165c0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000065d0       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size@ 00000001800165d0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000065e0       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small@ 00000001800165e0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000065f8       ??_C@_09NKFGCIPN@Not?5Ready@ 00000001800165f8     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006608       ??_C@_0N@HHEABDHO@Device?5Error@ 0000000180016608     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006618       ??_C@_0BA@LNEDDFNB@Write?5Protected@ 0000000180016618     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006628       ??_C@_0BB@GOILNEAA@Out?5of?5Resources@ 0000000180016628     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006640       ??_C@_0P@EIOJGIF@Volume?5Corrupt@ 0000000180016640     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006650       ??_C@_0M@HDLEPOFA@Volume?5Full@ 0000000180016650     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006660       ??_C@_08KEGAJDNN@No?5Media@ 0000000180016660     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006670       ??_C@_0O@JNCJKCCD@Media?5changed@ 0000000180016670     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006680       ??_C@_09CFCBFJND@Not?5Found@ 0000000180016680     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006690       ??_C@_0O@NFHOBIDO@Access?5Denied@ 0000000180016690     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000066a0       ??_C@_0M@ENKCBFEP@No?5Response@ 00000001800166a0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000066b0       ??_C@_0L@IFPBNFC@No?5mapping@ 00000001800166b0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000066c0       ??_C@_08PAFJCNGP@Time?5out@ 00000001800166c0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000066d0       ??_C@_0M@DCJFAFHJ@Not?5started@ 00000001800166d0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000066e0       ??_C@_0BA@IGIBFFPH@Already?5started@ 00000001800166e0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000066f0       ??_C@_07LCKDCBKK@Aborted@  00000001800166f0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000066f8       ??_C@_0L@LKIFCMNO@ICMP?5Error@ 00000001800166f8     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006708       ??_C@_0L@DJKNJKHM@TFTP?5Error@ 0000000180016708     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006718       ??_C@_0P@NCJHBCLM@Protocol?5Error@ 0000000180016718     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006728       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph@ 0000000180016728     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006740       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure@ 0000000180016740     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006758       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure@ 0000000180016758     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006770       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small@ 0000000180016770     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00006790       ??_C@_1O@CEDCILHN@?$AA?$CI?$AAn?$AAu?$AAl?$AAl?$AA?$CJ@ 0000000180016790     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000067a0       ??_C@_06OJHGLDPL@?$CInull?$CJ@ 00000001800167a0     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000067a8       ??_C@_02CBLLGHLK@r?$CL@    00000001800167a8     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067ac       ??_C@_03HMFOOINA@r?$CLb@   00000001800167ac     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067b0       ??_C@_03CCKOKKND@rb?$CL@   00000001800167b0     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067b4       ??_C@_01NOFIACDB@w@        00000001800167b4     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067b8       ??_C@_02GMLFBBN@wb@        00000001800167b8     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067bc       ??_C@_03BFHAFKOB@wb?$CL@   00000001800167bc     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067c0       ??_C@_01MCMALHOG@a@        00000001800167c0     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067c4       ??_C@_02BOGAIONP@ab@       00000001800167c4     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067c8       ??_C@_03DOPCBAKB@a?$CLb@   00000001800167c8     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067cc       ??_C@_03GAACFCKC@ab?$CL@   00000001800167cc     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067d0       ??_C@_08GAJLGCMP@CdeMkDir@ 00000001800167d0     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067dc       ??_C@_13PJJBFPED@?$AA?$DL@ 00000001800167dc     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067e0       ??_C@_13FPGAJAPJ@?$AA?2@   00000001800167e0     toroC64:osifUefiShellFileOpen.obj
+ 0002:000067e4       ??_C@_01KICIPPFI@?2@       00000001800167e4     toroC64:osifUefiShellFileFindAll.obj
+ 0002:000067e8       ??_C@_01JLIPDDHJ@?3@       00000001800167e8     toroC64:osifUefiShellFileGetStatus.obj
+ 0002:000067ec       ??_C@_02OFDPNJAI@FS@       00000001800167ec     toroC64:osifUefiShellFileGetStatus.obj
+ 0002:000067f0       ??_C@_15BFKPJPFA@?$AAA?$AA?3@ 00000001800167f0     toroC64:osifUefiShellCmdExec.obj
+ 0002:000067f8       ??_C@_13JOFGPIOO@?$AA?4@   00000001800167f8     toroC64:_cdeCLocale_.obj
+ 0002:000067fc       ??_C@_11LOCGONAA@@         00000001800167fc     toroC64:_cdeCLocale_.obj
+ 0002:00006800       ??_C@_02GNLKMPOH@?$CK?$DP@ 0000000180016800     toroC64:__cdeStrMatch.obj
+ 0002:00006804       ??_C@_01OGPIMHDM@?$DP@     0000000180016804     toroC64:__cdeStrMatch.obj
+ 0002:00006808       ??_C@_08INEPGKHH@No?5error@ 0000000180016808     toroC64:StrError.obj
+ 0002:00006818       ??_C@_0BI@BJFCGOHL@Operation?5not?5permitted@ 0000000180016818     toroC64:StrError.obj
+ 0002:00006830       ??_C@_0BK@FMDHKPNF@No?5such?5file?5or?5directory@ 0000000180016830     toroC64:StrError.obj
+ 0002:00006850       ??_C@_0BA@FKIAIBGA@No?5such?5process@ 0000000180016850     toroC64:StrError.obj
+ 0002:00006860       ??_C@_0BK@FJBOAFDK@Interrupted?5function?5call@ 0000000180016860     toroC64:StrError.obj
+ 0002:00006880       ??_C@_0BD@KKNFOBBD@Input?1output?5error@ 0000000180016880     toroC64:StrError.obj
+ 0002:00006898       ??_C@_0BK@DPKMCKJ@No?5such?5device?5or?5address@ 0000000180016898     toroC64:StrError.obj
+ 0002:000068b8       ??_C@_0BC@MFFGCDFL@Arg?5list?5too?5long@ 00000001800168b8     toroC64:StrError.obj
+ 0002:000068d0       ??_C@_0BC@HKPNECK@Exec?5format?5error@ 00000001800168d0     toroC64:StrError.obj
+ 0002:000068e8       ??_C@_0BE@NFGDDCEF@Bad?5file?5descriptor@ 00000001800168e8     toroC64:StrError.obj
+ 0002:00006900       ??_C@_0BD@LOHELEP@No?5child?5processes@ 0000000180016900     toroC64:StrError.obj
+ 0002:00006918       ??_C@_0CB@EPFKGNAK@Resource?5temporarily?5unavailabl@ 0000000180016918     toroC64:StrError.obj
+ 0002:00006940       ??_C@_0BB@IMDKMPFB@Not?5enough?5space@ 0000000180016940     toroC64:StrError.obj
+ 0002:00006958       ??_C@_0BC@HFNFNKAI@Permission?5denied@ 0000000180016958     toroC64:StrError.obj
+ 0002:00006970       ??_C@_0M@LOEHLCJD@Bad?5address@ 0000000180016970     toroC64:StrError.obj
+ 0002:00006980       ??_C@_0M@IDOOOPNG@errnum?5?$DN?515@ 0000000180016980     toroC64:StrError.obj
+ 0002:00006990       ??_C@_0BA@BIBLIOEK@Resource?5device@ 0000000180016990     toroC64:StrError.obj
+ 0002:000069a0       ??_C@_0M@NAAJNNGH@File?5exists@ 00000001800169a0     toroC64:StrError.obj
+ 0002:000069b0       ??_C@_0O@OAMDNOCP@Improper?5link@ 00000001800169b0     toroC64:StrError.obj
+ 0002:000069c0       ??_C@_0P@NLEIANHE@No?5such?5device@ 00000001800169c0     toroC64:StrError.obj
+ 0002:000069d0       ??_C@_0BA@CJBACOOL@Not?5a?5directory@ 00000001800169d0     toroC64:StrError.obj
+ 0002:000069e0       ??_C@_0P@NDHGCGKE@Is?5a?5directory@ 00000001800169e0     toroC64:StrError.obj
+ 0002:000069f0       ??_C@_0BB@HMGGCEBG@Invalid?5argument@ 00000001800169f0     toroC64:StrError.obj
+ 0002:00006a08       ??_C@_0BO@IIFBODJE@Too?5many?5open?5files?5in?5system@ 0000000180016a08     toroC64:StrError.obj
+ 0002:00006a28       ??_C@_0BE@INBJMKGG@Too?5many?5open?5files@ 0000000180016a28     toroC64:StrError.obj
+ 0002:00006a40       ??_C@_0CE@ONOKNLPF@Inappropriate?5I?1O?5control?5opera@ 0000000180016a40     toroC64:StrError.obj
+ 0002:00006a68       ??_C@_0M@KKIFACEM@errnum?5?$DN?526@ 0000000180016a68     toroC64:StrError.obj
+ 0002:00006a78       ??_C@_0P@LFMMIPAE@File?5too?5large@ 0000000180016a78     toroC64:StrError.obj
+ 0002:00006a88       ??_C@_0BI@FEALHKLD@No?5space?5left?5on?5device@ 0000000180016a88     toroC64:StrError.obj
+ 0002:00006aa0       ??_C@_0N@FEHLOILP@Invalid?5seek@ 0000000180016aa0     toroC64:StrError.obj
+ 0002:00006ab0       ??_C@_0BG@DDBFNKBH@Read?9only?5file?5system@ 0000000180016ab0     toroC64:StrError.obj
+ 0002:00006ac8       ??_C@_0P@PKCJJLLM@Too?5many?5links@ 0000000180016ac8     toroC64:StrError.obj
+ 0002:00006ad8       ??_C@_0M@LHEPIIOM@Broken?5pipe@ 0000000180016ad8     toroC64:StrError.obj
+ 0002:00006ae8       ??_C@_0N@MMJPGLJK@Domain?5error@ 0000000180016ae8     toroC64:StrError.obj
+ 0002:00006af8       ??_C@_0BB@FCBJFCAJ@Result?5too?5large@ 0000000180016af8     toroC64:StrError.obj
+ 0002:00006b10       ??_C@_0M@IAGKDLLI@errnum?5?$DN?535@ 0000000180016b10     toroC64:StrError.obj
+ 0002:00006b20       ??_C@_0BK@JAEBMJJM@Resource?5deadlock?5avoided@ 0000000180016b20     toroC64:StrError.obj
+ 0002:00006b40       ??_C@_0M@LCFMFJDK@errnum?5?$DN?537@ 0000000180016b40     toroC64:StrError.obj
+ 0002:00006b50       ??_C@_0BC@BEDIHIDK@Filename?5too?5long@ 0000000180016b50     toroC64:StrError.obj
+ 0002:00006b68       ??_C@_0BD@CLHBCGPB@No?5locks?5available@ 0000000180016b68     toroC64:StrError.obj
+ 0002:00006b80       ??_C@_0BJ@IHEHINLI@Function?5not?5implemented@ 0000000180016b80     toroC64:StrError.obj
+ 0002:00006ba0       ??_C@_0BE@ICMCHPHH@Directory?5not?5empty@ 0000000180016ba0     toroC64:StrError.obj
+ 0002:00006bb8       ??_C@_0BG@KLEAJEFJ@Illegal?5byte?5sequence@ 0000000180016bb8     toroC64:StrError.obj
+ 0002:00006bd0       ??_C@_0O@NIPGCINC@Unknown?5error@ 0000000180016bd0     toroC64:StrError.obj
+ 0002:00006be0       ??_C@_0CE@NLPNMFHG@invalid?5parameter?3?5?$CFS?$CI?$CFd?$CJ?5?$CFS?$CI?$CJ?5@ 0000000180016be0     toroC64:_invalid_parameter_handlerCDEABI.obj
+ 0002:00006c08       ??_C@_0BD@NEDHKJBG@invalid?5parameter?6@ 0000000180016c08     toroC64:_invalid_parameter_handlerCDEABI.obj
+ 0002:00006c20       ??_C@_0BO@ICHKIABJ@abnormal?5program?5termination?6@ 0000000180016c20     toroC64:abortCDEABI.obj
+ 0002:00006c5c       __volatile_metadata        0000000180016c5c     <linker-defined>
+ 0003:00000000       AcpiGbl_Optind             0000000180018000     getopt.obj
+ 0003:00000004       AcpiGbl_Opterr             0000000180018004     getopt.obj
+ 0003:00000010       AcpiGbl_AutoSerializeMethods 0000000180018010     utglobal.obj
+ 0003:00000011       AcpiGbl_CreateOsiMethod    0000000180018011     utglobal.obj
+ 0003:00000012       AcpiGbl_UseDefaultRegisterWidths 0000000180018012     utglobal.obj
+ 0003:00000013       AcpiGbl_EnableTableValidation 0000000180018013     utglobal.obj
+ 0003:00000014       AcpiGbl_Use32BitFacsAddresses 0000000180018014     utglobal.obj
+ 0003:00000015       AcpiGbl_RuntimeNamespaceOverride 0000000180018015     utglobal.obj
+ 0003:00000016       AcpiGbl_Shutdown           0000000180018016     utglobal.obj
+ 0003:00000017       AcpiGbl_EarlyInitialization 0000000180018017     utglobal.obj
+ 0003:00000018       AcpiGbl_MaxLoopIterations  0000000180018018     utglobal.obj
+ 0003:0000001c       AcpiGbl_TraceDbgLevel      000000018001801c     utglobal.obj
+ 0003:00000020       AcpiGbl_TraceDbgLayer      0000000180018020     utglobal.obj
+ 0003:00000024       AcpiDbgLevel               0000000180018024     utglobal.obj
+ 0003:00000028       AcpiDbgLayer               0000000180018028     utglobal.obj
+ 0003:0000002c       AcpiGbl_DsdtIndex          000000018001802c     utglobal.obj
+ 0003:00000030       AcpiGbl_FacsIndex          0000000180018030     utglobal.obj
+ 0003:00000034       AcpiGbl_XFacsIndex         0000000180018034     utglobal.obj
+ 0003:00000038       AcpiGbl_FadtIndex          0000000180018038     utglobal.obj
+ 0003:0000003c       AcpiGbl_DbOutputFlags      000000018001803c     utglobal.obj
+ 0003:00000040       AcpiGbl_SleepStateNames    0000000180018040     utglobal.obj
+ 0003:00000070       AcpiGbl_LowestDstateNames  0000000180018070     utglobal.obj
+ 0003:00000098       AcpiGbl_HighestDstateNames 0000000180018098     utglobal.obj
+ 0003:000000c0       AcpiGbl_BitRegisterInfo    00000001800180c0     utglobal.obj
+ 0003:00000110       AcpiGbl_FixedEventInfo     0000000180018110     utglobal.obj
+ 0003:00000130       Gbl_BraceInfo              0000000180018130     asconvrt.obj
+ 0003:00000190       HeaderBegin                0000000180018190     asconvrt.obj
+ 0003:000001a0       CopyRightHeaderEnd         00000001800181a0     asconvrt.obj
+ 0003:00000220       LinuxConversionTable       0000000180018220     astable.obj
+ 0003:000002f0       CleanupConversionTable     00000001800182f0     astable.obj
+ 0003:000003c0       StatsConversionTable       00000001800183c0     astable.obj
+ 0003:00000490       CustomConversionTable      0000000180018490     astable.obj
+ 0003:00000560       LicenseConversionTable     0000000180018560     astable.obj
+ 0003:00000630       IndentConversionTable      0000000180018630     astable.obj
+ 0003:00000700       StandardDataTypes          0000000180018700     astable.obj
+ 0003:00000870       DualLicenseHeader          0000000180018870     astable.obj
+ 0003:00000fd0       LinuxDataTypes             0000000180018fd0     astable.obj
+ 0003:000012a0       AcpiIdentifiers            00000001800192a0     astable.obj
+ 0003:00003a70       LinuxAddStruct             000000018001ba70     astable.obj
+ 0003:00003a98       LinuxEliminateLines_C      000000018001ba98     astable.obj
+ 0003:00003aa8       LinuxConditionalIdentifiers 000000018001baa8     astable.obj
+ 0003:00003ac0       LinuxSpecialStrings        000000018001bac0     astable.obj
+ 0003:00003cc0       LinuxSpecialMacros         000000018001bcc0     astable.obj
+ 0003:00003d30       CustomReplacements         000000018001bd30     astable.obj
+ 0003:00004e30       CdeAppIfShell              000000018001ce30     toroC64:osifUefiShellEntryPoint.obj
+ 0003:00005480       _fltused                   000000018001d480     toroC64:_fltused.obj
+ 0003:00005750       _cdeLconv_C                000000018001d750     toroC64:_cdeCLocale_.obj
+ 0003:000057e8       _cdeCLocale                000000018001d7e8     toroC64:_cdeCLocale_.obj
+ 0003:00005800       __imp_free                 000000018001d800     toroC64:FreeCDEABI.obj
+ 0003:00005808       __imp_memset               000000018001d808     toroC64:MemSetCDEINTRINABI.obj
+ 0003:00005810       __imp_fclose               000000018001d810     toroC64:FcloseCDEABI.obj
+ 0003:00005818       __imp_fgetc                000000018001d818     toroC64:FgetcCDEABI.obj
+ 0003:00005820       __imp_fwrite               000000018001d820     toroC64:FwriteCDEABI.obj
+ 0003:00005828       __imp_sprintf              000000018001d828     toroC64:SprintfCDEABI.obj
+ 0003:00005830       __imp_raise                000000018001d830     toroC64:raiseCDEABI.obj
+ 0003:00005838       _gCdeEfiShellProtocolGuid  000000018001d838     toroC64:EFI_SHELL_PROTOCOL_GUID.obj
+ 0003:000059c0       __imp_strlen               000000018001d9c0     toroC64:StrLenCDEABI.obj
+ 0003:000059c8       __imp_wcslen               000000018001d9c8     toroC64:WcsLenCDEABI.obj
+ 0003:000059d8       __imp_isspace              000000018001d9d8     toroC64:isspaceCDEABI.obj
+ 0003:000059e0       __imp_isdigit              000000018001d9e0     toroC64:isdigitCDEABI.obj
+ 0003:000059e8       __imp_isxdigit             000000018001d9e8     toroC64:isxdigitCDEABI.obj
+ 0003:000059f0       __imp__mktime64            000000018001d9f0     toroC64:mktimeCDEABI.obj
+ 0003:000059f8       __imp_mktime               000000018001d9f8     toroC64:mktimeCDEABI.obj
+ 0003:00005a00       __imp_wcschr               000000018001da00     toroC64:WcsChrCDEABI.obj
+ 0003:00005a08       __imp_wcscat               000000018001da08     toroC64:WcsCatCDEABI.obj
+ 0003:00005a10       __imp_wcscpy               000000018001da10     toroC64:WcsCpyCDEABI.obj
+ 0003:00005a20       __imp_wcsncmp              000000018001da20     toroC64:WcsNCmpCDEABI.obj
+ 0003:00005a28       __imp_wcsncpy              000000018001da28     toroC64:WcsNCpyCDEABI.obj
+ 0003:00005a38       __imp_wcstok               000000018001da38     toroC64:WcsTokCDEABI.obj
+ 0003:00005a48       __imp__wcsicmp             000000018001da48     toroC64:_WcsICmpCDEABI.obj
+ 0003:00005a58       __imp_strcmp               000000018001da58     toroC64:StrCmpCDEABI.obj
+ 0003:00005a68       __imp__stricmp             000000018001da68     toroC64:_StrICmpCDEABI.obj
+ 0003:00005a70       _gEfiSimpleFileSystemProtocolGuid 000000018001da70     toroC64:EFI_SIMPLE_FILE_SYSTEM_PROTOCOL_GUID.obj
+ 0003:00005a80       _gEfiDevicePathToTextProtocolGuid 000000018001da80     toroC64:EFI_DEVICE_PATH_TO_TEXT_PROTOCOL_GUID.obj
+ 0003:00005a90       _gEfiDevicePathProtocolGuid 000000018001da90     toroC64:EFI_DEVICE_PATH_PROTOCOL_GUID.obj
+ 0003:00005aa0       __imp_malloc               000000018001daa0     toroC64:MallocCDEABI.obj
+ 0003:00005aa8       __imp_wcsrchr              000000018001daa8     toroC64:WcsRChrCDEABI.obj
+ 0003:00005ab0       __imp__errno               000000018001dab0     toroC64:errnoCDEABI.obj
+ 0003:00005ab8       __imp_fopen                000000018001dab8     toroC64:FopenCDEABI.obj
+ 0003:00005ac0       __imp_fread                000000018001dac0     toroC64:FreadCDEABI.obj
+ 0003:00005ac8       __imp_fseek                000000018001dac8     toroC64:FseekCDEABI.obj
+ 0003:00005ad0       __imp_strchr               000000018001dad0     toroC64:StrChrCDEABI.obj
+ 0003:00005ad8       __imp_realloc              000000018001dad8     toroC64:ReallocCDEABI.obj
+ 0003:00005ae0       __imp_wcstombs             000000018001dae0     toroC64:wcstombsCDEABI.obj
+ 0003:00005ae8       __imp_mbstowcs             000000018001dae8     toroC64:mbstowcsCDEABI.obj
+ 0003:00005af0       __imp_strncpy              000000018001daf0     toroC64:StrNCpyCDEABI.obj
+ 0003:00005b00       __imp_strncmp              000000018001db00     toroC64:StrNCmpCDEABI.obj
+ 0003:00005b08       __imp_strcpy               000000018001db08     toroC64:StrCpyCDEABI.obj
+ 0003:00005b10       __imp_strcat               000000018001db10     toroC64:StrCatCDEABI.obj
+ 0003:00005b18       __imp_strtol               000000018001db18     toroC64:strtolCDEABI.obj
+ 0003:00005b20       __imp_strstr               000000018001db20     toroC64:StrStrCDEABI.obj
+ 0003:00005b28       _gEfiFileInfoIdGuid        000000018001db28     toroC64:EFI_FILE_INFO_ID_GUID.obj
+ 0003:00005b38       __imp_wcsstr               000000018001db38     toroC64:WcsStrCDEABI.obj
+ 0003:00005b40       __imp_fflush               000000018001db40     toroC64:FflushCDEABI.obj
+ 0003:00005b48       __imp_remove               000000018001db48     toroC64:RemoveCDEABI.obj
+ 0003:00005b50       pinvalid_parameter_handlerCDEABI 000000018001db50     toroC64:_invalid_parameter_handlerCDEABI.obj
+ 0003:00005b60       __imp_vsnprintf            000000018001db60     toroC64:VsnprintfCDEABI.obj
+ 0003:00005b70       __imp_fsetpos              000000018001db70     toroC64:FsetposCDEABI.obj
+ 0003:00005b80       pinvalid_parameter_handler 000000018001db80     toroC64:_invalid_parameter_handler.obj
+ 0003:00005b88       __imp_wcspbrk              000000018001db88     toroC64:WcsPbrkCDEABI.obj
+ 0003:00005b90       __imp_memcpy               000000018001db90     toroC64:MemCpyCDEABI.obj
+ 0003:00005ba0       __imp_strtok               000000018001dba0     toroC64:StrTokCDEABI.obj
+ 0003:00005ba8       __imp_strpbrk              000000018001dba8     toroC64:StrPbrkCDEABI.obj
+ 0003:00005bc0       __imp_exit                 000000018001dbc0     toroC64:exitCDEABI.obj
+ 0003:00005bc8       __imp_fprintf              000000018001dbc8     toroC64:FprintfCDEABI.obj
+ 0003:00005bd0       __imp_abort                000000018001dbd0     toroC64:abortCDEABI.obj
+ 0003:00005bd8       _gCdeCfgCmdLnParmPoolMemRetain 000000018001dbd8     toroC64:_gCdeCfgCmdLnParmPoolMemRetain.obj
+ 0003:00005be0       __imp_vfprintf             000000018001dbe0     toroC64:VfprintfCDEABI.obj
+ 0003:00005be8       __imp_fputc                000000018001dbe8     toroC64:FputcCDEABI.obj
+ 0003:00005c00       AcpiGbl_SubOptChar         000000018001dc00     getopt.obj
+ 0003:00005c08       AcpiGbl_EnableInterpreterSlack 000000018001dc08     utglobal.obj
+ 0003:00005c09       AcpiGbl_EnableAmlDebugObject 000000018001dc09     utglobal.obj
+ 0003:00005c0a       AcpiGbl_CopyDsdtLocally    000000018001dc0a     utglobal.obj
+ 0003:00005c0b       AcpiGbl_DoNotUseXsdt       000000018001dc0b     utglobal.obj
+ 0003:00005c0c       AcpiGbl_Use32BitFadtAddresses 000000018001dc0c     utglobal.obj
+ 0003:00005c0d       AcpiGbl_TruncateIoAddresses 000000018001dc0d     utglobal.obj
+ 0003:00005c0e       AcpiGbl_DisableAutoRepair  000000018001dc0e     utglobal.obj
+ 0003:00005c0f       AcpiGbl_DisableSsdtTableInstall 000000018001dc0f     utglobal.obj
+ 0003:00005c10       AcpiGbl_OsiData            000000018001dc10     utglobal.obj
+ 0003:00005c11       AcpiGbl_ReducedHardware    000000018001dc11     utglobal.obj
+ 0003:00005c12       AcpiGbl_IgnorePackageResolutionErrors 000000018001dc12     utglobal.obj
+ 0003:00005c13       AcpiGbl_DisplayDebugTimer  000000018001dc13     utglobal.obj
+ 0003:00005c14       AcpiGbl_TraceFlags         000000018001dc14     utglobal.obj
+ 0003:00005c18       AcpiGbl_TraceMethodName    000000018001dc18     utglobal.obj
+ 0003:00005c20       AcpiGbl_StartupFlags       000000018001dc20     utglobal.obj
+ 0003:00005c24       AcpiGbl_NamespaceInitialized 000000018001dc24     utglobal.obj
+ 0003:00005c25       AcpiGbl_CaptureComments    000000018001dc25     utglobal.obj
+ 0003:00005c26       AcpiGbl_DebugTimeout       000000018001dc26     utglobal.obj
+ 0003:00005c28       AcpiGbl_CurrentScope       000000018001dc28     utglobal.obj
+ 0003:00005c30       AcpiGbl_LastListHead       000000018001dc30     utglobal.obj
+ 0003:00005c38       AcpiGbl_DebugFile          000000018001dc38     utglobal.obj
+ 0003:00005c40       AcpiGbl_OutputFile         000000018001dc40     utglobal.obj
+ 0003:00005c48       Gbl_Files                  000000018001dc48     asmain.obj
+ 0003:00005c4c       Gbl_MissingBraces          000000018001dc4c     asmain.obj
+ 0003:00005c50       Gbl_Tabs                   000000018001dc50     asmain.obj
+ 0003:00005c54       Gbl_NonAnsiComments        000000018001dc54     asmain.obj
+ 0003:00005c58       Gbl_SourceLines            000000018001dc58     asmain.obj
+ 0003:00005c5c       Gbl_WhiteLines             000000018001dc5c     asmain.obj
+ 0003:00005c60       Gbl_CommentLines           000000018001dc60     asmain.obj
+ 0003:00005c64       Gbl_LongLines              000000018001dc64     asmain.obj
+ 0003:00005c68       Gbl_TotalLines             000000018001dc68     asmain.obj
+ 0003:00005c6c       Gbl_HeaderSize             000000018001dc6c     asmain.obj
+ 0003:00005c70       Gbl_HeaderLines            000000018001dc70     asmain.obj
+ 0003:00005c74       Gbl_TotalSize              000000018001dc74     asmain.obj
+ 0003:00005c78       Gbl_VerboseMode            000000018001dc78     asmain.obj
+ 0003:00005c79       Gbl_QuietMode              000000018001dc79     asmain.obj
+ 0003:00005c7a       Gbl_BatchMode              000000018001dc7a     asmain.obj
+ 0003:00005c7b       Gbl_MadeChanges            000000018001dc7b     asmain.obj
+ 0003:00005c7c       Gbl_Overwrite              000000018001dc7c     asmain.obj
+ 0003:00005c7d       Gbl_WidenDeclarations      000000018001dc7d     asmain.obj
+ 0003:00005c7e       Gbl_IgnoreLoneLineFeeds    000000018001dc7e     asmain.obj
+ 0003:00005c7f       Gbl_HasLoneLineFeeds       000000018001dc7f     asmain.obj
+ 0003:00005c80       Gbl_Cleanup                000000018001dc80     asmain.obj
+ 0003:00005c81       Gbl_IgnoreTranslationEscapes 000000018001dc81     asmain.obj
+ 0003:00005c82       Gbl_CheckAscii             000000018001dc82     asmain.obj
+ 0003:00005c83       Gbl_DebugStatementsMode    000000018001dc83     asmain.obj
+ 0003:00005c88       Gbl_StructDefs             000000018001dc88     asmain.obj
+ 0003:00005c90       EmptyHeader                000000018001dc90     astable.obj
+ 0003:00005c98       LinuxEliminateLines_H      000000018001dc98     astable.obj
+ 0003:000192c0       _gCdeCfgCmdLnParmReportStatusCodeSTDOUT 00000001800312c0     toroC64:_gCdeCfgCmdLnParmReportStatusCodeSTDOUT.obj
+ 0003:000192c4       Gbl_FileType               00000001800312c4     <common>
+ 0003:000192c8       Gbl_FileSize               00000001800312c8     <common>
+ 0003:000192d0       Gbl_FileBuffer             00000001800312d0     <common>
+ 0003:000192e0       Gbl_StatBuf                00000001800312e0     <common>
+ 0003:00019310       NonAnsiCommentCount        0000000180031310     <common>
+ 0003:00019318       TimerFrequency             0000000180031318     <common>
+ 0003:00019320       AcpiGbl_PrintLock          0000000180031320     <common>
+ 0003:00019328       AcpiGbl_Optarg             0000000180031328     <common>
+ 0003:00019330       pConIOPutStr               0000000180031330     <common>
+ 0003:00019338       pConIOClr                  0000000180031338     <common>
+ 0003:00019340       pCdeEfiDevicePathToTextProtocol 0000000180031340     <common>
+ 0003:00019348       gszCdeDriverName           0000000180031348     <common>
+ 0003:00019350       _cdegRT                    0000000180031350     <common>
+ 0003:00019358       _cdegBS                    0000000180031358     <common>
+ 0003:00019360       _cdegST                    0000000180031360     <common>
+ 0003:00019368       _cdegImageHandle           0000000180031368     <common>
+
+ entry point at        0001:00004d18
+
+ Static symbols
+
+ 0001:00002460       AsCheckBracesCallback      0000000180003460 f   asconvrt.obj
+ 0001:0000253c       AsCountLines               000000018000353c f   asconvrt.obj
+ 0001:000025ec       AsMatchValidToken          00000001800035ec f   asconvrt.obj
+ 0001:000034d8       AsCheckForNonPrintableChars 00000001800044d8 f   asfile.obj
+ 0001:000046b8       _StdOutPutChar             00000001800056b8 f   toroC64:osifUefiShellEntryPoint.obj
+ 0001:00004700       _StdInGetChar              0000000180005700 f   toroC64:osifUefiShellEntryPoint.obj
+ 0001:00004d44       __CdeChkCtrlC              0000000180005d44 f   toroC64:osifUefiShellEntryPoint.obj
+ 0001:00005554       __fputcpp                  0000000180006554 f   toroC64:Vfprintf.obj
+ 0001:00007178       $LN275                     0000000180008178     toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000071fc       ExpFieldOfDouble           00000001800081fc f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00007210       FractBinDigits             0000000180008210 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00007278       FractFieldOfDouble         0000000180008278 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:0000728c       IntgrBinDigits             000000018000828c f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000072d4       fract2bcd                  00000001800082d4 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000073ac       intgr2bcd                  00000001800083ac f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000074ac       nfill                      00000001800084ac f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:0000751c       nprintfield                000000018000851c f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000079a0       num2str                    00000001800089a0 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00007b04       str2dev                    0000000180008b04 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00008d20       GetCharAndCount            0000000180009d20 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00008d4c       IsCharInNumberRange        0000000180009d4c f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00008dc0       StoreTerminate             0000000180009dc0 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00008e20       UngetCharAndDecount        0000000180009e20 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00008e40       inrange                    0000000180009e40 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00008e68       str2num                    0000000180009e68 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00009914       __insertFree               000000018000a914 f   toroC64:_cdeCoreMemRealloc.obj
+ 0001:00009cf4       bcd2int                    000000018000acf4 f   toroC64:osifIbmAtGetTime.obj
+ 0001:00009d0c       inside                     000000018000ad0c f   toroC64:osifIbmAtGetTime.obj
+ 0001:00009d1c       rtcrd8                     000000018000ad1c f   toroC64:osifIbmAtGetTime.obj
+ 0001:0000a5a4       __CdeFsEnum                000000018000b5a4 f   toroC64:osifUefiShellFileOpen.obj
+ 0001:0000a73c       __CdeIsFsEnum              000000018000b73c f   toroC64:osifUefiShellFileOpen.obj
+ 0001:0000a74c       efifopen                   000000018000b74c f   toroC64:osifUefiShellFileOpen.obj
+ 0001:0000ae30       __cdeReadDirectory         000000018000be30 f   toroC64:osifUefiShellFileFindAll.obj
+ 0001:0000b1c0       myConIOClr                 000000018000c1c0 f   toroC64:osifUefiShellCmdExec.obj
+ 0001:0000b1cc       myConIOPutStr              000000018000c1cc f   toroC64:osifUefiShellCmdExec.obj
+ 0001:0000bd30       $$000000                   000000018000cd30     toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000c040       $$000000                   000000018000d040     toroC64:CdeGetCurrentPrivilegeLevel64.obj
+ 0001:0000c044       freeCDEABI                 000000018000d044 f   toroC64:FreeCDEABI.obj
+ 0001:0000c074       fcloseCDEABI               000000018000d074 f   toroC64:FcloseCDEABI.obj
+ 0001:0000c130       fgetcCDEABI                000000018000d130 f   toroC64:FgetcCDEABI.obj
+ 0001:0000c17c       fwriteCDEABI               000000018000d17c f   toroC64:FwriteCDEABI.obj
+ 0001:0000c1d4       sprintfCDEABI              000000018000d1d4 f   toroC64:SprintfCDEABI.obj
+ 0001:0000c200       raiseCDEABI                000000018000d200 f   toroC64:raiseCDEABI.obj
+ 0001:0000c950       $$000000                   000000018000d950     toroC64:longjmp64CDEINTRINABI.obj
+ 0001:0000cb78       strlenCDEABI               000000018000db78 f   toroC64:StrLenCDEABI.obj
+ 0001:0000cb8c       wcslenCDEABI               000000018000db8c f   toroC64:WcsLenCDEABI.obj
+ 0001:0000cbf0       isspaceCDEABI              000000018000dbf0 f   toroC64:isspaceCDEABI.obj
+ 0001:0000cc08       isdigitCDEABI              000000018000dc08 f   toroC64:isdigitCDEABI.obj
+ 0001:0000cc1c       isxdigitCDEABI             000000018000dc1c f   toroC64:isxdigitCDEABI.obj
+ 0001:0000ccb4       _mktime64CDEABI            000000018000dcb4 f   toroC64:mktimeCDEABI.obj
+ 0001:0000cd44       mktimeCDEABI               000000018000dd44 f   toroC64:mktimeCDEABI.obj
+ 0001:0000cef8       wcschrCDEABI               000000018000def8 f   toroC64:WcsChrCDEABI.obj
+ 0001:0000cf30       wcscatCDEABI               000000018000df30 f   toroC64:WcsCatCDEABI.obj
+ 0001:0000cf64       wcscpyCDEABI               000000018000df64 f   toroC64:WcsCpyCDEABI.obj
+ 0001:0000cf9c       wcsncmpCDEABI              000000018000df9c f   toroC64:WcsNCmpCDEABI.obj
+ 0001:0000cfe4       wcsncpyCDEABI              000000018000dfe4 f   toroC64:WcsNCpyCDEABI.obj
+ 0001:0000d028       wcstokCDEABI               000000018000e028 f   toroC64:WcsTokCDEABI.obj
+ 0001:0000d078       _wcsicmpCDEABI             000000018000e078 f   toroC64:_WcsICmpCDEABI.obj
+ 0001:0000d0b4       strcmpCDEABI               000000018000e0b4 f   toroC64:StrCmpCDEABI.obj
+ 0001:0000d0f0       _stricmpCDEABI             000000018000e0f0 f   toroC64:_StrICmpCDEABI.obj
+ 0001:0000d214       mallocCDEABI               000000018000e214 f   toroC64:MallocCDEABI.obj
+ 0001:0000d220       wcsrchrCDEABI              000000018000e220 f   toroC64:WcsRChrCDEABI.obj
+ 0001:0000d278       _errnoCDEABI               000000018000e278 f   toroC64:errnoCDEABI.obj
+ 0001:0000d29c       fopenCDEABI                000000018000e29c f   toroC64:FopenCDEABI.obj
+ 0001:0000d4d8       freadCDEABI                000000018000e4d8 f   toroC64:FreadCDEABI.obj
+ 0001:0000d530       fseekCDEABI                000000018000e530 f   toroC64:FseekCDEABI.obj
+ 0001:0000d538       strchrCDEABI               000000018000e538 f   toroC64:StrChrCDEABI.obj
+ 0001:0000d56c       reallocCDEABI              000000018000e56c f   toroC64:ReallocCDEABI.obj
+ 0001:0000d5a4       wcstombsCDEABI             000000018000e5a4 f   toroC64:wcstombsCDEABI.obj
+ 0001:0000d5f4       mbstowcsCDEABI             000000018000e5f4 f   toroC64:mbstowcsCDEABI.obj
+ 0001:0000d61c       strncpyCDEABI              000000018000e61c f   toroC64:StrNCpyCDEABI.obj
+ 0001:0000d660       strncmpCDEABI              000000018000e660 f   toroC64:StrNCmpCDEABI.obj
+ 0001:0000d6a8       strcpyCDEABI               000000018000e6a8 f   toroC64:StrCpyCDEABI.obj
+ 0001:0000d6e0       strcatCDEABI               000000018000e6e0 f   toroC64:StrCatCDEABI.obj
+ 0001:0000d714       strtolCDEABI               000000018000e714 f   toroC64:strtolCDEABI.obj
+ 0001:0000d7cc       strstrCDEABI               000000018000e7cc f   toroC64:StrStrCDEABI.obj
+ 0001:0000d864       wcsstrCDEABI               000000018000e864 f   toroC64:WcsStrCDEABI.obj
+ 0001:0000d9b8       fflushCDEABI               000000018000e9b8 f   toroC64:FflushCDEABI.obj
+ 0001:0000d9dc       removeCDEABI               000000018000e9dc f   toroC64:RemoveCDEABI.obj
+ 0001:0000da54       invalid_parameter_handler  000000018000ea54 f   toroC64:_invalid_parameter_handlerCDEABI.obj
+ 0001:0000dad8       vsnprintfCDEABI            000000018000ead8 f   toroC64:VsnprintfCDEABI.obj
+ 0001:0000dcf0       invalid_parameter_handler  000000018000ecf0 f   toroC64:_invalid_parameter_handler.obj
+ 0001:0000df70       wcspbrkCDEABI              000000018000ef70 f   toroC64:WcsPbrkCDEABI.obj
+ 0001:0000dfb4       memcpyCDEABI               000000018000efb4 f   toroC64:MemCpyCDEABI.obj
+ 0001:0000e048       strtokCDEABI               000000018000f048 f   toroC64:StrTokCDEABI.obj
+ 0001:0000e08c       strpbrkCDEABI              000000018000f08c f   toroC64:StrPbrkCDEABI.obj
+ 0001:0000e17c       exitCDEABI                 000000018000f17c f   toroC64:exitCDEABI.obj
+ 0001:0000e1a4       fprintfCDEABI              000000018000f1a4 f   toroC64:FprintfCDEABI.obj
+ 0001:0000e1c8       abortCDEABI                000000018000f1c8 f   toroC64:abortCDEABI.obj
+ 0001:0000e2d4       __fputcpp                  000000018000f2d4 f   toroC64:VfprintfCDEABI.obj
+ 0001:0000e2e4       vfprintfCDEABI             000000018000f2e4 f   toroC64:VfprintfCDEABI.obj
+ 0001:0000e470       fputcCDEABI                000000018000f470 f   toroC64:FputcCDEABI.obj
+ 0002:00000120       AcpiGbl_ExceptionNames_Env 0000000180010120     utexcep.obj
+ 0002:00000240       AcpiGbl_ExceptionNames_Pgm 0000000180010240     utexcep.obj
+ 0002:00000290       AcpiGbl_ExceptionNames_Tbl 0000000180010290     utexcep.obj
+ 0002:000002c0       AcpiGbl_ExceptionNames_Aml 00000001800102c0     utexcep.obj
+ 0002:000003f0       AcpiGbl_ExceptionNames_Ctrl 00000001800103f0     utexcep.obj
+ 0002:00000458       _AcpiModuleName            0000000180010458     utexcep.obj
+ 0002:00000ef8       _AcpiModuleName            0000000180010ef8     utmath.obj
+ 0002:00000ff8       _AcpiModuleName            0000000180010ff8     oswinxf.obj
+ 0002:00006dd4       $unwind$CmGetFileSize      0000000180016dd4     cmfsize.obj
+ 0002:00006de4       $unwind$AcpiGetopt         0000000180016de4     getopt.obj
+ 0002:00006dfc       $unwind$AcpiGetoptArgument 0000000180016dfc     getopt.obj
+ 0002:00006e04       $unwind$AcpiFormatException 0000000180016e04     utexcep.obj
+ 0002:00006e0c       $unwind$AcpiUtDivide       0000000180016e0c     utmath.obj
+ 0002:00006e14       $unwind$AcpiUtShortDivide  0000000180016e14     utmath.obj
+ 0002:00006e1c       $unwind$AcpiUtStrupr       0000000180016e1c     utnonansi.obj
+ 0002:00006e24       $unwind$AcpiUtStrlwr       0000000180016e24     utnonansi.obj
+ 0002:00006e2c       $unwind$AcpiUtStricmp      0000000180016e2c     utnonansi.obj
+ 0002:00006e3c       $unwind$AcpiUtSafeStrcpy   0000000180016e3c     utnonansi.obj
+ 0002:00006e4c       $unwind$AcpiUtSafeStrncpy  0000000180016e4c     utnonansi.obj
+ 0002:00006e58       $unwind$AcpiUtSafeStrcat   0000000180016e58     utnonansi.obj
+ 0002:00006e6c       $unwind$AcpiUtSafeStrncat  0000000180016e6c     utnonansi.obj
+ 0002:00006e84       $unwind$AcpiError          0000000180016e84     utxferror.obj
+ 0002:00006e90       $unwind$AcpiException      0000000180016e90     utxferror.obj
+ 0002:00006e9c       $unwind$AcpiWarning        0000000180016e9c     utxferror.obj
+ 0002:00006ea8       $unwind$AcpiInfo           0000000180016ea8     utxferror.obj
+ 0002:00006eb0       $unwind$AcpiBiosError      0000000180016eb0     utxferror.obj
+ 0002:00006ebc       $unwind$AcpiBiosException  0000000180016ebc     utxferror.obj
+ 0002:00006ec8       $unwind$AcpiBiosWarning    0000000180016ec8     utxferror.obj
+ 0002:00006ed4       $unwind$AcpiOsOpenDirectory 0000000180016ed4     oswindir.obj
+ 0002:00006eec       $unwind$AcpiOsGetNextFilename 0000000180016eec     oswindir.obj
+ 0002:00006ef8       $unwind$AcpiOsCloseDirectory 0000000180016ef8     oswindir.obj
+ 0002:00006f00       $unwind$AcpiOsInitialize   0000000180016f00     oswinxf.obj
+ 0002:00006f08       $unwind$AcpiOsExecute      0000000180016f08     oswinxf.obj
+ 0002:00006f10       $unwind$AcpiOsReadPort     0000000180016f10     oswinxf.obj
+ 0002:00006f18       $unwind$AcpiOsWritePort    0000000180016f18     oswinxf.obj
+ 0002:00006f20       $unwind$AcpiOsReadable     0000000180016f20     oswinxf.obj
+ 0002:00006f28       $unwind$AcpiOsWritable     0000000180016f28     oswinxf.obj
+ 0002:00006f30       $unwind$AcpiOsGetTimer     0000000180016f30     oswinxf.obj
+ 0002:00006f38       $unwind$AcpiOsPrintf       0000000180016f38     oswinxf.obj
+ 0002:00006f40       $unwind$AcpiOsVprintf      0000000180016f40     oswinxf.obj
+ 0002:00006f50       $unwind$AcpiOsGetLine      0000000180016f50     oswinxf.obj
+ 0002:00006f68       $unwind$AsLowerCaseString  0000000180016f68     ascase.obj
+ 0002:00006f84       $unwind$AsMixedCaseToUnderscores 0000000180016f84     ascase.obj
+ 0002:00006f9c       $unwind$AsLowerCaseIdentifiers 0000000180016f9c     ascase.obj
+ 0002:00006fa4       $unwind$AsUppercaseTokens  0000000180016fa4     ascase.obj
+ 0002:00006fbc       $unwind$AsReplaceString    0000000180016fbc     asconvrt.obj
+ 0002:00006fd8       $unwind$AsTrimLines        0000000180016fd8     asconvrt.obj
+ 0002:00006fe4       $unwind$AsCountTabs        0000000180016fe4     asconvrt.obj
+ 0002:00006ff4       $unwind$AsBracesOnSameLine 0000000180016ff4     asconvrt.obj
+ 0002:0000700c       $unwind$AsCountSourceLines 000000018001700c     asconvrt.obj
+ 0002:00007014       $unwind$AsCountNonAnsiComments 0000000180017014     asconvrt.obj
+ 0002:0000701c       $unwind$AsTrimWhitespace   000000018001701c     asconvrt.obj
+ 0002:00007024       $unwind$AsTabify4          0000000180017024     asconvrt.obj
+ 0002:00007030       $unwind$AsTabify8          0000000180017030     asconvrt.obj
+ 0002:0000704c       $unwind$AsReplaceHeader    000000018001704c     asconvrt.obj
+ 0002:0000705c       $unwind$AsDoSpdxHeader     000000018001705c     asconvrt.obj
+ 0002:00007068       $unwind$AsRemoveExtraLines 0000000180017068     asconvrt.obj
+ 0002:00007078       $unwind$AsRemoveSpacesAfterPeriod 0000000180017078     asconvrt.obj
+ 0002:00007084       $unwind$AsMatchExactWord   0000000180017084     asconvrt.obj
+ 0002:00007090       $unwind$AsPrint            0000000180017090     asconvrt.obj
+ 0002:00007098       $unwind$AsInsertPrefix     0000000180017098     asconvrt.obj
+ 0002:000070b4       $unwind$AsInsertCarriageReturns 00000001800170b4     asconvrt.obj
+ 0002:000070bc       $unwind$AsConvertToLineFeeds 00000001800170bc     asconvrt.obj
+ 0002:000070c4       $unwind$AsCheckBracesCallback 00000001800170c4     asconvrt.obj
+ 0002:000070dc       $unwind$AsMatchValidToken  00000001800170dc     asconvrt.obj
+ 0002:000070f8       $unwind$AsCountLines       00000001800170f8     asconvrt.obj
+ 0002:000070f8       $unwind$AsCheckForNonPrintableChars 00000001800170f8     asfile.obj
+ 0002:00007110       $unwind$AsProcessTree      0000000180017110     asfile.obj
+ 0002:00007124       $unwind$AsGetFile          0000000180017124     asfile.obj
+ 0002:00007140       $unwind$AsPutFile          0000000180017140     asfile.obj
+ 0002:00007158       $unwind$AsConvertFile      0000000180017158     asfile.obj
+ 0002:00007170       $unwind$AsProcessOneFile   0000000180017170     asfile.obj
+ 0002:0000718c       $unwind$AsCheckForDirectory 000000018001718c     asfile.obj
+ 0002:000071a4       $unwind$AsDoWildcard       00000001800171a4     asfile.obj
+ 0002:000071c0       $unwind$AsDetectLoneLineFeeds 00000001800171c0     asfile.obj
+ 0002:000071c8       $unwind$AsExaminePaths     00000001800171c8     asmain.obj
+ 0002:000071dc       $unwind$AsDisplayStats     00000001800171dc     asmain.obj
+ 0002:000071e4       $unwind$AsDisplayUsage     00000001800171e4     asmain.obj
+ 0002:000071ec       $unwind$main               00000001800171ec     asmain.obj
+ 0002:000071fc       $unwind$AsRemoveLine       00000001800171fc     asremove.obj
+ 0002:00007208       $unwind$AsReduceTypedefs   0000000180017208     asremove.obj
+ 0002:0000721c       $unwind$AsRemoveDebugMacros 000000018001721c     asremove.obj
+ 0002:00007228       $unwind$AsRemoveEmptyBlocks 0000000180017228     asremove.obj
+ 0002:00007240       $unwind$AsCleanupSpecialMacro 0000000180017240     asremove.obj
+ 0002:00007250       $unwind$AsRemoveConditionalCompile 0000000180017250     asremove.obj
+ 0002:00007268       $unwind$AsRemoveStatement  0000000180017268     asremove.obj
+ 0002:00007280       $unwind$AsReplaceData      0000000180017280     asutils.obj
+ 0002:00007298       $unwind$AsInsertData       0000000180017298     asutils.obj
+ 0002:000072ac       $unwind$AsRemoveData       00000001800172ac     asutils.obj
+ 0002:000072b8       $unwind$QueryPerformanceFrequency4UEFI 00000001800172b8     Win324UEFI:QueryPerformanceFrequency.obj
+ 0002:000072c4       $unwind$FractBinDigits     00000001800172c4     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000072c4       $unwind$IntgrBinDigits     00000001800172c4     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000072c4       $unwind$__CdeChkCtrlC      00000001800172c4     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000072c4       $unwind$GetTickCount644UEFI 00000001800172c4     Win324UEFI:GetTickCount64.obj
+ 0002:000072cc       $unwind$fract2bcd          00000001800172cc     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000072cc       $unwind$GetCharAndCount    00000001800172cc     toroC64:_cdeCoreVwxScanf.obj
+ 0002:000072cc       $unwind$Sleep4UEFI         00000001800172cc     Win324UEFI:Sleep.obj
+ 0002:000072d8       $unwind$__cdeGetAppIf      00000001800172d8     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000072e0       $unwind$_StdOutPutChar     00000001800172e0     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000072e8       $unwind$_StdInGetChar      00000001800172e8     toroC64:osifUefiShellEntryPoint.obj
+ 0002:000072f0       $unwind$_MainEntryPointShell 00000001800172f0     toroC64:osifUefiShellEntryPoint.obj
+ 0002:00007308       $unwind$__acrt_iob_func    0000000180017308     toroC64:__acrt_iob_func.obj
+ 0002:00007314       $unwind$fprintf            0000000180017314     toroC64:Fprintf.obj
+ 0002:0000731c       $unwind$strchr             000000018001731c     toroC64:StrChr.obj
+ 0002:00007324       $unwind$strcmp             0000000180017324     toroC64:StrCmp.obj
+ 0002:00007330       $unwind$strcat             0000000180017330     toroC64:StrCat.obj
+ 0002:0000733c       $unwind$strcpy             000000018001733c     toroC64:StrCpy.obj
+ 0002:00007348       $unwind$strncat            0000000180017348     toroC64:StrNCat.obj
+ 0002:0000735c       $unwind$strncpy            000000018001735c     toroC64:StrNCpy.obj
+ 0002:0000736c       $unwind$toupper            000000018001736c     toroC64:toupper.obj
+ 0002:00007374       $unwind$tolower            0000000180017374     toroC64:tolower.obj
+ 0002:0000737c       $unwind$_findclose         000000018001737c     toroC64:_findclose.obj
+ 0002:00007384       $unwind$_findfirst64i32    0000000180017384     toroC64:_findfirst.obj
+ 0002:0000739c       $unwind$_findnext64i32     000000018001739c     toroC64:_findnext.obj
+ 0002:000073b8       $unwind$calloc             00000001800173b8     toroC64:Calloc.obj
+ 0002:000073c4       $unwind$free               00000001800173c4     toroC64:Free.obj
+ 0002:000073cc       $unwind$printf             00000001800173cc     toroC64:Printf.obj
+ 0002:000073d4       $unwind$getchar            00000001800173d4     toroC64:Getchar.obj
+ 0002:000073dc       $unwind$vfprintf           00000001800173dc     toroC64:Vfprintf.obj
+ 0002:000073f0       $unwind$memmove            00000001800173f0     toroC64:MemMove.obj
+ 0002:00007400       $unwind$isxdigit           0000000180017400     toroC64:isxdigit.obj
+ 0002:00007408       $unwind$isalnum            0000000180017408     toroC64:isalnum.obj
+ 0002:00007414       $unwind$strncmp            0000000180017414     toroC64:StrNCmp.obj
+ 0002:00007424       $unwind$_errno             0000000180017424     toroC64:errno.obj
+ 0002:0000742c       $unwind$perror             000000018001742c     toroC64:Perror.obj
+ 0002:0000743c       $unwind$isprint            000000018001743c     toroC64:isprint.obj
+ 0002:00007444       $unwind$fclose             0000000180017444     toroC64:Fclose.obj
+ 0002:00007458       $unwind$fopen              0000000180017458     toroC64:Fopen.obj
+ 0002:00007478       $unwind$fread              0000000180017478     toroC64:Fread.obj
+ 0002:0000748c       $unwind$fwrite             000000018001748c     toroC64:Fwrite.obj
+ 0002:000074a0       $unwind$_mkdir             00000001800174a0     toroC64:_mkdir.obj
+ 0002:000074b8       $unwind$exit               00000001800174b8     toroC64:exit.obj
+ 0002:000074c0       $unwind$_stat64i32         00000001800174c0     toroC64:_stat64i32.obj
+ 0002:000074d8       $unwind$clock              00000001800174d8     toroC64:clock.obj
+ 0002:000074e4       $unwind$_CdeDbgPutChar     00000001800174e4     toroC64:_CdeDbgPutChar.obj
+ 0002:000074fc       $unwind$_cdeCoreVwxPrintf  00000001800174fc     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00007518       $unwind$intgr2bcd          0000000180017518     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:0000752c       $unwind$str2dev            000000018001752c     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00007544       $unwind$num2str            0000000180017544     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:0000755c       $unwind$nfill              000000018001755c     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00007574       $unwind$nprintfield        0000000180017574     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:0000758c       $unwind$UngetCharAndDecount 000000018001758c     toroC64:_cdeCoreVwxScanf.obj
+ 0002:00007594       $unwind$str2num            0000000180017594     toroC64:_cdeCoreVwxScanf.obj
+ 0002:000075ac       $unwind$_cdeCoreVwxScanf   00000001800175ac     toroC64:_cdeCoreVwxScanf.obj
+ 0002:000075c8       $unwind$_cdeCoreWcsStrTok  00000001800175c8     toroC64:_cdeCoreWcsStrTok.obj
+ 0002:000075e4       $unwind$_cdeWcsStrPbrkSpn  00000001800175e4     toroC64:_cdeWcsStrPbrkSpn.obj
+ 0002:00007600       $unwind$_cdeCoreMemRealloc 0000000180017600     toroC64:_cdeCoreMemRealloc.obj
+ 0002:0000761c       $unwind$_cdeMemStrxCpy     000000018001761c     toroC64:_cdeMemStrxCpy.obj
+ 0002:00007634       $unwind$_cdeMemStrxCmp     0000000180017634     toroC64:_cdeMemStrxCmp.obj
+ 0002:00007650       $unwind$_osifIbmAtGetTime  0000000180017650     toroC64:osifIbmAtGetTime.obj
+ 0002:0000765c       $unwind$_osifIbmAtGetTscPerSec 000000018001765c     toroC64:osifIbmAtGetTscPerSec.obj
+ 0002:00007664       $unwind$_osifUefiShellMemAlloc 0000000180017664     toroC64:osifUefiShellMemAlloc.obj
+ 0002:0000766c       $unwind$_osifUefiShellFileWrite 000000018001766c     toroC64:osifUefiShellFileWrite.obj
+ 0002:00007684       $unwind$_osifUefiShellFileRead 0000000180017684     toroC64:osifUefiShellFileRead.obj
+ 0002:00007698       $unwind$_osifUefiShellFileSetPos 0000000180017698     toroC64:osifUefiShellFileSetPos.obj
+ 0002:000076ac       $unwind$efifopen           00000001800176ac     toroC64:osifUefiShellFileOpen.obj
+ 0002:000076c4       $unwind$__CdeFsEnum        00000001800176c4     toroC64:osifUefiShellFileOpen.obj
+ 0002:000076d8       $unwind$_osifUefiShellFileOpen 00000001800176d8     toroC64:osifUefiShellFileOpen.obj
+ 0002:000076f0       $unwind$_osifUefiShellFileClose 00000001800176f0     toroC64:osifUefiShellFileClose.obj
+ 0002:000076fc       $unwind$_osifUefiShellFileDelete 00000001800176fc     toroC64:osifUefiShellFileDelete.obj
+ 0002:00007704       $unwind$_osifUefiShellFileRename 0000000180017704     toroC64:osifUefiShellFileRename.obj
+ 0002:00007720       $unwind$__cdeReadDirectory 0000000180017720     toroC64:osifUefiShellFileFindAll.obj
+ 0002:0000773c       $unwind$_osifUefiShellFileFindAll 000000018001773c     toroC64:osifUefiShellFileFindAll.obj
+ 0002:00007754       $unwind$_osifUefiShellFileGetStatus 0000000180017754     toroC64:osifUefiShellFileGetStatus.obj
+ 0002:00007768       $unwind$_osifUefiShellDirectoryCreate 0000000180017768     toroC64:osifUefiShellDirectoryCreate.obj
+ 0002:0000777c       $unwind$myConIOPutStr      000000018001777c     toroC64:osifUefiShellCmdExec.obj
+ 0002:00007790       $unwind$_osifUefiShellCmdExec 0000000180017790     toroC64:osifUefiShellCmdExec.obj
+ 0002:0000779c       $unwind$_osifUefiShellGetEnv 000000018001779c     toroC64:osifUefiShellGetEnv.obj
+ 0002:000077b4       $unwind$_osifUefiShellGetDrvCwd 00000001800177b4     toroC64:osifUefiShellGetDrvCwd.obj
+ 0002:000077c0       $unwind$_cdeCoreFread      00000001800177c0     toroC64:_cdeCoreFread.obj
+ 0002:000077d8       $unwind$_cdeCoreFwrite     00000001800177d8     toroC64:_cdeCoreFwrite.obj
+ 0002:000077f4       $unwind$_cdeCoreFsetpos    00000001800177f4     toroC64:_cdeCoreFsetpos.obj
+ 0002:00007808       $unwind$_cdeCoreFflush     0000000180017808     toroC64:_cdeCoreFflush.obj
+ 0002:00007818       $unwind$_CdeLocateProtocol 0000000180017818     toroC64:_CdeLocateProtocol.obj
+ 0002:00007820       $unwind$_cdeStr2Argcv      0000000180017820     toroC64:_cdeStr2Argcv.obj
+ 0002:00007838       $unwind$memset             0000000180017838     toroC64:MemSetCDEINTRINABI.obj
+ 0002:00007840       $unwind$fcloseCDEABI       0000000180017840     toroC64:FcloseCDEABI.obj
+ 0002:00007854       $unwind$fgetcCDEABI        0000000180017854     toroC64:FgetcCDEABI.obj
+ 0002:0000785c       $unwind$fwriteCDEABI       000000018001785c     toroC64:FwriteCDEABI.obj
+ 0002:00007870       $unwind$sprintfCDEABI      0000000180017870     toroC64:SprintfCDEABI.obj
+ 0002:00007878       $unwind$raiseCDEABI        0000000180017878     toroC64:raiseCDEABI.obj
+ 0002:00007888       $unwind$_fseeki64          0000000180017888     toroC64:_Fseeki64.obj
+ 0002:0000789c       $unwind$_ftelli64          000000018001789c     toroC64:_Ftelli64.obj
+ 0002:000078a4       $unwind$strpbrk            00000001800178a4     toroC64:StrPbrk.obj
+ 0002:000078b0       $unwind$strrchr            00000001800178b0     toroC64:StrRChr.obj
+ 0002:000078bc       $unwind$__cdeSplitSearchNameExt2Upcase 00000001800178bc     toroC64:__cdeSplitSearchNameExt2Upcase.obj
+ 0002:000078d8       $unwind$strspn             00000001800178d8     toroC64:StrSpn.obj
+ 0002:000078e4       $unwind$__cdeStrMatch      00000001800178e4     toroC64:__cdeStrMatch.obj
+ 0002:000078fc       $unwind$realloc            00000001800178fc     toroC64:Realloc.obj
+ 0002:00007908       $unwind$fgetc              0000000180017908     toroC64:Fgetc.obj
+ 0002:00007910       $unwind$fputc              0000000180017910     toroC64:Fputc.obj
+ 0002:00007918       $unwind$isalpha            0000000180017918     toroC64:isalpha.obj
+ 0002:00007924       $unwind$isgraph            0000000180017924     toroC64:isgraph.obj
+ 0002:00007930       $unwind$fflush             0000000180017930     toroC64:Fflush.obj
+ 0002:00007938       $unwind$remove             0000000180017938     toroC64:Remove.obj
+ 0002:0000794c       $unwind$__cdeIsFilePointer 000000018001794c     toroC64:__cdeIsFilePointer.obj
+ 0002:00007960       $unwind$_stricmp           0000000180017960     toroC64:_StrICmp.obj
+ 0002:0000796c       $unwind$strtok             000000018001796c     toroC64:StrTok.obj
+ 0002:00007978       $unwind$_cdeCoreSprintf    0000000180017978     toroC64:_cdeCoreSprintf.obj
+ 0002:00007980       $unwind$isxdigitCDEABI     0000000180017980     toroC64:isxdigitCDEABI.obj
+ 0002:00007988       $unwind$_cdeUMUL128        0000000180017988     toroC64:_cdeUMUL128.obj
+ 0002:00007990       $unwind$_mktime64CDEABI    0000000180017990     toroC64:mktimeCDEABI.obj
+ 0002:00007998       $unwind$_cdeGmltime        0000000180017998     toroC64:_cdeGmltime.obj
+ 0002:000079a4       $unwind$__cdeOnErrSet_status 00000001800179a4     toroC64:__cdeOnErrSet_status.obj
+ 0002:000079ac       $unwind$__cdeOffsetCdeFposType 00000001800179ac     toroC64:__cdeGetOffsetCdeFposType.obj
+ 0002:000079b4       $unwind$__cdeBiasCdeFposType 00000001800179b4     toroC64:__cdeGetBiasCdeFposType.obj
+ 0002:000079c0       $unwind$wcschrCDEABI       00000001800179c0     toroC64:WcsChrCDEABI.obj
+ 0002:000079c8       $unwind$wcscatCDEABI       00000001800179c8     toroC64:WcsCatCDEABI.obj
+ 0002:000079d4       $unwind$wcscpyCDEABI       00000001800179d4     toroC64:WcsCpyCDEABI.obj
+ 0002:000079e0       $unwind$wcsncmpCDEABI      00000001800179e0     toroC64:WcsNCmpCDEABI.obj
+ 0002:000079f0       $unwind$wcsncpyCDEABI      00000001800179f0     toroC64:WcsNCpyCDEABI.obj
+ 0002:00007a00       $unwind$wcstokCDEABI       0000000180017a00     toroC64:WcsTokCDEABI.obj
+ 0002:00007a10       $unwind$_wcsicmpCDEABI     0000000180017a10     toroC64:_WcsICmpCDEABI.obj
+ 0002:00007a1c       $unwind$strcmpCDEABI       0000000180017a1c     toroC64:StrCmpCDEABI.obj
+ 0002:00007a28       $unwind$_stricmpCDEABI     0000000180017a28     toroC64:_StrICmpCDEABI.obj
+ 0002:00007a34       $unwind$_CdeLocateHandleBuffer 0000000180017a34     toroC64:_CdeLocateHandleBuffer.obj
+ 0002:00007a44       $unwind$_cdeConvertDevicePathToText 0000000180017a44     toroC64:_cdeConvertDevicePathToText.obj
+ 0002:00007a4c       $unwind$_CdeGetMapFromDevicePath 0000000180017a4c     toroC64:_CdeGetMapFromDevicePath.obj
+ 0002:00007a54       $unwind$_CdeGetCurDir      0000000180017a54     toroC64:_CdeGetCurDir.obj
+ 0002:00007a5c       $unwind$wcsrchrCDEABI      0000000180017a5c     toroC64:WcsRChrCDEABI.obj
+ 0002:00007a68       $unwind$_errnoCDEABI       0000000180017a68     toroC64:errnoCDEABI.obj
+ 0002:00007a70       $unwind$fopenCDEABI        0000000180017a70     toroC64:FopenCDEABI.obj
+ 0002:00007a90       $unwind$freadCDEABI        0000000180017a90     toroC64:FreadCDEABI.obj
+ 0002:00007aa4       $unwind$strchrCDEABI       0000000180017aa4     toroC64:StrChrCDEABI.obj
+ 0002:00007aac       $unwind$reallocCDEABI      0000000180017aac     toroC64:ReallocCDEABI.obj
+ 0002:00007ab8       $unwind$wcstombsCDEABI     0000000180017ab8     toroC64:wcstombsCDEABI.obj
+ 0002:00007ac0       $unwind$strncpyCDEABI      0000000180017ac0     toroC64:StrNCpyCDEABI.obj
+ 0002:00007ad0       $unwind$strncmpCDEABI      0000000180017ad0     toroC64:StrNCmpCDEABI.obj
+ 0002:00007ae0       $unwind$strcpyCDEABI       0000000180017ae0     toroC64:StrCpyCDEABI.obj
+ 0002:00007aec       $unwind$strcatCDEABI       0000000180017aec     toroC64:StrCatCDEABI.obj
+ 0002:00007af8       $unwind$strtolCDEABI       0000000180017af8     toroC64:strtolCDEABI.obj
+ 0002:00007b00       $unwind$_cdeEfiTime2TimeT  0000000180017b00     toroC64:_cdeEfiTime2TimeT.obj
+ 0002:00007b08       $unwind$__cdeIsFilePointerCORE 0000000180017b08     toroC64:__cdeIsFilePointerCORE.obj
+ 0002:00007b20       $unwind$__cderewindCORE    0000000180017b20     toroC64:__cderewindCORE.obj
+ 0002:00007b28       $unwind$_cdeAbort          0000000180017b28     toroC64:_cdeAbort.obj
+ 0002:00007b30       $unwind$fflushCDEABI       0000000180017b30     toroC64:FflushCDEABI.obj
+ 0002:00007b38       $unwind$removeCDEABI       0000000180017b38     toroC64:RemoveCDEABI.obj
+ 0002:00007b4c       $unwind$invalid_parameter_handler 0000000180017b4c     toroC64:_invalid_parameter_handlerCDEABI.obj
+ 0002:00007b60       $unwind$vsnprintfCDEABI    0000000180017b60     toroC64:VsnprintfCDEABI.obj
+ 0002:00007b78       $unwind$fsetposCDEABI      0000000180017b78     toroC64:FsetposCDEABI.obj
+ 0002:00007b84       $unwind$fgetpos            0000000180017b84     toroC64:Fgetpos.obj
+ 0002:00007b98       $unwind$strcspn            0000000180017b98     toroC64:StrCSpn.obj
+ 0002:00007ba4       $unwind$_strnicmp          0000000180017ba4     toroC64:_StrNICmp.obj
+ 0002:00007bb4       $unwind$invalid_parameter_handler 0000000180017bb4     toroC64:_invalid_parameter_handler.obj
+ 0002:00007bc8       $unwind$__cdeOnErrSet_errno 0000000180017bc8     toroC64:__cdeOnErrSet_errno.obj
+ 0002:00007bd0       $unwind$_cdeDay2Greg       0000000180017bd0     toroC64:_cdeDay2Greg.obj
+ 0002:00007bdc       $unwind$_efierrno          0000000180017bdc     toroC64:_efierrno.obj
+ 0002:00007be4       $unwind$wcspbrkCDEABI      0000000180017be4     toroC64:WcsPbrkCDEABI.obj
+ 0002:00007bf0       $unwind$_cdePoolWcs2AppWcs 0000000180017bf0     toroC64:_CdePoolWcs2AppWcs.obj
+ 0002:00007c00       $unwind$strtokCDEABI       0000000180017c00     toroC64:StrTokCDEABI.obj
+ 0002:00007c0c       $unwind$strpbrkCDEABI      0000000180017c0c     toroC64:StrPbrkCDEABI.obj
+ 0002:00007c18       $unwind$_cdeSscanf         0000000180017c18     toroC64:_cdeSscanf.obj
+ 0002:00007c24       $unwind$__cdeOnErrSet_errnoCORE 0000000180017c24     toroC64:__cdeOnErrSet_errnoCORE.obj
+ 0002:00007c2c       $unwind$exitCDEABI         0000000180017c2c     toroC64:exitCDEABI.obj
+ 0002:00007c34       $unwind$fprintfCDEABI      0000000180017c34     toroC64:FprintfCDEABI.obj
+ 0002:00007c3c       $unwind$abortCDEABI        0000000180017c3c     toroC64:abortCDEABI.obj
+ 0002:00007c48       $unwind$abort              0000000180017c48     toroC64:abort.obj
+ 0002:00007c54       $unwind$vfprintfCDEABI     0000000180017c54     toroC64:VfprintfCDEABI.obj
+ 0002:00007c68       $unwind$raise              0000000180017c68     toroC64:raise.obj
+ 0002:00007c78       $unwind$fputcCDEABI        0000000180017c78     toroC64:FputcCDEABI.obj
+ 0003:00000008       CurrentCharPtr             0000000180018008     getopt.obj
+ 0003:00003d80       gCdeSystemVolumes          000000018001bd80     toroC64:osifUefiShellEntryPoint.obj
+ 0003:00004c90       gCdeServicesShell          000000018001cc90     toroC64:osifUefiShellEntryPoint.obj
+ 0003:00005440       _gEfiStatusCodeRuntimeProtocolGuid 000000018001d440     toroC64:osifUefiShellEntryPoint.obj
+ 0003:00005450       ?EfiLoadedImageProtocolGuid@?1??_MainEntryPointShell@@9@9 000000018001d450     toroC64:osifUefiShellEntryPoint.obj
+ 0003:00005460       ?EfiShellParametersProtocolGuid@?L@??_MainEntryPointShell@@9@9 000000018001d460     toroC64:osifUefiShellEntryPoint.obj
+ 0003:00005470       ROMPARM                    000000018001d470     toroC64:StrCmp.obj
+ 0003:00005478       ROMPARM                    000000018001d478     toroC64:StrNCmp.obj
+ 0003:00005484       ?action@?4??_cdeCoreMemRealloc@@9@9 000000018001d484     toroC64:_cdeCoreMemRealloc.obj
+ 0003:00005490       tblMode                    000000018001d490     toroC64:osifUefiShellFileOpen.obj
+ 0003:00005690       ?wcsSHELL@?1??myConIOPutStr@@9@9 000000018001d690     toroC64:osifUefiShellCmdExec.obj
+ 0003:000056c8       ?wcsMAP@?1??myConIOPutStr@@9@9 000000018001d6c8     toroC64:osifUefiShellCmdExec.obj
+ 0003:000056e8       ?wcsALIAS@?1??myConIOPutStr@@9@9 000000018001d6e8     toroC64:osifUefiShellCmdExec.obj
+ 0003:00005700       ?wcsBLK@?1??myConIOPutStr@@9@9 000000018001d700     toroC64:osifUefiShellCmdExec.obj
+ 0003:00005718       ?wcsBLK2@?1??myConIOPutStr@@9@9 000000018001d718     toroC64:osifUefiShellCmdExec.obj
+ 0003:00005728       ?wcsFS@?1??myConIOPutStr@@9@9 000000018001d728     toroC64:osifUefiShellCmdExec.obj
+ 0003:00005740       ?wcsFS2@?1??myConIOPutStr@@9@9 000000018001d740     toroC64:osifUefiShellCmdExec.obj
+ 0003:00005850       rgszSysErrors              000000018001d850     toroC64:StrError.obj
+ 0003:000059a8       ROMPARM                    000000018001d9a8     toroC64:_StrICmp.obj
+ 0003:000059b0       ROMPARM                    000000018001d9b0     toroC64:StrTok.obj
+ 0003:000059d0       ?RomParm@?1??_cdeCoreSprintf@@9@9 000000018001d9d0     toroC64:_cdeCoreSprintf.obj
+ 0003:00005a18       ROMPARM                    000000018001da18     toroC64:WcsNCmpCDEABI.obj
+ 0003:00005a30       ROMPARM                    000000018001da30     toroC64:WcsTokCDEABI.obj
+ 0003:00005a40       ROMPARM                    000000018001da40     toroC64:_WcsICmpCDEABI.obj
+ 0003:00005a50       ROMPARM                    000000018001da50     toroC64:StrCmpCDEABI.obj
+ 0003:00005a60       ROMPARM                    000000018001da60     toroC64:_StrICmpCDEABI.obj
+ 0003:00005af8       ROMPARM                    000000018001daf8     toroC64:StrNCmpCDEABI.obj
+ 0003:00005b58       RomParm                    000000018001db58     toroC64:VsnprintfCDEABI.obj
+ 0003:00005b68       ?sigorder@?1??_cdeSig2idx@@9@9 000000018001db68     toroC64:_cdeSig2idx.obj
+ 0003:00005b78       ROMPARM                    000000018001db78     toroC64:_StrNICmp.obj
+ 0003:00005b98       ROMPARM                    000000018001db98     toroC64:StrTokCDEABI.obj
+ 0003:00005bb0       RomParm                    000000018001dbb0     toroC64:_cdeSscanf.obj
+ 0003:00005ca0       _iob                       000000018001dca0     toroC64:osifUefiShellEntryPoint.obj
+ 0003:00007ca0       ?DblData@?CA@??_cdeCoreVwxPrintf@@9@9 000000018001fca0     toroC64:_cdeCoreVwxPrintf.obj
+ 0003:00008230       ?wcBuffer@?1??_osifUefiShellFileWrite@@9@9 0000000180020230     toroC64:osifUefiShellFileWrite.obj
+ 0003:00008640       ?zBuf64k@?O@??_osifUefiShellFileWrite@@9@9 0000000180020640     toroC64:osifUefiShellFileWrite.obj
+ 0003:00018640       ?wcbuffer@?3??_osifUefiShellFileRead@@9@9 0000000180030640     toroC64:osifUefiShellFileRead.obj
+ 0003:00018a40       ?wcsFilePath@?5??_osifUefiShellFileOpen@@9@9 0000000180030a40     toroC64:osifUefiShellFileOpen.obj
+ 0003:00018c50       ?wcsFileName@?5??_osifUefiShellFileOpen@@9@9 0000000180030c50     toroC64:osifUefiShellFileOpen.obj
+ 0003:00018e58       ?wcsDrive@?5??_osifUefiShellFileOpen@@9@9 0000000180030e58     toroC64:osifUefiShellFileOpen.obj
+ 0003:00018e78       ?wcsDrive2@?5??_osifUefiShellFileOpen@@9@9 0000000180030e78     toroC64:osifUefiShellFileOpen.obj
+ 0003:00018ea0       state                      0000000180030ea0     toroC64:osifUefiShellCmdExec.obj
+ 0003:00018eb0       ?wcsCommand@?1??_osifUefiShellCmdExec@@9@9 0000000180030eb0     toroC64:osifUefiShellCmdExec.obj
+ 0003:000190c0       ?buffer@?1??_osifUefiShellGetEnv@@9@9 00000001800310c0     toroC64:osifUefiShellGetEnv.obj

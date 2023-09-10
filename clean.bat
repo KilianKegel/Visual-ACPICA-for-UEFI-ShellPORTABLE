@@ -1,0 +1,3 @@
+@echo off
+echo clean up...
+for /F %%a in ('DIR /S /B *.vcxproj') do if exist %%~dpa\x64 rd /s /q %%~dpa\x64

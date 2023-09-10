@@ -43,6 +43,9 @@ https://acpica.org/downloads/windows-source
 [Visual-ACPICA-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell)
 
 ## Revision history
+### 20230910
+* update to **TORO C Library** *20230909*
+* keep and publish all related .EFI binaries and .MAP files https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell/tree/main/x64/UEFIShell
 ### 20230410
 * update to [TORO C Library 20230409](https://github.com/KilianKegel/toro-C-Library#20230409)
 ### 20211101 alpha

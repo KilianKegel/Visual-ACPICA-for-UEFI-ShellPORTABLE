@@ -1,5 +1,8 @@
 .vs/
-x64
+lib/
+#x64/
+!x64/UEFIShell/
+x64/UEFIShell/*.lib
 Win32
 !Include/X64/
 AslCompiler/aslcompiler.l.c
