@@ -22,3 +22,13 @@ AslCompiler/dtcompilerparser.y.output
 AslCompiler/dtparser.y.output
 AslCompiler/prparser.y.output
 AslCompiler/aslcompiler.y
+AcpiBin/x64/
+AcpiDump/x64/
+AcpiExec/x64/
+AcpiHelp/x64/
+AcpiSrc/x64/
+AcpiSubsystem/x64/
+AcpiXtract/x64/
+AslCompiler/x64/
+Examples/x64/
+template/x64/

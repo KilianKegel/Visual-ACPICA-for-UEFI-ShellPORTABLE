@@ -1,11 +1,11 @@
  AcpiDump
 
- Timestamp is 64fd92de (Sun Sep 10 11:56:46 2023)
+ Timestamp is 652ac789 (Sat Oct 14 18:53:29 2023)
 
  Preferred load address is 0000000180000000
 
  Start         Length     Name                   Class
- 0001:00000000 0000d316H .text$mn                CODE
+ 0001:00000000 0000d35eH .text$mn                CODE
  0002:00000000 00000008H .CRT$XCA                DATA
  0002:00000008 00000008H .CRT$XCZ                DATA
  0002:00000010 00000008H .CRT$XIA                DATA
@@ -17,8 +17,8 @@
  0002:00000040 0000210cH .rdata                  DATA
  0002:0000214c 00000040H .rdata$voltmd           DATA
  0002:0000218c 00000138H .rdata$zzzdbg           DATA
- 0002:000022c4 00000df4H .xdata                  DATA
- 0002:000030b8 00000000H .edata                  DATA
+ 0002:000022c4 00000df8H .xdata                  DATA
+ 0002:000030bc 00000000H .edata                  DATA
  0003:00000000 00001e80H .data                   DATA
  0003:00001e80 00013938H .bss                    DATA
  0004:00000000 00000be8H .pdata                  DATA
@@ -206,122 +206,122 @@
  0001:0000448c       memmove                    000000018000548c f   toroC64:MemMove.obj
  0001:000044ec       getchar                    00000001800054ec f   toroC64:Getchar.obj
  0001:00004504       vfprintf                   0000000180005504 f   toroC64:Vfprintf.obj
- 0001:00004610       fclose                     0000000180005610 f   toroC64:Fclose.obj
- 0001:000046c8       fgetc                      00000001800056c8 f   toroC64:Fgetc.obj
- 0001:00004714       fopen                      0000000180005714 f   toroC64:Fopen.obj
- 0001:00004940       fread                      0000000180005940 f   toroC64:Fread.obj
- 0001:00004998       fwrite                     0000000180005998 f   toroC64:Fwrite.obj
- 0001:000049f0       snprintf                   00000001800059f0 f   toroC64:Snprintf.obj
- 0001:00004a10       _stat64i32                 0000000180005a10 f   toroC64:_stat64i32.obj
- 0001:00004ac4       clock                      0000000180005ac4 f   toroC64:clock.obj
- 0001:00004b18       _CdeDbgPutChar             0000000180005b18 f   toroC64:_CdeDbgPutChar.obj
- 0001:00004cac       _cdeCoreVwxPrintf          0000000180005cac f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00005f70       ComputeFieldSize           0000000180006f70 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00005fac       ydes                       0000000180006fac f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00006980       _cdeCoreVwxScanf           0000000180007980 f   toroC64:_cdeCoreVwxScanf.obj
- 0001:000080f0       _cdeCoreWcsStrTok          00000001800090f0 f   toroC64:_cdeCoreWcsStrTok.obj
- 0001:000081ec       _cdeWcsStrPbrkSpn          00000001800091ec f   toroC64:_cdeWcsStrPbrkSpn.obj
- 0001:0000832c       _cdeCoreMemRealloc         000000018000932c f   toroC64:_cdeCoreMemRealloc.obj
- 0001:000086fc       _cdeMemStrxCpy             00000001800096fc f   toroC64:_cdeMemStrxCpy.obj
- 0001:000087f0       _cdeMemStrxCmp             00000001800097f0 f   toroC64:_cdeMemStrxCmp.obj
- 0001:00008930       _osifIbmAtGetTime          0000000180009930 f   toroC64:osifIbmAtGetTime.obj
- 0001:00008ae8       _osifIbmAtGetTscPerSec     0000000180009ae8 f   toroC64:osifIbmAtGetTscPerSec.obj
- 0001:00008b88       _osifIbmAtGetTsc           0000000180009b88 f   toroC64:osifIbmAtGetTsc.obj
- 0001:00008b94       _osifUefiShellMemAlloc     0000000180009b94 f   toroC64:osifUefiShellMemAlloc.obj
- 0001:00008bd8       _osifUefiShellMemFree      0000000180009bd8 f   toroC64:osifUefiShellMemFree.obj
- 0001:00008bf0       _osifUefiShellFileWrite    0000000180009bf0 f   toroC64:osifUefiShellFileWrite.obj
- 0001:00008d78       _osifUefiShellFileRead     0000000180009d78 f   toroC64:osifUefiShellFileRead.obj
- 0001:00008fa4       _osifUefiShellFileSetPos   0000000180009fa4 f   toroC64:osifUefiShellFileSetPos.obj
- 0001:000090b0       _osifUefiShellFileOpen     000000018000a0b0 f   toroC64:osifUefiShellFileOpen.obj
- 0001:00009790       _osifUefiShellFileClose    000000018000a790 f   toroC64:osifUefiShellFileClose.obj
- 0001:000097e4       _osifUefiShellFileDelete   000000018000a7e4 f   toroC64:osifUefiShellFileDelete.obj
- 0001:0000980c       _osifUefiShellFileRename   000000018000a80c f   toroC64:osifUefiShellFileRename.obj
- 0001:0000996c       _osifUefiShellFileFindAll  000000018000a96c f   toroC64:osifUefiShellFileFindAll.obj
- 0001:00009d9c       _osifUefiShellFileGetStatus 000000018000ad9c f   toroC64:osifUefiShellFileGetStatus.obj
- 0001:00009eec       _osifUefiShellDirectoryCreate 000000018000aeec f   toroC64:osifUefiShellDirectoryCreate.obj
- 0001:0000a184       _osifUefiShellCmdExec      000000018000b184 f   toroC64:osifUefiShellCmdExec.obj
- 0001:0000a278       _osifUefiShellGetEnv       000000018000b278 f   toroC64:osifUefiShellGetEnv.obj
- 0001:0000a328       _osifUefiShellGetDrvCwd    000000018000b328 f   toroC64:osifUefiShellGetDrvCwd.obj
- 0001:0000a374       _cdeCoreFread              000000018000b374 f   toroC64:_cdeCoreFread.obj
- 0001:0000a648       _cdeCoreFwrite             000000018000b648 f   toroC64:_cdeCoreFwrite.obj
- 0001:0000a8d8       _cdeCoreFsetpos            000000018000b8d8 f   toroC64:_cdeCoreFsetpos.obj
- 0001:0000aa50       _cdeCoreFflush             000000018000ba50 f   toroC64:_cdeCoreFflush.obj
- 0001:0000aad8       _cdeSigDflt                000000018000bad8 f   toroC64:_cdeSigDfl.obj
- 0001:0000aae0       __cdeGetIOBuffer           000000018000bae0 f   toroC64:__cdsGetIOBuffer.obj
- 0001:0000aaf0       _setjmp                    000000018000baf0 f   toroC64:setjmp64CDEINTRINABI.obj
- 0001:0000ab95       __imp_setjmp               000000018000bb95     toroC64:setjmp64CDEINTRINABI.obj
- 0001:0000ab9d       __cdeSETJMPCDEINTRINABIAnchor 000000018000bb9d     toroC64:setjmp64CDEINTRINABI.obj
- 0001:0000aba0       _CdeLocateProtocol         000000018000bba0 f   toroC64:_CdeLocateProtocol.obj
- 0001:0000abd0       _cdeStr2Argcv              000000018000bbd0 f   toroC64:_cdeStr2Argcv.obj
- 0001:0000ae00       __cdeGetCurrentPrivilegeLevel 000000018000be00 f   toroC64:CdeGetCurrentPrivilegeLevel64.obj
- 0001:0000ae10       memset                     000000018000be10 f   toroC64:MemSetCDEINTRINABI.obj
- 0001:0000b050       _fseeki64                  000000018000c050 f   toroC64:_Fseeki64.obj
- 0001:0000b108       _ftelli64                  000000018000c108 f   toroC64:_Ftelli64.obj
- 0001:0000b130       strpbrk                    000000018000c130 f   toroC64:StrPbrk.obj
- 0001:0000b170       isgraph                    000000018000c170 f   toroC64:isgraph.obj
- 0001:0000b198       islower                    000000018000c198 f   toroC64:islower.obj
- 0001:0000b1ac       isupper                    000000018000c1ac f   toroC64:isupper.obj
- 0001:0000b1b8       strrchr                    000000018000c1b8 f   toroC64:StrRChr.obj
- 0001:0000b208       __cdeSplitSearchNameExt2Upcase 000000018000c208 f   toroC64:__cdeSplitSearchNameExt2Upcase.obj
- 0001:0000b2c8       strspn                     000000018000c2c8 f   toroC64:StrSpn.obj
- 0001:0000b30c       __cdeStrMatch              000000018000c30c f   toroC64:__cdeStrMatch.obj
- 0001:0000b464       realloc                    000000018000c464 f   toroC64:Realloc.obj
- 0001:0000b49c       fputc                      000000018000c49c f   toroC64:Fputc.obj
- 0001:0000b4d4       _errno                     000000018000c4d4 f   toroC64:errno.obj
- 0001:0000b4f8       fflush                     000000018000c4f8 f   toroC64:Fflush.obj
- 0001:0000b51c       remove                     000000018000c51c f   toroC64:Remove.obj
- 0001:0000b594       __cdeIsFilePointer         000000018000c594 f   toroC64:__cdeIsFilePointer.obj
- 0001:0000b670       _stricmp                   000000018000c670 f   toroC64:_StrICmp.obj
- 0001:0000b6ac       strtok                     000000018000c6ac f   toroC64:StrTok.obj
- 0001:0000b6f0       vsnprintf                  000000018000c6f0 f   toroC64:Vsnprintf.obj
- 0001:0000b7bc       _CdeDbgCOMInit             000000018000c7bc f   toroC64:_CdeDbgCOMInit.obj
- 0001:0000b8d8       _CdeDbgCOMReady2Send       000000018000c8d8 f   toroC64:_CdeDbgCOMReady2Send.obj
- 0001:0000b908       _CdeDbgCOMSend             000000018000c908 f   toroC64:_CdeDbgCOMSend.obj
- 0001:0000b958       _cdeCoreSprintf            000000018000c958 f   toroC64:_cdeCoreSprintf.obj
- 0001:0000ba00       _cdeUMUL128                000000018000ca00 f   toroC64:_cdeUMUL128.obj
- 0001:0000bb04       _cdeGmltime                000000018000cb04 f   toroC64:_cdeGmltime.obj
- 0001:0000bc20       __cdeOnErrSet_status       000000018000cc20 f   toroC64:__cdeOnErrSet_status.obj
- 0001:0000bc40       __cdeOffsetCdeFposType     000000018000cc40 f   toroC64:__cdeGetOffsetCdeFposType.obj
- 0001:0000bc80       __cdeBiasCdeFposType       000000018000cc80 f   toroC64:__cdeGetBiasCdeFposType.obj
- 0001:0000bee4       _CdeLocateHandleBuffer     000000018000cee4 f   toroC64:_CdeLocateHandleBuffer.obj
- 0001:0000bf70       _cdeConvertDevicePathToText 000000018000cf70 f   toroC64:_cdeConvertDevicePathToText.obj
- 0001:0000bf8c       _CdeGetMapFromDevicePath   000000018000cf8c f   toroC64:_CdeGetMapFromDevicePath.obj
- 0001:0000bfac       _CdeGetCurDir              000000018000cfac f   toroC64:_CdeGetCurDir.obj
- 0001:0000c5c8       _cdeEfiTime2TimeT          000000018000d5c8 f   toroC64:_cdeEfiTime2TimeT.obj
- 0001:0000c664       __cdeIsFilePointerCORE     000000018000d664 f   toroC64:__cdeIsFilePointerCORE.obj
- 0001:0000c6e4       __cdereallocCORE           000000018000d6e4 f   toroC64:__cdereallocCORE.obj
- 0001:0000c6f4       __cderewindCORE            000000018000d6f4 f   toroC64:__cderewindCORE.obj
- 0001:0000c710       __cdeGetIOBufferCORE       000000018000d710 f   toroC64:__cdsGetIOBufferCORE.obj
- 0001:0000c718       _cdeAbort                  000000018000d718 f   toroC64:_cdeAbort.obj
- 0001:0000c95c       _cdeSig2idx                000000018000d95c f   toroC64:_cdeSig2idx.obj
- 0001:0000c984       _cdeSigIgn                 000000018000d984 f   toroC64:_cdeSigIgn.obj
- 0001:0000c988       fsetposCDEABI              000000018000d988 f   toroC64:FsetposCDEABI.obj
- 0001:0000c9bc       fgetpos                    000000018000d9bc f   toroC64:Fgetpos.obj
- 0001:0000ca1c       ispunct                    000000018000da1c f   toroC64:ispunct.obj
- 0001:0000ca48       isalnum                    000000018000da48 f   toroC64:isalnum.obj
- 0001:0000ca70       strcspn                    000000018000da70 f   toroC64:StrCSpn.obj
- 0001:0000cab4       _strnicmp                  000000018000dab4 f   toroC64:_StrNICmp.obj
- 0001:0000cafc       __cdeOnErrSet_errno        000000018000dafc f   toroC64:__cdeOnErrSet_errno.obj
- 0001:0000cb1c       abort                      000000018000db1c f   toroC64:abort.obj
- 0001:0000cb84       _CdeMemPutNada             000000018000db84 f   toroC64:_CdeMemPutNada.obj
- 0001:0000cb88       _CdeMemPutChar             000000018000db88 f   toroC64:_CdeMemPutChar.obj
- 0001:0000cb94       _cdeGreg2Day               000000018000db94 f   toroC64:_cdeGreg2Day.obj
- 0001:0000cc10       _cdeDay2Greg               000000018000dc10 f   toroC64:_cdeDay2Greg.obj
- 0001:0000cd14       _efierrno                  000000018000dd14 f   toroC64:_efierrno.obj
- 0001:0000cd38       __cdeIsCdeFposType         000000018000dd38 f   toroC64:__cdeIsCdeFposType.obj
- 0001:0000cdb0       _cdePoolWcs2AppWcs         000000018000ddb0 f   toroC64:_CdePoolWcs2AppWcs.obj
- 0001:0000cea8       _cdeSscanf                 000000018000dea8 f   toroC64:_cdeSscanf.obj
- 0001:0000cf18       __cdeOnErrSet_errnoCORE    000000018000df18 f   toroC64:__cdeOnErrSet_errnoCORE.obj
- 0001:0000cf38       __acrt_iob_funcCORE        000000018000df38 f   toroC64:__acrt_iob_funcCORE.obj
- 0001:0000d018       isalpha                    000000018000e018 f   toroC64:isalpha.obj
- 0001:0000d040       raise                      000000018000e040 f   toroC64:raise.obj
- 0001:0000d0d0       exit                       000000018000e0d0 f   toroC64:exit.obj
- 0001:0000d0f4       _cdeMemGetChar             000000018000e0f4 f   toroC64:_cdeMemGetChar.obj
- 0001:0000d104       _cdeMemUngetChar           000000018000e104 f   toroC64:_cdeMemUngetChar.obj
- 0001:0000d10c       _errnoCORE                 000000018000e10c f   toroC64:errnoCORE.obj
- 0001:0000d120       longjmp                    000000018000e120 f   toroC64:longjmp64CDEINTRINABI.obj
- 0001:0000d1c9       __imp_longjmp              000000018000e1c9     toroC64:longjmp64CDEINTRINABI.obj
- 0001:0000d1d1       __cdeLONGJMPCDEINTRINABIAnchor 000000018000e1d1     toroC64:longjmp64CDEINTRINABI.obj
+ 0001:00004624       fclose                     0000000180005624 f   toroC64:Fclose.obj
+ 0001:000046dc       fgetc                      00000001800056dc f   toroC64:Fgetc.obj
+ 0001:00004728       fopen                      0000000180005728 f   toroC64:Fopen.obj
+ 0001:00004954       fread                      0000000180005954 f   toroC64:Fread.obj
+ 0001:000049ac       fwrite                     00000001800059ac f   toroC64:Fwrite.obj
+ 0001:00004a04       snprintf                   0000000180005a04 f   toroC64:Snprintf.obj
+ 0001:00004a24       _stat64i32                 0000000180005a24 f   toroC64:_stat64i32.obj
+ 0001:00004ad8       clock                      0000000180005ad8 f   toroC64:clock.obj
+ 0001:00004b2c       _CdeDbgPutChar             0000000180005b2c f   toroC64:_CdeDbgPutChar.obj
+ 0001:00004cc0       _cdeCoreVwxPrintf          0000000180005cc0 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00005f9c       ComputeFieldSize           0000000180006f9c f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00005fd8       ydes                       0000000180006fd8 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000069ac       _cdeCoreVwxScanf           00000001800079ac f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:0000811c       _cdeCoreWcsStrTok          000000018000911c f   toroC64:_cdeCoreWcsStrTok.obj
+ 0001:00008218       _cdeWcsStrPbrkSpn          0000000180009218 f   toroC64:_cdeWcsStrPbrkSpn.obj
+ 0001:00008358       _cdeCoreMemRealloc         0000000180009358 f   toroC64:_cdeCoreMemRealloc.obj
+ 0001:00008728       _cdeMemStrxCpy             0000000180009728 f   toroC64:_cdeMemStrxCpy.obj
+ 0001:0000881c       _cdeMemStrxCmp             000000018000981c f   toroC64:_cdeMemStrxCmp.obj
+ 0001:0000895c       _osifIbmAtGetTime          000000018000995c f   toroC64:osifIbmAtGetTime.obj
+ 0001:00008b14       _osifIbmAtGetTscPerSec     0000000180009b14 f   toroC64:osifIbmAtGetTscPerSec.obj
+ 0001:00008bb4       _osifIbmAtGetTsc           0000000180009bb4 f   toroC64:osifIbmAtGetTsc.obj
+ 0001:00008bc0       _osifUefiShellMemAlloc     0000000180009bc0 f   toroC64:osifUefiShellMemAlloc.obj
+ 0001:00008c04       _osifUefiShellMemFree      0000000180009c04 f   toroC64:osifUefiShellMemFree.obj
+ 0001:00008c1c       _osifUefiShellFileWrite    0000000180009c1c f   toroC64:osifUefiShellFileWrite.obj
+ 0001:00008da4       _osifUefiShellFileRead     0000000180009da4 f   toroC64:osifUefiShellFileRead.obj
+ 0001:00008fd0       _osifUefiShellFileSetPos   0000000180009fd0 f   toroC64:osifUefiShellFileSetPos.obj
+ 0001:000090dc       _osifUefiShellFileOpen     000000018000a0dc f   toroC64:osifUefiShellFileOpen.obj
+ 0001:000097bc       _osifUefiShellFileClose    000000018000a7bc f   toroC64:osifUefiShellFileClose.obj
+ 0001:00009810       _osifUefiShellFileDelete   000000018000a810 f   toroC64:osifUefiShellFileDelete.obj
+ 0001:00009838       _osifUefiShellFileRename   000000018000a838 f   toroC64:osifUefiShellFileRename.obj
+ 0001:00009998       _osifUefiShellFileFindAll  000000018000a998 f   toroC64:osifUefiShellFileFindAll.obj
+ 0001:00009dc8       _osifUefiShellFileGetStatus 000000018000adc8 f   toroC64:osifUefiShellFileGetStatus.obj
+ 0001:00009f18       _osifUefiShellDirectoryCreate 000000018000af18 f   toroC64:osifUefiShellDirectoryCreate.obj
+ 0001:0000a1b0       _osifUefiShellCmdExec      000000018000b1b0 f   toroC64:osifUefiShellCmdExec.obj
+ 0001:0000a2a4       _osifUefiShellGetEnv       000000018000b2a4 f   toroC64:osifUefiShellGetEnv.obj
+ 0001:0000a354       _osifUefiShellGetDrvCwd    000000018000b354 f   toroC64:osifUefiShellGetDrvCwd.obj
+ 0001:0000a3a0       _cdeCoreFread              000000018000b3a0 f   toroC64:_cdeCoreFread.obj
+ 0001:0000a674       _cdeCoreFwrite             000000018000b674 f   toroC64:_cdeCoreFwrite.obj
+ 0001:0000a904       _cdeCoreFsetpos            000000018000b904 f   toroC64:_cdeCoreFsetpos.obj
+ 0001:0000aa7c       _cdeCoreFflush             000000018000ba7c f   toroC64:_cdeCoreFflush.obj
+ 0001:0000ab04       _cdeSigDflt                000000018000bb04 f   toroC64:_cdeSigDfl.obj
+ 0001:0000ab0c       __cdeGetIOBuffer           000000018000bb0c f   toroC64:__cdsGetIOBuffer.obj
+ 0001:0000ab20       _setjmp                    000000018000bb20 f   toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000abc5       __imp_setjmp               000000018000bbc5     toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000abcd       __cdeSETJMPCDEINTRINABIAnchor 000000018000bbcd     toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000abd0       _CdeLocateProtocol         000000018000bbd0 f   toroC64:_CdeLocateProtocol.obj
+ 0001:0000ac00       _cdeStr2Argcv              000000018000bc00 f   toroC64:_cdeStr2Argcv.obj
+ 0001:0000ae30       __cdeGetCurrentPrivilegeLevel 000000018000be30 f   toroC64:CdeGetCurrentPrivilegeLevel64.obj
+ 0001:0000ae40       memset                     000000018000be40 f   toroC64:MemSetCDEINTRINABI.obj
+ 0001:0000b080       _fseeki64                  000000018000c080 f   toroC64:_Fseeki64.obj
+ 0001:0000b138       _ftelli64                  000000018000c138 f   toroC64:_Ftelli64.obj
+ 0001:0000b160       strpbrk                    000000018000c160 f   toroC64:StrPbrk.obj
+ 0001:0000b1a0       isgraph                    000000018000c1a0 f   toroC64:isgraph.obj
+ 0001:0000b1c8       islower                    000000018000c1c8 f   toroC64:islower.obj
+ 0001:0000b1dc       isupper                    000000018000c1dc f   toroC64:isupper.obj
+ 0001:0000b1e8       strrchr                    000000018000c1e8 f   toroC64:StrRChr.obj
+ 0001:0000b238       __cdeSplitSearchNameExt2Upcase 000000018000c238 f   toroC64:__cdeSplitSearchNameExt2Upcase.obj
+ 0001:0000b2f8       strspn                     000000018000c2f8 f   toroC64:StrSpn.obj
+ 0001:0000b33c       __cdeStrMatch              000000018000c33c f   toroC64:__cdeStrMatch.obj
+ 0001:0000b494       realloc                    000000018000c494 f   toroC64:Realloc.obj
+ 0001:0000b4cc       fputc                      000000018000c4cc f   toroC64:Fputc.obj
+ 0001:0000b504       _errno                     000000018000c504 f   toroC64:errno.obj
+ 0001:0000b528       fflush                     000000018000c528 f   toroC64:Fflush.obj
+ 0001:0000b54c       remove                     000000018000c54c f   toroC64:Remove.obj
+ 0001:0000b5c4       __cdeIsFilePointer         000000018000c5c4 f   toroC64:__cdeIsFilePointer.obj
+ 0001:0000b6a0       _stricmp                   000000018000c6a0 f   toroC64:_StrICmp.obj
+ 0001:0000b6dc       strtok                     000000018000c6dc f   toroC64:StrTok.obj
+ 0001:0000b720       vsnprintf                  000000018000c720 f   toroC64:Vsnprintf.obj
+ 0001:0000b7ec       _CdeDbgCOMInit             000000018000c7ec f   toroC64:_CdeDbgCOMInit.obj
+ 0001:0000b908       _CdeDbgCOMReady2Send       000000018000c908 f   toroC64:_CdeDbgCOMReady2Send.obj
+ 0001:0000b938       _CdeDbgCOMSend             000000018000c938 f   toroC64:_CdeDbgCOMSend.obj
+ 0001:0000b988       _cdeCoreSprintf            000000018000c988 f   toroC64:_cdeCoreSprintf.obj
+ 0001:0000ba30       _cdeUMUL128                000000018000ca30 f   toroC64:_cdeUMUL128.obj
+ 0001:0000bb34       _cdeGmltime                000000018000cb34 f   toroC64:_cdeGmltime.obj
+ 0001:0000bc50       __cdeOnErrSet_status       000000018000cc50 f   toroC64:__cdeOnErrSet_status.obj
+ 0001:0000bc70       __cdeOffsetCdeFposType     000000018000cc70 f   toroC64:__cdeGetOffsetCdeFposType.obj
+ 0001:0000bcb0       __cdeBiasCdeFposType       000000018000ccb0 f   toroC64:__cdeGetBiasCdeFposType.obj
+ 0001:0000bf14       _CdeLocateHandleBuffer     000000018000cf14 f   toroC64:_CdeLocateHandleBuffer.obj
+ 0001:0000bfa0       _cdeConvertDevicePathToText 000000018000cfa0 f   toroC64:_cdeConvertDevicePathToText.obj
+ 0001:0000bfbc       _CdeGetMapFromDevicePath   000000018000cfbc f   toroC64:_CdeGetMapFromDevicePath.obj
+ 0001:0000bfdc       _CdeGetCurDir              000000018000cfdc f   toroC64:_CdeGetCurDir.obj
+ 0001:0000c5f8       _cdeEfiTime2TimeT          000000018000d5f8 f   toroC64:_cdeEfiTime2TimeT.obj
+ 0001:0000c694       __cdeIsFilePointerCORE     000000018000d694 f   toroC64:__cdeIsFilePointerCORE.obj
+ 0001:0000c714       __cdereallocCORE           000000018000d714 f   toroC64:__cdereallocCORE.obj
+ 0001:0000c724       __cderewindCORE            000000018000d724 f   toroC64:__cderewindCORE.obj
+ 0001:0000c740       __cdeGetIOBufferCORE       000000018000d740 f   toroC64:__cdsGetIOBufferCORE.obj
+ 0001:0000c748       _cdeAbort                  000000018000d748 f   toroC64:_cdeAbort.obj
+ 0001:0000c98c       _cdeSig2idx                000000018000d98c f   toroC64:_cdeSig2idx.obj
+ 0001:0000c9b4       _cdeSigIgn                 000000018000d9b4 f   toroC64:_cdeSigIgn.obj
+ 0001:0000c9b8       fsetposCDEABI              000000018000d9b8 f   toroC64:FsetposCDEABI.obj
+ 0001:0000c9ec       fgetpos                    000000018000d9ec f   toroC64:Fgetpos.obj
+ 0001:0000ca4c       ispunct                    000000018000da4c f   toroC64:ispunct.obj
+ 0001:0000ca78       isalnum                    000000018000da78 f   toroC64:isalnum.obj
+ 0001:0000caa0       strcspn                    000000018000daa0 f   toroC64:StrCSpn.obj
+ 0001:0000cae4       _strnicmp                  000000018000dae4 f   toroC64:_StrNICmp.obj
+ 0001:0000cb2c       __cdeOnErrSet_errno        000000018000db2c f   toroC64:__cdeOnErrSet_errno.obj
+ 0001:0000cb4c       abort                      000000018000db4c f   toroC64:abort.obj
+ 0001:0000cbb4       _CdeMemPutNada             000000018000dbb4 f   toroC64:_CdeMemPutNada.obj
+ 0001:0000cbb8       _CdeMemPutChar             000000018000dbb8 f   toroC64:_CdeMemPutChar.obj
+ 0001:0000cbc4       _cdeGreg2Day               000000018000dbc4 f   toroC64:_cdeGreg2Day.obj
+ 0001:0000cc40       _cdeDay2Greg               000000018000dc40 f   toroC64:_cdeDay2Greg.obj
+ 0001:0000cd44       _efierrno                  000000018000dd44 f   toroC64:_efierrno.obj
+ 0001:0000cd68       __cdeIsCdeFposType         000000018000dd68 f   toroC64:__cdeIsCdeFposType.obj
+ 0001:0000cde0       _cdePoolWcs2AppWcs         000000018000dde0 f   toroC64:_CdePoolWcs2AppWcs.obj
+ 0001:0000ced8       _cdeSscanf                 000000018000ded8 f   toroC64:_cdeSscanf.obj
+ 0001:0000cf48       __cdeOnErrSet_errnoCORE    000000018000df48 f   toroC64:__cdeOnErrSet_errnoCORE.obj
+ 0001:0000cf68       __acrt_iob_funcCORE        000000018000df68 f   toroC64:__acrt_iob_funcCORE.obj
+ 0001:0000d048       isalpha                    000000018000e048 f   toroC64:isalpha.obj
+ 0001:0000d070       raise                      000000018000e070 f   toroC64:raise.obj
+ 0001:0000d100       exit                       000000018000e100 f   toroC64:exit.obj
+ 0001:0000d124       _cdeMemGetChar             000000018000e124 f   toroC64:_cdeMemGetChar.obj
+ 0001:0000d134       _cdeMemUngetChar           000000018000e134 f   toroC64:_cdeMemUngetChar.obj
+ 0001:0000d13c       _errnoCORE                 000000018000e13c f   toroC64:errnoCORE.obj
+ 0001:0000d150       longjmp                    000000018000e150 f   toroC64:longjmp64CDEINTRINABI.obj
+ 0001:0000d1f9       __imp_longjmp              000000018000e1f9     toroC64:longjmp64CDEINTRINABI.obj
+ 0001:0000d201       __cdeLONGJMPCDEINTRINABIAnchor 000000018000e201     toroC64:longjmp64CDEINTRINABI.obj
  0002:00000000       __xc_a                     000000018000f000     toroC64:osifUefiShellEntryPoint.obj
  0002:00000008       __xc_z                     000000018000f008     toroC64:osifUefiShellEntryPoint.obj
  0002:00000010       __xi_a                     000000018000f010     toroC64:osifUefiShellEntryPoint.obj
@@ -583,8 +583,8 @@
  0002:00001a58       ??_C@_0BP@FHIMACMK@ACPI?5Binary?5Table?5Dump?5Utility@ 0000000180010a58     apmain.obj
  0002:00001a78       ??_C@_0CC@GEMNFFHD@Intel?5ACPI?5Component?5Architectu@ 0000000180010a78     apmain.obj
  0002:00001aa0       ??_C@_0BK@GCKDLEMI@?6?$CFs?6?$CFs?5version?5?$CF8?48X?6?$CFs?6?6@ 0000000180010aa0     apmain.obj
- 0002:00001ac0       ??_C@_08CKPGIJPL@11?356?346@ 0000000180010ac0     apmain.obj
- 0002:00001ad0       ??_C@_0M@IEBCDICD@Sep?510?52023@ 0000000180010ad0     apmain.obj
+ 0002:00001ac0       ??_C@_08GHFHEMJM@18?353?328@ 0000000180010ac0     apmain.obj
+ 0002:00001ad0       ??_C@_0M@JIBBNGHE@Oct?514?52023@ 0000000180010ad0     apmain.obj
  0002:00001ae0       ??_C@_0BI@PDHHDADA@Build?5date?1time?3?5?$CFs?5?$CFs?6@ 0000000180010ae0     apmain.obj
  0002:00001af8       ??_C@_0BG@BMJCIMDK@Unknown?5option?3?5?9v?$CFs?6@ 0000000180010af8     apmain.obj
  0002:00001b10       ??_C@_0CG@DDLHPAKC@Internal?5error?0?5invalid?5action?3@ 0000000180010b10     apmain.obj
@@ -828,91 +828,91 @@
  0001:0000362c       _StdOutPutChar             000000018000462c f   toroC64:osifUefiShellEntryPoint.obj
  0001:00003674       _StdInGetChar              0000000180004674 f   toroC64:osifUefiShellEntryPoint.obj
  0001:00003cb8       __CdeChkCtrlC              0000000180004cb8 f   toroC64:osifUefiShellEntryPoint.obj
- 0001:00004608       __fputcpp                  0000000180005608 f   toroC64:Vfprintf.obj
- 0001:00005f30       $LN275                     0000000180006f30     toroC64:_cdeCoreVwxPrintf.obj
- 0001:00005fb4       ExpFieldOfDouble           0000000180006fb4 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00005fc8       FractBinDigits             0000000180006fc8 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00006030       FractFieldOfDouble         0000000180007030 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00006044       IntgrBinDigits             0000000180007044 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:0000608c       fract2bcd                  000000018000708c f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00006164       intgr2bcd                  0000000180007164 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00006264       nfill                      0000000180007264 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:000062d4       nprintfield                00000001800072d4 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00006758       num2str                    0000000180007758 f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:000068bc       str2dev                    00000001800078bc f   toroC64:_cdeCoreVwxPrintf.obj
- 0001:00007ad8       GetCharAndCount            0000000180008ad8 f   toroC64:_cdeCoreVwxScanf.obj
- 0001:00007b04       IsCharInNumberRange        0000000180008b04 f   toroC64:_cdeCoreVwxScanf.obj
- 0001:00007b78       StoreTerminate             0000000180008b78 f   toroC64:_cdeCoreVwxScanf.obj
- 0001:00007bd8       UngetCharAndDecount        0000000180008bd8 f   toroC64:_cdeCoreVwxScanf.obj
- 0001:00007bf8       inrange                    0000000180008bf8 f   toroC64:_cdeCoreVwxScanf.obj
- 0001:00007c20       str2num                    0000000180008c20 f   toroC64:_cdeCoreVwxScanf.obj
- 0001:000086cc       __insertFree               00000001800096cc f   toroC64:_cdeCoreMemRealloc.obj
- 0001:00008aac       bcd2int                    0000000180009aac f   toroC64:osifIbmAtGetTime.obj
- 0001:00008ac4       inside                     0000000180009ac4 f   toroC64:osifIbmAtGetTime.obj
- 0001:00008ad4       rtcrd8                     0000000180009ad4 f   toroC64:osifIbmAtGetTime.obj
- 0001:0000935c       __CdeFsEnum                000000018000a35c f   toroC64:osifUefiShellFileOpen.obj
- 0001:000094f4       __CdeIsFsEnum              000000018000a4f4 f   toroC64:osifUefiShellFileOpen.obj
- 0001:00009504       efifopen                   000000018000a504 f   toroC64:osifUefiShellFileOpen.obj
- 0001:00009be8       __cdeReadDirectory         000000018000abe8 f   toroC64:osifUefiShellFileFindAll.obj
- 0001:00009f78       myConIOClr                 000000018000af78 f   toroC64:osifUefiShellCmdExec.obj
- 0001:00009f84       myConIOPutStr              000000018000af84 f   toroC64:osifUefiShellCmdExec.obj
- 0001:0000aaf0       $$000000                   000000018000baf0     toroC64:setjmp64CDEINTRINABI.obj
- 0001:0000ae00       $$000000                   000000018000be00     toroC64:CdeGetCurrentPrivilegeLevel64.obj
- 0001:0000ae04       freeCDEABI                 000000018000be04 f   toroC64:FreeCDEABI.obj
- 0001:0000ae34       fcloseCDEABI               000000018000be34 f   toroC64:FcloseCDEABI.obj
- 0001:0000aef0       fgetcCDEABI                000000018000bef0 f   toroC64:FgetcCDEABI.obj
- 0001:0000af3c       fwriteCDEABI               000000018000bf3c f   toroC64:FwriteCDEABI.obj
- 0001:0000af94       sprintfCDEABI              000000018000bf94 f   toroC64:SprintfCDEABI.obj
- 0001:0000afc0       raiseCDEABI                000000018000bfc0 f   toroC64:raiseCDEABI.obj
- 0001:0000b600       invalid_parameter_handler  000000018000c600 f   toroC64:_invalid_parameter_handler.obj
- 0001:0000b930       strlenCDEABI               000000018000c930 f   toroC64:StrLenCDEABI.obj
- 0001:0000b944       wcslenCDEABI               000000018000c944 f   toroC64:WcsLenCDEABI.obj
- 0001:0000b9a8       isspaceCDEABI              000000018000c9a8 f   toroC64:isspaceCDEABI.obj
- 0001:0000b9c0       isdigitCDEABI              000000018000c9c0 f   toroC64:isdigitCDEABI.obj
- 0001:0000b9d4       isxdigitCDEABI             000000018000c9d4 f   toroC64:isxdigitCDEABI.obj
- 0001:0000ba6c       _mktime64CDEABI            000000018000ca6c f   toroC64:mktimeCDEABI.obj
- 0001:0000bafc       mktimeCDEABI               000000018000cafc f   toroC64:mktimeCDEABI.obj
- 0001:0000bcb0       wcschrCDEABI               000000018000ccb0 f   toroC64:WcsChrCDEABI.obj
- 0001:0000bce8       wcscatCDEABI               000000018000cce8 f   toroC64:WcsCatCDEABI.obj
- 0001:0000bd1c       wcscpyCDEABI               000000018000cd1c f   toroC64:WcsCpyCDEABI.obj
- 0001:0000bd54       wcsncmpCDEABI              000000018000cd54 f   toroC64:WcsNCmpCDEABI.obj
- 0001:0000bd9c       wcsncpyCDEABI              000000018000cd9c f   toroC64:WcsNCpyCDEABI.obj
- 0001:0000bde0       wcstokCDEABI               000000018000cde0 f   toroC64:WcsTokCDEABI.obj
- 0001:0000be30       _wcsicmpCDEABI             000000018000ce30 f   toroC64:_WcsICmpCDEABI.obj
- 0001:0000be6c       strcmpCDEABI               000000018000ce6c f   toroC64:StrCmpCDEABI.obj
- 0001:0000bea8       _stricmpCDEABI             000000018000cea8 f   toroC64:_StrICmpCDEABI.obj
- 0001:0000bfcc       mallocCDEABI               000000018000cfcc f   toroC64:MallocCDEABI.obj
- 0001:0000bfd8       wcsrchrCDEABI              000000018000cfd8 f   toroC64:WcsRChrCDEABI.obj
- 0001:0000c030       _errnoCDEABI               000000018000d030 f   toroC64:errnoCDEABI.obj
- 0001:0000c054       fopenCDEABI                000000018000d054 f   toroC64:FopenCDEABI.obj
- 0001:0000c290       freadCDEABI                000000018000d290 f   toroC64:FreadCDEABI.obj
- 0001:0000c2e8       fseekCDEABI                000000018000d2e8 f   toroC64:FseekCDEABI.obj
- 0001:0000c2f0       strchrCDEABI               000000018000d2f0 f   toroC64:StrChrCDEABI.obj
- 0001:0000c324       reallocCDEABI              000000018000d324 f   toroC64:ReallocCDEABI.obj
- 0001:0000c35c       wcstombsCDEABI             000000018000d35c f   toroC64:wcstombsCDEABI.obj
- 0001:0000c3ac       mbstowcsCDEABI             000000018000d3ac f   toroC64:mbstowcsCDEABI.obj
- 0001:0000c3d4       strncpyCDEABI              000000018000d3d4 f   toroC64:StrNCpyCDEABI.obj
- 0001:0000c418       strncmpCDEABI              000000018000d418 f   toroC64:StrNCmpCDEABI.obj
- 0001:0000c460       strcpyCDEABI               000000018000d460 f   toroC64:StrCpyCDEABI.obj
- 0001:0000c498       strcatCDEABI               000000018000d498 f   toroC64:StrCatCDEABI.obj
- 0001:0000c4cc       strtolCDEABI               000000018000d4cc f   toroC64:strtolCDEABI.obj
- 0001:0000c584       strstrCDEABI               000000018000d584 f   toroC64:StrStrCDEABI.obj
- 0001:0000c61c       wcsstrCDEABI               000000018000d61c f   toroC64:WcsStrCDEABI.obj
- 0001:0000c770       fflushCDEABI               000000018000d770 f   toroC64:FflushCDEABI.obj
- 0001:0000c794       removeCDEABI               000000018000d794 f   toroC64:RemoveCDEABI.obj
- 0001:0000c80c       invalid_parameter_handler  000000018000d80c f   toroC64:_invalid_parameter_handlerCDEABI.obj
- 0001:0000c890       vsnprintfCDEABI            000000018000d890 f   toroC64:VsnprintfCDEABI.obj
- 0001:0000cd4c       wcspbrkCDEABI              000000018000dd4c f   toroC64:WcsPbrkCDEABI.obj
- 0001:0000cd90       memcpyCDEABI               000000018000dd90 f   toroC64:MemCpyCDEABI.obj
- 0001:0000ce24       strtokCDEABI               000000018000de24 f   toroC64:StrTokCDEABI.obj
- 0001:0000ce68       strpbrkCDEABI              000000018000de68 f   toroC64:StrPbrkCDEABI.obj
- 0001:0000cf58       exitCDEABI                 000000018000df58 f   toroC64:exitCDEABI.obj
- 0001:0000cf80       fprintfCDEABI              000000018000df80 f   toroC64:FprintfCDEABI.obj
- 0001:0000cfa4       abortCDEABI                000000018000dfa4 f   toroC64:abortCDEABI.obj
- 0001:0000d120       $$000000                   000000018000e120     toroC64:longjmp64CDEINTRINABI.obj
- 0001:0000d1d4       __fputcpp                  000000018000e1d4 f   toroC64:VfprintfCDEABI.obj
- 0001:0000d1e4       vfprintfCDEABI             000000018000e1e4 f   toroC64:VfprintfCDEABI.obj
- 0001:0000d2e0       fputcCDEABI                000000018000e2e0 f   toroC64:FputcCDEABI.obj
+ 0001:0000461c       __fputcpp                  000000018000561c f   toroC64:Vfprintf.obj
+ 0001:00005f5c       $LN276                     0000000180006f5c     toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00005fe0       ExpFieldOfDouble           0000000180006fe0 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00005ff4       FractBinDigits             0000000180006ff4 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:0000605c       FractFieldOfDouble         000000018000705c f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00006070       IntgrBinDigits             0000000180007070 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000060b8       fract2bcd                  00000001800070b8 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00006190       intgr2bcd                  0000000180007190 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00006290       nfill                      0000000180007290 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00006300       nprintfield                0000000180007300 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00006784       num2str                    0000000180007784 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:000068e8       str2dev                    00000001800078e8 f   toroC64:_cdeCoreVwxPrintf.obj
+ 0001:00007b04       GetCharAndCount            0000000180008b04 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00007b30       IsCharInNumberRange        0000000180008b30 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00007ba4       StoreTerminate             0000000180008ba4 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00007c04       UngetCharAndDecount        0000000180008c04 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00007c24       inrange                    0000000180008c24 f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:00007c4c       str2num                    0000000180008c4c f   toroC64:_cdeCoreVwxScanf.obj
+ 0001:000086f8       __insertFree               00000001800096f8 f   toroC64:_cdeCoreMemRealloc.obj
+ 0001:00008ad8       bcd2int                    0000000180009ad8 f   toroC64:osifIbmAtGetTime.obj
+ 0001:00008af0       inside                     0000000180009af0 f   toroC64:osifIbmAtGetTime.obj
+ 0001:00008b00       rtcrd8                     0000000180009b00 f   toroC64:osifIbmAtGetTime.obj
+ 0001:00009388       __CdeFsEnum                000000018000a388 f   toroC64:osifUefiShellFileOpen.obj
+ 0001:00009520       __CdeIsFsEnum              000000018000a520 f   toroC64:osifUefiShellFileOpen.obj
+ 0001:00009530       efifopen                   000000018000a530 f   toroC64:osifUefiShellFileOpen.obj
+ 0001:00009c14       __cdeReadDirectory         000000018000ac14 f   toroC64:osifUefiShellFileFindAll.obj
+ 0001:00009fa4       myConIOClr                 000000018000afa4 f   toroC64:osifUefiShellCmdExec.obj
+ 0001:00009fb0       myConIOPutStr              000000018000afb0 f   toroC64:osifUefiShellCmdExec.obj
+ 0001:0000ab20       $$000000                   000000018000bb20     toroC64:setjmp64CDEINTRINABI.obj
+ 0001:0000ae30       $$000000                   000000018000be30     toroC64:CdeGetCurrentPrivilegeLevel64.obj
+ 0001:0000ae34       freeCDEABI                 000000018000be34 f   toroC64:FreeCDEABI.obj
+ 0001:0000ae64       fcloseCDEABI               000000018000be64 f   toroC64:FcloseCDEABI.obj
+ 0001:0000af20       fgetcCDEABI                000000018000bf20 f   toroC64:FgetcCDEABI.obj
+ 0001:0000af6c       fwriteCDEABI               000000018000bf6c f   toroC64:FwriteCDEABI.obj
+ 0001:0000afc4       sprintfCDEABI              000000018000bfc4 f   toroC64:SprintfCDEABI.obj
+ 0001:0000aff0       raiseCDEABI                000000018000bff0 f   toroC64:raiseCDEABI.obj
+ 0001:0000b630       invalid_parameter_handler  000000018000c630 f   toroC64:_invalid_parameter_handler.obj
+ 0001:0000b960       strlenCDEABI               000000018000c960 f   toroC64:StrLenCDEABI.obj
+ 0001:0000b974       wcslenCDEABI               000000018000c974 f   toroC64:WcsLenCDEABI.obj
+ 0001:0000b9d8       isspaceCDEABI              000000018000c9d8 f   toroC64:isspaceCDEABI.obj
+ 0001:0000b9f0       isdigitCDEABI              000000018000c9f0 f   toroC64:isdigitCDEABI.obj
+ 0001:0000ba04       isxdigitCDEABI             000000018000ca04 f   toroC64:isxdigitCDEABI.obj
+ 0001:0000ba9c       _mktime64CDEABI            000000018000ca9c f   toroC64:mktimeCDEABI.obj
+ 0001:0000bb2c       mktimeCDEABI               000000018000cb2c f   toroC64:mktimeCDEABI.obj
+ 0001:0000bce0       wcschrCDEABI               000000018000cce0 f   toroC64:WcsChrCDEABI.obj
+ 0001:0000bd18       wcscatCDEABI               000000018000cd18 f   toroC64:WcsCatCDEABI.obj
+ 0001:0000bd4c       wcscpyCDEABI               000000018000cd4c f   toroC64:WcsCpyCDEABI.obj
+ 0001:0000bd84       wcsncmpCDEABI              000000018000cd84 f   toroC64:WcsNCmpCDEABI.obj
+ 0001:0000bdcc       wcsncpyCDEABI              000000018000cdcc f   toroC64:WcsNCpyCDEABI.obj
+ 0001:0000be10       wcstokCDEABI               000000018000ce10 f   toroC64:WcsTokCDEABI.obj
+ 0001:0000be60       _wcsicmpCDEABI             000000018000ce60 f   toroC64:_WcsICmpCDEABI.obj
+ 0001:0000be9c       strcmpCDEABI               000000018000ce9c f   toroC64:StrCmpCDEABI.obj
+ 0001:0000bed8       _stricmpCDEABI             000000018000ced8 f   toroC64:_StrICmpCDEABI.obj
+ 0001:0000bffc       mallocCDEABI               000000018000cffc f   toroC64:MallocCDEABI.obj
+ 0001:0000c008       wcsrchrCDEABI              000000018000d008 f   toroC64:WcsRChrCDEABI.obj
+ 0001:0000c060       _errnoCDEABI               000000018000d060 f   toroC64:errnoCDEABI.obj
+ 0001:0000c084       fopenCDEABI                000000018000d084 f   toroC64:FopenCDEABI.obj
+ 0001:0000c2c0       freadCDEABI                000000018000d2c0 f   toroC64:FreadCDEABI.obj
+ 0001:0000c318       fseekCDEABI                000000018000d318 f   toroC64:FseekCDEABI.obj
+ 0001:0000c320       strchrCDEABI               000000018000d320 f   toroC64:StrChrCDEABI.obj
+ 0001:0000c354       reallocCDEABI              000000018000d354 f   toroC64:ReallocCDEABI.obj
+ 0001:0000c38c       wcstombsCDEABI             000000018000d38c f   toroC64:wcstombsCDEABI.obj
+ 0001:0000c3dc       mbstowcsCDEABI             000000018000d3dc f   toroC64:mbstowcsCDEABI.obj
+ 0001:0000c404       strncpyCDEABI              000000018000d404 f   toroC64:StrNCpyCDEABI.obj
+ 0001:0000c448       strncmpCDEABI              000000018000d448 f   toroC64:StrNCmpCDEABI.obj
+ 0001:0000c490       strcpyCDEABI               000000018000d490 f   toroC64:StrCpyCDEABI.obj
+ 0001:0000c4c8       strcatCDEABI               000000018000d4c8 f   toroC64:StrCatCDEABI.obj
+ 0001:0000c4fc       strtolCDEABI               000000018000d4fc f   toroC64:strtolCDEABI.obj
+ 0001:0000c5b4       strstrCDEABI               000000018000d5b4 f   toroC64:StrStrCDEABI.obj
+ 0001:0000c64c       wcsstrCDEABI               000000018000d64c f   toroC64:WcsStrCDEABI.obj
+ 0001:0000c7a0       fflushCDEABI               000000018000d7a0 f   toroC64:FflushCDEABI.obj
+ 0001:0000c7c4       removeCDEABI               000000018000d7c4 f   toroC64:RemoveCDEABI.obj
+ 0001:0000c83c       invalid_parameter_handler  000000018000d83c f   toroC64:_invalid_parameter_handlerCDEABI.obj
+ 0001:0000c8c0       vsnprintfCDEABI            000000018000d8c0 f   toroC64:VsnprintfCDEABI.obj
+ 0001:0000cd7c       wcspbrkCDEABI              000000018000dd7c f   toroC64:WcsPbrkCDEABI.obj
+ 0001:0000cdc0       memcpyCDEABI               000000018000ddc0 f   toroC64:MemCpyCDEABI.obj
+ 0001:0000ce54       strtokCDEABI               000000018000de54 f   toroC64:StrTokCDEABI.obj
+ 0001:0000ce98       strpbrkCDEABI              000000018000de98 f   toroC64:StrPbrkCDEABI.obj
+ 0001:0000cf88       exitCDEABI                 000000018000df88 f   toroC64:exitCDEABI.obj
+ 0001:0000cfb0       fprintfCDEABI              000000018000dfb0 f   toroC64:FprintfCDEABI.obj
+ 0001:0000cfd4       abortCDEABI                000000018000dfd4 f   toroC64:abortCDEABI.obj
+ 0001:0000d150       $$000000                   000000018000e150     toroC64:longjmp64CDEINTRINABI.obj
+ 0001:0000d204       __fputcpp                  000000018000e204 f   toroC64:VfprintfCDEABI.obj
+ 0001:0000d214       vfprintfCDEABI             000000018000e214 f   toroC64:VfprintfCDEABI.obj
+ 0001:0000d328       fputcCDEABI                000000018000e328 f   toroC64:FputcCDEABI.obj
  0002:00000120       _AcpiModuleName            000000018000f120     tbprint.obj
  0002:00000208       _AcpiModuleName            000000018000f208     tbxfroot.obj
  0002:000002d0       AcpiGbl_ExceptionNames_Env 000000018000f2d0     utexcep.obj
@@ -1053,132 +1053,132 @@
  0002:000028ec       $unwind$clock              00000001800118ec     toroC64:clock.obj
  0002:000028f8       $unwind$_CdeDbgPutChar     00000001800118f8     toroC64:_CdeDbgPutChar.obj
  0002:00002910       $unwind$_cdeCoreVwxPrintf  0000000180011910     toroC64:_cdeCoreVwxPrintf.obj
- 0002:0000292c       $unwind$intgr2bcd          000000018001192c     toroC64:_cdeCoreVwxPrintf.obj
- 0002:00002940       $unwind$str2dev            0000000180011940     toroC64:_cdeCoreVwxPrintf.obj
- 0002:00002958       $unwind$num2str            0000000180011958     toroC64:_cdeCoreVwxPrintf.obj
- 0002:00002970       $unwind$nfill              0000000180011970     toroC64:_cdeCoreVwxPrintf.obj
- 0002:00002988       $unwind$nprintfield        0000000180011988     toroC64:_cdeCoreVwxPrintf.obj
- 0002:000029a0       $unwind$str2num            00000001800119a0     toroC64:_cdeCoreVwxScanf.obj
- 0002:000029b8       $unwind$_cdeCoreVwxScanf   00000001800119b8     toroC64:_cdeCoreVwxScanf.obj
- 0002:000029d4       $unwind$_cdeCoreWcsStrTok  00000001800119d4     toroC64:_cdeCoreWcsStrTok.obj
- 0002:000029f0       $unwind$_cdeWcsStrPbrkSpn  00000001800119f0     toroC64:_cdeWcsStrPbrkSpn.obj
- 0002:00002a0c       $unwind$_cdeCoreMemRealloc 0000000180011a0c     toroC64:_cdeCoreMemRealloc.obj
- 0002:00002a28       $unwind$_cdeMemStrxCpy     0000000180011a28     toroC64:_cdeMemStrxCpy.obj
- 0002:00002a40       $unwind$_cdeMemStrxCmp     0000000180011a40     toroC64:_cdeMemStrxCmp.obj
- 0002:00002a5c       $unwind$_osifIbmAtGetTime  0000000180011a5c     toroC64:osifIbmAtGetTime.obj
- 0002:00002a68       $unwind$_osifIbmAtGetTscPerSec 0000000180011a68     toroC64:osifIbmAtGetTscPerSec.obj
- 0002:00002a70       $unwind$_osifUefiShellMemAlloc 0000000180011a70     toroC64:osifUefiShellMemAlloc.obj
- 0002:00002a78       $unwind$_osifUefiShellFileWrite 0000000180011a78     toroC64:osifUefiShellFileWrite.obj
- 0002:00002a90       $unwind$_osifUefiShellFileRead 0000000180011a90     toroC64:osifUefiShellFileRead.obj
- 0002:00002aa4       $unwind$_osifUefiShellFileSetPos 0000000180011aa4     toroC64:osifUefiShellFileSetPos.obj
- 0002:00002ab8       $unwind$efifopen           0000000180011ab8     toroC64:osifUefiShellFileOpen.obj
- 0002:00002ad0       $unwind$__CdeFsEnum        0000000180011ad0     toroC64:osifUefiShellFileOpen.obj
- 0002:00002ae4       $unwind$_osifUefiShellFileOpen 0000000180011ae4     toroC64:osifUefiShellFileOpen.obj
- 0002:00002afc       $unwind$_osifUefiShellFileClose 0000000180011afc     toroC64:osifUefiShellFileClose.obj
- 0002:00002b08       $unwind$_osifUefiShellFileDelete 0000000180011b08     toroC64:osifUefiShellFileDelete.obj
- 0002:00002b10       $unwind$_osifUefiShellFileRename 0000000180011b10     toroC64:osifUefiShellFileRename.obj
- 0002:00002b2c       $unwind$__cdeReadDirectory 0000000180011b2c     toroC64:osifUefiShellFileFindAll.obj
- 0002:00002b48       $unwind$_osifUefiShellFileFindAll 0000000180011b48     toroC64:osifUefiShellFileFindAll.obj
- 0002:00002b60       $unwind$_osifUefiShellFileGetStatus 0000000180011b60     toroC64:osifUefiShellFileGetStatus.obj
- 0002:00002b74       $unwind$_osifUefiShellDirectoryCreate 0000000180011b74     toroC64:osifUefiShellDirectoryCreate.obj
- 0002:00002b88       $unwind$myConIOPutStr      0000000180011b88     toroC64:osifUefiShellCmdExec.obj
- 0002:00002b9c       $unwind$_osifUefiShellCmdExec 0000000180011b9c     toroC64:osifUefiShellCmdExec.obj
- 0002:00002ba8       $unwind$_osifUefiShellGetEnv 0000000180011ba8     toroC64:osifUefiShellGetEnv.obj
- 0002:00002bc0       $unwind$_osifUefiShellGetDrvCwd 0000000180011bc0     toroC64:osifUefiShellGetDrvCwd.obj
- 0002:00002bcc       $unwind$_cdeCoreFread      0000000180011bcc     toroC64:_cdeCoreFread.obj
- 0002:00002be4       $unwind$_cdeCoreFwrite     0000000180011be4     toroC64:_cdeCoreFwrite.obj
- 0002:00002c00       $unwind$_cdeCoreFsetpos    0000000180011c00     toroC64:_cdeCoreFsetpos.obj
- 0002:00002c14       $unwind$_cdeCoreFflush     0000000180011c14     toroC64:_cdeCoreFflush.obj
- 0002:00002c24       $unwind$_CdeLocateProtocol 0000000180011c24     toroC64:_CdeLocateProtocol.obj
- 0002:00002c2c       $unwind$_cdeStr2Argcv      0000000180011c2c     toroC64:_cdeStr2Argcv.obj
- 0002:00002c44       $unwind$memset             0000000180011c44     toroC64:MemSetCDEINTRINABI.obj
- 0002:00002c4c       $unwind$fcloseCDEABI       0000000180011c4c     toroC64:FcloseCDEABI.obj
- 0002:00002c60       $unwind$fgetcCDEABI        0000000180011c60     toroC64:FgetcCDEABI.obj
- 0002:00002c68       $unwind$fwriteCDEABI       0000000180011c68     toroC64:FwriteCDEABI.obj
- 0002:00002c7c       $unwind$sprintfCDEABI      0000000180011c7c     toroC64:SprintfCDEABI.obj
- 0002:00002c84       $unwind$raiseCDEABI        0000000180011c84     toroC64:raiseCDEABI.obj
- 0002:00002c94       $unwind$_fseeki64          0000000180011c94     toroC64:_Fseeki64.obj
- 0002:00002ca8       $unwind$_ftelli64          0000000180011ca8     toroC64:_Ftelli64.obj
- 0002:00002cb0       $unwind$strpbrk            0000000180011cb0     toroC64:StrPbrk.obj
- 0002:00002cbc       $unwind$isgraph            0000000180011cbc     toroC64:isgraph.obj
- 0002:00002cc8       $unwind$strrchr            0000000180011cc8     toroC64:StrRChr.obj
- 0002:00002cd4       $unwind$__cdeSplitSearchNameExt2Upcase 0000000180011cd4     toroC64:__cdeSplitSearchNameExt2Upcase.obj
- 0002:00002cf0       $unwind$strspn             0000000180011cf0     toroC64:StrSpn.obj
- 0002:00002cfc       $unwind$__cdeStrMatch      0000000180011cfc     toroC64:__cdeStrMatch.obj
- 0002:00002d14       $unwind$realloc            0000000180011d14     toroC64:Realloc.obj
- 0002:00002d20       $unwind$fputc              0000000180011d20     toroC64:Fputc.obj
- 0002:00002d28       $unwind$_errno             0000000180011d28     toroC64:errno.obj
- 0002:00002d30       $unwind$fflush             0000000180011d30     toroC64:Fflush.obj
- 0002:00002d38       $unwind$remove             0000000180011d38     toroC64:Remove.obj
- 0002:00002d4c       $unwind$__cdeIsFilePointer 0000000180011d4c     toroC64:__cdeIsFilePointer.obj
- 0002:00002d60       $unwind$invalid_parameter_handler 0000000180011d60     toroC64:_invalid_parameter_handler.obj
- 0002:00002d74       $unwind$_stricmp           0000000180011d74     toroC64:_StrICmp.obj
- 0002:00002d80       $unwind$strtok             0000000180011d80     toroC64:StrTok.obj
- 0002:00002d8c       $unwind$vsnprintf          0000000180011d8c     toroC64:Vsnprintf.obj
- 0002:00002da4       $unwind$_cdeCoreSprintf    0000000180011da4     toroC64:_cdeCoreSprintf.obj
- 0002:00002dac       $unwind$isxdigitCDEABI     0000000180011dac     toroC64:isxdigitCDEABI.obj
- 0002:00002db4       $unwind$_cdeUMUL128        0000000180011db4     toroC64:_cdeUMUL128.obj
- 0002:00002dbc       $unwind$_mktime64CDEABI    0000000180011dbc     toroC64:mktimeCDEABI.obj
- 0002:00002dc4       $unwind$_cdeGmltime        0000000180011dc4     toroC64:_cdeGmltime.obj
- 0002:00002dd0       $unwind$__cdeOnErrSet_status 0000000180011dd0     toroC64:__cdeOnErrSet_status.obj
- 0002:00002dd8       $unwind$__cdeOffsetCdeFposType 0000000180011dd8     toroC64:__cdeGetOffsetCdeFposType.obj
- 0002:00002de0       $unwind$__cdeBiasCdeFposType 0000000180011de0     toroC64:__cdeGetBiasCdeFposType.obj
- 0002:00002dec       $unwind$wcschrCDEABI       0000000180011dec     toroC64:WcsChrCDEABI.obj
- 0002:00002df4       $unwind$wcscatCDEABI       0000000180011df4     toroC64:WcsCatCDEABI.obj
- 0002:00002e00       $unwind$wcscpyCDEABI       0000000180011e00     toroC64:WcsCpyCDEABI.obj
- 0002:00002e0c       $unwind$wcsncmpCDEABI      0000000180011e0c     toroC64:WcsNCmpCDEABI.obj
- 0002:00002e1c       $unwind$wcsncpyCDEABI      0000000180011e1c     toroC64:WcsNCpyCDEABI.obj
- 0002:00002e2c       $unwind$wcstokCDEABI       0000000180011e2c     toroC64:WcsTokCDEABI.obj
- 0002:00002e3c       $unwind$_wcsicmpCDEABI     0000000180011e3c     toroC64:_WcsICmpCDEABI.obj
- 0002:00002e48       $unwind$strcmpCDEABI       0000000180011e48     toroC64:StrCmpCDEABI.obj
- 0002:00002e54       $unwind$_stricmpCDEABI     0000000180011e54     toroC64:_StrICmpCDEABI.obj
- 0002:00002e60       $unwind$_CdeLocateHandleBuffer 0000000180011e60     toroC64:_CdeLocateHandleBuffer.obj
- 0002:00002e70       $unwind$_cdeConvertDevicePathToText 0000000180011e70     toroC64:_cdeConvertDevicePathToText.obj
- 0002:00002e78       $unwind$_CdeGetMapFromDevicePath 0000000180011e78     toroC64:_CdeGetMapFromDevicePath.obj
- 0002:00002e80       $unwind$_CdeGetCurDir      0000000180011e80     toroC64:_CdeGetCurDir.obj
- 0002:00002e88       $unwind$wcsrchrCDEABI      0000000180011e88     toroC64:WcsRChrCDEABI.obj
- 0002:00002e94       $unwind$_errnoCDEABI       0000000180011e94     toroC64:errnoCDEABI.obj
- 0002:00002e9c       $unwind$fopenCDEABI        0000000180011e9c     toroC64:FopenCDEABI.obj
- 0002:00002ebc       $unwind$freadCDEABI        0000000180011ebc     toroC64:FreadCDEABI.obj
- 0002:00002ed0       $unwind$strchrCDEABI       0000000180011ed0     toroC64:StrChrCDEABI.obj
- 0002:00002ed8       $unwind$reallocCDEABI      0000000180011ed8     toroC64:ReallocCDEABI.obj
- 0002:00002ee4       $unwind$wcstombsCDEABI     0000000180011ee4     toroC64:wcstombsCDEABI.obj
- 0002:00002eec       $unwind$strncpyCDEABI      0000000180011eec     toroC64:StrNCpyCDEABI.obj
- 0002:00002efc       $unwind$strncmpCDEABI      0000000180011efc     toroC64:StrNCmpCDEABI.obj
- 0002:00002f0c       $unwind$strcpyCDEABI       0000000180011f0c     toroC64:StrCpyCDEABI.obj
- 0002:00002f18       $unwind$strcatCDEABI       0000000180011f18     toroC64:StrCatCDEABI.obj
- 0002:00002f24       $unwind$strtolCDEABI       0000000180011f24     toroC64:strtolCDEABI.obj
- 0002:00002f2c       $unwind$_cdeEfiTime2TimeT  0000000180011f2c     toroC64:_cdeEfiTime2TimeT.obj
- 0002:00002f34       $unwind$__cdeIsFilePointerCORE 0000000180011f34     toroC64:__cdeIsFilePointerCORE.obj
- 0002:00002f4c       $unwind$__cderewindCORE    0000000180011f4c     toroC64:__cderewindCORE.obj
- 0002:00002f54       $unwind$_cdeAbort          0000000180011f54     toroC64:_cdeAbort.obj
- 0002:00002f5c       $unwind$fflushCDEABI       0000000180011f5c     toroC64:FflushCDEABI.obj
- 0002:00002f64       $unwind$removeCDEABI       0000000180011f64     toroC64:RemoveCDEABI.obj
- 0002:00002f78       $unwind$invalid_parameter_handler 0000000180011f78     toroC64:_invalid_parameter_handlerCDEABI.obj
- 0002:00002f8c       $unwind$vsnprintfCDEABI    0000000180011f8c     toroC64:VsnprintfCDEABI.obj
- 0002:00002fa4       $unwind$fsetposCDEABI      0000000180011fa4     toroC64:FsetposCDEABI.obj
- 0002:00002fb0       $unwind$fgetpos            0000000180011fb0     toroC64:Fgetpos.obj
- 0002:00002fc4       $unwind$isalnum            0000000180011fc4     toroC64:isalnum.obj
- 0002:00002fd0       $unwind$strcspn            0000000180011fd0     toroC64:StrCSpn.obj
- 0002:00002fdc       $unwind$_strnicmp          0000000180011fdc     toroC64:_StrNICmp.obj
- 0002:00002fec       $unwind$__cdeOnErrSet_errno 0000000180011fec     toroC64:__cdeOnErrSet_errno.obj
- 0002:00002ff4       $unwind$abort              0000000180011ff4     toroC64:abort.obj
- 0002:00003000       $unwind$_cdeDay2Greg       0000000180012000     toroC64:_cdeDay2Greg.obj
- 0002:0000300c       $unwind$_efierrno          000000018001200c     toroC64:_efierrno.obj
- 0002:00003014       $unwind$wcspbrkCDEABI      0000000180012014     toroC64:WcsPbrkCDEABI.obj
- 0002:00003020       $unwind$_cdePoolWcs2AppWcs 0000000180012020     toroC64:_CdePoolWcs2AppWcs.obj
- 0002:00003030       $unwind$strtokCDEABI       0000000180012030     toroC64:StrTokCDEABI.obj
- 0002:0000303c       $unwind$strpbrkCDEABI      000000018001203c     toroC64:StrPbrkCDEABI.obj
- 0002:00003048       $unwind$_cdeSscanf         0000000180012048     toroC64:_cdeSscanf.obj
- 0002:00003054       $unwind$__cdeOnErrSet_errnoCORE 0000000180012054     toroC64:__cdeOnErrSet_errnoCORE.obj
- 0002:0000305c       $unwind$exitCDEABI         000000018001205c     toroC64:exitCDEABI.obj
- 0002:00003064       $unwind$fprintfCDEABI      0000000180012064     toroC64:FprintfCDEABI.obj
- 0002:0000306c       $unwind$abortCDEABI        000000018001206c     toroC64:abortCDEABI.obj
- 0002:00003078       $unwind$isalpha            0000000180012078     toroC64:isalpha.obj
- 0002:00003084       $unwind$raise              0000000180012084     toroC64:raise.obj
- 0002:00003094       $unwind$exit               0000000180012094     toroC64:exit.obj
- 0002:0000309c       $unwind$vfprintfCDEABI     000000018001209c     toroC64:VfprintfCDEABI.obj
- 0002:000030b0       $unwind$fputcCDEABI        00000001800120b0     toroC64:FputcCDEABI.obj
+ 0002:00002930       $unwind$intgr2bcd          0000000180011930     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00002944       $unwind$str2dev            0000000180011944     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:0000295c       $unwind$num2str            000000018001195c     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:00002974       $unwind$nfill              0000000180011974     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:0000298c       $unwind$nprintfield        000000018001198c     toroC64:_cdeCoreVwxPrintf.obj
+ 0002:000029a4       $unwind$str2num            00000001800119a4     toroC64:_cdeCoreVwxScanf.obj
+ 0002:000029bc       $unwind$_cdeCoreVwxScanf   00000001800119bc     toroC64:_cdeCoreVwxScanf.obj
+ 0002:000029d8       $unwind$_cdeCoreWcsStrTok  00000001800119d8     toroC64:_cdeCoreWcsStrTok.obj
+ 0002:000029f4       $unwind$_cdeWcsStrPbrkSpn  00000001800119f4     toroC64:_cdeWcsStrPbrkSpn.obj
+ 0002:00002a10       $unwind$_cdeCoreMemRealloc 0000000180011a10     toroC64:_cdeCoreMemRealloc.obj
+ 0002:00002a2c       $unwind$_cdeMemStrxCpy     0000000180011a2c     toroC64:_cdeMemStrxCpy.obj
+ 0002:00002a44       $unwind$_cdeMemStrxCmp     0000000180011a44     toroC64:_cdeMemStrxCmp.obj
+ 0002:00002a60       $unwind$_osifIbmAtGetTime  0000000180011a60     toroC64:osifIbmAtGetTime.obj
+ 0002:00002a6c       $unwind$_osifIbmAtGetTscPerSec 0000000180011a6c     toroC64:osifIbmAtGetTscPerSec.obj
+ 0002:00002a74       $unwind$_osifUefiShellMemAlloc 0000000180011a74     toroC64:osifUefiShellMemAlloc.obj
+ 0002:00002a7c       $unwind$_osifUefiShellFileWrite 0000000180011a7c     toroC64:osifUefiShellFileWrite.obj
+ 0002:00002a94       $unwind$_osifUefiShellFileRead 0000000180011a94     toroC64:osifUefiShellFileRead.obj
+ 0002:00002aa8       $unwind$_osifUefiShellFileSetPos 0000000180011aa8     toroC64:osifUefiShellFileSetPos.obj
+ 0002:00002abc       $unwind$efifopen           0000000180011abc     toroC64:osifUefiShellFileOpen.obj
+ 0002:00002ad4       $unwind$__CdeFsEnum        0000000180011ad4     toroC64:osifUefiShellFileOpen.obj
+ 0002:00002ae8       $unwind$_osifUefiShellFileOpen 0000000180011ae8     toroC64:osifUefiShellFileOpen.obj
+ 0002:00002b00       $unwind$_osifUefiShellFileClose 0000000180011b00     toroC64:osifUefiShellFileClose.obj
+ 0002:00002b0c       $unwind$_osifUefiShellFileDelete 0000000180011b0c     toroC64:osifUefiShellFileDelete.obj
+ 0002:00002b14       $unwind$_osifUefiShellFileRename 0000000180011b14     toroC64:osifUefiShellFileRename.obj
+ 0002:00002b30       $unwind$__cdeReadDirectory 0000000180011b30     toroC64:osifUefiShellFileFindAll.obj
+ 0002:00002b4c       $unwind$_osifUefiShellFileFindAll 0000000180011b4c     toroC64:osifUefiShellFileFindAll.obj
+ 0002:00002b64       $unwind$_osifUefiShellFileGetStatus 0000000180011b64     toroC64:osifUefiShellFileGetStatus.obj
+ 0002:00002b78       $unwind$_osifUefiShellDirectoryCreate 0000000180011b78     toroC64:osifUefiShellDirectoryCreate.obj
+ 0002:00002b8c       $unwind$myConIOPutStr      0000000180011b8c     toroC64:osifUefiShellCmdExec.obj
+ 0002:00002ba0       $unwind$_osifUefiShellCmdExec 0000000180011ba0     toroC64:osifUefiShellCmdExec.obj
+ 0002:00002bac       $unwind$_osifUefiShellGetEnv 0000000180011bac     toroC64:osifUefiShellGetEnv.obj
+ 0002:00002bc4       $unwind$_osifUefiShellGetDrvCwd 0000000180011bc4     toroC64:osifUefiShellGetDrvCwd.obj
+ 0002:00002bd0       $unwind$_cdeCoreFread      0000000180011bd0     toroC64:_cdeCoreFread.obj
+ 0002:00002be8       $unwind$_cdeCoreFwrite     0000000180011be8     toroC64:_cdeCoreFwrite.obj
+ 0002:00002c04       $unwind$_cdeCoreFsetpos    0000000180011c04     toroC64:_cdeCoreFsetpos.obj
+ 0002:00002c18       $unwind$_cdeCoreFflush     0000000180011c18     toroC64:_cdeCoreFflush.obj
+ 0002:00002c28       $unwind$_CdeLocateProtocol 0000000180011c28     toroC64:_CdeLocateProtocol.obj
+ 0002:00002c30       $unwind$_cdeStr2Argcv      0000000180011c30     toroC64:_cdeStr2Argcv.obj
+ 0002:00002c48       $unwind$memset             0000000180011c48     toroC64:MemSetCDEINTRINABI.obj
+ 0002:00002c50       $unwind$fcloseCDEABI       0000000180011c50     toroC64:FcloseCDEABI.obj
+ 0002:00002c64       $unwind$fgetcCDEABI        0000000180011c64     toroC64:FgetcCDEABI.obj
+ 0002:00002c6c       $unwind$fwriteCDEABI       0000000180011c6c     toroC64:FwriteCDEABI.obj
+ 0002:00002c80       $unwind$sprintfCDEABI      0000000180011c80     toroC64:SprintfCDEABI.obj
+ 0002:00002c88       $unwind$raiseCDEABI        0000000180011c88     toroC64:raiseCDEABI.obj
+ 0002:00002c98       $unwind$_fseeki64          0000000180011c98     toroC64:_Fseeki64.obj
+ 0002:00002cac       $unwind$_ftelli64          0000000180011cac     toroC64:_Ftelli64.obj
+ 0002:00002cb4       $unwind$strpbrk            0000000180011cb4     toroC64:StrPbrk.obj
+ 0002:00002cc0       $unwind$isgraph            0000000180011cc0     toroC64:isgraph.obj
+ 0002:00002ccc       $unwind$strrchr            0000000180011ccc     toroC64:StrRChr.obj
+ 0002:00002cd8       $unwind$__cdeSplitSearchNameExt2Upcase 0000000180011cd8     toroC64:__cdeSplitSearchNameExt2Upcase.obj
+ 0002:00002cf4       $unwind$strspn             0000000180011cf4     toroC64:StrSpn.obj
+ 0002:00002d00       $unwind$__cdeStrMatch      0000000180011d00     toroC64:__cdeStrMatch.obj
+ 0002:00002d18       $unwind$realloc            0000000180011d18     toroC64:Realloc.obj
+ 0002:00002d24       $unwind$fputc              0000000180011d24     toroC64:Fputc.obj
+ 0002:00002d2c       $unwind$_errno             0000000180011d2c     toroC64:errno.obj
+ 0002:00002d34       $unwind$fflush             0000000180011d34     toroC64:Fflush.obj
+ 0002:00002d3c       $unwind$remove             0000000180011d3c     toroC64:Remove.obj
+ 0002:00002d50       $unwind$__cdeIsFilePointer 0000000180011d50     toroC64:__cdeIsFilePointer.obj
+ 0002:00002d64       $unwind$invalid_parameter_handler 0000000180011d64     toroC64:_invalid_parameter_handler.obj
+ 0002:00002d78       $unwind$_stricmp           0000000180011d78     toroC64:_StrICmp.obj
+ 0002:00002d84       $unwind$strtok             0000000180011d84     toroC64:StrTok.obj
+ 0002:00002d90       $unwind$vsnprintf          0000000180011d90     toroC64:Vsnprintf.obj
+ 0002:00002da8       $unwind$_cdeCoreSprintf    0000000180011da8     toroC64:_cdeCoreSprintf.obj
+ 0002:00002db0       $unwind$isxdigitCDEABI     0000000180011db0     toroC64:isxdigitCDEABI.obj
+ 0002:00002db8       $unwind$_cdeUMUL128        0000000180011db8     toroC64:_cdeUMUL128.obj
+ 0002:00002dc0       $unwind$_mktime64CDEABI    0000000180011dc0     toroC64:mktimeCDEABI.obj
+ 0002:00002dc8       $unwind$_cdeGmltime        0000000180011dc8     toroC64:_cdeGmltime.obj
+ 0002:00002dd4       $unwind$__cdeOnErrSet_status 0000000180011dd4     toroC64:__cdeOnErrSet_status.obj
+ 0002:00002ddc       $unwind$__cdeOffsetCdeFposType 0000000180011ddc     toroC64:__cdeGetOffsetCdeFposType.obj
+ 0002:00002de4       $unwind$__cdeBiasCdeFposType 0000000180011de4     toroC64:__cdeGetBiasCdeFposType.obj
+ 0002:00002df0       $unwind$wcschrCDEABI       0000000180011df0     toroC64:WcsChrCDEABI.obj
+ 0002:00002df8       $unwind$wcscatCDEABI       0000000180011df8     toroC64:WcsCatCDEABI.obj
+ 0002:00002e04       $unwind$wcscpyCDEABI       0000000180011e04     toroC64:WcsCpyCDEABI.obj
+ 0002:00002e10       $unwind$wcsncmpCDEABI      0000000180011e10     toroC64:WcsNCmpCDEABI.obj
+ 0002:00002e20       $unwind$wcsncpyCDEABI      0000000180011e20     toroC64:WcsNCpyCDEABI.obj
+ 0002:00002e30       $unwind$wcstokCDEABI       0000000180011e30     toroC64:WcsTokCDEABI.obj
+ 0002:00002e40       $unwind$_wcsicmpCDEABI     0000000180011e40     toroC64:_WcsICmpCDEABI.obj
+ 0002:00002e4c       $unwind$strcmpCDEABI       0000000180011e4c     toroC64:StrCmpCDEABI.obj
+ 0002:00002e58       $unwind$_stricmpCDEABI     0000000180011e58     toroC64:_StrICmpCDEABI.obj
+ 0002:00002e64       $unwind$_CdeLocateHandleBuffer 0000000180011e64     toroC64:_CdeLocateHandleBuffer.obj
+ 0002:00002e74       $unwind$_cdeConvertDevicePathToText 0000000180011e74     toroC64:_cdeConvertDevicePathToText.obj
+ 0002:00002e7c       $unwind$_CdeGetMapFromDevicePath 0000000180011e7c     toroC64:_CdeGetMapFromDevicePath.obj
+ 0002:00002e84       $unwind$_CdeGetCurDir      0000000180011e84     toroC64:_CdeGetCurDir.obj
+ 0002:00002e8c       $unwind$wcsrchrCDEABI      0000000180011e8c     toroC64:WcsRChrCDEABI.obj
+ 0002:00002e98       $unwind$_errnoCDEABI       0000000180011e98     toroC64:errnoCDEABI.obj
+ 0002:00002ea0       $unwind$fopenCDEABI        0000000180011ea0     toroC64:FopenCDEABI.obj
+ 0002:00002ec0       $unwind$freadCDEABI        0000000180011ec0     toroC64:FreadCDEABI.obj
+ 0002:00002ed4       $unwind$strchrCDEABI       0000000180011ed4     toroC64:StrChrCDEABI.obj
+ 0002:00002edc       $unwind$reallocCDEABI      0000000180011edc     toroC64:ReallocCDEABI.obj
+ 0002:00002ee8       $unwind$wcstombsCDEABI     0000000180011ee8     toroC64:wcstombsCDEABI.obj
+ 0002:00002ef0       $unwind$strncpyCDEABI      0000000180011ef0     toroC64:StrNCpyCDEABI.obj
+ 0002:00002f00       $unwind$strncmpCDEABI      0000000180011f00     toroC64:StrNCmpCDEABI.obj
+ 0002:00002f10       $unwind$strcpyCDEABI       0000000180011f10     toroC64:StrCpyCDEABI.obj
+ 0002:00002f1c       $unwind$strcatCDEABI       0000000180011f1c     toroC64:StrCatCDEABI.obj
+ 0002:00002f28       $unwind$strtolCDEABI       0000000180011f28     toroC64:strtolCDEABI.obj
+ 0002:00002f30       $unwind$_cdeEfiTime2TimeT  0000000180011f30     toroC64:_cdeEfiTime2TimeT.obj
+ 0002:00002f38       $unwind$__cdeIsFilePointerCORE 0000000180011f38     toroC64:__cdeIsFilePointerCORE.obj
+ 0002:00002f50       $unwind$__cderewindCORE    0000000180011f50     toroC64:__cderewindCORE.obj
+ 0002:00002f58       $unwind$_cdeAbort          0000000180011f58     toroC64:_cdeAbort.obj
+ 0002:00002f60       $unwind$fflushCDEABI       0000000180011f60     toroC64:FflushCDEABI.obj
+ 0002:00002f68       $unwind$removeCDEABI       0000000180011f68     toroC64:RemoveCDEABI.obj
+ 0002:00002f7c       $unwind$invalid_parameter_handler 0000000180011f7c     toroC64:_invalid_parameter_handlerCDEABI.obj
+ 0002:00002f90       $unwind$vsnprintfCDEABI    0000000180011f90     toroC64:VsnprintfCDEABI.obj
+ 0002:00002fa8       $unwind$fsetposCDEABI      0000000180011fa8     toroC64:FsetposCDEABI.obj
+ 0002:00002fb4       $unwind$fgetpos            0000000180011fb4     toroC64:Fgetpos.obj
+ 0002:00002fc8       $unwind$isalnum            0000000180011fc8     toroC64:isalnum.obj
+ 0002:00002fd4       $unwind$strcspn            0000000180011fd4     toroC64:StrCSpn.obj
+ 0002:00002fe0       $unwind$_strnicmp          0000000180011fe0     toroC64:_StrNICmp.obj
+ 0002:00002ff0       $unwind$__cdeOnErrSet_errno 0000000180011ff0     toroC64:__cdeOnErrSet_errno.obj
+ 0002:00002ff8       $unwind$abort              0000000180011ff8     toroC64:abort.obj
+ 0002:00003004       $unwind$_cdeDay2Greg       0000000180012004     toroC64:_cdeDay2Greg.obj
+ 0002:00003010       $unwind$_efierrno          0000000180012010     toroC64:_efierrno.obj
+ 0002:00003018       $unwind$wcspbrkCDEABI      0000000180012018     toroC64:WcsPbrkCDEABI.obj
+ 0002:00003024       $unwind$_cdePoolWcs2AppWcs 0000000180012024     toroC64:_CdePoolWcs2AppWcs.obj
+ 0002:00003034       $unwind$strtokCDEABI       0000000180012034     toroC64:StrTokCDEABI.obj
+ 0002:00003040       $unwind$strpbrkCDEABI      0000000180012040     toroC64:StrPbrkCDEABI.obj
+ 0002:0000304c       $unwind$_cdeSscanf         000000018001204c     toroC64:_cdeSscanf.obj
+ 0002:00003058       $unwind$__cdeOnErrSet_errnoCORE 0000000180012058     toroC64:__cdeOnErrSet_errnoCORE.obj
+ 0002:00003060       $unwind$exitCDEABI         0000000180012060     toroC64:exitCDEABI.obj
+ 0002:00003068       $unwind$fprintfCDEABI      0000000180012068     toroC64:FprintfCDEABI.obj
+ 0002:00003070       $unwind$abortCDEABI        0000000180012070     toroC64:abortCDEABI.obj
+ 0002:0000307c       $unwind$isalpha            000000018001207c     toroC64:isalpha.obj
+ 0002:00003088       $unwind$raise              0000000180012088     toroC64:raise.obj
+ 0002:00003098       $unwind$exit               0000000180012098     toroC64:exit.obj
+ 0002:000030a0       $unwind$vfprintfCDEABI     00000001800120a0     toroC64:VfprintfCDEABI.obj
+ 0002:000030b4       $unwind$fputcCDEABI        00000001800120b4     toroC64:FputcCDEABI.obj
  0003:00000008       CurrentCharPtr             0000000180013008     getopt.obj
  0003:00000130       ?EfiAcpi20TableGuid@?1??EnumSystemFirmwareTables4UEFI@@9@9 0000000180013130     Win324UEFI:EnumSystemFirmwareTables.obj
  0003:00000140       ?EfiAcpi20TableGuid@?1??GetSystemFirmwareTable4UEFI@@9@9 0000000180013140     Win324UEFI:GetSystemFirmwareTable.obj
