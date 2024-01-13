@@ -57,7 +57,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include;$(SolutionDir)acpica-win-20210930-source\tools\acpiexec</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(OutDir)Win324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
     </Link>
     <Link>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>

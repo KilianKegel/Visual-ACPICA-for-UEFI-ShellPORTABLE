@@ -30,6 +30,7 @@
     <TargetExt>.efi</TargetExt>
     <GenerateManifest>false</GenerateManifest>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
     <ClCompile>
@@ -59,7 +60,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include;$(SolutionDir)acpica-win-20210930-source\compiler;$(SolutionDir)$(ProjectName)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>$(OutDir)Win324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
     </Link>
     <Link>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
@@ -81,7 +82,8 @@
       <Message>COPY $(OutDir)$(TargetName)$(TargetExt) g: /y</Message>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>$(SolutionDir)toolschk.bat</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -35,14 +35,25 @@ All changes to the original source code are encapsulated by the `VISUAL_ACPICA_F
 #### 1. install Visual Studio 2022 on a Windows PC<br>
 https://github.com/KilianKegel/HowTo-setup-an-UEFI-Development-PC#howto-setup-an-uefi-development-pc
 
-#### 2. install additional tools <br>
+<del>#### 2. install additional tools <br>
 Follow the guidance to get FLEX/BISON running on that build machine<br>
-https://acpica.org/downloads/windows-source
+https://acpica.org/downloads/windows-source</del>
 
-#### 3. get the project to the build machine <br>
+#### 2. get the project to the build machine <br>
 [Visual-ACPICA-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell)
 
+#### 3. run LAUNCH.BAT to begin – don't invoke AcpiComponents.sln directly <br>
+FLEX/BISON automatically downloaded and extracted *to the project folder* initially by **LAUNCH.BAT**<br>
+https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for-upcoming-portable-projects<br>
+**PATH** updated by **LAUNCH.BAT**.
+
+
 ## Revision history
+### 20240113
+* convert to **PORTABLE MODEL** – https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for-upcoming-portable-projects
+    * FLEX/BISON automatically downloaded and installed *in the project folder*
+* update to **TORO C Library** *20231228*, copyright update only
+* replace deprecated **Win324UEFI** by current **Visual-LIBWIN32-for-UEFI**
 ### 20231014
 * update to **TORO C Library** *20231014*
 ### 20230910
