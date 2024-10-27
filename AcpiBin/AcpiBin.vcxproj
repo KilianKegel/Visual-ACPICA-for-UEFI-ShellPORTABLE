@@ -54,7 +54,7 @@
       </EnableEnhancedInstructionSet>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-source\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
@@ -71,31 +71,37 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
     </Link>
+    <PostBuildEvent>
+      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) &amp; copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\cmfsize.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\Common\getopt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utalloc.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utascii.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utbuffer.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utcache.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdecode.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utlock.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\utilities\utmath.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmisc.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmutex.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstate.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstring.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxferror.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiBin\abcompare.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiBin\abmain.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\cmfsize.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\Common\getopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utalloc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utascii.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utbuffer.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utcache.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdecode.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utlock.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmisc.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmutex.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstate.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstring.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxferror.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiBin\abcompare.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiBin\abmain.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiBin\acpibin.h" />
+    <ClInclude Include="$(SolutionDir)acpica-win-source\tools\AcpiBin\acpibin.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

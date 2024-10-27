@@ -55,7 +55,7 @@
       </EnableEnhancedInstructionSet>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-source\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
@@ -72,18 +72,24 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
     </Link>
+    <PostBuildEvent>
+      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) &amp; copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\getopt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utascii.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmath.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utnonansi.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxferror.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiXtract\acpixtract.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\getopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utascii.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utnonansi.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxferror.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiXtract\acpixtract.c">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level4</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level4</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level4</WarningLevel>
@@ -91,8 +97,8 @@
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BrowseInformation>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpixtract\axmain.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpixtract\axutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpixtract\axmain.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpixtract\axutils.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

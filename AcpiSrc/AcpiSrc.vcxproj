@@ -54,7 +54,7 @@
       </EnableEnhancedInstructionSet>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-20210930-source\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-source\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
@@ -71,28 +71,34 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
     </Link>
+    <PostBuildEvent>
+      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) &amp; copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\cmfsize.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\getopt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmath.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utnonansi.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxferror.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\SERVICE_LAYERS\oswindir.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\TOOLS\acpisrc\ascase.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiSrc\asconvrt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiSrc\asfile.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiSrc\asmain.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\TOOLS\acpisrc\asremove.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\acpisrc\astable.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiSrc\asutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\cmfsize.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\getopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utnonansi.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxferror.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\SERVICE_LAYERS\oswindir.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\TOOLS\acpisrc\ascase.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiSrc\asconvrt.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiSrc\asfile.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiSrc\asmain.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\TOOLS\acpisrc\asremove.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpisrc\astable.c" />
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiSrc\asutils.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiSrc\acpisrc.h" />
+    <ClInclude Include="$(SolutionDir)acpica-win-source\tools\AcpiSrc\acpisrc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

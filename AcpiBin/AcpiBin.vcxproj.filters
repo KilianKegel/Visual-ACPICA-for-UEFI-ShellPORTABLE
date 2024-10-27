@@ -15,69 +15,69 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\cmfsize.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\cmfsize.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\Common\getopt.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\Common\getopt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utalloc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utalloc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utascii.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utascii.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utbuffer.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utbuffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utcache.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utcache.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdecode.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdecode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utlock.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utlock.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\utilities\utmath.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\utilities\utmath.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmisc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmisc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmutex.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmutex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstate.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstring.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstring.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxferror.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxferror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiBin\abcompare.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiBin\abcompare.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiBin\abmain.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiBin\abmain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\tools\AcpiBin\acpibin.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\tools\AcpiBin\acpibin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

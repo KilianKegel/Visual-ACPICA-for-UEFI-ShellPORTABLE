@@ -42,15 +42,19 @@ https://acpica.org/downloads/windows-source</del>
 #### 2. get the project to the build machine <br>
 [Visual-ACPICA-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell)
 
-#### 3. run LAUNCH.BAT to begin – don't invoke AcpiComponents.sln directly <br>
+#### 3. run LAUNCH.BAT to begin â€“ don't invoke AcpiComponents.sln directly <br>
 FLEX/BISON automatically downloaded and extracted *to the project folder* initially by **LAUNCH.BAT**<br>
 https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for-upcoming-portable-projects<br>
 **PATH** updated by **LAUNCH.BAT**.
 
 
 ## Revision history
+### 20241027
+* update to ACPICA **v202409277** taken from [Windows Format Source Code and Build Environment (.zip, 3 MB)](https://github.com/user-attachments/files/17171020/acpica-win-20240927.zip)
+* update to **TORO C Library** *20241013, v0.8.7 Build 200*
+* intern: rename ACPICA sourcecode folder from `acpica-win-20210930-source` to `acpica-win-source`
 ### 20240113
-* convert to **PORTABLE MODEL** – https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for-upcoming-portable-projects
+* convert to **PORTABLE MODEL** â€“ https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for-upcoming-portable-projects
     * FLEX/BISON automatically downloaded and installed *in the project folder*
 * update to **TORO C Library** *20231228*, copyright update only
 * replace deprecated **Win324UEFI** by current **Visual-LIBWIN32-for-UEFI**

@@ -15,613 +15,613 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\acfileio.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\acfileio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\adfile.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\adfile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\adisasm.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\adisasm.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\adwalk.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\adwalk.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahids.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahids.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahpredef.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahpredef.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahtable.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahtable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\ahuuids.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahuuids.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\cmfsize.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\cmfsize.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmextern.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmextern.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmrestag.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmrestag.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmswitch.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmswitch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtable.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtables.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtables.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbdump.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbdump1.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbdump2.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbdump3.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbinfo.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbinfo1.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbinfo2.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\dmtbinfo3.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\common\getopt.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\common\getopt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslallocate.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslallocate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslanalyze.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslanalyze.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslascii.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslascii.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslbtypes.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslbtypes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslcache.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslcache.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslcodegen.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslcodegen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslcompile.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslcompile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asldebug.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asldebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslerror.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslerror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslexternal.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslexternal.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslfileio.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslfileio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslfiles.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslfiles.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslfold.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslfold.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslhelp.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslhelp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslhex.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslhex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asllength.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllength.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asllisting.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllisting.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asllistsup.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllistsup.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslload.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslload.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asllookup.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllookup.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmain.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmap.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmapenter.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmapenter.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmapoutput.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmapoutput.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmaputils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmaputils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmessages.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmessages.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmethod.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmethod.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslnamesp.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslnamesp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asloffset.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asloffset.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslopcodes.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslopcodes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asloperands.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asloperands.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslopt.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslopt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asloptions.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asloptions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslparseop.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslparseop.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslpld.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslpld.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslpredef.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslpredef.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslprepkg.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslprepkg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslprintf.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslprintf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslprune.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslprune.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslresource.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslresource.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype1.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype1i.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype1i.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype2.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype2d.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2d.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype2e.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2e.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype2q.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2q.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype2s.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2s.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrestype2w.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2w.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslstartup.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslstartup.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslstubs.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslstubs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asltransform.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asltransform.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asltree.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asltree.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\asluuid.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asluuid.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslwalks.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslwalks.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslxref.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslxref.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslxrefout.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslxrefout.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\cvcompiler.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\cvcompiler.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\cvdisasm.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\cvdisasm.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\cvparser.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\cvparser.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtcompile.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtcompile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtexpress.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtexpress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtfield.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtfield.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtio.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtsubtable.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtsubtable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dttable.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dttable1.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttable1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dttable2.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttable2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dttemplate.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttemplate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\prexpress.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prexpress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\prmacros.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prmacros.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\prscan.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prscan.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\compiler\prutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\DEBUGGER\dbfileio.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\DEBUGGER\dbfileio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\disassembler\dmbuffer.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmbuffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\disassembler\dmcstyle.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\disassembler\dmcstyle.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\disassembler\dmdeferred.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\disassembler\dmdeferred.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\disassembler\dmnames.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmnames.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\disassembler\dmopcode.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmopcode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\disassembler\dmresrc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmresrc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\disassembler\dmresrcl.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmresrcl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\disassembler\dmresrcl2.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\disassembler\dmresrcl2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\disassembler\dmresrcs.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmresrcs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\Disassembler\dmutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\Disassembler\dmutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\disassembler\dmwalk.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmwalk.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsargs.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsargs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dscontrol.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dscontrol.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsfield.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsfield.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsobject.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsobject.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsopcode.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsopcode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dspkginit.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dspkginit.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dsutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswexec.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswexec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswload.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswload.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswload2.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswload2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswscope.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswscope.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\dispatcher\dswstate.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswstate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exconcat.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exconcat.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exconvrt.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exconvrt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\excreate.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\excreate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exdump.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exdump.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exmisc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exmisc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exmutex.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exmutex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exnames.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exnames.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg1.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg2.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg3.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exoparg6.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg6.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exprep.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exprep.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exregion.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exregion.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exresnte.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exresnte.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exresolv.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exresolv.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exresop.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exresop.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exstore.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exstore.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exstoren.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exstoren.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exstorob.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exstorob.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exsystem.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exsystem.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\executer\exutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsaccess.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsaccess.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsalloc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsalloc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsdump.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsdump.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsnames.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsnames.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsobject.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsobject.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\NAMESPACE\nsparse.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\NAMESPACE\nsparse.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nssearch.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nssearch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nsutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\namespace\nswalk.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nswalk.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\NAMESPACE\nsxfobj.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\NAMESPACE\nsxfobj.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psargs.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psargs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psloop.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psloop.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psobject.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psobject.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psopcode.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psopcode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psopinfo.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psopinfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psparse.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psparse.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psscope.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psscope.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\pstree.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\pstree.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\psutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\parser\pswalk.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\pswalk.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbdata.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbdata.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbfadt.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbfadt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\tables\tbinstal.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\tables\tbinstal.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbprint.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbprint.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\COMPONENTS\tables\tbutils.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\tables\tbutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbxface.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbxface.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\tables\tbxfload.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbxfload.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utaddress.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utaddress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utalloc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utalloc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utascii.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utascii.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utbuffer.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utbuffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utcache.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utcache.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utcopy.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utcopy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdebug.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdecode.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdecode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utdelete.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdelete.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uterror.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\uterror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utexcep.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utglobal.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\uthex.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\uthex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utinit.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utinit.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utlock.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utlock.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmath.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmath.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmisc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmisc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utmutex.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmutex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utnonansi.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utnonansi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utobject.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utobject.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utownerid.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utownerid.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utpredef.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utpredef.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utresdecode.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utresdecode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utresrc.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utresrc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstate.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstring.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstring.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstrsuppt.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstrsuppt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utstrtoul64.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstrtoul64.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utuuid.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utuuid.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxface.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxface.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\components\utilities\utxferror.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxferror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswindir.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswindir.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswintbl.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswintbl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-20210930-source\os_specific\service_layers\oswinxf.c">
+    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="aslcompiler.l.c">
@@ -648,53 +648,56 @@
     <ClCompile Include="prparser.y.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\acpica-win-source\components\utilities\utcksum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslcompiler.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\aslcompiler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\compiler\asldefine.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\asldefine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslglobal.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\aslglobal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslmessages.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\aslmessages.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\compiler\asltypes.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\asltypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtcompiler.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\dtcompiler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="$(SolutionDir)acpica-win-20210930-source\compiler\dttemplate.h">
+    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\dttemplate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslcompiler.l" />
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslparser.y" />
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtparser.l" />
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtparser.y" />
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\prparser.l" />
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\prparser.y" />
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtcompilerparser.l" />
-    <CustomBuild Include="$(SolutionDir)acpica-win-20210930-source\compiler\dtcompilerparser.y" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\aslcompiler.l" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\aslparser.y" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtparser.l" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtparser.y" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\prparser.l" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\prparser.y" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtcompilerparser.l" />
+    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtcompilerparser.y" />
     <CustomBuild Include="aslcompiler.y" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslcstyle.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslhelpers.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslkeywords.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslprimaries.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslresources.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslrules.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\aslsupport.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\asltokens.y" />
-    <None Include="$(SolutionDir)acpica-win-20210930-source\compiler\asltypes.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\aslcstyle.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\aslhelpers.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\aslkeywords.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\aslprimaries.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\aslresources.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\aslrules.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\aslsupport.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\asltokens.y" />
+    <None Include="$(SolutionDir)acpica-win-source\compiler\asltypes.y" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="$(SolutionDir)acpica-win-20210930-source\compiler\readme.txt" />
+    <Text Include="$(SolutionDir)acpica-win-source\compiler\readme.txt" />
   </ItemGroup>
 </Project>
