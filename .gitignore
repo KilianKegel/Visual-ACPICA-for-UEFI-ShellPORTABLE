@@ -32,4 +32,4 @@ AcpiXtract/x64/
 AslCompiler/x64/
 Examples/x64/
 template/x64/
-Tools/
+*.pdb

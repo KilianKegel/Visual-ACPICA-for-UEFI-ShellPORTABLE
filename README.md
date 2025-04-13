@@ -49,6 +49,10 @@ https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for
 
 
 ## Revision history
+### 20250413
+* fix `.gitignore` issue
+* update to [**toro C Library v0.9.1 Build 267**](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI)
+* update to [**Visual-LIBWIN32-for-UEFI 20250102**](https://github.com/KilianKegel/Visual-LIBWIN32-for-UEFI)
 ### 20241027
 * update to ACPICA **v20240927** taken from [Windows Format Source Code and Build Environment (.zip, 3 MB)](https://github.com/user-attachments/files/17171020/acpica-win-20240927.zip)
 * update to **TORO C Library** *20241013, v0.8.7 Build 200*
