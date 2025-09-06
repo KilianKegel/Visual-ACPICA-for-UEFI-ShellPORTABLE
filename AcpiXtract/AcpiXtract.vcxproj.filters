@@ -15,40 +15,40 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\getopt.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\common\getopt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utascii.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utascii.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utdebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utexcep.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utglobal.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmath.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmath.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utnonansi.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utnonansi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxferror.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utxferror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswinxf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\AcpiXtract\acpixtract.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\AcpiXtract\acpixtract.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpixtract\axmain.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpixtract\axmain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpixtract\axutils.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpixtract\axutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

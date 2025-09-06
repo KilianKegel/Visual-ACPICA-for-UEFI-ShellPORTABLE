@@ -57,7 +57,7 @@
       </EnableEnhancedInstructionSet>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-source\include;$(SolutionDir)acpica-win-source\compiler;$(SolutionDir)$(ProjectName)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)overrides\acpica\source\include;$(SolutionDir)acpica\source\compiler;$(SolutionDir)$(ProjectName)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
@@ -87,217 +87,224 @@
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\acfileio.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\adfile.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\adisasm.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\adwalk.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahids.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahpredef.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahtable.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahuuids.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\cmfsize.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmextern.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmrestag.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmswitch.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtable.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtables.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump1.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump2.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbdump3.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo1.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo2.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\dmtbinfo3.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\getopt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslallocate.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslanalyze.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslascii.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslbtypes.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslcache.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslcodegen.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslcompile.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asldebug.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslerror.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslexternal.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslfileio.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslfiles.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslfold.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslhelp.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslhex.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllength.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllisting.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllistsup.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslload.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asllookup.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmain.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmap.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmapenter.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmapoutput.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmaputils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmessages.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmethod.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslnamesp.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asloffset.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslopcodes.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asloperands.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslopt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asloptions.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslparseop.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslpld.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslpredef.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslprepkg.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslprintf.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslprune.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslresource.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype1.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype1i.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2d.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2e.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2q.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2s.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslrestype2w.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslstartup.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslstubs.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asltransform.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asltree.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\asluuid.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslwalks.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslxref.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslxrefout.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\cvcompiler.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\cvdisasm.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\cvparser.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtcompile.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtexpress.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtfield.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtio.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtsubtable.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttable.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttable1.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttable2.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dttemplate.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\dtutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prexpress.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prmacros.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prscan.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\prutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\DEBUGGER\dbfileio.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmbuffer.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\disassembler\dmcstyle.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\disassembler\dmdeferred.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmnames.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmopcode.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmresrc.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmresrcl.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\disassembler\dmresrcl2.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmresrcs.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\Disassembler\dmutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\disassembler\dmwalk.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsargs.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dscontrol.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsfield.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsobject.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsopcode.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dspkginit.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dsutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswexec.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswload.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswload2.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswscope.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\dispatcher\dswstate.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exconcat.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exconvrt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\excreate.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exdump.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exmisc.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exmutex.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exnames.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg1.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg2.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg3.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exoparg6.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exprep.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exregion.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exresnte.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exresolv.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exresop.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exstore.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exstoren.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exstorob.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exsystem.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\executer\exutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsaccess.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsalloc.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsdump.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsnames.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsobject.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\NAMESPACE\nsparse.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nssearch.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nsutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\namespace\nswalk.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\NAMESPACE\nsxfobj.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psargs.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psloop.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psobject.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psopcode.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psopinfo.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psparse.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psscope.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\pstree.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\psutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\parser\pswalk.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbdata.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbfadt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\tables\tbinstal.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbprint.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\COMPONENTS\tables\tbutils.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbxface.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\tables\tbxfload.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utaddress.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utalloc.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utascii.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utbuffer.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utcache.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utcopy.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdecode.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdelete.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\uterror.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\uthex.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utinit.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utlock.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmath.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmisc.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\common\acfileio.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\adfile.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\adisasm.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\adwalk.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahids.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahtable.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahuuids.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\cmfsize.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmextern.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmrestag.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmswitch.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtable.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtables.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbdump.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbdump1.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbdump2.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbdump3.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbinfo.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbinfo1.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbinfo2.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\dmtbinfo3.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\getopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslallocate.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslanalyze.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslascii.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslbtypes.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslcache.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslcodegen.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslcompile.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asldebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslerror.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslexternal.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslfileio.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslfiles.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslfold.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslhelp.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslhex.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asllength.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asllisting.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asllistsup.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslload.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asllookup.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmain.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmap.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmapenter.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmapoutput.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmaputils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmessages.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmethod.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslnamesp.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asloffset.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslopcodes.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asloperands.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asloptions.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslparseop.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslpld.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslprepkg.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslprintf.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslprune.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslresource.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype1.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype1i.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype2.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype2d.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype2e.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype2q.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype2s.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslrestype2w.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslstartup.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslstubs.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asltransform.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asltree.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\asluuid.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslwalks.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslxref.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslxrefout.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\cvcompiler.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\cvdisasm.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\cvparser.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dtcompile.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dtexpress.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dtfield.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dtio.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dtsubtable.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dttable.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dttable1.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dttable2.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dttemplate.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\dtutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\prexpress.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\prmacros.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\prscan.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\prutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\DEBUGGER\dbfileio.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\disassembler\dmbuffer.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\disassembler\dmcstyle.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\disassembler\dmdeferred.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\disassembler\dmnames.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\disassembler\dmopcode.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\disassembler\dmresrc.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\disassembler\dmresrcl.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\disassembler\dmresrcl2.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\disassembler\dmresrcs.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\Disassembler\dmutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\disassembler\dmwalk.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dsargs.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dscontrol.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dsfield.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dsobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dsopcode.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dspkginit.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dsutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dswexec.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dswload.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dswload2.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dswscope.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\dispatcher\dswstate.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exconcat.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exconvrt.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\excreate.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exdump.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exmisc.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exmutex.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exnames.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exoparg1.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exoparg2.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exoparg3.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exoparg6.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exprep.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exregion.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exresnte.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exresolv.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exresop.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exstore.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exstoren.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exstorob.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exsystem.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\executer\exutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nsaccess.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nsalloc.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nsdump.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nsnames.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nsobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\NAMESPACE\nsparse.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nssearch.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nsutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\namespace\nswalk.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\NAMESPACE\nsxfobj.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psargs.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psloop.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psopcode.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psopinfo.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psparse.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psscope.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\pstree.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\psutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\parser\pswalk.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\tables\tbdata.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\tables\tbfadt.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\tables\tbinstal.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\tables\tbprint.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\COMPONENTS\tables\tbutils.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\tables\tbxface.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\tables\tbxfload.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utaddress.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utalloc.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utascii.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utbuffer.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utcache.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utcopy.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utdecode.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utdelete.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\uterror.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\uthex.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utinit.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utlock.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmisc.c">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">NDEBUG;WIN32;_CONSOLE;YY_NEVER_INTERACTIVE;YY_NO_UNISTD_H;ACPI_ASL_COMPILER;ACPI_DISASSEMBLER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">_STDC__;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmutex.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utnonansi.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utobject.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utownerid.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utpredef.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utresdecode.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utresrc.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstate.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstring.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstrsuppt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utstrtoul64.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utuuid.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxface.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utxferror.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswindir.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswintbl.c">
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmutex.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utnonansi.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utobject.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utownerid.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utresdecode.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utresrc.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utstate.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utstring.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utstrsuppt.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utstrtoul64.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utuuid.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utxface.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utxferror.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswindir.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswintbl.c">
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">false</DisableLanguageExtensions>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswinxf.c">
       <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">false</DisableLanguageExtensions>
     </ClCompile>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c">
-      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">false</DisableLanguageExtensions>
-    </ClCompile>
-    <ClCompile Include="..\acpica-win-source\components\utilities\utcksum.c" />
+    <ClCompile Include="..\acpica\source\components\utilities\utcksum.c" />
+    <ClCompile Include="..\overrides\acpica\source\compiler\aslmain.c" />
+    <ClCompile Include="..\overrides\acpica\source\os_specific\service_layers\oswintbl.c" />
     <ClCompile Include="aslcompiler.l.c">
     </ClCompile>
     <ClCompile Include="aslcompiler.y.c">
@@ -319,16 +326,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\aslcompiler.h" />
-    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\asldefine.h" />
-    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\aslglobal.h" />
-    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\aslmessages.h" />
-    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\asltypes.h" />
-    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\dtcompiler.h" />
-    <ClInclude Include="$(SolutionDir)acpica-win-source\compiler\dttemplate.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\aslcompiler.l">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\aslcompiler.l">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -i -PAslCompiler -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
@@ -336,44 +334,44 @@
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</LinkObjects>
       <FileType>Document</FileType>
     </CustomBuild>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\aslparser.y">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\aslparser.y">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">m4 -P -I%(RootDir)%(Directory) %(FullPath) &gt; aslcompiler.y</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Macro-processing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">aslcompiler.y</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(RelativeDir)asltokens.y;%(RelativeDir)asltypes.y;%(RelativeDir)aslrules.y;%(RelativeDir)aslprimaries.y;%(RelativeDir)aslcstyle.y;%(RelativeDir)aslkeywords.y;%(RelativeDir)aslresources.y;%(RelativeDir)aslhelpers.y;%(RelativeDir)aslsupport.y</AdditionalInputs>
     </CustomBuild>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtparser.l">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtparser.l">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -PDtParser -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
     </CustomBuild>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtparser.y">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtparser.y">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pDtParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Yaccing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
     </CustomBuild>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\prparser.l">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\prparser.l">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -PPrParser -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
     </CustomBuild>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\prparser.y">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\prparser.y">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pPrParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Yaccing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="$(SolutionDir)acpica-win-source\compiler\readme.txt" />
+    <Text Include="$(SolutionDir)acpica\source\compiler\readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtcompilerparser.l">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtcompilerparser.l">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -i -PDtCompilerParser -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
     </CustomBuild>
-    <CustomBuild Include="$(SolutionDir)acpica-win-source\compiler\dtcompilerparser.y">
+    <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtcompilerparser.y">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pDtCompilerParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Yaccing %(FullPath)</Message>
@@ -381,15 +379,15 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(SolutionDir)acpica-win-source\compiler\aslcstyle.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\aslhelpers.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\aslkeywords.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\aslprimaries.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\aslresources.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\aslrules.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\aslsupport.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\asltokens.y" />
-    <None Include="$(SolutionDir)acpica-win-source\compiler\asltypes.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\aslcstyle.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\aslhelpers.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\aslkeywords.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\aslprimaries.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\aslresources.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\aslrules.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\aslsupport.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\asltokens.y" />
+    <None Include="$(SolutionDir)acpica\source\compiler\asltypes.y" />
     <CustomBuild Include="aslcompiler.y">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pAslCompiler -v %(FullPath) -vd -o%(Filename).y.c</Command>

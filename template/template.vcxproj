@@ -55,7 +55,7 @@
       </EnableEnhancedInstructionSet>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-source\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)overrides\acpica\source\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>

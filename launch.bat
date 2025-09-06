@@ -92,6 +92,6 @@ set pathNEW=%pathNEW%;%~dp0Tools\regex-2.7-bin\bin
 
 :THEEND
 set path=%~dp0;%PATHNEW%;%path%;
-start AcpiComponents.sln
+start START_WITH_LAUNCH_AcpiComponents.sln
 rem cmd /title FlexBison
 :EOF

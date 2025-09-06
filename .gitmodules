@@ -1,6 +1,13 @@
 [submodule "libsrc"]
 	path = libsrc
 	url = https://github.com/KilianKegel/torosrc.git
+	ignore = dirty
+	ignory = dirty
 [submodule "Visual-LIBWIN32-for-UEFI"]
 	path = Visual-LIBWIN32-for-UEFI
 	url = https://github.com/KilianKegel/Visual-LIBWIN32-for-UEFI.git
+	ignore = dirty
+[submodule "acpica"]
+	path = acpica
+	url = https://github.com/acpica/acpica.git
+	ignore = dirty

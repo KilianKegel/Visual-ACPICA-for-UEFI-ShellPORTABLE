@@ -54,7 +54,7 @@
       </EnableEnhancedInstructionSet>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>$(SolutionDir)acpica-win-source\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)overrides\acpica\source\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>$(SolutionDir)lib\LibWin324UEFI.lib;$(SolutionDir)lib\toroC64.lib</AdditionalDependencies>
@@ -79,32 +79,32 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="$(SolutionDir)acpica-win-source\tools\acpihelp\acpihelp.h" />
+    <ClInclude Include="$(SolutionDir)acpica\source\tools\acpihelp\acpihelp.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahids.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahpredef.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahtable.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\ahuuids.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\common\getopt.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\compiler\aslmessages.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utdebug.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utexcep.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utglobal.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\uthex.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utmath.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utnonansi.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utpredef.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\components\utilities\utuuid.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\os_specific\service_layers\oswinxf.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahaml.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahamlops.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahasl.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahaslkey.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahaslops.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahdecode.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahgrammar.c" />
-    <ClCompile Include="$(SolutionDir)acpica-win-source\tools\acpihelp\ahmain.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahids.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahtable.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\ahuuids.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\common\getopt.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmessages.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utdebug.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utexcep.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utglobal.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\uthex.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmath.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utnonansi.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utpredef.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utuuid.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswinxf.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahaml.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahamlops.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahasl.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahaslkey.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahaslops.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahdecode.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahgrammar.c" />
+    <ClCompile Include="$(SolutionDir)acpica\source\tools\acpihelp\ahmain.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
