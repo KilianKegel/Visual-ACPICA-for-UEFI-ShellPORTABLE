@@ -5,6 +5,10 @@
       <Configuration>UEFIShell</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="WINDebug|x64">
+      <Configuration>WINDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -20,6 +24,11 @@
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
@@ -30,12 +39,26 @@
     <TargetExt>.efi</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
+    <TargetExt>.exe</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
     <ClCompile>
       <DebugInformationFormat>None</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
@@ -73,7 +96,48 @@
       <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
     </Link>
     <PostBuildEvent>
-      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) &amp; copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</Command>
+      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
+    <ClCompile>
+      <SDLCheck>false</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>ACPI_XTRACT_APP;VISUAL_ACPICA_FOR_WIN64;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;WIN32;NDEBUG;_CONSOLE;__STDC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)overrides\acpica\source\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib; kernel32.lib;Advapi32.lib</AdditionalDependencies>
+    </Link>
+    <Link>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EnableUAC>false</EnableUAC>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>_cdeCRT0WinNT</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
+      <ManifestFile />
+    </Link>
+    <PostBuildEvent>
+      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Message>

@@ -165,7 +165,7 @@ static UINT32
 AcpiEvGlobalLockHandler (
     void                    *Context);
 
-#ifdef  VISUAL_ACPICA_FOR_UEFI
+#if defined(VISUAL_ACPICA_FOR_UEFI) || defined(VISUAL_ACPICA_FOR_WIN64)
 /*******************************************************************************
  *
  * FUNCTION:    AcpiAcquireGlobalLockX8664
@@ -237,7 +237,7 @@ BOOLEAN AcpiReleaseGlobalLockX8664(ACPI_TABLE_FACS* pAcpiGbl_FACS)
 
     return nRet;
 }
-#endif//VISUAL_ACPICA_FOR_UEFI
+#endif//defined(VISUAL_ACPICA_FOR_UEFI) || defined(VISUAL_ACPICA_FOR_WIN64)
 
 /*******************************************************************************
  *

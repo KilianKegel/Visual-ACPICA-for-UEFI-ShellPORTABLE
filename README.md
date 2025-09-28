@@ -49,6 +49,10 @@ https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for
 
 
 ## Revision history
+### 20250928
+* enable **Microsoft Windows 64 DEBUG** build using **Visual Studio 2026**<BR>
+    * single step debug through **ACPICA** and **toro C Library** source code
+    * **NOTE:** The original Intel ACPI Component Architecture (ACPICA) reference implementation provides 32Bit-builds only:<BR> https://github.com/acpica/acpica/blob/master/generate/msvc2017/AcpiComponents.sln#L79
 ### 20250906
 * reorganize project files:
     * add [**ACPICA source**](https://github.com/acpica/acpica) files as **git subproject** (tag **20250807**)

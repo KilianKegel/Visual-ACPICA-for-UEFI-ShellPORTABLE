@@ -5,6 +5,10 @@
       <Configuration>UEFIShell</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="WINDebug|x64">
+      <Configuration>WINDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -20,6 +24,11 @@
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
@@ -32,12 +41,28 @@
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
+    <TargetExt>.exe</TargetExt>
+    <GenerateManifest>false</GenerateManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
     <ClCompile>
       <DebugInformationFormat>None</DebugInformationFormat>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
@@ -76,7 +101,53 @@
       <ManifestFile />
     </Link>
     <PostBuildEvent>
-      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) &amp; copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</Command>
+      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Message>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">
+    <ClCompile>
+      <SDLCheck>false</SDLCheck>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>VISUAL_ACPICA_FOR_WIN64;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;NDEBUG;WIN32;_CONSOLE;__STDC__;YY_NEVER_INTERACTIVE;YY_NO_UNISTD_H;ACPI_ASL_COMPILER;ACPI_DISASSEMBLER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>$(SolutionDir)overrides\acpica\source\include;$(SolutionDir)acpica\source\compiler;$(SolutionDir)$(ProjectName)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(SolutionDir)lib\toroC64.lib; kernel32.lib;Advapi32.lib</AdditionalDependencies>
+    </Link>
+    <Link>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EnableUAC>false</EnableUAC>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>_cdeCRT0WinNT</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <AdditionalOptions>/IGNORE:4078</AdditionalOptions>
+      <ManifestFile>
+      </ManifestFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</Message>
@@ -132,7 +203,9 @@
     <ClCompile Include="$(SolutionDir)acpica\source\compiler\asllookup.c" />
     <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmain.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">true</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">true</DeploymentContent>
     </ClCompile>
     <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmap.c" />
     <ClCompile Include="$(SolutionDir)acpica\source\compiler\aslmapenter.c" />
@@ -277,7 +350,9 @@
     <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmath.c" />
     <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmisc.c">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">NDEBUG;WIN32;_CONSOLE;YY_NEVER_INTERACTIVE;YY_NO_UNISTD_H;ACPI_ASL_COMPILER;ACPI_DISASSEMBLER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">NDEBUG;WIN32;_CONSOLE;YY_NEVER_INTERACTIVE;YY_NO_UNISTD_H;ACPI_ASL_COMPILER;ACPI_DISASSEMBLER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">_STDC__;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">_STDC__;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
     </ClCompile>
     <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utmutex.c" />
     <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utnonansi.c" />
@@ -296,11 +371,15 @@
     <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswindir.c" />
     <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswintbl.c">
       <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">false</DisableLanguageExtensions>
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">false</DisableLanguageExtensions>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">true</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">true</DeploymentContent>
     </ClCompile>
     <ClCompile Include="$(SolutionDir)acpica\source\os_specific\service_layers\oswinxf.c">
       <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">false</DisableLanguageExtensions>
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">false</DisableLanguageExtensions>
     </ClCompile>
     <ClCompile Include="..\acpica\source\components\utilities\utcksum.c" />
     <ClCompile Include="..\overrides\acpica\source\compiler\aslmain.c" />
@@ -309,56 +388,81 @@
     </ClCompile>
     <ClCompile Include="aslcompiler.y.c">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Level3</WarningLevel>
     </ClCompile>
     <ClCompile Include="dtcompilerparser.l.c" />
     <ClCompile Include="dtcompilerparser.y.c">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Level3</WarningLevel>
     </ClCompile>
     <ClCompile Include="dtparser.l.c">
     </ClCompile>
     <ClCompile Include="dtparser.y.c">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Level3</WarningLevel>
     </ClCompile>
     <ClCompile Include="prparser.l.c">
     </ClCompile>
     <ClCompile Include="prparser.y.c">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Level3</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Level3</WarningLevel>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\aslcompiler.l">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -i -PAslCompiler -o%(Filename).l.c %(FullPath)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">flex -i -PAslCompiler -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).l.c</Outputs>
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">false</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">false</TreatOutputAsContent>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">true</LinkObjects>
       <FileType>Document</FileType>
     </CustomBuild>
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\aslparser.y">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">m4 -P -I%(RootDir)%(Directory) %(FullPath) &gt; aslcompiler.y</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">m4 -P -I%(RootDir)%(Directory) %(FullPath) &gt; aslcompiler.y</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Macro-processing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Macro-processing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">aslcompiler.y</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">aslcompiler.y</Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(RelativeDir)asltokens.y;%(RelativeDir)asltypes.y;%(RelativeDir)aslrules.y;%(RelativeDir)aslprimaries.y;%(RelativeDir)aslcstyle.y;%(RelativeDir)aslkeywords.y;%(RelativeDir)aslresources.y;%(RelativeDir)aslhelpers.y;%(RelativeDir)aslsupport.y</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(RelativeDir)asltokens.y;%(RelativeDir)asltypes.y;%(RelativeDir)aslrules.y;%(RelativeDir)aslprimaries.y;%(RelativeDir)aslcstyle.y;%(RelativeDir)aslkeywords.y;%(RelativeDir)aslresources.y;%(RelativeDir)aslhelpers.y;%(RelativeDir)aslsupport.y</AdditionalInputs>
     </CustomBuild>
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtparser.l">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -PDtParser -o%(Filename).l.c %(FullPath)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">flex -PDtParser -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).l.c</Outputs>
     </CustomBuild>
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtparser.y">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pDtParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">bison -d -l -pDtParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Yaccing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Yaccing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
     </CustomBuild>
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\prparser.l">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -PPrParser -o%(Filename).l.c %(FullPath)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">flex -PPrParser -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).l.c</Outputs>
     </CustomBuild>
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\prparser.y">
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pPrParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">bison -d -l -pPrParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Yaccing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Yaccing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -368,14 +472,20 @@
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtcompilerparser.l">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">flex -i -PDtCompilerParser -o%(Filename).l.c %(FullPath)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">flex -i -PDtCompilerParser -o%(Filename).l.c %(FullPath)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Lexing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Lexing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).l.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).l.c</Outputs>
     </CustomBuild>
     <CustomBuild Include="$(SolutionDir)acpica\source\compiler\dtcompilerparser.y">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pDtCompilerParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">bison -d -l -pDtCompilerParser -v %(FullPath) -vd -o%(Filename).y.c</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Yaccing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Yaccing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -391,8 +501,11 @@
     <CustomBuild Include="aslcompiler.y">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">bison -d -l -pAslCompiler -v %(FullPath) -vd -o%(Filename).y.c</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">bison -d -l -pAslCompiler -v %(FullPath) -vd -o%(Filename).y.c</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">Yaccing %(FullPath)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">Yaccing %(FullPath)</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='UEFIShell|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='WINDebug|x64'">%(Filename).y.c;%(Filename).y.h</Outputs>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

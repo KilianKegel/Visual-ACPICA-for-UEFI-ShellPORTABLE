@@ -272,12 +272,12 @@ typedef COMPILER_DEPENDENT_UINT64       u64;
  *
  * Note: Handles case where the FACS pointer is null
  */
-#ifdef  VISUAL_ACPICA_FOR_UEFI
+#if  defined(VISUAL_ACPICA_FOR_UEFI) || defined(VISUAL_ACPICA_FOR_WIN64)
 
 #   define ACPI_ACQUIRE_GLOBAL_LOCK(FacsPtr, Acq)  Acq = AcpiAcquireGlobalLockX8664(FacsPtr)
 #   define ACPI_RELEASE_GLOBAL_LOCK(FacsPtr, Acq)  Acq = AcpiReleaseGlobalLockX8664(FacsPtr)
 
-#else// #ifdef VISUAL_ACPICA_FOR_UEFI
+#else// #if defined(VISUAL_ACPICA_FOR_UEFI) || defined(VISUAL_ACPICA_FOR_WIN64)
 #define ACPI_ACQUIRE_GLOBAL_LOCK(FacsPtr, Acq)  __asm \
 {                                                   \
         __asm mov           eax, 0xFF               \
