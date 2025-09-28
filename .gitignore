@@ -1,8 +1,8 @@
 .vs/
 lib/
-#x64/
+x64/
 !x64/UEFIShell/
-x64/UEFIShell/*.lib
+!x64/WINDebug/
 Win32
 Tools/
 !Include/X64/
@@ -11,6 +11,6 @@ Tools/
 *.y.h
 *.y.output
 *.y
-x64/
+*.ilk
 *.pdb
 
