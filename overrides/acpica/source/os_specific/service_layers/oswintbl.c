@@ -148,14 +148,12 @@
  * Software Foundation.
  *
  *****************************************************************************/
-
 #include "acpi.h"
 #include "accommon.h"
 #include "acutils.h"
 #include <stdio.h>
 #ifdef  VISUAL_ACPICA_FOR_UEFI
 #include <stdint.h>
-extern uint32_t EnumSystemFirmwareTables4UEFI(uint32_t FirmwareTableProviderSignature, void* pFirmwareTableEnumBuffer, uint32_t BufferSize);
 #define EFIAPI __cdecl  
 uint32_t EFIAPI GetSystemFirmwareTable4UEFI(
     uint32_t FirmwareTableProviderSignature,
@@ -372,11 +370,7 @@ OslTableInitialize (
      * ACPI table signatures are always 4 characters. Therefore, the data size
      * buffer should be a multiple of 4
      */
-#ifdef  VISUAL_ACPICA_FOR_UEFI
-    DataSize = EnumSystemFirmwareTables4UEFI ('ACPI', NULL, 0);
-#else// VISUAL_ACPICA_FOR_UEFI
     DataSize = EnumSystemFirmwareTables ('ACPI', NULL, 0);
-#endif//VISUAL_ACPICA_FOR_UEFI
     if (DataSize % ACPI_NAMESEG_SIZE)
     {
         return (AE_ERROR);
@@ -393,11 +387,7 @@ OslTableInitialize (
         return (AE_NO_MEMORY);
     }
 
-#ifdef  VISUAL_ACPICA_FOR_UEFI
-    ResultSize = EnumSystemFirmwareTables4UEFI ('ACPI', Gbl_AvailableTableSignatures, DataSize);
-#else// VISUAL_ACPICA_FOR_UEFI
     ResultSize = EnumSystemFirmwareTables ('ACPI', Gbl_AvailableTableSignatures, DataSize);
-#endif//VISUAL_ACPICA_FOR_UEFI
     if (ResultSize > DataSize)
     {
         return (AE_ERROR);

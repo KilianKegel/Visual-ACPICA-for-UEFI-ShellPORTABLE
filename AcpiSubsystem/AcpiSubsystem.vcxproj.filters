@@ -552,6 +552,9 @@
     <ClCompile Include="$(SolutionDir)acpica\source\components\utilities\utxfmutex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\overrides\acpica\source\components\events\evglock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(SolutionDir)acpica\source\include\acbuffer.h">

@@ -11,38 +11,43 @@ The [ACPI Component Architecture (ACPICA) project](https://acpica.org/)
 provides an operating system (OS)-independent reference implementation of the Advanced Configuration and Power Interface Specification (ACPI).
 
 ## Approach
-ACPICA provides a reference implementation for 32Bit-Windows as a Visual Studio 2017 solution here:<br>
-https://acpica.org/downloads/windows-source
+**ACPICA** provides a reference implementation for **32Bit-Windows** as a **Visual Studio 2017** solution here:<br>
+**https://github.com/acpica/acpica**
 
 Based on that source code package the transition to a 64Bit UEFI Shell Built could be easily done,
-using the **Microsoft C Library** compatible UEFI C Library **toro C Library** 
-https://github.com/KilianKegel/toro-C-Library#toro-c-library-formerly-known-as-torito-c-library
+using the **Microsoft C Library** compatible UEFI C Library [**toro C Library**](https://github.com/KilianKegel/toro-C-Library#toro-c-library-formerly-known-as-torito-c-library)
 
 Additionally it was necessary to create the [**Win32API4UEFI**](https://github.com/KilianKegel/Win324UEFI)–sub-project,
 to get required Win32 API equivalents for UEFI.
 
-The original source code directory is here: **https://github.com/acpica/acpica**
-
 All changes to the original source code are encapsulated by the **`VISUAL_ACPICA_FOR_UEFI`** and **`VISUAL_ACPICA_FOR_WIN64`** build switch.
 
 ## HowTo/QuickStart
-#### 1. install Visual Studio 2026 on a Windows PC<br>
-https://github.com/KilianKegel/HowTo-setup-an-UEFI-Development-PC#howto-setup-an-uefi-development-pc
+### 1. install Visual Studio 2026 on a Windows PC<br>
+https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC/blob/master/README.md#install-visual-studio<br>
+**NOTE:** It's about time to update to latest Visual Studio version!
+* **Windows 11 SDK:** 10.0.26100.4654
+* **Platform Toolset:** Visual Studio v18 (v145)
+
 
 <del>#### 2. install additional tools <br>
 Follow the guidance to get FLEX/BISON running on that build machine<br>
 https://acpica.org/downloads/windows-source</del>
 
-#### 2. get the project to the build machine <br>
-[Visual-ACPICA-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell)
+### 2. get the project to the build machine <br>
+[**Visual-ACPICA-for-UEFI-Shell**](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-ShellPORTABLE/tree/6a500cea0aefb2be43e0e8d2928e8fef2e7f2241)
 
-#### 3. run LAUNCH.BAT to begin – don't invoke AcpiComponents.slnx directly <br>
-FLEX/BISON automatically downloaded and extracted *to the project folder* initially by **LAUNCH.BAT**<br>
+### 3. run LAUNCH.BAT to start – don't invoke AcpiComponents.slnx directly <br>
+**FLEX/BISON** automatically downloaded and extracted *to the project folder* initially by **LAUNCH.BAT**<br>
 https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for-upcoming-portable-projects<br>
 **PATH** updated by **LAUNCH.BAT**.
 
 
 ## Revision history
+### 20251005
+* add support for **VS2026**
+* fix **ACPIDUMP** SSDT dump issue in Windows
+* early support for **LLVM/CLANG** (-alpha)
 ### 20250928
 * enable **Microsoft Windows 64 DEBUG** build using **Visual Studio 2026**<BR>
     * single step debug through **ACPICA** and **toro C Library** source code
