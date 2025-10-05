@@ -1,6 +1,6 @@
 # Visual-ACPICA-for-UEFI-Shell
 
-![LOGO](https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell/blob/main/LOGO.PNG)
+![LOGO](LOGO.PNG)
 
 **ACPICA** (ACPI component architecture) reference implementation for UEFI, using **Visual Studio 2026** build environment.
 
