@@ -317,7 +317,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>ACPI_LIBRARY;VISUAL_ACPICA_FOR_UEFI;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;WIN32;NDEBUG;_CONSOLE;__STDC__</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ACPI_LIBRARY;VISUAL_ACPICA_FOR_WIN64;_CRT_SECURE_NO_WARNINGS;_NO_CRT_STDIO_INLINE;WIN32;NDEBUG;_CONSOLE;__STDC__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)overrides\acpica\source\include</AdditionalIncludeDirectories>
       <DebugInformationFormat>None</DebugInformationFormat>

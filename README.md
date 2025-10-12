@@ -44,6 +44,8 @@ https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for
 
 
 ## Revision history
+### 20251012
+* minor sourcecode corrections
 ### 20251005
 * add support for **VS2026**
 * fix **ACPIDUMP** SSDT dump issue in Windows
