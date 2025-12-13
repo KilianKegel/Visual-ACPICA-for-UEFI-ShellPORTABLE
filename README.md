@@ -44,6 +44,9 @@ https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for
 
 
 ## Revision history
+### 20251212
+* update [**ACPICA source**](https://github.com/acpica/acpica) tag **20251212**
+* update to **toro C Library v0.9.9 Build 799**
 ### 20251012
 * minor sourcecode corrections
 ### 20251005
