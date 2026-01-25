@@ -181,7 +181,7 @@ AcpiEvGlobalLockHandler (
  ******************************************************************************/
 BOOLEAN AcpiAcquireGlobalLockX8664(ACPI_TABLE_FACS *pAcpiGbl_FACS)
         {
-    BOOLEAN fRet = -1;
+    BOOLEAN fRet = 1;
     int  GlobalLockValue, GlobalLockOrg;
 #define PENDING 0
 #define OWNED   1
@@ -217,7 +217,7 @@ BOOLEAN AcpiAcquireGlobalLockX8664(ACPI_TABLE_FACS *pAcpiGbl_FACS)
  ******************************************************************************/
 BOOLEAN AcpiReleaseGlobalLockX8664(ACPI_TABLE_FACS* pAcpiGbl_FACS)
 {
-    int nRet = -1;
+    BOOLEAN nRet = 1;
     int  GlobalLockValue, GlobalLockOrg;
 #define PENDING 0
 #define OWNED   1

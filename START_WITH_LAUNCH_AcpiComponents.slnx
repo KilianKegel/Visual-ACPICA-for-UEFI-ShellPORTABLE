@@ -2,7 +2,10 @@
   <Configurations>
     <BuildType Name="UEFIShell" />
     <BuildType Name="WINDebug" />
+    <BuildType Name="WINDebug32Bit" />
+    <Platform Name="Win32" />
     <Platform Name="x64" />
+    <Platform Name="x86" />
   </Configurations>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
@@ -49,9 +52,24 @@
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
   </Project>
   <Project Path="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" Id="223b3668-e022-4da7-a33d-c9168d1357a3">
-    <BuildType Project="Debug" />
+    <BuildType Solution="*|Win32" Project="Release" />
+    <BuildType Solution="*|x86" Project="Release" />
+    <BuildType Solution="UEFIShell|x64" Project="Debug" />
+    <BuildType Solution="WINDebug32Bit|x64" Project="Release" />
+    <BuildType Solution="WINDebug|x64" Project="Debug" />
+    <Platform Project="x64" />
+    <Build Solution="*|Win32" Project="false" />
+    <Build Solution="*|x86" Project="false" />
+    <Build Solution="WINDebug32Bit|x64" Project="false" />
   </Project>
   <Project Path="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" Id="8c250c8a-c234-450d-83ed-f0c898e1a739">
-    <BuildType Project="Debug" />
+    <BuildType Solution="UEFIShell|*" Project="Debug" />
+    <BuildType Solution="WINDebug32Bit|*" Project="Release" />
+    <BuildType Solution="WINDebug|Win32" Project="Release" />
+    <BuildType Solution="WINDebug|x64" Project="Debug" />
+    <BuildType Solution="WINDebug|x86" Project="Release" />
+    <Build Solution="*|Win32" Project="false" />
+    <Build Solution="*|x86" Project="false" />
+    <Build Solution="WINDebug32Bit|x64" Project="false" />
   </Project>
 </Solution>

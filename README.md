@@ -44,6 +44,11 @@ https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC#preparation-for
 
 
 ## Revision history
+### 20260125
+* change to local 64bit enabled branch of [**ACPICA source**](https://github.com/KilianKegel/acpica64)
+    * this reduces compiler warnings at higher warning level
+* update to **toro C Library v0.9.10Build 803**
+
 ### 20251212
 * update [**ACPICA source**](https://github.com/acpica/acpica) tag **20251212**
 * update to **toro C Library v0.9.9 Build 799**

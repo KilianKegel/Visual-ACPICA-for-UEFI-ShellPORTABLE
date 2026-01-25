@@ -255,7 +255,7 @@ typedef COMPILER_DEPENDENT_UINT64       u64;
 #define ACPI_FLUSH_CPU_CACHE()
 #else
 #if  defined(VISUAL_ACPICA_FOR_UEFI) || defined(VISUAL_ACPICA_FOR_WIN64)
-#define ACPI_FLUSH_CPU_CACHE()  __wbinvd
+#define ACPI_FLUSH_CPU_CACHE()  __wbinvd()
 #else// defined(VISUAL_ACPICA_FOR_UEFI) || defined(VISUAL_ACPICA_FOR_WIN64)
 #define ACPI_FLUSH_CPU_CACHE()  __asm {WBINVD}
 #endif//defined(VISUAL_ACPICA_FOR_UEFI) || defined(VISUAL_ACPICA_FOR_WIN64)
