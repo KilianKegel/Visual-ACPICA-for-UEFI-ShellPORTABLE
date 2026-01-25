@@ -2,8 +2,6 @@
   <Configurations>
     <BuildType Name="UEFIShell" />
     <BuildType Name="WINDebug" />
-    <BuildType Name="WINDebug32Bit" />
-    <Platform Name="Win32" />
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
@@ -14,62 +12,65 @@
   <Project Path="AcpiBin/AcpiBin.vcxproj" Id="ead90ae6-d7e3-40ef-8ae7-cb40e3b7f594">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="AcpiDump/AcpiDump.vcxproj" Id="2eab564d-2739-43af-a545-2077d3d91560">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="AcpiExec/AcpiExec.vcxproj" Id="c5acd4d6-501a-48bc-8d05-97963f4f2c29">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="AcpiHelp/AcpiHelp.vcxproj" Id="ad65c64c-ae16-4ea4-84fa-e05e781a3049">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="AcpiSrc/AcpiSrc.vcxproj" Id="3010a373-3aaa-4c48-b56a-77f17227518c">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="AcpiSubsystem/AcpiSubsystem.vcxproj" Id="92db00e8-eae5-40aa-b4c1-584002a844b4">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="AcpiXtract/AcpiXtract.vcxproj" Id="b6864d00-5273-4589-8226-d2553b8ee127">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="AslCompiler/AslCompiler.vcxproj" Id="4a66161c-e61a-4a23-8fff-270673027e7d">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="Examples/Examples.vcxproj" Id="c5b5ec25-ad36-48ae-a6a1-b094263c6454">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="template/template.vcxproj" Id="e4c4ae18-cf90-4109-b345-1fae61affcf0">
     <BuildDependency Project="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" />
     <BuildDependency Project="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
   <Project Path="Visual-LIBWIN32-for-UEFI/LibWin324UEFI.vcxproj" Id="223b3668-e022-4da7-a33d-c9168d1357a3">
-    <BuildType Solution="*|Win32" Project="Release" />
     <BuildType Solution="*|x86" Project="Release" />
-    <BuildType Solution="UEFIShell|x64" Project="Debug" />
-    <BuildType Solution="WINDebug32Bit|x64" Project="Release" />
+    <BuildType Solution="UEFIShell|x64" Project="Release" />
     <BuildType Solution="WINDebug|x64" Project="Debug" />
     <Platform Project="x64" />
-    <Build Solution="*|Win32" Project="false" />
     <Build Solution="*|x86" Project="false" />
-    <Build Solution="WINDebug32Bit|x64" Project="false" />
+    <Build Solution="WINDebug|x64" Project="false" />
   </Project>
   <Project Path="Visual-TORO-C-LIBRARY-for-UEFI/toroCLibrary/toroCLibrary.vcxproj" Id="8c250c8a-c234-450d-83ed-f0c898e1a739">
-    <BuildType Solution="UEFIShell|*" Project="Debug" />
-    <BuildType Solution="WINDebug32Bit|*" Project="Release" />
-    <BuildType Solution="WINDebug|Win32" Project="Release" />
+    <BuildType Solution="*|x86" Project="Debug" />
+    <BuildType Solution="UEFIShell|x64" Project="Release" />
     <BuildType Solution="WINDebug|x64" Project="Debug" />
-    <BuildType Solution="WINDebug|x86" Project="Release" />
-    <Build Solution="*|Win32" Project="false" />
-    <Build Solution="*|x86" Project="false" />
-    <Build Solution="WINDebug32Bit|x64" Project="false" />
+    <Build Solution="UEFIShell|x86" Project="false" />
   </Project>
 </Solution>
